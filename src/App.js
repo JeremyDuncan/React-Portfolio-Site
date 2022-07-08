@@ -33,8 +33,7 @@ const theme = createTheme({
 function App() {
   return (
     <Box>
-      TEST
-      {/* <ThemeProvider theme={theme}>
+      <ThemeProvider theme={theme}>
         <div className="App">
           <Header />
           <br />
@@ -43,7 +42,7 @@ function App() {
           <ContactMe />
           <Footer />
         </div>
-      </ThemeProvider> */}
+      </ThemeProvider>
     </Box>
   );
 }
