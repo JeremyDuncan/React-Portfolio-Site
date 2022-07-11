@@ -11,7 +11,7 @@ import AssignmentIndRoundedIcon from "@mui/icons-material/AssignmentIndRounded";
 import SchoolRoundedIcon from "@mui/icons-material/SchoolRounded";
 import MilitaryTechRoundedIcon from "@mui/icons-material/MilitaryTechRounded";
 import TerminalIcon from "@mui/icons-material/Terminal";
-import MyResume from "./Resume-All_Duncan.pdf";
+import MyResume from "./Jeremy_Duncan_Resume_All-11July2022.pdf";
 
 import Projects from "./Projects";
 import Languages from "./Languages";
@@ -63,7 +63,7 @@ export default function ControlledAccordions() {
               in Software Programming. I am interested in gaining real-world
               experience through internships and mentorship.
             </p>
-            <p>Thank you for taking the time to view my portfolio.</p>
+            <p>Thank you for taking the time to view my portfolio site I created.</p>
           </Typography>
           <Button
             href={MyResume}
@@ -162,7 +162,7 @@ export default function ControlledAccordions() {
           </Typography>
           <br />
           <Button
-            href="https://jeremyduncan.github.io/devry-projects/devry.html"
+            href="https://www.jeremy-duncan.com/devry-projects/devry.html"
             target="_blank"
             rel="noopener"
             variant="contained"

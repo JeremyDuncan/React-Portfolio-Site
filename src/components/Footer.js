@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { styled } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
+import Link from "@mui/material/Link";
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
@@ -31,6 +32,27 @@ class Footer extends Component {
         >
           <Grid item xs={12}>
             <Item sx={{ bgcolor: 'primary.main', color: 'white'}}>
+              <Typography sx={{fontSize: ".8rem"}}>
+                This site was created using
+                <Link
+                  color="text.secondary"
+                  underline="none"
+                  target="_blank"
+                  rel="noopener"
+                  href="https://reactjs.org/">
+                    &nbsp; React &nbsp;
+                </Link>
+                and &nbsp;
+                <Link
+                  color="text.secondary"
+                  underline="none"
+                  target="_blank"
+                  rel="noopener"
+                  href="https://mui.com/material-ui/getting-started/overview/">
+                    Material UI
+                </Link>
+                .
+              </Typography>
               <Typography>
                 Jeremy Duncan &copy; 2022
               </Typography>
