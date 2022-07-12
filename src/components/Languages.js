@@ -1,3 +1,8 @@
+// *****************************************************************************
+// This component displays the programming languages and certifications
+// Imported to AboutMe.js Component ==>
+// *****************************************************************************
+
 import React, { Component } from "react";
 import Image from "mui-image";
 import { styled } from "@mui/material/styles";
@@ -6,7 +11,6 @@ import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium";
-
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
@@ -27,6 +31,7 @@ class Languages extends Component {
       buttonClick: "",
     };
   }
+  
   render() {
     return (
       <Box sx={{ flexGrow: 1 }}>
@@ -37,6 +42,7 @@ class Languages extends Component {
           justifyContent="center"
           alignItems="center"
         >
+{/* ========= This section renders all the programming language logos =======*/}
           {/*//=========== GRID BOX ===============> */}
           <Grid item xs={4} md={2}>
             <Item sx={{ bgcolor: "primary.main", color: "white" }}>
@@ -74,7 +80,6 @@ class Languages extends Component {
               />
               <Typography variant="caption">JavaScript</Typography>
             </Item>
-            
           </Grid>
           {/*//=========== GRID END ===============> */}
           {/*//=========== GRID BOX ===============> */}
@@ -88,7 +93,6 @@ class Languages extends Component {
               />
               <Typography variant="caption">React</Typography>
             </Item>
-            
           </Grid>
           {/*//=========== GRID END ===============> */}
           {/*//=========== GRID BOX ===============> */}
@@ -184,6 +188,7 @@ class Languages extends Component {
           {/*//=========== GRID END ===============> */}
         </Grid>
 
+{/* ========= This section renders all the Cerifications ====================*/}
         <Typography variant="h6" sx={{ paddingBottom: 2, paddingTop: 2 }}>
           <WorkspacePremiumIcon
             sx={{ verticalAlign: "center", fontSize: "small" }}
@@ -197,7 +202,7 @@ class Languages extends Component {
           justifyContent="center"
           alignItems="center"
         >
-          {/*//=========== CERTIFICATION GRID BOX ===================================> */}
+          {/*//=========== CERTIFICATION GRID BOX START ===================> */}
           <Grid item xs={12} md={4}>
             <Item sx={{ bgcolor: "primary.main", color: "white" }}>
               <Image
@@ -208,8 +213,8 @@ class Languages extends Component {
               />
             </Item>
           </Grid>
-          {/*//=========== CERTIFICATION GRID BOXEND ================================> */}
-          {/*//=========== CERTIFICATION GRID BOX ===================================> */}
+          {/*//=========== CERTIFICATION GRID BOX END =====================> */}
+          {/*//=========== CERTIFICATION GRID BOX START ===================> */}
           <Grid item xs={12} md={4}>
             <Item sx={{ bgcolor: "primary.main", color: "white" }}>
               <Image
@@ -220,8 +225,8 @@ class Languages extends Component {
               />
             </Item>
           </Grid>
-          {/*//=========== CERTIFICATION GRID BOXEND ================================> */}
-          {/*//=========== CERTIFICATION GRID BOX ===================================> */}
+          {/*//=========== CERTIFICATION GRID BOX END =====================> */}
+          {/*//=========== CERTIFICATION GRID BOX START ===================> */}
           <Grid item xs={12} md={4}>
             <Item sx={{ bgcolor: "primary.main", color: "white" }}>
               <Image
@@ -232,7 +237,7 @@ class Languages extends Component {
               />
             </Item>
           </Grid>
-          {/*//=========== CERTIFICATION GRID BOXEND ================================> */}
+          {/*//=========== CERTIFICATION GRID BOX END =====================> */}
         </Grid>
       </Box>
     );

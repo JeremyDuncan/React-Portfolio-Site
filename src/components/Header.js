@@ -1,3 +1,8 @@
+// *****************************************************************************
+// This component displays the Header section and links
+// Imported to App.js Component ==>
+// *****************************************************************************
+
 import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -11,11 +16,11 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import Link from "@mui/material/Link";
 import EmojiEmotionsRoundedIcon from "@mui/icons-material/EmojiEmotionsRounded";
-
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
+import EmojiPeopleIcon from '@mui/icons-material/EmojiPeople';
 
 const pages = [
   <Link
@@ -67,10 +72,10 @@ const Header = () => {
     <AppBar position="sticky">
       <Container
         maxWidth="xl"
-        sx={{ display: "flex", justifyContent: "space-evenly" }}
+        sx={{ display: "flex", justifyContent: "space-evenly"}}
       >
         <Toolbar disableGutters>
-          <EmojiEmotionsRoundedIcon
+          <EmojiPeopleIcon
             sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}
           />
           <Typography
@@ -91,7 +96,7 @@ const Header = () => {
             {/* Desktop View */}
             Jeremy Duncan
           </Typography>
-
+          
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
@@ -100,6 +105,7 @@ const Header = () => {
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
               color="inherit"
+              
             >
               <MenuIcon />
             </IconButton>
@@ -128,19 +134,19 @@ const Header = () => {
               ))}
             </Menu>
           </Box>
-
-          <EmojiEmotionsRoundedIcon
+          &nbsp;
+          <EmojiPeopleIcon
             sx={{ display: { xs: "flex", md: "none" }, mr: 1 }}
           />
           <Typography
-            variant="h5"
+            variant="h6"
             noWrap
             component="a"
             href=""
             sx={{
               mr: 2,
               display: { xs: "flex", md: "none" },
-              flexGrow: 1,
+              flexGrow: 2,
               fontFamily: "monospace",
               fontWeight: 700,
               letterSpacing: ".3rem",
@@ -149,7 +155,7 @@ const Header = () => {
             }}
           >
             {/* Mobile View */}
-            Jeremy
+             Jeremy Duncan
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (

@@ -1,3 +1,8 @@
+// *****************************************************************************
+// This component displays the Footer section
+// Imported to App.js Component ==>
+// *****************************************************************************
+
 import React, { Component } from 'react'
 import { styled } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
@@ -5,7 +10,6 @@ import Link from "@mui/material/Link";
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
-
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
@@ -33,7 +37,7 @@ class Footer extends Component {
           <Grid item xs={12}>
             <Item sx={{ bgcolor: 'primary.main', color: 'white'}}>
               <Typography sx={{fontSize: ".8rem"}}>
-                This site was created using
+                I created this site with
                 <Link
                   color="text.secondary"
                   underline="none"
@@ -62,5 +66,4 @@ class Footer extends Component {
     )
   }
 }
-
 export default Footer;

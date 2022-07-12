@@ -1,3 +1,8 @@
+// *****************************************************************************
+// This is the main portfiolio section. Has portfiolio pictions and holdes AboutMe Component
+// Imported to App.js Component ==>
+// *****************************************************************************
+
 import React, { Component } from "react";
 import { styled } from "@mui/material/styles";
 import Typography from "@mui/material/Typography";
@@ -6,7 +11,6 @@ import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import Image from "mui-image";
 import AboutMe from "./AboutMe";
-
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
@@ -29,7 +33,6 @@ class Portfolio extends Component {
     };
   }
 
-  //======================== Render ===========================================>
   render() {
     return (
       <Box sx={{ flexGrow: 1 }}>
@@ -40,6 +43,7 @@ class Portfolio extends Component {
           justifyContent="center"
           alignItems="center"
         >
+          {/* === PORTFOLIO IMAGE OF ME === */}
           {/*//=========== GRID BOX ===============> */}
           <Grid item xs={11} md={5}>
             <Item sx={{ bgcolor: "primary.main", color: "white" }}>
@@ -58,8 +62,9 @@ class Portfolio extends Component {
               <Typography variant="h4" sx={{ paddingBottom: 1 }}>
                 Hello! I'm Jeremy,
               </Typography>
-              <AboutMe />{" "}
-              {/*//=========== AboutMe Component ===============> */}
+              {/*=== ===*/}
+              <AboutMe /> {/*<== === === === === === === === === {COMPONENT} */}
+              {/*=== ===*/}
             </Item>
           </Grid>
           {/*//=========== GRID END ===============> */}
@@ -68,5 +73,4 @@ class Portfolio extends Component {
     );
   }
 }
-
 export default Portfolio;

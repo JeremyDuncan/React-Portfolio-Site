@@ -1,3 +1,8 @@
+// *****************************************************************************
+// This component displays the Accordion functions that display the portfolio sections
+// Imported to Portfolio.js Component ==>
+// *****************************************************************************
+
 import * as React from "react";
 import Accordion from "@mui/material/Accordion";
 import AccordionDetails from "@mui/material/AccordionDetails";
@@ -12,10 +17,8 @@ import SchoolRoundedIcon from "@mui/icons-material/SchoolRounded";
 import MilitaryTechRoundedIcon from "@mui/icons-material/MilitaryTechRounded";
 import TerminalIcon from "@mui/icons-material/Terminal";
 import MyResume from "./Jeremy_Duncan_Resume_All-11July2022.pdf";
-
 import Projects from "./Projects";
 import Languages from "./Languages";
-
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
@@ -30,7 +33,8 @@ export default function ControlledAccordions() {
 
   return (
     <div>
-      {/* =============== === ACCORDIAN === ============*/}
+      {/* =============== === ACCORDIAN START === ===========================*/}
+      {/* =============== === ABOUT ME SECTION === ==========================*/}
       <Accordion
         sx={{ bgcolor: "primary.dark", color: "primary.contrastText" }}
         expanded={expanded === "panel1"}
@@ -63,7 +67,7 @@ export default function ControlledAccordions() {
               in Software Programming. I am interested in gaining real-world
               experience through internships and mentorship.
             </p>
-            <p>Thank you for taking the time to view my portfolio site I created.</p>
+            <p>Thank you for taking the time to view my portfolio.</p>
           </Typography>
           <Button
             href={MyResume}
@@ -75,8 +79,10 @@ export default function ControlledAccordions() {
           </Button>
         </AccordionDetails>
       </Accordion>
+      {/* =============== === ACCORDIAN END === =============================*/}
 
-      {/* =============== === ACCORDIAN === ============*/}
+      {/* =============== === ACCORDIAN START === ===========================*/}
+      {/* ======== === PROGRAMMING LANGUAGE SECTION === =====================*/}
       <Accordion
         sx={{ bgcolor: "primary.dark", color: "primary.contrastText" }}
         expanded={expanded === "panel2"}
@@ -98,7 +104,8 @@ export default function ControlledAccordions() {
             <TerminalIcon sx={{ verticalAlign: "center", fontSize: "small" }} />
             &nbsp; Languages Used
           </Typography>
-          <Languages /> {/*//=========== Language Component ===============> */}
+          <Languages /> {/* <<-========= Language Component ===============> */}
+
           <br />
           <Button
             href="https://github.com/JeremyDuncan"
@@ -111,8 +118,10 @@ export default function ControlledAccordions() {
           </Button>
         </AccordionDetails>
       </Accordion>
+      {/* =============== === ACCORDIAN END === =============================*/}
 
-      {/* =============== === ACCORDIAN === ============*/}
+      {/* =============== === ACCORDIAN START === ===========================*/}
+      {/* ========== === COLLEGE EDUCATION SECTION === ======================*/}
       <Accordion
         sx={{ bgcolor: "primary.dark", color: "primary.contrastText" }}
         expanded={expanded === "panel3"}
@@ -172,8 +181,10 @@ export default function ControlledAccordions() {
           </Button>
         </AccordionDetails>
       </Accordion>
+      {/* =============== === ACCORDIAN END === =============================*/}
 
-      {/* =============== === ACCORDIAN === ============*/}
+      {/* =============== === ACCORDIAN START === ===========================*/}
+      {/* ========== === MILITARY EXPERIENCE SECTION === ====================*/}
       <Accordion
         sx={{ bgcolor: "primary.dark", color: "primary.contrastText" }}
         expanded={expanded === "panel4"}
@@ -230,8 +241,10 @@ export default function ControlledAccordions() {
           </Button>
         </AccordionDetails>
       </Accordion>
+      {/* =============== === ACCORDIAN END === =============================*/}
 
-      {/* =============== === ACCORDIAN === ============*/}
+      {/* =============== === ACCORDIAN START === ===========================*/}
+      {/* ============== === PORTFOLIO SECTION === ==========================*/}
       <Accordion
         sx={{ bgcolor: "primary.dark", color: "primary.contrastText" }}
         expanded={expanded === "panel5"}
@@ -252,10 +265,12 @@ export default function ControlledAccordions() {
           <Typography sx={{ paddingBottom: 2 }}>
             These are some of my projects.
           </Typography>
-          <Projects />
-          {/*//============== Projects Component ===============> */}
+          {/*=== ===*/}
+          <Projects /> {/*<== === === === === === === === === === {COMPONENT} */}
+          {/*=== ===*/}
         </AccordionDetails>
       </Accordion>
+      {/* =============== === ACCORDIAN END === =============================*/}
     </div>
   );
 }

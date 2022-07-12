@@ -5,12 +5,10 @@ import Header from "./components/Header";
 import Portfolio from "./components/Portfolio";
 import ContactMe from "./components/ContactMe";
 import Footer from "./components/Footer";
-
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
-
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 const theme = createTheme({
@@ -46,7 +44,4 @@ function App() {
     </Box>
   );
 }
-
 export default App;
-
-// <img width="50px" src={require("../images/Jeremy_duncan_logo_React.webp")}/>

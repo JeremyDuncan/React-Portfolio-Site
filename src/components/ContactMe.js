@@ -1,3 +1,8 @@
+// *****************************************************************************
+// This component displays the Contact section in an Accordian Component
+// Imported to App.js Component ==>
+// *****************************************************************************
+
 import * as React from "react";
 import Accordion from "@mui/material/Accordion";
 import AccordionDetails from "@mui/material/AccordionDetails";
@@ -11,7 +16,6 @@ import EmailRoundedIcon from "@mui/icons-material/EmailRounded";
 import PermPhoneMsgRoundedIcon from "@mui/icons-material/PermPhoneMsgRounded";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
-
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
@@ -19,7 +23,6 @@ import "@fontsource/roboto/700.css";
 
 export default function ControlledAccordions() {
   const [expanded, setExpanded] = React.useState(false);
-
   const handleChange = (panel) => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);
   };
@@ -53,7 +56,7 @@ export default function ControlledAccordions() {
               justifyContent="center"
               alignItems="center"
             >
-              {/* ============CONTACT LINK ================================================*/}
+              {/* ============CONTACT LINK ==================================*/}
               <Button
                 href="mailto:jeremy.duncan1984@gmail.com"
                 target="_blank"
@@ -62,8 +65,8 @@ export default function ControlledAccordions() {
               >
                 <EmailRoundedIcon />
               </Button>
-              {/* ============CONTACT LINK END ================================================*/}
-              {/* ============CONTACT LINK ================================================*/}
+              {/* ============CONTACT LINK END ==============================*/}
+              {/* ============CONTACT LINK ==================================*/}
               <Button
                 href="tel:770-309-2046"
                 target="_blank"
@@ -72,8 +75,8 @@ export default function ControlledAccordions() {
               >
                 <PermPhoneMsgRoundedIcon />
               </Button>
-              {/* ============CONTACT LINK END ================================================*/}
-              {/* ============CONTACT LINK ================================================*/}
+              {/* ============CONTACT LINK END ==============================*/}
+              {/* ============CONTACT LINK ==================================*/}
               <Button
                 href="https://www.linkedin.com/in/jeremy-duncan2021/"
                 target="_blank"
@@ -82,8 +85,8 @@ export default function ControlledAccordions() {
               >
                 <LinkedInIcon />
               </Button>
-              {/* ============CONTACT LINK END ================================================*/}
-              {/* ============CONTACT LINK ================================================*/}
+              {/* ============CONTACT LINK END ==============================*/}
+              {/* ============CONTACT LINK ==================================*/}
               <Button
                 href="https://github.com/JeremyDuncan"
                 target="_blank"
@@ -92,7 +95,7 @@ export default function ControlledAccordions() {
               >
                 <GitHubIcon />
               </Button>
-              {/* ============CONTACT LINK END ================================================*/}
+              {/* ============CONTACT LINK END ==============================*/}
             </Grid>
           </Box>
         </AccordionDetails>
