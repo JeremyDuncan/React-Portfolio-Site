@@ -478,7 +478,7 @@ class Projects extends Component {
                   <br />
                   <Button
                     /*==> URL Link <== =======================================*/
-                    href="https://jeremyduncan.github.io/inputs-jeremy/"
+                    href="https://www.jeremyduncan.tech/treasure_hunt/"
                     target="_blank"
                     rel="noopener"
                     variant="contained"
