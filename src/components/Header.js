@@ -70,8 +70,7 @@ const Header = () => {
   return (
     <AppBar position="sticky">
       <Container
-        maxWidth="xl"
-        sx={{ display: "flex", justifyContent: "space-evenly"}}
+        sx={{ display: "flex", justifyContent: {xs: "space-evenly", lg: "space-around"}}}
       >
         <Toolbar disableGutters>
           <EmojiPeopleIcon
@@ -87,13 +86,14 @@ const Header = () => {
               display: { xs: "none", md: "flex" },
               fontFamily: "monospace",
               fontWeight: 700,
-              letterSpacing: ".3rem",
+              letterSpacing: ".5rem",
               color: "inherit",
               textDecoration: "none",
             }}
           >
             {/* Desktop View */}
-            Jeremy Duncan
+            Jeremy Duncan 
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </Typography>
           
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -123,7 +123,7 @@ const Header = () => {
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-                display: { xs: "block", md: "none" },
+                display: { xs: "block", md: "none" }
               }}
             >
               {pages.map((page) => (
@@ -150,13 +150,13 @@ const Header = () => {
               fontWeight: 700,
               letterSpacing: ".3rem",
               color: "inherit",
-              textDecoration: "none",
+              textDecoration: "none"
             }}
           >
             {/* Mobile View */}
              Jeremy Duncan
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" }}}>
             {pages.map((page) => (
               <Button
                 key={page}
