@@ -6,7 +6,6 @@
 import React, { Component } from "react";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
-import SchoolRoundedIcon from "@mui/icons-material/SchoolRounded";
 import MilitaryTechRoundedIcon from "@mui/icons-material/MilitaryTechRounded";
 import CircleIcon from "@mui/icons-material/Circle";
 
@@ -14,7 +13,6 @@ import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import Divider from "@mui/material/Divider";
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
