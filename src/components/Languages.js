@@ -51,9 +51,9 @@ class Languages extends Component {
                 style={{ borderRadius: 16 }}
                 shift="top"
                 distance={400}
-              />
-                <Typography variant="caption">HTML</Typography>
+              />  
             </Item>
+            <Typography variant="caption">HTML</Typography>
           </Grid>
           {/*//=========== GRID END ===============> */}
           {/*//=========== GRID BOX ===============> */}
@@ -65,8 +65,8 @@ class Languages extends Component {
                 shift="top"
                 distance={400}
               />
-            <Typography variant="caption">CSS</Typography>
             </Item>
+            <Typography variant="caption">CSS</Typography>
           </Grid>
           {/*//=========== GRID END ===============> */}
           {/*//=========== GRID BOX ===============> */}
@@ -78,8 +78,8 @@ class Languages extends Component {
                 shift="top"
                 distance={400}
               />
-              <Typography variant="caption">JavaScript</Typography>
             </Item>
+            <Typography variant="caption">JavaScript</Typography>
           </Grid>
           {/*//=========== GRID END ===============> */}
           {/*//=========== GRID BOX ===============> */}
@@ -91,8 +91,8 @@ class Languages extends Component {
                 shift="top"
                 distance={400}
               />
-              <Typography variant="caption">React</Typography>
             </Item>
+            <Typography variant="caption">React</Typography>
           </Grid>
           {/*//=========== GRID END ===============> */}
           {/*//=========== GRID BOX ===============> */}
@@ -104,8 +104,8 @@ class Languages extends Component {
                 shift="top"
                 distance={400}
               />
-              <Typography variant="caption">Python</Typography>
             </Item>
+            <Typography variant="caption">Python</Typography>
           </Grid>
           {/*//=========== GRID END ===============> */}          
           {/*//=========== GRID BOX ===============> */}
@@ -117,8 +117,8 @@ class Languages extends Component {
                 shift="top"
                 distance={400}
               />
-              <Typography variant="caption">Java</Typography>
             </Item>
+            <Typography variant="caption">Java</Typography>
           </Grid>
           {/*//=========== GRID END ===============> */}
           {/*//=========== GRID BOX ===============> */}
@@ -130,8 +130,8 @@ class Languages extends Component {
                 shift="top"
                 distance={400}
               />
-              <Typography variant="caption">Rails</Typography>
             </Item>
+            <Typography variant="caption">Rails</Typography>
           </Grid>
           {/*//=========== GRID END ===============> */}
           {/*//=========== GRID BOX ===============> */}
@@ -143,8 +143,8 @@ class Languages extends Component {
                 shift="top"
                 distance={400}
               />
-              <Typography variant="caption">Ruby</Typography>
             </Item>
+            <Typography variant="caption">Ruby</Typography>
           </Grid>
           {/*//=========== GRID END ===============> */}
           {/*//=========== GRID BOX ===============> */}
@@ -156,8 +156,8 @@ class Languages extends Component {
                 shift="top"
                 distance={400}
               />
-              <Typography variant="caption">RSpec</Typography>
             </Item> 
+            <Typography variant="caption">RSpec</Typography>
           </Grid>
           {/*//=========== GRID END ===============> */}
           {/*//=========== GRID BOX ===============> */}
@@ -169,8 +169,8 @@ class Languages extends Component {
                 shift="top"
                 distance={400}
               />
-              <Typography variant="caption">Jest</Typography>
             </Item> 
+            <Typography variant="caption">Jest</Typography>
           </Grid>
           {/*//=========== GRID END ===============> */}
           {/*//=========== GRID BOX ===============> */}
@@ -182,8 +182,8 @@ class Languages extends Component {
                 shift="top"
                 distance={400}
               />
-              <Typography variant="caption">C#</Typography>
             </Item>
+            <Typography variant="caption">C#</Typography>
           </Grid>
           {/*//=========== GRID END ===============> */}
         </Grid>
