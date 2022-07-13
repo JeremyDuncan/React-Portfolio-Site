@@ -40,7 +40,7 @@ export default function ControlledAccordions() {
           aria-controls="panel1bh-content"
           id="panel1bh-header"
         >
-          <Typography sx={{ width: "50%", flexShrink: 0, fontWeight: "bold" }}>
+          <Typography sx={{ flexShrink: 0, fontWeight: "bold", margin: "auto" }}>
             Contact Info
           </Typography>
         </AccordionSummary>
