@@ -19,6 +19,7 @@ import MyResume from "./Jeremy_Duncan_Resume_All-11July2022.pdf";
 import Projects from "./Projects";
 import Languages from "./Languages";
 import College from "./College";
+import MilitaryExp from "./MilitaryExp";
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
