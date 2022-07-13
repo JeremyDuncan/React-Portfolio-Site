@@ -11,9 +11,7 @@ import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Button from "@mui/material/Button";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import CircleIcon from "@mui/icons-material/Circle";
 import AssignmentIndRoundedIcon from "@mui/icons-material/AssignmentIndRounded";
-import MilitaryTechRoundedIcon from "@mui/icons-material/MilitaryTechRounded";
 import TerminalIcon from "@mui/icons-material/Terminal";
 import MyResume from "./Jeremy_Duncan_Resume_All-11July2022.pdf";
 import Projects from "./Projects";
@@ -106,7 +104,6 @@ export default function ControlledAccordions() {
             &nbsp; Languages and Technologies Used
           </Typography>
           <Languages /> {/* <<-========= Language Component ===============> */}
-
           <br />
           <Button
             href="https://github.com/JeremyDuncan"
@@ -126,21 +123,23 @@ export default function ControlledAccordions() {
       <Accordion
         sx={{ bgcolor: "primary.dark", color: "primary.contrastText" }}
         expanded={expanded === "panel3"}
-        onChange={handleChange("panel3")}
-      >
+        onChange={handleChange("panel3")}>
+
         <AccordionSummary
           expandIcon={<ExpandMoreIcon sx={{ color: "primary.contrastText" }} />}
           aria-controls="panel3bh-content"
-          id="panel3bh-header"
-        >
+          id="panel3bh-header">
+
           <Typography sx={{ width: "33%", flexShrink: 0, fontWeight: "bold" }}>
             College Education
           </Typography>
+
         </AccordionSummary>
         <AccordionDetails
-          sx={{ bgcolor: "secondary.main", color: "primary.contrastText" }}
-        >
-          <College />
+          sx={{ bgcolor: "secondary.main", color: "primary.contrastText" }}>
+
+          <College />{/* <<-========= College Component ===============> */}
+
         </AccordionDetails>
       </Accordion>
       {/* =============== === ACCORDIAN END === =============================*/}
@@ -164,43 +163,7 @@ export default function ControlledAccordions() {
         <AccordionDetails
           sx={{ bgcolor: "secondary.main", color: "primary.contrastText" }}
         >
-          <Typography variant="h7">
-            Here are a few responisbilities I had in the US Navy.
-            <h4>
-              <CircleIcon sx={{ verticalAlign: "center", fontSize: "small" }} />
-              &nbsp; Electronics Technician
-            </h4>
-            <h4>
-              <CircleIcon sx={{ verticalAlign: "center", fontSize: "small" }} />
-              &nbsp; Work Center Supervisor
-            </h4>
-            <h4>
-              <CircleIcon sx={{ verticalAlign: "center", fontSize: "small" }} />
-              &nbsp; Radar Technician
-            </h4>
-            <h4>
-              <CircleIcon sx={{ verticalAlign: "center", fontSize: "small" }} />
-              &nbsp; 2M Micro-Miniature Repair Technician
-            </h4>
-            <h4>
-              <CircleIcon sx={{ verticalAlign: "center", fontSize: "small" }} />
-              &nbsp; Information Systems Technician
-            </h4>
-            <h4>
-              <CircleIcon sx={{ verticalAlign: "center", fontSize: "small" }} />
-              &nbsp; US Navy Instructor
-            </h4>
-          </Typography>
-          <br />
-          <Button
-            href="https://jeremy-duncan.notion.site/Jeremy-Duncan-s-Military-Experience-7abdbb418a6b40e7b2abd161eed48cda"
-            target="_blank"
-            rel="noopener"
-            variant="contained"
-            endIcon={<MilitaryTechRoundedIcon />}
-          >
-            See My Military Experience
-          </Button>
+          <MilitaryExp/>{/* <<-========= MilitaryExp Component ===============> */}
         </AccordionDetails>
       </Accordion>
       {/* =============== === ACCORDIAN END === =============================*/}
