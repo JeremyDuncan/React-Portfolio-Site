@@ -13,12 +13,12 @@ import Button from "@mui/material/Button";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import CircleIcon from "@mui/icons-material/Circle";
 import AssignmentIndRoundedIcon from "@mui/icons-material/AssignmentIndRounded";
-import SchoolRoundedIcon from "@mui/icons-material/SchoolRounded";
 import MilitaryTechRoundedIcon from "@mui/icons-material/MilitaryTechRounded";
 import TerminalIcon from "@mui/icons-material/Terminal";
 import MyResume from "./Jeremy_Duncan_Resume_All-11July2022.pdf";
 import Projects from "./Projects";
 import Languages from "./Languages";
+import College from "./College";
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
@@ -139,46 +139,7 @@ export default function ControlledAccordions() {
         <AccordionDetails
           sx={{ bgcolor: "secondary.main", color: "primary.contrastText" }}
         >
-          <Typography variant="h7">
-            <p>
-              <CircleIcon sx={{ verticalAlign: "center", fontSize: "small" }} />
-              &nbsp; Associate of Applied Science - Information Technology and
-              Networking
-              <br />
-              <Typography variant="h9" color="text.secondary">
-                – DeVry University 2022 - June-2022
-                <br />
-                – Grade: 4.0 GPA, Deans List Awardee
-                <br />
-                – Nominated for the National Society of Leadership and Success
-                <br />– Nominated for the Alpha Chi Honor Society
-              </Typography>
-            </p>
-            <p>
-              <CircleIcon sx={{ verticalAlign: "center", fontSize: "small" }} />
-              &nbsp; Bachelor of Science - Computer Information Systems and
-              Software Programming Candidate
-              <br />
-              <Typography variant="h9" color="text.secondary">
-                – DeVry University 2022 - November 2023 (Projected)
-                <br />
-                – Grade: 4.0 GPA, Deans List Awardee
-                <br />
-                – Nominated for the National Society of Leadership and Success
-                <br />– Nominated for the Alpha Chi Honor Society
-              </Typography>
-            </p>
-          </Typography>
-          <br />
-          <Button
-            href="https://www.jeremy-duncan.com/devry-projects/devry.html"
-            target="_blank"
-            rel="noopener"
-            variant="contained"
-            endIcon={<SchoolRoundedIcon />}
-          >
-            Visit My College Project Page
-          </Button>
+          <College />
         </AccordionDetails>
       </Accordion>
       {/* =============== === ACCORDIAN END === =============================*/}
