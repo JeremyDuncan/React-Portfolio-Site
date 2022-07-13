@@ -18,13 +18,6 @@ import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 
 class College extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      buttonClick: "",
-    };
-  }
-
   render() {
     return (
       <Box
