@@ -102,7 +102,7 @@ export default function ControlledAccordions() {
         >
           <Typography variant="h6" sx={{ paddingBottom: 2, paddingTop: 2 }}>
             <TerminalIcon sx={{ verticalAlign: "center", fontSize: "small" }} />
-            &nbsp; Languages Used
+            &nbsp; Languages and Technologies Used
           </Typography>
           <Languages /> {/* <<-========= Language Component ===============> */}
 
