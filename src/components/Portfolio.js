@@ -60,7 +60,7 @@ class Portfolio extends Component {
           <Grid item xs={11} md={10}>
             <Item sx={{ bgcolor: "primary.main", color: "white" }}>
               <Typography variant="h4" sx={{ paddingBottom: 1 }}>
-                Hello! I'm Jeremy,
+                Hello! I'm Jeremy
               </Typography>
               {/*=== ===*/}
               <AboutMe /> {/*<== === === === === === === === === {COMPONENT} */}
