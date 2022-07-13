@@ -44,7 +44,7 @@ export default function ControlledAccordions() {
           aria-controls="panel1bh-content"
           id="panel1bh-header"
         >
-          <Typography sx={{ width: "33%", flexShrink: 0, fontWeight: "bold" }}>
+          <Typography sx={{ width: "33%", flexShrink: 0, fontWeight: "bold", margin: { md: "auto", lg: "auto", sm: "auto" }  }}>
             About Me
           </Typography>
         </AccordionSummary>
@@ -92,7 +92,7 @@ export default function ControlledAccordions() {
           aria-controls="panel2bh-content"
           id="panel2bh-header"
         >
-          <Typography sx={{ width: "33%", flexShrink: 0, fontWeight: "bold" }}>
+          <Typography  sx={{ width: "33%", flexShrink: 0, fontWeight: "bold", margin: { md: "auto", lg: "auto", sm: "auto" } }}>
             Programming Languages
           </Typography>
         </AccordionSummary>
@@ -123,23 +123,22 @@ export default function ControlledAccordions() {
       <Accordion
         sx={{ bgcolor: "primary.dark", color: "primary.contrastText" }}
         expanded={expanded === "panel3"}
-        onChange={handleChange("panel3")}>
-
+        onChange={handleChange("panel3")}
+      >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon sx={{ color: "primary.contrastText" }} />}
           aria-controls="panel3bh-content"
-          id="panel3bh-header">
-
-          <Typography sx={{ width: "33%", flexShrink: 0, fontWeight: "bold" }}>
+          id="panel3bh-header"
+        >
+          <Typography sx={{ width: "33%", flexShrink: 0, fontWeight: "bold", margin: { md: "auto", lg: "auto", sm: "auto" }  }}>
             College Education
           </Typography>
-
         </AccordionSummary>
         <AccordionDetails
-          sx={{ bgcolor: "secondary.main", color: "primary.contrastText" }}>
-
-          <College />{/* <<-========= College Component ===============> */}
-
+          sx={{ bgcolor: "secondary.main", color: "primary.contrastText" }}
+        >
+          <College />
+          {/* <<-========= College Component ===============> */}
         </AccordionDetails>
       </Accordion>
       {/* =============== === ACCORDIAN END === =============================*/}
@@ -156,14 +155,15 @@ export default function ControlledAccordions() {
           aria-controls="panel4bh-content"
           id="panel4bh-header"
         >
-          <Typography sx={{ width: "33%", flexShrink: 0, fontWeight: "bold" }}>
+          <Typography sx={{ width: "33%", flexShrink: 0, fontWeight: "bold", margin: { md: "auto", lg: "auto", sm: "auto" }  }}>
             Military Experience
           </Typography>
         </AccordionSummary>
         <AccordionDetails
           sx={{ bgcolor: "secondary.main", color: "primary.contrastText" }}
         >
-          <MilitaryExp/>{/* <<-========= MilitaryExp Component ===============> */}
+          <MilitaryExp />
+          {/* <<-========= MilitaryExp Component ===============> */}
         </AccordionDetails>
       </Accordion>
       {/* =============== === ACCORDIAN END === =============================*/}
@@ -180,7 +180,7 @@ export default function ControlledAccordions() {
           aria-controls="panel4bh-content"
           id="panel4bh-header"
         >
-          <Typography sx={{ width: "33%", flexShrink: 0, fontWeight: "bold" }}>
+          <Typography sx={{ width: "33%", flexShrink: 0, fontWeight: "bold", margin: { md: "auto", lg: "auto", sm: "auto" } }}>
             My Portfolio Projects
           </Typography>
         </AccordionSummary>
@@ -191,7 +191,8 @@ export default function ControlledAccordions() {
             These are some of my projects.
           </Typography>
           {/*=== ===*/}
-          <Projects /> {/*<== === === === === === === === === === {COMPONENT} */}
+          <Projects />{" "}
+          {/*<== === === === === === === === === === {COMPONENT} */}
           {/*=== ===*/}
         </AccordionDetails>
       </Accordion>
