@@ -47,7 +47,7 @@ class Languages extends Component {
           <Grid item xs={4} md={2}>
             <Item sx={{ bgcolor: "primary.main", color: "white" }}>
               <Image
-                src={require("../images/languages/html_logo.png")}
+                src={require("../images/languages/html_logo_Scaled.png")}
                 style={{ borderRadius: 16 }}
                 shift="top"
                 distance={400}
@@ -60,7 +60,7 @@ class Languages extends Component {
           <Grid item xs={4} md={2}>
             <Item sx={{ bgcolor: "primary.main", color: "white" }}>
               <Image
-                src={require("../images/languages/css-logo.webp")}
+                src={require("../images/languages/css-logo_Scaled.webp")}
                 style={{ borderRadius: 16 }}
                 shift="top"
                 distance={400}
@@ -73,7 +73,7 @@ class Languages extends Component {
           <Grid item xs={4} md={2}>
             <Item sx={{ bgcolor: "primary.main", color: "white" }}>
               <Image
-                src={require("../images/languages/javascript_logo.png")}
+                src={require("../images/languages/javascript_logo_Scaled.png")}
                 style={{ borderRadius: 16 }}
                 shift="top"
                 distance={400}
@@ -84,9 +84,9 @@ class Languages extends Component {
           {/*//=========== GRID END ===============> */}
           {/*//=========== GRID BOX ===============> */}
           <Grid item xs={4} md={2}>
-            <Item sx={{ bgcolor: "primary.main", color: "white" }}>
+            <Item sx={{ bgcolor: "primary.main", color: "white"}}>
               <Image
-                src={require("../images/languages/react.png")}
+                src={require("../images/languages/react_Scaled.png")}
                 style={{ borderRadius: 16 }}
                 shift="top"
                 distance={400}
@@ -99,7 +99,7 @@ class Languages extends Component {
           <Grid item xs={4} md={2}>
             <Item sx={{ bgcolor: "primary.main", color: "white" }}>
               <Image
-                src={require("../images/languages/python_logo.png")}
+                src={require("../images/languages/python_logo_Scaled.png")}
                 style={{ borderRadius: 16 }}
                 shift="top"
                 distance={400}
@@ -112,7 +112,7 @@ class Languages extends Component {
           <Grid item xs={4} md={2}>
             <Item sx={{ bgcolor: "primary.main", color: "white" }}>
               <Image
-                src={require("../images/languages/java_logo.png")}
+                src={require("../images/languages/java_logo_Scaled.png")}
                 style={{ borderRadius: 16 }}
                 shift="top"
                 distance={400}
@@ -125,12 +125,12 @@ class Languages extends Component {
           <Grid item xs={4} md={2}>
             <Item sx={{ bgcolor: "primary.main", color: "white" }}>
               <Image
-                src={require("../images/languages/rails_logo.png")}
+                src={require("../images/languages/rails_logo_Scaled.png")}
                 style={{ borderRadius: 16 }}
                 shift="top"
                 distance={400}
               />
-              <Typography variant="caption">Ruby on Rails</Typography>
+              <Typography variant="caption">Rails</Typography>
             </Item>
           </Grid>
           {/*//=========== GRID END ===============> */}
@@ -138,7 +138,7 @@ class Languages extends Component {
           <Grid item xs={4} md={2}>
             <Item sx={{ bgcolor: "primary.main", color: "white" }}>
               <Image
-                src={require("../images/languages/ruby_LOGO.png")}
+                src={require("../images/languages/ruby_LOGO_Scaled.png")}
                 style={{ borderRadius: 16 }}
                 shift="top"
                 distance={400}
@@ -151,7 +151,7 @@ class Languages extends Component {
           <Grid item xs={4} md={2}>
             <Item sx={{ bgcolor: "primary.main", color: "white" }}>
               <Image
-                src={require("../images/languages/rspec_logo.png")}
+                src={require("../images/languages/rspec_logo_Scaled.png")}
                 style={{ borderRadius: 16 }}
                 shift="top"
                 distance={400}
@@ -164,7 +164,7 @@ class Languages extends Component {
           <Grid item xs={4} md={2}>
             <Item sx={{ bgcolor: "primary.main", color: "white" }}>
               <Image
-                src={require("../images/languages/jest_logo.png")}
+                src={require("../images/languages/jest_logo_Scaled.png")}
                 style={{ borderRadius: 16 }}
                 shift="top"
                 distance={400}
@@ -177,7 +177,7 @@ class Languages extends Component {
           <Grid item xs={4} md={2}>
             <Item sx={{ bgcolor: "primary.main", color: "white" }}>
               <Image
-                src={require("../images/languages/cSharp_logo.png")}
+                src={require("../images/languages/cSharp_logo_Scaled.png")}
                 style={{ borderRadius: 16 }}
                 shift="top"
                 distance={400}
