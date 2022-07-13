@@ -5,15 +5,17 @@
 
 import React, { Component } from "react";
 import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
-import CircleIcon from "@mui/icons-material/Circle";
 import SchoolRoundedIcon from "@mui/icons-material/SchoolRounded";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import ListItemIcon from "@mui/material/ListItemIcon";
+import ListItemText from "@mui/material/ListItemText";
+import Divider from "@mui/material/Divider";
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
-
 
 class College extends Component {
   constructor(props) {
@@ -22,50 +24,106 @@ class College extends Component {
       buttonClick: "",
     };
   }
-  
+
   render() {
     return (
-      <Box sx={{ flexGrow: 1 }}>
-          <Typography variant="h7">
-            <p>
-              <CircleIcon sx={{ verticalAlign: "center", fontSize: "small" }} />
-              &nbsp; Associate of Applied Science - Information Technology and
-              Networking
-              <br />
-              <Typography variant="h9" color="text.secondary">
-                – DeVry University 2022 - June-2022
-                <br />
-                – Grade: 4.0 GPA, Deans List Awardee
-                <br />
-                – Nominated for the National Society of Leadership and Success
-                <br />– Nominated for the Alpha Chi Honor Society
-              </Typography>
-            </p>
-            <p>
-              <CircleIcon sx={{ verticalAlign: "center", fontSize: "small" }} />
-              &nbsp; Bachelor of Science - Computer Information Systems and
-              Software Programming Candidate
-              <br />
-              <Typography variant="h9" color="text.secondary">
-                – DeVry University 2022 - November 2023 (Projected)
-                <br />
-                – Grade: 4.0 GPA, Deans List Awardee
-                <br />
-                – Nominated for the National Society of Leadership and Success
-                <br />– Nominated for the Alpha Chi Honor Society
-              </Typography>
-            </p>
-          </Typography>
-          <br />
-          <Button
-            href="https://www.jeremy-duncan.com/devry-projects/devry.html"
-            target="_blank"
-            rel="noopener"
-            variant="contained"
-            endIcon={<SchoolRoundedIcon />}
-          >
-            Visit My College Project Page
-          </Button>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          margin: "auto"
+        }}
+      >
+        <List>
+          <ListItem>
+            <ListItemIcon>
+              <SchoolRoundedIcon />
+            </ListItemIcon>
+            <ListItemText
+              primary="Associate of Applied Science - Information Technology and
+              Networking"
+            />
+          </ListItem>
+
+          <ListItem>
+            <ListItemText
+              inset
+              secondary="– DeVry University 2021 - June-2022"
+            />
+          </ListItem>
+
+          <ListItem>
+            <ListItemText
+              inset
+              secondary="– Grade: 4.0 GPA, Deans List Awardee"
+            />
+          </ListItem>
+
+          <ListItem>
+            <ListItemText
+              inset
+              secondary="– Nominated for the National Society of Leadership and Success"
+            />
+          </ListItem>
+
+          <ListItem>
+            <ListItemText
+              inset
+              secondary="– Nominated for the Alpha Chi Honor Society"
+            />
+          </ListItem>
+          <Divider/>
+          <ListItem>
+            <ListItemIcon>
+              <SchoolRoundedIcon />
+            </ListItemIcon>
+            <ListItemText
+              primary="Bachelor of Science - Computer Information Systems and
+          Software Programming Candidate"
+            />
+          </ListItem>
+
+          <ListItem>
+            <ListItemText
+              inset
+              secondary="– DeVry University 2021 - Nov-2023 (Projected)"
+            />
+          </ListItem>
+
+          <ListItem>
+            <ListItemText
+              inset
+              secondary="– Grade: 4.0 GPA, Deans List Awardee"
+            />
+          </ListItem>
+
+          <ListItem>
+            <ListItemText
+              inset
+              secondary="– Nominated for the National Society of Leadership and Success"
+            />
+          </ListItem>
+
+          <ListItem>
+            <ListItemText
+              inset
+              secondary="– Nominated for the Alpha Chi Honor Society"
+            />
+          </ListItem>
+        </List>
+
+        <br />
+        <Button
+          href="https://www.jeremy-duncan.com/devry-projects/devry.html"
+          target="_blank"
+          rel="noopener"
+          variant="contained"
+          endIcon={<SchoolRoundedIcon />}
+        >
+          Visit My College Project Page
+        </Button>
       </Box>
     );
   }
