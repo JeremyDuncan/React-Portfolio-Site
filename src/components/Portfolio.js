@@ -1,5 +1,5 @@
 // *****************************************************************************
-// This is the main portfiolio section. Contains AboutMe Component
+// This is the main portfiolio section. Contains MainSection Component
 // Goes to ==> App.js Component
 // *****************************************************************************
 
@@ -10,7 +10,7 @@ import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import Image from "mui-image";
-import AboutMe from "./AboutMe";
+import MainSection from "./MainSection";
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
@@ -57,7 +57,7 @@ class Portfolio extends Component {
                 Hello! I'm Jeremy
               </Typography>
               {/*=== ===*/}
-              <AboutMe /> {/*<== === === === === === === === === {COMPONENT} */}
+              <MainSection /> {/*<== === === === === === === === === {COMPONENT} */}
               {/*=== ===*/}
             </Item>
           </Grid>
