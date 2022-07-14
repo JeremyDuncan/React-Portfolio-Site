@@ -13,6 +13,7 @@ import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 import MyResume from "./Jeremy_Duncan_Resume_All-11July2022.pdf";
+import Resume from "./Resume";
 
 class AboutMe extends Component {
   render() {
@@ -35,6 +36,9 @@ class AboutMe extends Component {
           <Typography paragraph={true}>
             Thank you for taking the time to view my portfolio.
           </Typography>
+
+          <Resume/>
+
           <Button
             href={MyResume}
             download
