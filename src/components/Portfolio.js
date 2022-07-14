@@ -26,7 +26,6 @@ const Item = styled(Paper)(({ theme }) => ({
 
 //======================== CLASS BoxDesign ====================================>
 class Portfolio extends Component {
-
   render() {
     return (
       <Box sx={{ flexGrow: 1 }}>
