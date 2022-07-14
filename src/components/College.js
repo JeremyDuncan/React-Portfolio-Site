@@ -1,6 +1,6 @@
 // *****************************************************************************
 // This component displays my Colleges and Degrees
-// Imported to AboutMe.js Component ==>
+// Goes to to ==> AboutMe.js Component 
 // *****************************************************************************
 
 import React, { Component } from "react";
