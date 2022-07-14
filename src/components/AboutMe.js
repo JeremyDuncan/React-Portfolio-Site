@@ -7,12 +7,11 @@ import React, { Component } from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import AssignmentIndRoundedIcon from "@mui/icons-material/AssignmentIndRounded";
-import Button from "@mui/material/Button";
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
-import MyResume from "./Jeremy_Duncan_Resume_All-11July2022.pdf";
+
 import Resume from "./Resume";
 
 class AboutMe extends Component {
@@ -38,15 +37,6 @@ class AboutMe extends Component {
           </Typography>
 
           <Resume/>
-
-          <Button
-            href={MyResume}
-            download
-            variant="contained"
-            endIcon={<AssignmentIndRoundedIcon />}
-          >
-            Download My Resume
-          </Button>
       </Box>
     );
   }
