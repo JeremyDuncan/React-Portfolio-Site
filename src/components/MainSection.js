@@ -11,9 +11,8 @@ import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Button from "@mui/material/Button";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import AssignmentIndRoundedIcon from "@mui/icons-material/AssignmentIndRounded";
 import TerminalIcon from "@mui/icons-material/Terminal";
-import MyResume from "./Jeremy_Duncan_Resume_All-11July2022.pdf";
+import AboutMe from "./AboutMe.js";
 import Projects from "./Projects";
 import Languages from "./Languages";
 import College from "./College";
@@ -58,31 +57,7 @@ export default function ControlledAccordions() {
         <AccordionDetails
           sx={{ bgcolor: "secondary.main", color: "primary.contrastText" }}
         >
-          <Typography>
-            <p>
-              I'm a highly motivated veteran that has over a decade of
-              experience as an Electronic Technician and Network Administrator.
-              I love solving problems and I work well with teams to accomplish
-              projects.
-            </p>
-            <p>
-              I've been in the process of transitioning from my military career
-              to a new career as a Software Developer. During this transition I
-              have been going to DeVry University full-time working towards a
-              Bachelor's of Science in Computer Information Systems with a focus
-              in Software Programming. I am interested in gaining real-world
-              experience through internships and mentorship.
-            </p>
-            <p>Thank you for taking the time to view my portfolio.</p>
-          </Typography>
-          <Button
-            href={MyResume}
-            download
-            variant="contained"
-            endIcon={<AssignmentIndRoundedIcon />}
-          >
-            Download My Resume
-          </Button>
+          <AboutMe />
         </AccordionDetails>
       </Accordion>
       {/* =============== === ACCORDIAN END === =============================*/}
