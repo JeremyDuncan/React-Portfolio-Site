@@ -1,6 +1,6 @@
 // *****************************************************************************
 // This component displays the Projects I've completed
-// Imported to AboutMe.js Component ==>
+// Imported to MainSection.js Component ==>
 // *****************************************************************************
 
 import React, { Component } from "react";

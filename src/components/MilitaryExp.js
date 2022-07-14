@@ -1,6 +1,6 @@
 // *****************************************************************************
 // This component displays my Military Experience
-// Goes to ==> AboutMe.js Component 
+// Goes to ==> MainSection.js Component 
 // *****************************************************************************
 
 import React, { Component } from "react";
