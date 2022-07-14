@@ -1,6 +1,6 @@
 // *****************************************************************************
 // This component displays the programming languages and certifications
-// Imported to AboutMe.js Component ==>
+// Goes to ==> AboutMe.js Component
 // *****************************************************************************
 
 import React, { Component } from "react";
