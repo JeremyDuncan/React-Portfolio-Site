@@ -1,6 +1,6 @@
 // *****************************************************************************
-// This is the main portfiolio section. Has portfiolio pictions and holdes AboutMe Component
-// Imported to App.js Component ==>
+// This is the main portfiolio section. Contains AboutMe Component
+// Goes to ==> App.js Component
 // *****************************************************************************
 
 import React, { Component } from "react";
@@ -26,12 +26,6 @@ const Item = styled(Paper)(({ theme }) => ({
 
 //======================== CLASS BoxDesign ====================================>
 class Portfolio extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      buttonClick: "",
-    };
-  }
 
   render() {
     return (
