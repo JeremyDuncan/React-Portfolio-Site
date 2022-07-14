@@ -25,7 +25,6 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 class Languages extends Component {
-
   render() {
     return (
       <Box sx={{ flexGrow: 1 }}>
@@ -181,7 +180,7 @@ class Languages extends Component {
           </Grid>
           {/*//=========== GRID END ===============> */}
         </Grid>
-
+        
 {/* ========= This section renders all the Cerifications ====================*/}
         <Typography variant="h6" sx={{ paddingBottom: 2, paddingTop: 2 }}>
           <WorkspacePremiumIcon

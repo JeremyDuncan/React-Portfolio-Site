@@ -12,15 +12,16 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Button from "@mui/material/Button";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import TerminalIcon from "@mui/icons-material/Terminal";
+import "@fontsource/roboto/300.css";
+import "@fontsource/roboto/400.css";
+import "@fontsource/roboto/500.css";
+import "@fontsource/roboto/700.css";
 import AboutMe from "./AboutMe.js";
 import Projects from "./Projects";
 import Languages from "./Languages";
 import College from "./College";
 import MilitaryExp from "./MilitaryExp";
-import "@fontsource/roboto/300.css";
-import "@fontsource/roboto/400.css";
-import "@fontsource/roboto/500.css";
-import "@fontsource/roboto/700.css";
+
 
 export default function ControlledAccordions() {
   const [expanded, setExpanded] = React.useState(false);
@@ -44,11 +45,9 @@ export default function ControlledAccordions() {
           id="panel1bh-header"
         >
           <Typography
-            sx={{
-              width: "33%",
-              flexShrink: 0,
-              fontWeight: "bold",
-              margin: { md: "auto", lg: "auto", sm: "auto" },
+            sx={{ 
+              width: "33%",flexShrink: 0,fontWeight: "bold", 
+              margin: { md: "auto", lg: "auto", sm: "auto" }
             }}
           >
             About Me
@@ -57,7 +56,7 @@ export default function ControlledAccordions() {
         <AccordionDetails
           sx={{ bgcolor: "secondary.main", color: "primary.contrastText" }}
         >
-          <AboutMe />
+          <AboutMe />{/* <=={COMPONENT} */}
         </AccordionDetails>
       </Accordion>
       {/* =============== === ACCORDIAN END === =============================*/}
@@ -91,7 +90,7 @@ export default function ControlledAccordions() {
             <TerminalIcon sx={{ verticalAlign: "center", fontSize: "small" }} />
             &nbsp; Languages and Technologies Used
           </Typography>
-          <Languages /> {/*<== === === === === === === === === ===  {COMPONENT} */}
+          <Languages /> {/* <=={COMPONENT} */}
           <br />
           <Button
             href="https://github.com/JeremyDuncan"
@@ -131,7 +130,7 @@ export default function ControlledAccordions() {
         <AccordionDetails
           sx={{ bgcolor: "secondary.main", color: "primary.contrastText" }}
         >
-          <College /> {/*<== === === === === === === === === === {COMPONENT} */}
+          <College /> {/* <=={COMPONENT} */}
         </AccordionDetails>
       </Accordion>
       {/* =============== === ACCORDIAN END === =============================*/}
@@ -161,7 +160,7 @@ export default function ControlledAccordions() {
         <AccordionDetails
           sx={{ bgcolor: "secondary.main", color: "primary.contrastText" }}
         >
-          <MilitaryExp /> {/*<== === === === === === === === === === {COMPONENT} */}
+          <MilitaryExp /> {/* <=={COMPONENT} */}
         </AccordionDetails>
       </Accordion>
       {/* =============== === ACCORDIAN END === =============================*/}
@@ -194,7 +193,7 @@ export default function ControlledAccordions() {
           <Typography sx={{ paddingBottom: 2 }}>
             These are some of my projects.
           </Typography>
-          <Projects /> {/*<== === === === === === === === === === {COMPONENT} */}
+          <Projects /> {/* <=={COMPONENT} */}
         </AccordionDetails>
       </Accordion>
       {/* =============== === ACCORDIAN END === =============================*/}

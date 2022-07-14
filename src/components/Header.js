@@ -1,6 +1,6 @@
 // *****************************************************************************
 // This component displays the Header section and links
-// Imported to App.js Component ==>
+// Goes to ==> App.js Component 
 // *****************************************************************************
 
 import * as React from "react";
@@ -15,11 +15,11 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import Link from "@mui/material/Link";
+import EmojiPeopleIcon from '@mui/icons-material/EmojiPeople';
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
-import EmojiPeopleIcon from '@mui/icons-material/EmojiPeople';
 
 const pages = [
   <Link

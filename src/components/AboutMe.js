@@ -7,12 +7,12 @@ import React, { Component } from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import AssignmentIndRoundedIcon from "@mui/icons-material/AssignmentIndRounded";
-import MyResume from "./Jeremy_Duncan_Resume_All-11July2022.pdf";
 import Button from "@mui/material/Button";
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
+import MyResume from "./Jeremy_Duncan_Resume_All-11July2022.pdf";
 
 class AboutMe extends Component {
   render() {
