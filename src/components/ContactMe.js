@@ -1,6 +1,6 @@
 // *****************************************************************************
 // This component displays the Contact section in an Accordian Component
-// Imported to App.js Component ==>
+// Goes to ==> App.js Component 
 // *****************************************************************************
 
 import * as React from "react";
