@@ -25,13 +25,7 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 class Languages extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      buttonClick: "",
-    };
-  }
-  
+
   render() {
     return (
       <Box sx={{ flexGrow: 1 }}>
