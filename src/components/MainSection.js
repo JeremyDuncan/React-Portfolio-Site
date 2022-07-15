@@ -81,17 +81,16 @@ export default function ControlledAccordions() {
               margin: { md: "auto", lg: "auto", sm: "auto" },
             }}
           >
-            Work Experience
+            Resume
           </Typography>
         </AccordionSummary>
         <AccordionDetails
           sx={{ bgcolor: "secondary.main", color: "primary.contrastText" }}
         >
-          <Resume />{/* <=={COMPONENT} */}
+          <Resume/>{/* <=={COMPONENT} */}
         </AccordionDetails>
       </Accordion>
       {/* =============== === ACCORDIAN END === =============================*/}
-
       {/* =============== === ACCORDIAN START === ===========================*/}
       {/* === PROGRAMMING LANGUAGE SECTION === */}
       <Accordion
@@ -123,16 +122,6 @@ export default function ControlledAccordions() {
             &nbsp; Languages and Technologies Used
           </Typography>
           <Languages /> {/* <=={COMPONENT} */}
-          <br />
-          <Button
-            href="https://github.com/JeremyDuncan"
-            target="_blank"
-            rel="noopener"
-            variant="contained"
-            endIcon={<GitHubIcon />}
-          >
-            Visit my GitHub
-          </Button>
         </AccordionDetails>
       </Accordion>
       {/* =============== === ACCORDIAN END === =============================*/}
@@ -192,7 +181,8 @@ export default function ControlledAccordions() {
         <AccordionDetails
           sx={{ bgcolor: "secondary.main", color: "primary.contrastText" }}
         >
-          <MilitaryExp /> {/* <=={COMPONENT} */}
+          
+          <MilitaryExp />{/* <=={COMPONENT} */}
         </AccordionDetails>
       </Accordion>
       {/* =============== === ACCORDIAN END === =============================*/}
