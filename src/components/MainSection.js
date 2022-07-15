@@ -9,20 +9,16 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import Button from "@mui/material/Button";
-import GitHubIcon from "@mui/icons-material/GitHub";
 import TerminalIcon from "@mui/icons-material/Terminal";
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 import AboutMe from "./AboutMe.js";
-import Resume from "./Resume";
 import Projects from "./Projects";
 import Languages from "./Languages";
 import College from "./College";
 import MilitaryExp from "./MilitaryExp";
-
 
 export default function ControlledAccordions() {
   const [expanded, setExpanded] = React.useState(false);
@@ -44,50 +40,23 @@ export default function ControlledAccordions() {
           expandIcon={<ExpandMoreIcon sx={{ color: "primary.contrastText" }} />}
           aria-controls="panel1bh-content"
           id="panel1bh-header"
+          
         >
+          
           <Typography
-            sx={{ 
+             sx={{
               width: "33%",flexShrink: 0,fontWeight: "bold", 
               margin: { md: "auto", lg: "auto", sm: "auto" }
             }}
           >
             About Me
           </Typography>
+          {/* </Box> */}
         </AccordionSummary>
         <AccordionDetails
           sx={{ bgcolor: "secondary.main", color: "primary.contrastText" }}
         >
           <AboutMe />{/* <=={COMPONENT} */}
-        </AccordionDetails>
-      </Accordion>
-      {/* =============== === ACCORDIAN END === =============================*/}
-      {/* =============== === ACCORDIAN START === ===========================*/}
-      {/* === WORK EXPERIENCE SECTION === */}
-      <Accordion
-        sx={{ bgcolor: "primary.dark", color: "primary.contrastText" }}
-        expanded={expanded === "panel6"}
-        onChange={handleChange("panel6")}
-      >
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon sx={{ color: "primary.contrastText" }} />}
-          aria-controls="panel4bh-content"
-          id="panel4bh-header"
-        >
-          <Typography
-            sx={{
-              width: "33%",
-              flexShrink: 0,
-              fontWeight: "bold",
-              margin: { md: "auto", lg: "auto", sm: "auto" },
-            }}
-          >
-            Resume
-          </Typography>
-        </AccordionSummary>
-        <AccordionDetails
-          sx={{ bgcolor: "secondary.main", color: "primary.contrastText" }}
-        >
-          <Resume/>{/* <=={COMPONENT} */}
         </AccordionDetails>
       </Accordion>
       {/* =============== === ACCORDIAN END === =============================*/}

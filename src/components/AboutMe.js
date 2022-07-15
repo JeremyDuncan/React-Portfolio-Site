@@ -6,13 +6,11 @@
 import React, { Component } from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import AssignmentIndRoundedIcon from "@mui/icons-material/AssignmentIndRounded";
+import Resume from "./Resume";
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
-
-import Resume from "./Resume";
 
 class AboutMe extends Component {
   render() {
@@ -35,6 +33,7 @@ class AboutMe extends Component {
           <Typography paragraph={true}>
             Thank you for taking the time to view my portfolio.
           </Typography>
+          <Resume />
       </Box>
     );
   }
