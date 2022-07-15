@@ -11,6 +11,9 @@ import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium";
+import Button from "@mui/material/Button";
+import GitHubIcon from "@mui/icons-material/GitHub";
+
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
@@ -232,6 +235,16 @@ class Languages extends Component {
           </Grid>
           {/*//=========== CERTIFICATION GRID BOX END =====================> */}
         </Grid>
+        <br />
+          <Button
+            href="https://github.com/JeremyDuncan"
+            target="_blank"
+            rel="noopener"
+            variant="contained"
+            endIcon={<GitHubIcon />}
+          >
+            Visit my GitHub
+          </Button>
       </Box>
     );
   }
