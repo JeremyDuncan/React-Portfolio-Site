@@ -17,6 +17,7 @@ import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 import AboutMe from "./AboutMe.js";
+import Resume from "./Resume";
 import Projects from "./Projects";
 import Languages from "./Languages";
 import College from "./College";
@@ -60,6 +61,37 @@ export default function ControlledAccordions() {
         </AccordionDetails>
       </Accordion>
       {/* =============== === ACCORDIAN END === =============================*/}
+      {/* =============== === ACCORDIAN START === ===========================*/}
+      {/* === WORK EXPERIENCE SECTION === */}
+      <Accordion
+        sx={{ bgcolor: "primary.dark", color: "primary.contrastText" }}
+        expanded={expanded === "panel6"}
+        onChange={handleChange("panel6")}
+      >
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon sx={{ color: "primary.contrastText" }} />}
+          aria-controls="panel4bh-content"
+          id="panel4bh-header"
+        >
+          <Typography
+            sx={{
+              width: "33%",
+              flexShrink: 0,
+              fontWeight: "bold",
+              margin: { md: "auto", lg: "auto", sm: "auto" },
+            }}
+          >
+            Work Experience
+          </Typography>
+        </AccordionSummary>
+        <AccordionDetails
+          sx={{ bgcolor: "secondary.main", color: "primary.contrastText" }}
+        >
+          <Resume />{/* <=={COMPONENT} */}
+        </AccordionDetails>
+      </Accordion>
+      {/* =============== === ACCORDIAN END === =============================*/}
+
       {/* =============== === ACCORDIAN START === ===========================*/}
       {/* === PROGRAMMING LANGUAGE SECTION === */}
       <Accordion
