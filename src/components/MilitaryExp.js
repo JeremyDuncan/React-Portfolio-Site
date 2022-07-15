@@ -1,292 +1,324 @@
 // *****************************************************************************
 // This component displays my Military Experience
-// Goes to ==> MainSection.js Component 
+// Goes to ==> MainSection.js Component
 // *****************************************************************************
 
 import React from "react";
-import ListSubheader from '@mui/material/ListSubheader';
-import List from '@mui/material/List';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
-import Collapse from '@mui/material/Collapse';
-import ExpandLess from '@mui/icons-material/ExpandLess';
-import ExpandMore from '@mui/icons-material/ExpandMore';
-import AssignmentIndRoundedIcon from "@mui/icons-material/AssignmentIndRounded";
-import MilitaryTechRoundedIcon from "@mui/icons-material/MilitaryTechRounded";
+import List from "@mui/material/List";
+import Box from "@mui/material/Box";
+import Grid from "@mui/material/Grid";
+
+import ListItemButton from "@mui/material/ListItemButton";
+import ListItemIcon from "@mui/material/ListItemIcon";
+import ListItemText from "@mui/material/ListItemText";
+import Collapse from "@mui/material/Collapse";
+import ExpandLess from "@mui/icons-material/ExpandLess";
+import ExpandMore from "@mui/icons-material/ExpandMore";
 import Button from "@mui/material/Button";
 import Divider from "@mui/material/Divider";
+import AssignmentIndRoundedIcon from "@mui/icons-material/AssignmentIndRounded";
+import MilitaryTechRoundedIcon from "@mui/icons-material/MilitaryTechRounded";
 
 export default function NestedList() {
   const [open, setOpen] = React.useState("");
 
-
   const handleClick = (e) => {
     var job = e.target.parentElement.id;
-    console.log(e)
-    console.log(job)
-    if(open === job){
+    console.log(e);
+    console.log(job);
+    if (open === job) {
       setOpen("0");
-    }else {
-      setOpen(job)
+    } else {
+      setOpen(job);
     }
-
   };
 
   return (
-    <div>
-    <List
-      sx={{ width: '100%', bgcolor: 'primary.secondary', color: "primary.contrastText"}}
-      component="nav"
-      aria-labelledby="nested-list-subheader"
-      subheader={
-        <ListSubheader component="div" id="nested-list-subheader" 
-        sx={{ width: '100%', bgcolor: 'primary.light', color: "text.primary", borderRadius: 1 }}>
-        
-        </ListSubheader>
-      }
-    >
-
-{/* === === === === === WORKCENTER SUPERVISOR === === === === */}
-      {/* === List Item Button === */} 
-      <ListItemButton onClick={handleClick}>
-        <ListItemIcon>
-          <AssignmentIndRoundedIcon />
-        </ListItemIcon>
-        <ListItemText
-        Id="WCS" 
-        primary="Work Center Supervisor"
-        />
-        {(open === "WCS")? <ExpandLess /> : <ExpandMore />}
-      </ListItemButton>
-
-      {/* === COLLAPSE LIST === */}
-      <Collapse in={(open === "WCS")} timeout="auto" unmountOnExit>
+    <Box container direction="row" justifyContent="center" alignItems="center">
+      <Grid
+        container
+        spacing={2}
+        direction="column"
+        justifyContent="center"
+        alignItems="center"
+      >
         <List
-        component="div" disablePadding>
-          <ListItemButton sx={{ display: "flex", flexDirection: "column",  pl: 4 }}>
-            <ListItemText secondary="United States Navy 2015 - 2018" />
+          sx={{
+            width: "100%",
+            maxWidth: 550,
+            bgcolor: "primary.secondary",
+            color: "primary.contrastText",
+          }}
+          component="nav"
+          aria-labelledby="nested-list-subheader"
+        >
+          {/* === === === === === WORKCENTER SUPERVISOR === === === === */}
+
+          {/* === List Item Button === */}
+          <ListItemButton onClick={handleClick}>
+            <ListItemIcon>
+              <AssignmentIndRoundedIcon />
+            </ListItemIcon>
+            <ListItemText Id="WCS" primary="Work Center Supervisor" />
+            {/* if open equals "WCS" then show details... */}
+            {open === "WCS" ? <ExpandLess /> : <ExpandMore />}
+          </ListItemButton>
+
+          {/* === COLLAPSE LIST === */}
+          <Collapse in={open === "WCS"} timeout="auto" unmountOnExit>
+            <List component="div" disablePadding>
+              <ListItemButton
+                sx={{ display: "flex", flexDirection: "column", pl: 4 }}
+              >
+                <ListItemText secondary="United States Navy 2015 - 2018" />
+                <ListItemText secondary="Scheduled and supervised the accomplishment of weekly work center maintenance tasks. Ensuring prompt documentation of all noted material deficiencies in the work center if required." />
+                <ListItemText secondary="Ensured maintenance personnel were trained and qualified to perform maintenance and work on designated equipment" />
+                <ListItemText secondary="Analyzed and reported any maintenance requirements that were believed to be inadequate or excessive or when performance would cause a hazardous condition to exist; or replacement documents were required." />
+                <ListItemText secondary="" />
+              </ListItemButton>
+              <Divider />
+            </List>
+          </Collapse>
+
+          {/* === === === ELECTRONICS DATA SYSTEMS TECH === === === === */}
+
+          {/* === List Item Button === */}
+          <ListItemButton onClick={handleClick}>
+            <ListItemIcon>
+              <AssignmentIndRoundedIcon />
+            </ListItemIcon>
             <ListItemText
-            secondary="Responsible for the following: Scheduling and supervising accomplishment of weekly work center maintenance tasks. Ensuring preventive maintenance status is shown correctly on work center PMS schedules. Informing the division officer or group supervisor of maintenance actions within the work center. Maintaining an adequate supply maintenance material for the work center. Ensuring prompt documentation of all noted material deficiencies in the work center if required. Documenting completed maintenance actions promptly. Reviewing all maintenance documentation leaving the work center to make sure it is correct, legible, and prepared and submitted promptly, ensuring maximum use of planned maintenance system as a maintenance training aid for work center personnel. Maintaining control and accountability of work center maintenance, verifying that the work is current and complete. Ensuring maintenance personnel are trained and qualified to perform maintenance and work on designated equipment. Analyzing and reporting of maintenance requirements that are believed to be inadequate or excessive or when performance would cause a hazardous condition to exist; or replacement documents are required. Maintaining an accurate and current list of maintenance documentation to actual work center equipment configuration. Ensuring periodic maintenance requirements (PMR) scheduled for the work center are completed and reported as stated in the planned maintenance system. Ensuring proper tests and inspections prior to acceptance of work done by outside activities. Ensuring delivery of test, measurement, or other portable equipment to testing and calibration work centers as indicated on scheduling reports."/>
+              Id="LINK"
+              primary="Electronics Data Systems Technician"
+            />
+            {open === "LINK" ? <ExpandLess /> : <ExpandMore />}
           </ListItemButton>
-          <Divider/>
-        </List>
-      </Collapse>
 
-{/* === === === ELECTRONICS DATA SYSTEMS TECH === === === === */}
-      {/* === List Item Button === */} 
-      <ListItemButton onClick={handleClick}>
-        <ListItemIcon>
-          <AssignmentIndRoundedIcon />
-        </ListItemIcon>
-        <ListItemText
-        Id="LINK" 
-        primary="Electronics Data Systems Technician"
-        />
-        {(open === "LINK")? <ExpandLess /> : <ExpandMore />}
-      </ListItemButton>
+          {/* === COLLAPSE LIST === */}
+          <Collapse in={open === "LINK"} timeout="auto" unmountOnExit>
+            <List component="div" disablePadding>
+              <ListItemButton
+                sx={{ display: "flex", flexDirection: "column", pl: 4 }}
+              >
+                <ListItemText secondary="United States Navy 2015 - 2018" />
+                <ListItemText secondary="Maintained data link, inertial navigation, tactical network, message routing digital production/projection, calibration, fiber optics, micro-miniature module test and repair, computer-based, and peripheral computer systems." />
+                <ListItemText secondary="Analyzed equipment operation, established computer, and network configurations, and troubleshot and repaired computer-based equipment to the lowest replaceable unit." />
+                <ListItemText secondary="Executed casualty control procedures, restored operability for all assigned electronic equipment." />
+              </ListItemButton>
+              <Divider />
+            </List>
+          </Collapse>
 
-      {/* === COLLAPSE LIST === */}
-      <Collapse in={(open === "LINK")} timeout="auto" unmountOnExit>
-        <List component="div" disablePadding>
-          <ListItemButton sx={{ display: "flex", flexDirection: "column",  pl: 4 }}>
-          <ListItemText secondary="United States Navy 2015 - 2018" />
-            <ListItemText 
-              secondary="Maintain data link, inertial navigation, tactical network, message routing digital production/projection, calibration, fiber optics, micro-miniature module test and repair, computer-based, and peripheral computer systems. In addition, other responsibilities were to analyze equipment operation, establish computer, and network configurations, and troubleshoot and repair computer-based equipment to the lowest replaceable unit. Executed casualty control procedures, restoring operability for all assigned electronic equipment, recognizing mission criticality and redundancies within systems. Also performed administrative functions that include updating casualty reporting messages, technical manuals, equipment maintenance records, and managing test equipment calibration requirements."/>
+          {/* === === === === === IVCS TECHNICIAN === === === === === */}
+
+          {/* === List Item Button === */}
+          <ListItemButton onClick={handleClick}>
+            <ListItemIcon>
+              <AssignmentIndRoundedIcon />
+            </ListItemIcon>
+            <ListItemText
+              Id="IVCS"
+              primary="Internal Voice Communication Technician"
+            />
+            {open === "IVCS" ? <ExpandLess /> : <ExpandMore />}
           </ListItemButton>
-          <Divider/>
-        </List>
-      </Collapse>
 
-{/* === === === === === IVCS TECHNICIAN === === === === === */}
-      {/* === List Item Button === */} 
-      <ListItemButton onClick={handleClick}>
-        <ListItemIcon>
-          <AssignmentIndRoundedIcon />
-        </ListItemIcon>
-        <ListItemText
-        Id="IVCS" 
-        primary="Internal Voice Communication Technician"
-         />
-        {(open === "IVCS")? <ExpandLess /> : <ExpandMore />}
-      </ListItemButton>
+          {/* === COLLAPSE LIST === */}
+          <Collapse in={open === "IVCS"} timeout="auto" unmountOnExit>
+            <List component="div" disablePadding>
+              <ListItemButton
+                sx={{ display: "flex", flexDirection: "column", pl: 4 }}
+              >
+                <ListItemText secondary="United States Navy 2015 - 2018" />
+                <ListItemText
+                  secondary="Operated and performed installation, testing, troubleshooting, 
+                    maintenance and repair of shipboard telephony systems and other digital 
+                    telephone switching systems."
+                />
+                <ListItemText secondary="Analyzed system faults, isolated, identified, and performed corrective actions as required ensuring 24-hours-a-day operation." />
+              </ListItemButton>
+              <Divider />
+            </List>
+          </Collapse>
 
-      {/* === COLLAPSE LIST === */}
-      <Collapse in={(open === "IVCS")} timeout="auto" unmountOnExit>
-        <List component="div" disablePadding>
-          <ListItemButton sx={{ display: "flex", flexDirection: "column", pl: 4 }}>
-            <ListItemText secondary="United States Navy 2015 - 2018"/>
-            <ListItemText 
-              secondary="Operated and performed installation, testing, troubleshooting, 
-              maintenance and repair of shipboard telephony systems and other digital 
-              telephone switching systems to include use of electronic test equipment 
-              in the checkout and repair of complex electrical and electronic circuits. 
-              Analyzed system faults, isolated, identified, and performed corrective 
-              actions as required ensuring 24-hours-a-day operation."/>
+          {/* === === === INFORMATION SYSTEMS TECH === === === === */}
+
+          {/* === List Item Button === */}
+          <ListItemButton onClick={handleClick}>
+            <ListItemIcon>
+              <AssignmentIndRoundedIcon />
+            </ListItemIcon>
+            <ListItemText
+              Id="IT"
+              primary="Information System Maintenance Technician"
+            />
+            {open === "IT" ? <ExpandLess /> : <ExpandMore />}
           </ListItemButton>
-          <Divider/>
-        </List>
-      </Collapse>
-      
- {/* === === === INFORMATION SYSTEMS TECH === === === === */}
-      {/* === List Item Button === */} 
-      <ListItemButton onClick={handleClick}>
-        <ListItemIcon>
-          <AssignmentIndRoundedIcon />
-        </ListItemIcon>
-        <ListItemText
-        Id="IT" 
-        primary="Information System Maintenance Technician"
-        />
-        {(open === "IT")? <ExpandLess /> : <ExpandMore />}
-      </ListItemButton>
 
-      {/* === COLLAPSE LIST === */}
-      <Collapse in={(open === "IT")} timeout="auto" unmountOnExit>
-        <List component="div" disablePadding>
-          <ListItemButton sx={{ display: "flex", flexDirection: "column",  pl: 4 }}>
-            <ListItemText secondary="United States Navy 2012 - 2018" />
-            <ListItemText 
-            secondary="Performed Journeyman level organizational and system maintenance on shipboard and ashore end-to-end information systems. Experience working with Local and Wide Area Networks, Desktop Computers, Tactical Advanced Computers (TAC-n), Routers, Uninterruptible Power Supplies (UPS), Satellite Communications (SATCOM) Peripheral Devices, General Front End Processor (GFCP), Link Converters, Fiber Optic Repair Centronics Data Hubs. Knowledge in CompTia A+, CompTia Security+, MCDST XP, Video Switch technology, working knowledge in Windows NT, Windows XP, Windows 10, UNIX, and Cisco INTERNETWORK Operating systems."/>
+          {/* === COLLAPSE LIST === */}
+          <Collapse in={open === "IT"} timeout="auto" unmountOnExit>
+            <List component="div" disablePadding>
+              <ListItemButton
+                sx={{ display: "flex", flexDirection: "column", pl: 4 }}
+              >
+                <ListItemText secondary="United States Navy 2012 - 2018" />
+                <ListItemText secondary="Performed organizational and system maintenance on end-to-end information systems." />
+                <ListItemText secondary="Experience working with Local and Wide Area Networks, Desktop Computers, Routers, Switches, and Satellite Communications (SATCOM)" />
+                <ListItemText secondary="Knowledge in CompTia A+, CompTia Security+, MCDST XP, Video Switch technology, working knowledge in Windows NT, Windows XP, Windows 10, UNIX, and Image Deployments" />
+              </ListItemButton>
+              <Divider />
+            </List>
+          </Collapse>
+
+          {/* === === === === === NAVY INSTRUCTOR === === === === === === */}
+
+          {/* === List Item Button === */}
+          <ListItemButton onClick={handleClick}>
+            <ListItemIcon>
+              <AssignmentIndRoundedIcon />
+            </ListItemIcon>
+            <ListItemText Id="INSTRUCTOR" primary="US Navy Instructor" />
+            {open === "INSTRUCTOR" ? <ExpandLess /> : <ExpandMore />}
           </ListItemButton>
-          <Divider/>
-        </List>
-      </Collapse> 
 
-{/* === === === === === NAVY INSTRUCTOR === === === === === === */}
-      {/* === List Item Button === */} 
-      <ListItemButton onClick={handleClick}>
-        <ListItemIcon>
-          <AssignmentIndRoundedIcon />
-        </ListItemIcon>
-        <ListItemText
-        Id="INSTRUCTOR" 
-        primary="US Navy Instructor"
-        />
-        {(open === "INSTRUCTOR")? <ExpandLess /> : <ExpandMore />}
-      </ListItemButton>
+          {/* === COLLAPSE LIST === */}
+          <Collapse in={open === "INSTRUCTOR"} timeout="auto" unmountOnExit>
+            <List component="div" disablePadding>
+              <ListItemButton
+                sx={{ display: "flex", flexDirection: "column", pl: 4 }}
+              >
+                <ListItemText secondary="United States Navy 2011 - 2018" />
+                <ListItemText secondary="Qualified Navy instructor that directed teaching and learning activities in schools; training centers, and selected reserve units; " />
+                <ListItemText secondary="Wrote learning objectives; prepared test items; evaluated instructional materials and results; and counseled students on academic learning problems." />
+              </ListItemButton>
+              <Divider />
+            </List>
+          </Collapse>
 
-      {/* === COLLAPSE LIST === */}
-      <Collapse in={(open === "INSTRUCTOR")} timeout="auto" unmountOnExit>
-        <List component="div" disablePadding>
-          <ListItemButton sx={{ display: "flex", flexDirection: "column",  pl: 4 }}>
-          <ListItemText secondary="United States Navy 2011 - 2018" />
-            <ListItemText 
-            secondary="Qualified Navy instructor to direct teaching and learning activities in schools; training centers, and selected reserve units; write learning objectives; prepare test items; evaluate instructional materials and results; and counsel students on academic learning problems."/>
+          {/* === === === === === RADAR TECHNICIAN === === === === === === */}
+
+          {/* === List Item Button === */}
+          <ListItemButton onClick={handleClick}>
+            <ListItemIcon>
+              <AssignmentIndRoundedIcon />
+            </ListItemIcon>
+            <ListItemText
+              Id="RADAR"
+              primary="Electronics Radar Systems Technician"
+            />
+            {open === "RADAR" ? <ExpandLess /> : <ExpandMore />}
           </ListItemButton>
-          <Divider/>
-        </List>
-      </Collapse>      
 
-{/* === === === === === RADAR TECHNICIAN === === === === === === */}
-      {/* === List Item Button === */} 
-      <ListItemButton onClick={handleClick}>
-        <ListItemIcon>
-          <AssignmentIndRoundedIcon />
-        </ListItemIcon>
-        <ListItemText
-        Id="RADAR" 
-        primary="Electronics Radar Systems Technician"
-        />
-        {(open === "RADAR")? <ExpandLess /> : <ExpandMore />}
-      </ListItemButton>
+          {/* === COLLAPSE LIST === */}
+          <Collapse in={open === "RADAR"} timeout="auto" unmountOnExit>
+            <List component="div" disablePadding>
+              <ListItemButton
+                sx={{ display: "flex", flexDirection: "column", pl: 4 }}
+              >
+                <ListItemText secondary="United States Navy 2010 - 2018" />
+                <ListItemText secondary="Maintained surface search, air search, weather radar systems, radar video switchboards, synchro Identification Friend or Foe (IFF) equipment, and tactical air navigation equipment." />
+                <ListItemText secondary="Performed administrative functions that included updating casualty reporting messages, technical manuals, equipment maintenance records, and managing test equipment calibration requirements." />
+                <ListItemText secondary="Analyzed equipment operation and alignments, troubleshot, and repaired equipment to the lowest replaceable unit." />
+              </ListItemButton>
+              <Divider />
+            </List>
+          </Collapse>
 
-      {/* === COLLAPSE LIST === */}
-      <Collapse in={(open === "RADAR")} timeout="auto" unmountOnExit>
-        <List component="div" disablePadding>
-          <ListItemButton sx={{ display: "flex", flexDirection: "column",  pl: 4 }}>
-            <ListItemText secondary="United States Navy 2010 - 2018" />
-            <ListItemText 
-            secondary="Experience maintaining surface search, air search, weather radar systems, radar video switchboards, synchro Identification Friend or Foe (IFF) equipment, and tactical air navigation equipment, including all associated cabling, cooling water, and dry air systems. Analyzing equipment operation and alignments, troubleshooting, and repairing equipment to the lowest replaceable unit. Executing casualty control procedures, restoring operability for all assigned electronic equipment, recognizing mission criticality and redundancies within systems. Perform administrative functions that include updating casualty reporting messages, technical manuals, equipment maintenance records, and managing test equipment calibration requirements. Other duties included completing fiber optic and basic soldering repair, electrical safety checks, and test equipment calibration and supervising personnel who conduct tool and test equipment inventories, logistics support, and maintenance and testing of systems and equipment."/>
+          {/* === === === === === GAGE CALIBRATION  === === === === === */}
+
+          {/* === List Item Button === */}
+          <ListItemButton onClick={handleClick}>
+            <ListItemIcon>
+              <AssignmentIndRoundedIcon />
+            </ListItemIcon>
+            <ListItemText Id="GAGE" primary="Gage and Meter Calibrator" />
+            {open === "GAGE" ? <ExpandLess /> : <ExpandMore />}
           </ListItemButton>
-          <Divider/>
-        </List>
-      </Collapse> 
 
-{/* === === === === === GAGE CALIBRATION  === === === === === */}
-      {/* === List Item Button === */} 
-      <ListItemButton onClick={handleClick}>
-        <ListItemIcon>
-          <AssignmentIndRoundedIcon />
-        </ListItemIcon>
-        <ListItemText
-        Id="GAGE" 
-        primary="Gage and Meter Calibrator"
-        />
-        {(open === "GAGE")? <ExpandLess /> : <ExpandMore />}
-      </ListItemButton>
+          {/* === COLLAPSE LIST === */}
+          <Collapse in={open === "GAGE"} timeout="auto" unmountOnExit>
+            <List component="div" disablePadding>
+              <ListItemButton
+                sx={{ display: "flex", flexDirection: "column", pl: 4 }}
+              >
+                <ListItemText secondary="United States Navy 2008 - 2018" />
+                <ListItemText secondary="Calibrated and maintained shipboard Pressure, Temperature, Electric Meter, and Torque Calibration." />
+                <ListItemText secondary="Ensured the proper operation, care, and maintenance of Shipboard Gage Calibration Program test equipment." />
+                <ListItemText secondary="Responsible for documenting and tracking of multiple ship's calibration programs." />
+              </ListItemButton>
+              <Divider />
+            </List>
+          </Collapse>
 
-      {/* === COLLAPSE LIST === */}
-      <Collapse in={(open === "GAGE")} timeout="auto" unmountOnExit>
-        <List component="div" disablePadding>
-          <ListItemButton sx={{ display: "flex", flexDirection: "column",  pl: 4 }}>
-            <ListItemText secondary="United States Navy 2008 - 2018" />
-            <ListItemText 
-            secondary="Calibrated and maintained shipboard Pressure, Temperature, Electric Meter, and Torque Calibration. Ensured the proper operation, care, and maintenance of Shipboard Gage Calibration Program test equipment, and was responsible for documenting and tracking of multiple ship's calibration programs."/>
+          {/* === === === === === 2M TECHNICIAN  === === === === === */}
+
+          {/* === List Item Button === */}
+          <ListItemButton onClick={handleClick}>
+            <ListItemIcon>
+              <AssignmentIndRoundedIcon />
+            </ListItemIcon>
+            <ListItemText
+              Id="2M"
+              primary="2M Micro Miniature Repair Technician"
+            />
+            {open === "2M" ? <ExpandLess /> : <ExpandMore />}
           </ListItemButton>
-          <Divider/>
-        </List>
-      </Collapse>
 
-{/* === === === === === 2M TECHNICIAN  === === === === === */}
-      {/* === List Item Button === */} 
-      <ListItemButton onClick={handleClick}>
-        <ListItemIcon>
-          <AssignmentIndRoundedIcon />
-        </ListItemIcon>
-        <ListItemText
-        Id="2M" 
-        primary="2M Micro Miniature Repair Technician"
-        />
-        {(open === "2M")? <ExpandLess /> : <ExpandMore />}
-      </ListItemButton>
+          {/* === COLLAPSE LIST === */}
+          <Collapse in={open === "2M"} timeout="auto" unmountOnExit>
+            <List component="div" disablePadding>
+              <ListItemButton
+                sx={{ display: "flex", flexDirection: "column", pl: 4 }}
+              >
+                <ListItemText secondary="United States Navy 2007 - 2018" />
+                <ListItemText secondary="Experience with advanced soldering techniques, performing high quality and reliable solder connections on complex circuit card assemblies." />
+                <ListItemText secondary="Performed miniature electronic repairs to single-sided and double sided printed wiring boards (PWB)." />
+                <ListItemText secondary="" />
+                <ListItemText secondary="Repaired PWB laminate and conductor damage, removed and applied PWB conformal coating, and repaired multilayer, flexible, and plastic, panel-printed circuit boards" />
+              </ListItemButton>
+              <Divider />
+            </List>
+          </Collapse>
 
-      {/* === COLLAPSE LIST === */}
-      <Collapse in={(open === "2M")} timeout="auto" unmountOnExit>
-        <List component="div" disablePadding>
-          <ListItemButton sx={{ display: "flex", flexDirection: "column",  pl: 4 }}>
-            <ListItemText secondary="United States Navy 2007 - 2018" />
-            <ListItemText 
-            secondary="Experience with advanced soldering techniques, qualified to perform high quality and reliable solder connections on complex circuit card assemblies; perform miniature electronic repairs to single-sided and double sided printed wiring boards (PWB); repair PWB laminate and conductor damage; remove and apply PWB conformal coating; install wires on common types of terminal and solder connectors; repair multilayer, flexible, and plastic, panel-printed circuit board; remove and install surface-mounted components; and perform solder station maintenance."/>
+          {/* === === === === === ELECTRONICS TECHNICIAN  === === === === === */}
+
+          {/* === List Item Button === */}
+          <ListItemButton onClick={handleClick}>
+            <ListItemIcon>
+              <AssignmentIndRoundedIcon />
+            </ListItemIcon>
+            <ListItemText Id="ET" primary="Electronics Technician" />
+            {open === "ET" ? <ExpandLess /> : <ExpandMore />}
           </ListItemButton>
-          <Divider/>
-        </List>
-      </Collapse>
 
-{/* === === === === === ELECTRONICS TECHNICIAN  === === === === === */}
-      {/* === List Item Button === */} 
-      <ListItemButton onClick={handleClick}>
-        <ListItemIcon>
-          <AssignmentIndRoundedIcon />
-        </ListItemIcon>
-        <ListItemText
-        Id="ET" 
-        primary="Electronics Technician"
-        />
-        {(open === "ET")? <ExpandLess /> : <ExpandMore />}
-      </ListItemButton>
-
-      {/* === COLLAPSE LIST === */}
-      <Collapse in={(open === "ET")} timeout="auto" unmountOnExit>
-        <List component="div" disablePadding>
-          <ListItemButton sx={{ display: "flex", flexDirection: "column",  pl: 4 }}>
-            <ListItemText secondary="United States Navy 2005 - 2018" />
-            <ListItemText 
-            secondary="Maintained shore-based, ship-based, and portable communications equipment, including all associated cabling, computer, multiplexing, switching, cryptographic, recording, cooling water, and dry air systems. Analyzed equipment operation and alignment, troubleshoot, and repaired equipment to the lowest replaceable unit. In addition, Execute casualty control procedures, restoring operability for all assigned electronic equipment, and recognizing mission criticality and redundancies within systems. Other duties included completing fiber optic and basic soldering repair, electrical safety checks, test equipment calibration, and supervising personnel who conduct tool and test equipment inventories, logistics support, and maintenance and testing of systems and equipment."/>
-          </ListItemButton>
-       
+          {/* === COLLAPSE LIST === */}
+          <Collapse in={open === "ET"} timeout="auto" unmountOnExit>
+            <List component="div" disablePadding>
+              <ListItemButton
+                sx={{ display: "flex", flexDirection: "column", pl: 4 }}
+              >
+                <ListItemText secondary="United States Navy 2005 - 2018" />
+                <ListItemText secondary="Maintained shore-based, ship-based, and portable communications equipment, including all associated cabling, computer, multiplexing, switching, cryptographic, recording, cooling water, and dry air systems." />
+                <ListItemText secondary="Analyzed equipment operation and alignment, troubleshot, and repaired equipment to the lowest replaceable unit." />
+                <ListItemText secondary="Supervising personnel who conducted tool and test equipment inventories, logistics support, and maintenance and testing of systems and equipment." />
+                <ListItemText secondary="" />
+                <ListItemText secondary="" />
+                <ListItemText secondary="" />
+                <ListItemText secondary="" />
+              </ListItemButton>
+            </List>
+          </Collapse>
         </List>
-      </Collapse>
-    </List>
-    <Button
-            href="https://jeremy-duncan.notion.site/Jeremy-Duncan-s-Military-Experience-7abdbb418a6b40e7b2abd161eed48cda"
-            target="_blank"
-            rel="noopener"
-            variant="contained"
-            endIcon={<MilitaryTechRoundedIcon />}
-          >
-            See My Military Experience
-          </Button>
-    </div>
+        <Button
+          href="https://jeremy-duncan.notion.site/Jeremy-Duncan-s-Military-Experience-7abdbb418a6b40e7b2abd161eed48cda"
+          target="_blank"
+          rel="noopener"
+          variant="contained"
+          endIcon={<MilitaryTechRoundedIcon />}
+        >
+          See My Military Experience
+        </Button>
+      </Grid>
+    </Box>
   );
 }
