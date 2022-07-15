@@ -35,8 +35,6 @@ class AboutMe extends Component {
           <Typography paragraph={true}>
             Thank you for taking the time to view my portfolio.
           </Typography>
-
-          <Resume/>
       </Box>
     );
   }
