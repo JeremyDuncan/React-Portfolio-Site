@@ -3,7 +3,7 @@
 // Goes to ==> MainSection.js Component 
 // *****************************************************************************
 
-import React, { Component } from "react";
+import React from "react";
 import ListSubheader from '@mui/material/ListSubheader';
 import List from '@mui/material/List';
 import ListItemButton from '@mui/material/ListItemButton';
@@ -19,6 +19,7 @@ import Divider from "@mui/material/Divider";
 
 export default function NestedList() {
   const [open, setOpen] = React.useState("");
+
 
   const handleClick = (e) => {
     var job = e.target.parentElement.id;
@@ -56,7 +57,7 @@ export default function NestedList() {
         Id="WCS" 
         primary="Work Center Supervisor"
         />
-        {(open == "WCS")? <ExpandLess /> : <ExpandMore />}
+        {(open === "WCS")? <ExpandLess /> : <ExpandMore />}
       </ListItemButton>
 
       {/* === COLLAPSE LIST === */}
@@ -82,7 +83,7 @@ export default function NestedList() {
         Id="LINK" 
         primary="Electronics Data Systems Technician"
         />
-        {(open == "LINK")? <ExpandLess /> : <ExpandMore />}
+        {(open === "LINK")? <ExpandLess /> : <ExpandMore />}
       </ListItemButton>
 
       {/* === COLLAPSE LIST === */}
@@ -107,7 +108,7 @@ export default function NestedList() {
         Id="IVCS" 
         primary="Internal Voice Communication Technician"
          />
-        {(open == "IVCS")? <ExpandLess /> : <ExpandMore />}
+        {(open === "IVCS")? <ExpandLess /> : <ExpandMore />}
       </ListItemButton>
 
       {/* === COLLAPSE LIST === */}
@@ -137,7 +138,7 @@ export default function NestedList() {
         Id="IT" 
         primary="Information System Maintenance Technician"
         />
-        {(open == "IT")? <ExpandLess /> : <ExpandMore />}
+        {(open === "IT")? <ExpandLess /> : <ExpandMore />}
       </ListItemButton>
 
       {/* === COLLAPSE LIST === */}
@@ -162,7 +163,7 @@ export default function NestedList() {
         Id="INSTRUCTOR" 
         primary="US Navy Instructor"
         />
-        {(open == "INSTRUCTOR")? <ExpandLess /> : <ExpandMore />}
+        {(open === "INSTRUCTOR")? <ExpandLess /> : <ExpandMore />}
       </ListItemButton>
 
       {/* === COLLAPSE LIST === */}
@@ -187,7 +188,7 @@ export default function NestedList() {
         Id="RADAR" 
         primary="Electronics Radar Systems Technician"
         />
-        {(open == "RADAR")? <ExpandLess /> : <ExpandMore />}
+        {(open === "RADAR")? <ExpandLess /> : <ExpandMore />}
       </ListItemButton>
 
       {/* === COLLAPSE LIST === */}
@@ -212,7 +213,7 @@ export default function NestedList() {
         Id="GAGE" 
         primary="Gage and Meter Calibrator"
         />
-        {(open == "GAGE")? <ExpandLess /> : <ExpandMore />}
+        {(open === "GAGE")? <ExpandLess /> : <ExpandMore />}
       </ListItemButton>
 
       {/* === COLLAPSE LIST === */}
@@ -237,7 +238,7 @@ export default function NestedList() {
         Id="2M" 
         primary="2M Micro Miniature Repair Technician"
         />
-        {(open == "2M")? <ExpandLess /> : <ExpandMore />}
+        {(open === "2M")? <ExpandLess /> : <ExpandMore />}
       </ListItemButton>
 
       {/* === COLLAPSE LIST === */}
@@ -262,7 +263,7 @@ export default function NestedList() {
         Id="ET" 
         primary="Electronics Technician"
         />
-        {(open == "ET")? <ExpandLess /> : <ExpandMore />}
+        {(open === "ET")? <ExpandLess /> : <ExpandMore />}
       </ListItemButton>
 
       {/* === COLLAPSE LIST === */}
