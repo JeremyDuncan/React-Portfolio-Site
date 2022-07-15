@@ -7,7 +7,6 @@ import React from "react";
 import List from "@mui/material/List";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
-
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
@@ -74,7 +73,6 @@ export default function NestedList() {
                 <ListItemText secondary="Scheduled and supervised the accomplishment of weekly work center maintenance tasks. Ensuring prompt documentation of all noted material deficiencies in the work center if required." />
                 <ListItemText secondary="Ensured maintenance personnel were trained and qualified to perform maintenance and work on designated equipment" />
                 <ListItemText secondary="Analyzed and reported any maintenance requirements that were believed to be inadequate or excessive or when performance would cause a hazardous condition to exist; or replacement documents were required." />
-                <ListItemText secondary="" />
               </ListItemButton>
               <Divider />
             </List>
@@ -301,10 +299,6 @@ export default function NestedList() {
                 <ListItemText secondary="Maintained shore-based, ship-based, and portable communications equipment, including all associated cabling, computer, multiplexing, switching, cryptographic, recording, cooling water, and dry air systems." />
                 <ListItemText secondary="Analyzed equipment operation and alignment, troubleshot, and repaired equipment to the lowest replaceable unit." />
                 <ListItemText secondary="Supervising personnel who conducted tool and test equipment inventories, logistics support, and maintenance and testing of systems and equipment." />
-                <ListItemText secondary="" />
-                <ListItemText secondary="" />
-                <ListItemText secondary="" />
-                <ListItemText secondary="" />
               </ListItemButton>
             </List>
           </Collapse>
