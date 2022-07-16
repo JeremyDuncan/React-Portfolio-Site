@@ -70,7 +70,7 @@ export default function NestedList() {
                 sx={{ display: "flex", flexDirection: "column", pl: 4 }}
               >
                 <ListItemText secondary="United States Navy 2015 - 2018" />
-                <ListItemText secondary="Scheduled and supervised the accomplishment of weekly work center maintenance tasks. Ensuring prompt documentation of all noted material deficiencies in the work center if required." />
+                <ListItemText secondary="Scheduled and supervised the accomplishment of weekly work center maintenance tasks. Ensured prompt documentation of all noted material deficiencies in the work center if required." />
                 <ListItemText secondary="Ensured maintenance personnel were trained and qualified to perform maintenance and work on designated equipment" />
                 <ListItemText secondary="Analyzed and reported any maintenance requirements that were believed to be inadequate or excessive or when performance would cause a hazardous condition to exist; or replacement documents were required." />
               </ListItemButton>
@@ -161,8 +161,8 @@ export default function NestedList() {
               >
                 <ListItemText secondary="United States Navy 2012 - 2018" />
                 <ListItemText secondary="Performed organizational and system maintenance on end-to-end information systems." />
-                <ListItemText secondary="Experience working with Local and Wide Area Networks, Desktop Computers, Routers, Switches, and Satellite Communications (SATCOM)" />
-                <ListItemText secondary="Knowledge in CompTia A+, CompTia Security+, MCDST XP, Video Switch technology, working knowledge in Windows NT, Windows XP, Windows 10, UNIX, and Image Deployments" />
+                <ListItemText secondary="Experience working with Local and Wide Area Networks, Desktop Computers, Routers, Switches, and Satellite Communications (SATCOM)." />
+                <ListItemText secondary="Knowledge in CompTia A+, CompTia Security+, MCDST XP, Video Switch technology, working knowledge in Windows NT, Windows XP, Windows 10, UNIX, and Image Deployments." />
               </ListItemButton>
               <Divider />
             </List>
@@ -186,7 +186,7 @@ export default function NestedList() {
                 sx={{ display: "flex", flexDirection: "column", pl: 4 }}
               >
                 <ListItemText secondary="United States Navy 2011 - 2018" />
-                <ListItemText secondary="Qualified Navy instructor that directed teaching and learning activities in schools; training centers, and selected reserve units; " />
+                <ListItemText secondary="Qualified Navy instructor that directed teaching and learning activities in schools; training centers, and selected reserve units." />
                 <ListItemText secondary="Wrote learning objectives; prepared test items; evaluated instructional materials and results; and counseled students on academic learning problems." />
               </ListItemButton>
               <Divider />
@@ -242,7 +242,7 @@ export default function NestedList() {
                 <ListItemText secondary="United States Navy 2008 - 2018" />
                 <ListItemText secondary="Calibrated and maintained shipboard Pressure, Temperature, Electric Meter, and Torque Calibration." />
                 <ListItemText secondary="Ensured the proper operation, care, and maintenance of Shipboard Gage Calibration Program test equipment." />
-                <ListItemText secondary="Responsible for documenting and tracking of multiple ship's calibration programs." />
+                <ListItemText secondary="Documented and tracked of multiple ship's calibration programs." />
               </ListItemButton>
               <Divider />
             </List>
@@ -271,8 +271,7 @@ export default function NestedList() {
                 <ListItemText secondary="United States Navy 2007 - 2018" />
                 <ListItemText secondary="Experience with advanced soldering techniques, performing high quality and reliable solder connections on complex circuit card assemblies." />
                 <ListItemText secondary="Performed miniature electronic repairs to single-sided and double sided printed wiring boards (PWB)." />
-                <ListItemText secondary="" />
-                <ListItemText secondary="Repaired PWB laminate and conductor damage, removed and applied PWB conformal coating, and repaired multilayer, flexible, and plastic, panel-printed circuit boards" />
+                <ListItemText secondary="Repaired PWB laminate and conductor damage, removed and applied PWB conformal coating, and repaired multilayer, flexible, and plastic, panel-printed circuit boards." />
               </ListItemButton>
               <Divider />
             </List>
