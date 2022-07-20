@@ -40,6 +40,54 @@ class Projects extends Component {
           justifyContent="center"
           alignItems="center"
         >
+
+         {/*//========================= GRID BOX ===================================> */}
+         <Grid item xs={11} md={3.5}>
+            <Item sx={{ bgcolor: "primary.main", color: "white" }}>
+              {/*==> Image Link <== =========================================*/}
+              <Image
+                src={require("../images/Willis_Deluxe_Detail_Logo.jpg")}
+              />
+              <Accordion
+                sx={{ bgcolor: "primary.dark", color: "primary.contrastText" }}
+              >
+                <AccordionSummary
+                  expandIcon={
+                    <ExpandMoreIcon sx={{ color: "primary.contrastText" }} />
+                  }
+                  aria-controls="panel1a-content"
+                  id="panel1a-header"
+                >
+                  <Typography>Business Website</Typography>
+                </AccordionSummary>
+                <AccordionDetails
+                  sx={{
+                    bgcolor: "secondary.main",
+                    color: "primary.contrastText",
+                  }}
+                >
+                  {/*==> Description Text <== ===============================*/}
+                  <Typography>
+                    This is a website I created for a family member's car
+                    detailing business using React and Material UI.
+                  </Typography>
+                  <br />
+                  <Button
+                    /*==> URL Link <== =======================================*/
+                    href="https://www.willisdeluxedetailing.com"
+                    target="_blank"
+                    rel="noopener"
+                    variant="contained"
+                    endIcon={<NavigateNextRoundedIcon />}
+                  >
+                    Visit
+                  </Button>
+                </AccordionDetails>
+              </Accordion>
+            </Item>
+          </Grid>
+          {/*//========================= GRID END ===================================> */}
+
           {/*//=========== GRID BOX START =================================> */}
           <Grid item xs={11} md={3.5}>
             <Item sx={{ bgcolor: "primary.main", color: "white" }}>
@@ -572,52 +620,7 @@ class Projects extends Component {
             </Item>
           </Grid>
           {/*//========================= GRID END ===================================> */}
-          {/*//========================= GRID BOX ===================================> */}
-          <Grid item xs={11} md={3.5}>
-            <Item sx={{ bgcolor: "primary.main", color: "white" }}>
-              {/*==> Image Link <== =========================================*/}
-              <Image
-                src={require("../images/Willis_Deluxe_Detail_Logo.webp")}
-              />
-              <Accordion
-                sx={{ bgcolor: "primary.dark", color: "primary.contrastText" }}
-              >
-                <AccordionSummary
-                  expandIcon={
-                    <ExpandMoreIcon sx={{ color: "primary.contrastText" }} />
-                  }
-                  aria-controls="panel1a-content"
-                  id="panel1a-header"
-                >
-                  <Typography>Car Detailing Website</Typography>
-                </AccordionSummary>
-                <AccordionDetails
-                  sx={{
-                    bgcolor: "secondary.main",
-                    color: "primary.contrastText",
-                  }}
-                >
-                  {/*==> Description Text <== ===============================*/}
-                  <Typography>
-                    This is a Webpage I created for a family member's car
-                    detailing business.
-                  </Typography>
-                  <br />
-                  <Button
-                    /*==> URL Link <== =======================================*/
-                    href="https://jeremyduncan.github.io/WillisDeluxeDetailing/index.html"
-                    target="_blank"
-                    rel="noopener"
-                    variant="contained"
-                    endIcon={<NavigateNextRoundedIcon />}
-                  >
-                    Visit
-                  </Button>
-                </AccordionDetails>
-              </Accordion>
-            </Item>
-          </Grid>
-          {/*//========================= GRID END ===================================> */}
+ 
         </Grid>
       </Box>
     );
