@@ -10,6 +10,8 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import TerminalIcon from "@mui/icons-material/Terminal";
+import Divider from "@mui/material/Divider";
+
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
@@ -86,10 +88,12 @@ export default function ControlledAccordions() {
         <AccordionDetails
           sx={{ bgcolor: "secondary.main", color: "primary.contrastText" }}
         >
+          
           <Typography variant="h6" sx={{ paddingBottom: 2, paddingTop: 2 }}>
             <TerminalIcon sx={{ verticalAlign: "center", fontSize: "small" }} />
             &nbsp; Languages and Technologies Used
           </Typography>
+        
           <Languages /> {/* <=={COMPONENT} */}
         </AccordionDetails>
       </Accordion>

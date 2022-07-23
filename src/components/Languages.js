@@ -9,6 +9,7 @@ import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
+import Divider from "@mui/material/Divider";
 import Typography from "@mui/material/Typography";
 import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium";
 import Button from "@mui/material/Button";
@@ -184,12 +185,14 @@ class Languages extends Component {
         </Grid>
         
 {/* ========= This section renders all the Cerifications ====================*/}
+        <Divider>
         <Typography variant="h6" sx={{ paddingBottom: 2, paddingTop: 2 }}>
           <WorkspacePremiumIcon
             sx={{ verticalAlign: "center", fontSize: "small" }}
           />
           &nbsp; Certifications Earned
         </Typography>
+        </Divider>
         <Grid
           container
           spacing={2}
@@ -198,8 +201,9 @@ class Languages extends Component {
           alignItems="center"
         >
           {/*//=========== CERTIFICATION GRID BOX START ===================> */}
-          <Grid item xs={12} md={4}>
+          <Grid item xs={12} md={5.5}>
             <Item sx={{ bgcolor: "primary.main", color: "white" }}>
+              
               <Image
                 src={require("../images/languages/JavaScript_algo.png")}
                 style={{ borderRadius: 16 }}
@@ -207,10 +211,21 @@ class Languages extends Component {
                 distance={400}
               />
             </Item>
+            <Typography>JavaScript Algorithms</Typography>
+            <Button
+            sx={{mt: "5px"}}
+            href="https://www.freecodecamp.org/certification/jeremyduncan/javascript-algorithms-and-data-structures"
+            target="_blank"
+            rel="noopener"
+            variant="contained"
+            endIcon={<WorkspacePremiumIcon  />}
+          >
+            Verify
+          </Button>
           </Grid>
           {/*//=========== CERTIFICATION GRID BOX END =====================> */}
           {/*//=========== CERTIFICATION GRID BOX START ===================> */}
-          <Grid item xs={12} md={4}>
+          <Grid item xs={12} md={5.5}>
             <Item sx={{ bgcolor: "primary.main", color: "white" }}>
               <Image
                 src={require("../images/languages/Responsive_Web_Design.png")}
@@ -219,10 +234,21 @@ class Languages extends Component {
                 distance={400}
               />
             </Item>
+            <Typography>Responsive Web Design</Typography>
+            <Button
+            sx={{mt: "5px"}}
+            href="https://www.freecodecamp.org/certification/jeremyduncan/responsive-web-design"
+            target="_blank"
+            rel="noopener"
+            variant="contained"
+            endIcon={<WorkspacePremiumIcon  />}
+          >
+            Verify
+          </Button>
           </Grid>
           {/*//=========== CERTIFICATION GRID BOX END =====================> */}
           {/*//=========== CERTIFICATION GRID BOX START ===================> */}
-          <Grid item xs={12} md={4}>
+          <Grid item xs={12} md={5.5}>
             <Item sx={{ bgcolor: "primary.main", color: "white" }}>
               <Image
                 src={require("../images/languages/Front_End_Dev.png")}
@@ -231,6 +257,40 @@ class Languages extends Component {
                 distance={400}
               />
             </Item>
+            <Typography>Front End Development Libraries</Typography>
+            <Button
+            sx={{mt: "5px"}}
+            href="https://www.freecodecamp.org/certification/JeremyDuncan/front-end-development-libraries"
+            target="_blank"
+            rel="noopener"
+            variant="contained"
+            endIcon={<WorkspacePremiumIcon  />}
+          >
+            Verify
+          </Button>
+          </Grid>
+          {/*//=========== CERTIFICATION GRID BOX END =====================> */}
+          {/*//=========== CERTIFICATION GRID BOX START ===================> */}
+          <Grid item xs={12} md={5.5}>
+            <Item sx={{ bgcolor: "primary.main", color: "white" }}>
+              <Image
+                src={require("../images/degrees/programming-essentials.webp")}
+                style={{ borderRadius: 16 }}
+                shift="top"
+                distance={400}
+              />
+            </Item>
+            <Typography>Programming Essentials</Typography>
+            <Button
+            sx={{mt: "5px"}}
+            href="https://www.parchment.com/u/award/877ddb7d34111e1741c380984dfeb7a4"
+            target="_blank"
+            rel="noopener"
+            variant="contained"
+            endIcon={<WorkspacePremiumIcon  />}
+          >
+            Verify
+          </Button>
           </Grid>
           {/*//=========== CERTIFICATION GRID BOX END =====================> */}
         </Grid>
