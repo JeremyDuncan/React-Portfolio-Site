@@ -38,7 +38,7 @@ class Languages extends Component {
           justifyContent="center"
           alignItems="center"
         >
-{/* ========= This section renders all the programming language logos =======*/}
+          {/* ========= This section renders all the programming language logos =======*/}
           {/*//=========== GRID BOX ===============> */}
           <Grid item xs={4} md={2}>
             <Item sx={{ bgcolor: "primary.main", color: "white" }}>
@@ -47,7 +47,7 @@ class Languages extends Component {
                 style={{ borderRadius: 16 }}
                 shift="top"
                 distance={400}
-              />  
+              />
             </Item>
             <Typography variant="caption">HTML</Typography>
           </Grid>
@@ -80,7 +80,7 @@ class Languages extends Component {
           {/*//=========== GRID END ===============> */}
           {/*//=========== GRID BOX ===============> */}
           <Grid item xs={4} md={2}>
-            <Item sx={{ bgcolor: "primary.main", color: "white"}}>
+            <Item sx={{ bgcolor: "primary.main", color: "white" }}>
               <Image
                 src={require("../images/languages/react_Scaled.png")}
                 style={{ borderRadius: 16 }}
@@ -89,12 +89,11 @@ class Languages extends Component {
               />
             </Item>
             <Typography variant="caption">React.js</Typography>
-
           </Grid>
           {/*//=========== GRID END ===============> */}
           {/*//=========== GRID BOX ===============> */}
           <Grid item xs={4} md={2}>
-            <Item sx={{ bgcolor: "primary.main", color: "white"}}>
+            <Item sx={{ bgcolor: "primary.main", color: "white" }}>
               <Image
                 src={require("../images/languages/Node.js_logo.png")}
                 style={{ borderRadius: 16 }}
@@ -118,7 +117,7 @@ class Languages extends Component {
             </Item>
             <Typography variant="caption">Python</Typography>
           </Grid>
-          {/*//=========== GRID END ===============> */}          
+          {/*//=========== GRID END ===============> */}
           {/*//=========== GRID BOX ===============> */}
           <Grid item xs={4} md={2}>
             <Item sx={{ bgcolor: "primary.main", color: "white" }}>
@@ -193,7 +192,7 @@ class Languages extends Component {
                 shift="top"
                 distance={400}
               />
-            </Item> 
+            </Item>
             <Typography variant="caption">RSpec</Typography>
           </Grid>
           {/*//=========== GRID END ===============> */}
@@ -206,7 +205,7 @@ class Languages extends Component {
                 shift="top"
                 distance={400}
               />
-            </Item> 
+            </Item>
             <Typography variant="caption">Jest</Typography>
           </Grid>
           {/*//=========== GRID END ===============> */}
@@ -224,15 +223,15 @@ class Languages extends Component {
           </Grid>
           {/*//=========== GRID END ===============> */}
         </Grid>
-        
-{/* ========= This section renders all the Cerifications ====================*/}
+
+        {/* ========= This section renders all the Cerifications ====================*/}
         <Divider>
-        <Typography variant="h6" sx={{ paddingBottom: 2, paddingTop: 2 }}>
-          <WorkspacePremiumIcon
-            sx={{ verticalAlign: "center", fontSize: "small" }}
-          />
-          &nbsp; Certifications Earned
-        </Typography>
+          <Typography variant="h6" sx={{ paddingBottom: 2, paddingTop: 2 }}>
+            <WorkspacePremiumIcon
+              sx={{ verticalAlign: "center", fontSize: "small" }}
+            />
+            &nbsp; Certifications Earned
+          </Typography>
         </Divider>
         <Grid
           container
@@ -242,11 +241,8 @@ class Languages extends Component {
           alignItems="center"
         >
           {/*//=========== CERTIFICATION GRID BOX START ===================> */}
-          <Grid 
-          direction="column"
-          item xs={12} sm={6} md={5.5} lg={3.8} xl={4}>
+          <Grid direction="column" item xs={12} sm={6} md={5.5} lg={3.8} xl={4}>
             <Item sx={{ bgcolor: "primary.main", color: "white" }}>
-              
               <Image
                 src={require("../images/languages/JavaScript_algo.png")}
                 style={{ borderRadius: 16 }}
@@ -255,23 +251,21 @@ class Languages extends Component {
               />
             </Item>
             <Typography variant="caption">JavaScript Algorithms</Typography>
-            <br/>
+            <br />
             <Button
-            sx={{mt: "5px"}}
-            href="https://www.freecodecamp.org/certification/jeremyduncan/javascript-algorithms-and-data-structures"
-            target="_blank"
-            rel="noopener"
-            variant="contained"
-            endIcon={<WorkspacePremiumIcon  />}
-          >
-            Verify
-          </Button>
+              sx={{ mt: "5px" }}
+              href="https://www.freecodecamp.org/certification/jeremyduncan/javascript-algorithms-and-data-structures"
+              target="_blank"
+              rel="noopener"
+              variant="contained"
+              endIcon={<WorkspacePremiumIcon />}
+            >
+              Verify
+            </Button>
           </Grid>
           {/*//=========== CERTIFICATION GRID BOX END =====================> */}
           {/*//=========== CERTIFICATION GRID BOX START ===================> */}
-          <Grid 
-          direction="column"
-          item xs={12} sm={6} md={5.5} lg={3.8} xl={4}>
+          <Grid direction="column" item xs={12} sm={6} md={5.5} lg={3.8} xl={4}>
             <Item sx={{ bgcolor: "primary.main", color: "white" }}>
               <Image
                 src={require("../images/languages/Responsive_Web_Design.png")}
@@ -283,21 +277,19 @@ class Languages extends Component {
             <Typography variant="caption">Responsive Web Design</Typography>
             <br />
             <Button
-            sx={{mt: "5px"}}
-            href="https://www.freecodecamp.org/certification/jeremyduncan/responsive-web-design"
-            target="_blank"
-            rel="noopener"
-            variant="contained"
-            endIcon={<WorkspacePremiumIcon  />}
-          >
-            Verify
-          </Button>
+              sx={{ mt: "5px" }}
+              href="https://www.freecodecamp.org/certification/jeremyduncan/responsive-web-design"
+              target="_blank"
+              rel="noopener"
+              variant="contained"
+              endIcon={<WorkspacePremiumIcon />}
+            >
+              Verify
+            </Button>
           </Grid>
           {/*//=========== CERTIFICATION GRID BOX END =====================> */}
           {/*//=========== CERTIFICATION GRID BOX START ===================> */}
-          <Grid 
-          direction="column"
-          item xs={12} sm={6} md={5.5} lg={3.8} xl={4}>
+          <Grid direction="column" item xs={12} sm={6} md={5.5} lg={3.8} xl={4}>
             <Item sx={{ bgcolor: "primary.main", color: "white" }}>
               <Image
                 src={require("../images/languages/Front_End_Dev.png")}
@@ -306,24 +298,24 @@ class Languages extends Component {
                 distance={400}
               />
             </Item>
-            <Typography variant="caption">Front End Development Libraries</Typography>
-            <br/>
+            <Typography variant="caption">
+              Front End Development Libraries
+            </Typography>
+            <br />
             <Button
-            sx={{mt: "5px"}}
-            href="https://www.freecodecamp.org/certification/JeremyDuncan/front-end-development-libraries"
-            target="_blank"
-            rel="noopener"
-            variant="contained"
-            endIcon={<WorkspacePremiumIcon  />}
-          >
-            Verify
-          </Button>
+              sx={{ mt: "5px" }}
+              href="https://www.freecodecamp.org/certification/JeremyDuncan/front-end-development-libraries"
+              target="_blank"
+              rel="noopener"
+              variant="contained"
+              endIcon={<WorkspacePremiumIcon />}
+            >
+              Verify
+            </Button>
           </Grid>
           {/*//=========== CERTIFICATION GRID BOX END =====================> */}
           {/*//=========== CERTIFICATION GRID BOX START ===================> */}
-          <Grid 
-          direction="column"
-          item xs={12} sm={6} md={5.5} lg={3.8} xl={4}>
+          <Grid direction="column" item xs={12} sm={6} md={5.5} lg={3.8} xl={4}>
             <Item sx={{ bgcolor: "primary.main", color: "white" }}>
               <Image
                 src={require("../images/degrees/programming-essentials.webp")}
@@ -335,28 +327,28 @@ class Languages extends Component {
             <Typography variant="caption">Programming Essentials</Typography>
             <br />
             <Button
-            sx={{mt: "5px"}}
-            href="https://www.parchment.com/u/award/877ddb7d34111e1741c380984dfeb7a4"
-            target="_blank"
-            rel="noopener"
-            variant="contained"
-            endIcon={<WorkspacePremiumIcon  />}
-          >
-            Verify
-          </Button>
+              sx={{ mt: "5px" }}
+              href="https://www.parchment.com/u/award/877ddb7d34111e1741c380984dfeb7a4"
+              target="_blank"
+              rel="noopener"
+              variant="contained"
+              endIcon={<WorkspacePremiumIcon />}
+            >
+              Verify
+            </Button>
           </Grid>
           {/*//=========== CERTIFICATION GRID BOX END =====================> */}
         </Grid>
         <br />
-          <Button
-            href="https://github.com/JeremyDuncan"
-            target="_blank"
-            rel="noopener"
-            variant="contained"
-            endIcon={<GitHubIcon />}
-          >
-            Visit my GitHub
-          </Button>
+        <Button
+          href="https://github.com/JeremyDuncan"
+          target="_blank"
+          rel="noopener"
+          variant="contained"
+          endIcon={<GitHubIcon />}
+        >
+          Visit my GitHub
+        </Button>
       </Box>
     );
   }
