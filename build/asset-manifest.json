@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.d71ff4a1.css",
-    "main.js": "/static/js/main.353b9018.js",
+    "main.js": "/static/js/main.e18fb878.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/Jeremy_Duncan_Resume_All-11July2022.pdf": "/static/media/Jeremy_Duncan_Resume_All-11July2022.bf988aef99e933673374.pdf",
     "static/media/JavaScript_algo.png": "/static/media/JavaScript_algo.b09a090f3ea764e693ab.png",
@@ -9,6 +9,7 @@
     "static/media/Responsive_Web_Design.png": "/static/media/Responsive_Web_Design.ac3a35fc4a78eb6ae025.png",
     "static/media/rails_logo_Scaled.png": "/static/media/rails_logo_Scaled.458ffe30da35b75fe656.png",
     "static/media/ruby_LOGO_Scaled.png": "/static/media/ruby_LOGO_Scaled.6c3aa122989f985a1326.png",
+    "static/media/pry_logo.png": "/static/media/pry_logo.a3f13a4e7e966158b02d.png",
     "static/media/associate-degree.webp": "/static/media/associate-degree.39a1e54b4d7f52b1fd96.webp",
     "static/media/programming-essentials.webp": "/static/media/programming-essentials.c7b0d77f4f6d86b97d7d.webp",
     "static/media/cSharp_logo_Scaled.png": "/static/media/cSharp_logo_Scaled.559aa6b8e7568430ec2e.png",
@@ -20,10 +21,12 @@
     "static/media/roboto-all-700-normal.woff": "/static/media/roboto-all-700-normal.a457fde362a540fcadff.woff",
     "static/media/roboto-all-400-normal.woff": "/static/media/roboto-all-400-normal.c5d001fa922fa66a147f.woff",
     "static/media/roboto-all-300-normal.woff": "/static/media/roboto-all-300-normal.168d6383e73339293ac3.woff",
+    "static/media/Postgresql_logo.png": "/static/media/Postgresql_logo.14cff44b09e1efab0c64.png",
     "static/media/rspec_logo_Scaled.png": "/static/media/rspec_logo_Scaled.4180d2bc2eedba738840.png",
     "static/media/java_logo_Scaled.png": "/static/media/java_logo_Scaled.e0ce4c71f7b949059828.png",
     "static/media/mad-libs.webp": "/static/media/mad-libs.d9688981bec47eab5c40.webp",
     "static/media/html_logo_Scaled.png": "/static/media/html_logo_Scaled.ca429e07054c77fa483a.png",
+    "static/media/Node.js_logo.png": "/static/media/Node.js_logo.6dc320ffbc93bc18c370.png",
     "static/media/javascript_logo_Scaled.png": "/static/media/javascript_logo_Scaled.d87fd26a84e32c333acb.png",
     "static/media/robot-translator.webp": "/static/media/robot-translator.c80fab333904d1f92aa1.webp",
     "static/media/rock_paper_scissors.webp": "/static/media/rock_paper_scissors.9db6f7d2ec4afa67b454.webp",
@@ -68,11 +71,11 @@
     "index.html": "/index.html",
     "static/media/roboto-greek-ext-700-normal.woff2": "/static/media/roboto-greek-ext-700-normal.bd9854c751441ccc1a70.woff2",
     "main.d71ff4a1.css.map": "/static/css/main.d71ff4a1.css.map",
-    "main.353b9018.js.map": "/static/js/main.353b9018.js.map",
+    "main.e18fb878.js.map": "/static/js/main.e18fb878.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d71ff4a1.css",
-    "static/js/main.353b9018.js"
+    "static/js/main.e18fb878.js"
   ]
 }
