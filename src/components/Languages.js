@@ -88,8 +88,23 @@ class Languages extends Component {
                 distance={400}
               />
             </Item>
-            <Typography variant="caption">React</Typography>
+            <Typography variant="caption">React.js</Typography>
+
           </Grid>
+          {/*//=========== GRID END ===============> */}
+          {/*//=========== GRID BOX ===============> */}
+          <Grid item xs={4} md={2}>
+            <Item sx={{ bgcolor: "primary.main", color: "white"}}>
+              <Image
+                src={require("../images/languages/Node.js_logo.png")}
+                style={{ borderRadius: 16 }}
+                shift="top"
+                distance={400}
+              />
+            </Item>
+            <Typography variant="caption">Node.js</Typography>
+          </Grid>
+
           {/*//=========== GRID END ===============> */}
           {/*//=========== GRID BOX ===============> */}
           <Grid item xs={4} md={2}>
@@ -134,6 +149,19 @@ class Languages extends Component {
           <Grid item xs={4} md={2}>
             <Item sx={{ bgcolor: "primary.main", color: "white" }}>
               <Image
+                src={require("../images/languages/Postgresql_logo.png")}
+                style={{ borderRadius: 16 }}
+                shift="top"
+                distance={400}
+              />
+            </Item>
+            <Typography variant="caption">Postgresql</Typography>
+          </Grid>
+          {/*//=========== GRID END ===============> */}
+          {/*//=========== GRID BOX ===============> */}
+          <Grid item xs={4} md={2}>
+            <Item sx={{ bgcolor: "primary.main", color: "white" }}>
+              <Image
                 src={require("../images/languages/ruby_LOGO_Scaled.png")}
                 style={{ borderRadius: 16 }}
                 shift="top"
@@ -141,6 +169,19 @@ class Languages extends Component {
               />
             </Item>
             <Typography variant="caption">Ruby</Typography>
+          </Grid>
+          {/*//=========== GRID END ===============> */}
+          {/*//=========== GRID BOX ===============> */}
+          <Grid item xs={4} md={2}>
+            <Item sx={{ bgcolor: "primary.main", color: "white" }}>
+              <Image
+                src={require("../images/languages/pry_logo.png")}
+                style={{ borderRadius: 16 }}
+                shift="top"
+                distance={400}
+              />
+            </Item>
+            <Typography variant="caption">Pry</Typography>
           </Grid>
           {/*//=========== GRID END ===============> */}
           {/*//=========== GRID BOX ===============> */}
