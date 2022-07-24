@@ -40,7 +40,7 @@ class Degrees extends Component {
           alignItems="center"
         >
           {/*//=========== CERTIFICATION GRID BOX START ===================> */}
-          <Grid item xs={12} md={11}>
+          <Grid item xs={12} sm={6} md={6}>
             <Item sx={{ bgcolor: "primary.main", color: "white" }}>
               <Image
                 src={require("../images/degrees/associate-degree.webp")}
