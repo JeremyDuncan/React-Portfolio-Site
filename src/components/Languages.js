@@ -201,7 +201,9 @@ class Languages extends Component {
           alignItems="center"
         >
           {/*//=========== CERTIFICATION GRID BOX START ===================> */}
-          <Grid item xs={12} md={5.5}>
+          <Grid 
+          direction="column"
+          item xs={12} sm={6} md={5.5} lg={3.8} xl={4}>
             <Item sx={{ bgcolor: "primary.main", color: "white" }}>
               
               <Image
@@ -211,7 +213,8 @@ class Languages extends Component {
                 distance={400}
               />
             </Item>
-            <Typography>JavaScript Algorithms</Typography>
+            <Typography variant="caption">JavaScript Algorithms</Typography>
+            <br/>
             <Button
             sx={{mt: "5px"}}
             href="https://www.freecodecamp.org/certification/jeremyduncan/javascript-algorithms-and-data-structures"
@@ -225,7 +228,9 @@ class Languages extends Component {
           </Grid>
           {/*//=========== CERTIFICATION GRID BOX END =====================> */}
           {/*//=========== CERTIFICATION GRID BOX START ===================> */}
-          <Grid item xs={12} md={5.5}>
+          <Grid 
+          direction="column"
+          item xs={12} sm={6} md={5.5} lg={3.8} xl={4}>
             <Item sx={{ bgcolor: "primary.main", color: "white" }}>
               <Image
                 src={require("../images/languages/Responsive_Web_Design.png")}
@@ -234,7 +239,8 @@ class Languages extends Component {
                 distance={400}
               />
             </Item>
-            <Typography>Responsive Web Design</Typography>
+            <Typography variant="caption">Responsive Web Design</Typography>
+            <br />
             <Button
             sx={{mt: "5px"}}
             href="https://www.freecodecamp.org/certification/jeremyduncan/responsive-web-design"
@@ -248,7 +254,9 @@ class Languages extends Component {
           </Grid>
           {/*//=========== CERTIFICATION GRID BOX END =====================> */}
           {/*//=========== CERTIFICATION GRID BOX START ===================> */}
-          <Grid item xs={12} md={5.5}>
+          <Grid 
+          direction="column"
+          item xs={12} sm={6} md={5.5} lg={3.8} xl={4}>
             <Item sx={{ bgcolor: "primary.main", color: "white" }}>
               <Image
                 src={require("../images/languages/Front_End_Dev.png")}
@@ -257,7 +265,8 @@ class Languages extends Component {
                 distance={400}
               />
             </Item>
-            <Typography>Front End Development Libraries</Typography>
+            <Typography variant="caption">Front End Development Libraries</Typography>
+            <br/>
             <Button
             sx={{mt: "5px"}}
             href="https://www.freecodecamp.org/certification/JeremyDuncan/front-end-development-libraries"
@@ -271,7 +280,9 @@ class Languages extends Component {
           </Grid>
           {/*//=========== CERTIFICATION GRID BOX END =====================> */}
           {/*//=========== CERTIFICATION GRID BOX START ===================> */}
-          <Grid item xs={12} md={5.5}>
+          <Grid 
+          direction="column"
+          item xs={12} sm={6} md={5.5} lg={3.8} xl={4}>
             <Item sx={{ bgcolor: "primary.main", color: "white" }}>
               <Image
                 src={require("../images/degrees/programming-essentials.webp")}
@@ -280,7 +291,8 @@ class Languages extends Component {
                 distance={400}
               />
             </Item>
-            <Typography>Programming Essentials</Typography>
+            <Typography variant="caption">Programming Essentials</Typography>
+            <br />
             <Button
             sx={{mt: "5px"}}
             href="https://www.parchment.com/u/award/877ddb7d34111e1741c380984dfeb7a4"
