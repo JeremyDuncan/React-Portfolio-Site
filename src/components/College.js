@@ -6,7 +6,6 @@
 import React, { Component } from "react";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
-
 import Button from "@mui/material/Button";
 import SchoolRoundedIcon from "@mui/icons-material/SchoolRounded";
 import List from "@mui/material/List";
@@ -45,8 +44,8 @@ class College extends Component {
             }}
           >
             <ListItem>
-              <ListItemIcon>
-                <SchoolRoundedIcon />
+              <ListItemIcon color="white">
+                <SchoolRoundedIcon sx={{color: "primary.light"}}/>
               </ListItemIcon>
               <ListItemText
                 primary="Associate of Applied Science - Information Technology and
@@ -55,30 +54,35 @@ class College extends Component {
               
             </ListItem>
             
-            <ListItem>
+            <ListItem sx={{ color: "secondaryList.text"}}>
               <ListItemText
                 inset
+                disableTypography
                 secondary="– DeVry University 2021 - June-2022"
+                
               />
             </ListItem>
 
-            <ListItem>
+            <ListItem sx={{ color: "secondaryList.text"}}>
               <ListItemText
                 inset
+                disableTypography
                 secondary="– Grade: 4.0 GPA, With Honors, Deans List Awardee"
               />
             </ListItem>
 
-            <ListItem>
+            <ListItem sx={{ color: "secondaryList.text"}}>
               <ListItemText
                 inset
+                disableTypography
                 secondary="– Nominated for the National Society of Leadership and Success"
               />
             </ListItem>
 
-            <ListItem>
+            <ListItem sx={{ color: "secondaryList.text"}}>
               <ListItemText
                 inset
+                disableTypography
                 secondary="– Nominated for the Alpha Chi Honor Society"
               />
             </ListItem>
@@ -92,7 +96,7 @@ class College extends Component {
             <Divider />
             <ListItem>
               <ListItemIcon>
-                <SchoolRoundedIcon />
+                <SchoolRoundedIcon sx={{color: "primary.light"}}/>
               </ListItemIcon>
               <ListItemText
                 primary="Bachelor of Science - Computer Information Systems and
@@ -100,30 +104,34 @@ class College extends Component {
               />
             </ListItem>
 
-            <ListItem>
+            <ListItem sx={{ color: "secondaryList.text"}}>
               <ListItemText
                 inset
+                disableTypography
                 secondary="– DeVry University 2021 - Nov-2023 (Projected)"
               />
             </ListItem>
 
-            <ListItem>
+            <ListItem sx={{ color: "secondaryList.text"}}>
               <ListItemText
                 inset
+                disableTypography
                 secondary="– Grade: 4.0 GPA, Deans List Awardee"
               />
             </ListItem>
 
-            <ListItem>
+            <ListItem sx={{ color: "secondaryList.text"}}>
               <ListItemText
                 inset
+                disableTypography
                 secondary="– Nominated for the National Society of Leadership and Success"
               />
             </ListItem>
 
-            <ListItem>
+            <ListItem sx={{ color: "secondaryList.text"}}>
               <ListItemText
                 inset
+                disableTypography
                 secondary="– Nominated for the Alpha Chi Honor Society"
               />
             </ListItem>

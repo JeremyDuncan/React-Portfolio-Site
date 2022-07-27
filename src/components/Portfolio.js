@@ -51,12 +51,19 @@ class Portfolio extends Component {
           {/*//=========== GRID END ===============> */}
           {/*//=========== GRID BOX ===============> */}
           <Grid item xs={11} md={10}>
-            <Item sx={{ bgcolor: "primary.main", color: "white" }}>
-              <Typography variant="h4" sx={{ paddingBottom: 1 }}>
+            <Item sx={{ bgcolor: "primary.main", color: "primary.contrastText" }}>
+              <Typography
+                variant="h4"
+                sx={{
+                  textShadow: "1.5px 1.5px 4px #292727",
+                  paddingBottom: 1,
+                }}
+              >
                 Hello! I'm Jeremy
               </Typography>
               {/*=== ===*/}
-              <MainSection /> {/*<== === === === === === === === === {COMPONENT} */}
+              <MainSection />
+              {/*<== === === === === === === === === {COMPONENT} */}
               {/*=== ===*/}
             </Item>
           </Grid>

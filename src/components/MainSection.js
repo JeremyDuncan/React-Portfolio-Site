@@ -46,6 +46,7 @@ export default function ControlledAccordions() {
           
           <Typography
              sx={{
+              textShadow: "1.5px 1.5px 4px #292727",
               width: "33%",flexShrink: 0,fontWeight: "bold", 
               margin: { md: "auto", lg: "auto", sm: "auto" }
             }}
@@ -75,6 +76,7 @@ export default function ControlledAccordions() {
         >
           <Typography
             sx={{
+              textShadow: "1.5px 1.5px 4px #292727",
               width: "33%",
               flexShrink: 0,
               fontWeight: "bold",
@@ -111,6 +113,7 @@ export default function ControlledAccordions() {
         >
           <Typography
             sx={{
+              textShadow: "1.5px 1.5px 4px #292727",
               width: "33%",
               flexShrink: 0,
               fontWeight: "bold",
@@ -141,6 +144,7 @@ export default function ControlledAccordions() {
         >
           <Typography
             sx={{
+              textShadow: "1.5px 1.5px 4px #292727",
               width: "33%",
               flexShrink: 0,
               fontWeight: "bold",
@@ -172,6 +176,7 @@ export default function ControlledAccordions() {
         >
           <Typography
             sx={{
+              textShadow: "1.5px 1.5px 4px #292727",
               width: "33%",
               flexShrink: 0,
               fontWeight: "bold",
@@ -185,7 +190,7 @@ export default function ControlledAccordions() {
           sx={{ bgcolor: "secondary.main", color: "primary.contrastText" }}
         >
           <Typography sx={{ paddingBottom: 2 }}>
-            These are some of my projects.
+            
           </Typography>
           <Projects /> {/* <=={COMPONENT} */}
         </AccordionDetails>

@@ -15,7 +15,7 @@ import "@fontsource/roboto/700.css";
 class AboutMe extends Component {
   render() {
     return (
-      <Box>
+      <Box sx={{ textShadow: "1.5px 1.5px 4px #292727" }}color="primary.contrastText">
           <Typography paragraph={true}>
             I'm a highly motivated veteran that has over a decade of
             experience as an Electronic Technician and Network Administrator.

@@ -32,6 +32,7 @@ class Languages extends Component {
     return (
       <Box sx={{ flexGrow: 1 }}>
         <Grid
+          sx={{ textShadow: "1.5px 1.5px 4px #292727" }}
           container
           spacing={2}
           direction="row"
@@ -226,9 +227,19 @@ class Languages extends Component {
 
         {/* ========= This section renders all the Cerifications ====================*/}
         <Divider>
-          <Typography variant="h6" sx={{ paddingBottom: 2, paddingTop: 2 }}>
+          <Typography
+            variant="h6"
+            sx={{
+              textShadow: ".5px .5px 2px #292727",
+              paddingBottom: 2,
+              paddingTop: 2,
+            }}
+          >
             <WorkspacePremiumIcon
-              sx={{ verticalAlign: "center", fontSize: "small" }}
+              sx={{
+                verticalAlign: "center",
+                fontSize: "small",
+              }}
             />
             &nbsp; Certifications Earned
           </Typography>
@@ -250,7 +261,12 @@ class Languages extends Component {
                 distance={400}
               />
             </Item>
-            <Typography variant="caption">JavaScript Algorithms</Typography>
+            <Typography
+              sx={{ textShadow: "1.5px 1.5px 4px #292727" }}
+              variant="caption"
+            >
+              JavaScript Algorithms
+            </Typography>
             <br />
             <Button
               sx={{ mt: "5px" }}
@@ -274,7 +290,12 @@ class Languages extends Component {
                 distance={400}
               />
             </Item>
-            <Typography variant="caption">Responsive Web Design</Typography>
+            <Typography
+              sx={{ textShadow: "1.5px 1.5px 4px #292727" }}
+              variant="caption"
+            >
+              Responsive Web Design
+            </Typography>
             <br />
             <Button
               sx={{ mt: "5px" }}
@@ -298,7 +319,10 @@ class Languages extends Component {
                 distance={400}
               />
             </Item>
-            <Typography variant="caption">
+            <Typography
+              sx={{ textShadow: "1.5px 1.5px 4px #292727" }}
+              variant="caption"
+            >
               Front End Development Libraries
             </Typography>
             <br />
@@ -324,7 +348,12 @@ class Languages extends Component {
                 distance={400}
               />
             </Item>
-            <Typography variant="caption">Programming Essentials</Typography>
+            <Typography
+              sx={{ textShadow: "1.5px 1.5px 4px #292727" }}
+              variant="caption"
+            >
+              Programming Essentials
+            </Typography>
             <br />
             <Button
               sx={{ mt: "5px" }}

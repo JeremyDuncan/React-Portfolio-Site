@@ -23,6 +23,7 @@ import "@fontsource/roboto/700.css";
 
 const pages = [
   <Link
+    sx={{textShadow: "1.5px 1.5px 4px #292727"}}
     color="inherit"
     underline="none"
     target="_blank"
@@ -32,6 +33,7 @@ const pages = [
     Github Profile
   </Link>,
   <Link
+  sx={{textShadow: "1.5px 1.5px 4px #292727"}}
     color="inherit"
     underline="none"
     target="_blank"
@@ -41,6 +43,7 @@ const pages = [
     LinkedIn
   </Link>,
   <Link
+  sx={{textShadow: "1.5px 1.5px 4px #292727"}}
     color="inherit"
     underline="none"
     target="_blank"
@@ -89,6 +92,7 @@ const Header = () => {
               letterSpacing: ".5rem",
               color: "inherit",
               textDecoration: "none",
+              textShadow: "1.5px 1.5px 4px #292727"
             }}
           >
             {/* Desktop View */}
@@ -138,6 +142,7 @@ const Header = () => {
             sx={{ display: { xs: "flex", md: "none" }, mr: 1 }}
           />
           <Typography
+  
             variant="h6"
             noWrap
             component="a"
@@ -150,7 +155,8 @@ const Header = () => {
               fontWeight: 700,
               letterSpacing: ".3rem",
               color: "inherit",
-              textDecoration: "none"
+              textDecoration: "none",
+              textShadow: "1.5px 1.5px 4px #292727"
             }}
           >
             {/* Mobile View */}
