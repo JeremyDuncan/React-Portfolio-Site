@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.bfbb7c8e.css",
-    "main.js": "/static/js/main.33c8c4d7.js",
+    "main.js": "/static/js/main.d06a3363.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/Jeremy_Duncan_Resume_All-11July2022.pdf": "/static/media/Jeremy_Duncan_Resume_All-11July2022.b9a1c1f9d8c359d6d40d.pdf",
     "static/media/JavaScript_algo.png": "/static/media/JavaScript_algo.b09a090f3ea764e693ab.png",
@@ -71,11 +71,11 @@
     "index.html": "/index.html",
     "static/media/roboto-greek-ext-700-normal.woff2": "/static/media/roboto-greek-ext-700-normal.bd9854c751441ccc1a70.woff2",
     "main.bfbb7c8e.css.map": "/static/css/main.bfbb7c8e.css.map",
-    "main.33c8c4d7.js.map": "/static/js/main.33c8c4d7.js.map",
+    "main.d06a3363.js.map": "/static/js/main.d06a3363.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bfbb7c8e.css",
-    "static/js/main.33c8c4d7.js"
+    "static/js/main.d06a3363.js"
   ]
 }
