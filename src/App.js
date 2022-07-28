@@ -17,20 +17,29 @@ const theme = createTheme({
       light: "#a4a4a4",
       main: "#757575",
       dark: "#494949",
-      contrastText: "#ffffff",
+      contrastText: "#434442",
     },
     secondary: {
       light: "#819ca9",
-      main: "#2d2c2c",
+      main: "#95c2e2",
       dark: "#29434e",
       contrastText: "#000000",
     },
     secondaryList: { 
-      text: "#d6d0d0",
+      text: "#25222c",
     },
     contrast: { 
-      text: "#000000",
+      textLight: "#ffffff",
+      textDark: "#000000",
     },
+    header: { 
+      textLight: "#ffffff",
+      textDark: "#000000",
+    },
+    button: { 
+      textLight: "#ffffff",
+      textDark: "#000000",
+    }
   },
 });
 

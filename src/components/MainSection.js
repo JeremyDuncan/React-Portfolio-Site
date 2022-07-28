@@ -33,7 +33,7 @@ export default function ControlledAccordions() {
       {/* =============== === ACCORDIAN START === ===========================*/}
       {/* === ABOUT ME SECTION === */}
       <Accordion
-        sx={{ bgcolor: "primary.dark", color: "primary.contrastText" }}
+        sx={{ bgcolor: "primary.dark", color: "contrast.textLight" }}
         expanded={expanded === "panel1"}
         onChange={handleChange("panel1")}
       >
@@ -65,7 +65,7 @@ export default function ControlledAccordions() {
       {/* =============== === ACCORDIAN START === ===========================*/}
       {/* === PROGRAMMING LANGUAGE SECTION === */}
       <Accordion
-        sx={{ bgcolor: "primary.dark", color: "primary.contrastText" }}
+        sx={{ bgcolor: "primary.dark", color: "contrast.textLight"  }}
         expanded={expanded === "panel2"}
         onChange={handleChange("panel2")}
       >
@@ -87,11 +87,11 @@ export default function ControlledAccordions() {
           </Typography>
         </AccordionSummary>
         <AccordionDetails
-          sx={{ bgcolor: "secondary.main", color: "primary.contrastText" }}
+          sx={{ bgcolor: "secondary.main", color: "contrast.textDark", textShadow: "0px 3px 8px #8a8a8a" }}
         >
           
           <Typography variant="h6" sx={{ paddingBottom: 2, paddingTop: 2 }}>
-            <TerminalIcon sx={{ verticalAlign: "center", fontSize: "small" }} />
+            <TerminalIcon sx={{ verticalAlign: "center", fontSize: "large" }} />
             &nbsp; Languages and Technologies Used
           </Typography>
         
@@ -102,7 +102,7 @@ export default function ControlledAccordions() {
       {/* =============== === ACCORDIAN START === ===========================*/}
       {/* === COLLEGE EDUCATION SECTION === */}
       <Accordion
-        sx={{ bgcolor: "primary.dark", color: "primary.contrastText" }}
+        sx={{ bgcolor: "primary.dark", color: "contrast.textLight" }}
         expanded={expanded === "panel3"}
         onChange={handleChange("panel3")}
       >
@@ -133,7 +133,7 @@ export default function ControlledAccordions() {
       {/* =============== === ACCORDIAN START === ===========================*/}
       {/* === MILITARY EXPERIENCE SECTION === */}
       <Accordion
-        sx={{ bgcolor: "primary.dark", color: "primary.contrastText" }}
+        sx={{ bgcolor: "primary.dark", color: "contrast.textLight" }}
         expanded={expanded === "panel4"}
         onChange={handleChange("panel4")}
       >
@@ -165,7 +165,7 @@ export default function ControlledAccordions() {
       {/* =============== === ACCORDIAN START === ===========================*/}
       {/* === PORTFOLIO SECTION === */}
       <Accordion
-        sx={{ bgcolor: "primary.dark", color: "primary.contrastText" }}
+        sx={{ bgcolor: "primary.dark", color: "contrast.textLight" }}
         expanded={expanded === "panel5"}
         onChange={handleChange("panel5")}
       >

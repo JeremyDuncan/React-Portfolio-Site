@@ -23,7 +23,7 @@ import "@fontsource/roboto/700.css";
 
 const pages = [
   <Link
-    sx={{textShadow: "1.5px 1.5px 4px #292727"}}
+    sx={{textShadow: "0px 1.5px 9px #292727"}}
     color="inherit"
     underline="none"
     target="_blank"
@@ -33,7 +33,7 @@ const pages = [
     Github Profile
   </Link>,
   <Link
-  sx={{textShadow: "1.5px 1.5px 4px #292727"}}
+  sx={{textShadow: "0px 1.5px 9px #292727"}}
     color="inherit"
     underline="none"
     target="_blank"
@@ -43,7 +43,7 @@ const pages = [
     LinkedIn
   </Link>,
   <Link
-  sx={{textShadow: "1.5px 1.5px 4px #292727"}}
+  sx={{textShadow: "0px 1.5px 9px #292727"}}
     color="inherit"
     underline="none"
     target="_blank"
@@ -77,7 +77,7 @@ const Header = () => {
       >
         <Toolbar disableGutters>
           <EmojiPeopleIcon
-            sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}
+            sx={{ display: { xs: "none", md: "flex" }, mr: 1, color: "header.textLight" }}
           />
           <Typography
             variant="h6"
@@ -90,7 +90,7 @@ const Header = () => {
               fontFamily: "monospace",
               fontWeight: 700,
               letterSpacing: ".5rem",
-              color: "inherit",
+              color: "header.textLight",
               textDecoration: "none",
               textShadow: "1.5px 1.5px 4px #292727"
             }}
@@ -107,7 +107,7 @@ const Header = () => {
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
-              color="inherit"
+              sx={{color: "header.textLight"}}
               
             >
               <MenuIcon />
@@ -139,7 +139,7 @@ const Header = () => {
           </Box>
           &nbsp;
           <EmojiPeopleIcon
-            sx={{ display: { xs: "flex", md: "none" }, mr: 1 }}
+            sx={{ display: { xs: "flex", md: "none" }, mr: 1, color: "header.textLight" }}
           />
           <Typography
   
@@ -154,7 +154,7 @@ const Header = () => {
               fontFamily: "monospace",
               fontWeight: 700,
               letterSpacing: ".3rem",
-              color: "inherit",
+              color: "header.textLight",
               textDecoration: "none",
               textShadow: "1.5px 1.5px 4px #292727"
             }}

@@ -40,12 +40,12 @@ class College extends Component {
               width: "100%",
               maxWidth: 750,
               bgcolor: "primary.secondary",
-              color: "primary.contrastText",
+              color: "contrast.textDark",
             }}
           >
-            <ListItem>
+            <ListItem sx={{textShadow: "0px 3px 8px #8a8a8a"}}>
               <ListItemIcon color="white">
-                <SchoolRoundedIcon sx={{color: "primary.light"}}/>
+                <SchoolRoundedIcon sx={{color: "contrast.textDark"}}/>
               </ListItemIcon>
               <ListItemText
                 primary="Associate of Applied Science - Information Technology and
@@ -54,7 +54,7 @@ class College extends Component {
               
             </ListItem>
             
-            <ListItem sx={{ color: "secondaryList.text"}}>
+            <ListItem sx={{ color: "secondaryList.text", textShadow: "0px 3px 8px #8a8a8a"}}>
               <ListItemText
                 inset
                 disableTypography
@@ -63,7 +63,7 @@ class College extends Component {
               />
             </ListItem>
 
-            <ListItem sx={{ color: "secondaryList.text"}}>
+            <ListItem sx={{ color: "secondaryList.text", textShadow: "0px 3px 8px #8a8a8a"}}>
               <ListItemText
                 inset
                 disableTypography
@@ -71,7 +71,7 @@ class College extends Component {
               />
             </ListItem>
 
-            <ListItem sx={{ color: "secondaryList.text"}}>
+            <ListItem sx={{ color: "secondaryList.text", textShadow: "0px 3px 8px #8a8a8a"}}>
               <ListItemText
                 inset
                 disableTypography
@@ -79,7 +79,7 @@ class College extends Component {
               />
             </ListItem>
 
-            <ListItem sx={{ color: "secondaryList.text"}}>
+            <ListItem sx={{ color: "secondaryList.text", textShadow: "0px 3px 8px #8a8a8a"}}>
               <ListItemText
                 inset
                 disableTypography
@@ -94,9 +94,9 @@ class College extends Component {
 
             <br />
             <Divider />
-            <ListItem>
+            <ListItem sx={{textShadow: "0px 3px 8px #8a8a8a"}}>
               <ListItemIcon>
-                <SchoolRoundedIcon sx={{color: "primary.light"}}/>
+                <SchoolRoundedIcon sx={{color: "contrast.textDark"}}/>
               </ListItemIcon>
               <ListItemText
                 primary="Bachelor of Science - Computer Information Systems and
@@ -104,7 +104,7 @@ class College extends Component {
               />
             </ListItem>
 
-            <ListItem sx={{ color: "secondaryList.text"}}>
+            <ListItem sx={{ color: "secondaryList.text", textShadow: "0px 3px 8px #8a8a8a"}}>
               <ListItemText
                 inset
                 disableTypography
@@ -112,7 +112,7 @@ class College extends Component {
               />
             </ListItem>
 
-            <ListItem sx={{ color: "secondaryList.text"}}>
+            <ListItem sx={{ color: "secondaryList.text", textShadow: "0px 3px 8px #8a8a8a"}}>
               <ListItemText
                 inset
                 disableTypography
@@ -120,7 +120,7 @@ class College extends Component {
               />
             </ListItem>
 
-            <ListItem sx={{ color: "secondaryList.text"}}>
+            <ListItem sx={{ color: "secondaryList.text", textShadow: "0px 3px 8px #8a8a8a"}}>
               <ListItemText
                 inset
                 disableTypography
@@ -128,7 +128,7 @@ class College extends Component {
               />
             </ListItem>
 
-            <ListItem sx={{ color: "secondaryList.text"}}>
+            <ListItem sx={{ color: "secondaryList.text", textShadow: "0px 3px 8px #8a8a8a"}}>
               <ListItemText
                 inset
                 disableTypography
@@ -139,6 +139,7 @@ class College extends Component {
           <br />
 
           <Button
+            sx={{color: "button.textLight"}}
             href="https://www.jeremy-duncan.com/devry-projects/devry.html"
             target="_blank"
             rel="noopener"

@@ -41,7 +41,7 @@ class Degrees extends Component {
         >
           {/*//=========== CERTIFICATION GRID BOX START ===================> */}
           <Grid item xs={12} sm={6} md={6}>
-            <Item sx={{ bgcolor: "primary.main", color: "white" }}>
+            <Item elevation={6} sx={{ bgcolor: "primary.main", color: "white" }}>
               <Image
                 src={require("../images/degrees/associate-degree.webp")}
                 style={{ borderRadius: 16 }}
@@ -61,7 +61,7 @@ class Degrees extends Component {
           alignItems="center"
         >
           <Button
-            sx={{mt: "5px"}}
+            sx={{mt: "5px", color: "button.textLight"}}
             href="https://www.parchment.com/u/award/877ddb7d34111e1741c380984dfeb7a4"
             target="_blank"
             rel="noopener"

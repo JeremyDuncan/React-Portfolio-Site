@@ -35,7 +35,7 @@ class Footer extends Component {
         alignItems="center"
         >
           <Grid item xs={12}>
-            <Item sx={{ bgcolor: 'primary.main', color: 'white'}}>
+            <Item sx={{ bgcolor: 'primary.main', color: 'white', borderRadius: "0px"}}>
               <Typography sx={{fontSize: ".8rem"}}>
                 I created this site with
                 <Link

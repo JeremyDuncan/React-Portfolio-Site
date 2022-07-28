@@ -35,7 +35,7 @@ class Resume extends Component {
         }}
       >
     <br/>
-    <Button
+    <Button sx={{color: "button.textLight"}}
             href={MyResume}
             download
             variant="contained"
