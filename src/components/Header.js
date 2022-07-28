@@ -71,7 +71,7 @@ const Header = () => {
   };
 
   return (
-    <AppBar position="sticky">
+    <AppBar  elevation={9} position="sticky">
       <Container
         sx={{ display: "flex", justifyContent: {xs: "space-evenly", lg: "space-around"}}}
       >

@@ -28,7 +28,7 @@ export default function ControlledAccordions() {
   };
 
   return (
-    <div >
+    <div sx={{boxShadow: "0px -18px 8px 3px rgba(0,0,0,1)"}}>
       {/* =============== === ACCORDIAN === ============*/}
       <Accordion
         sx={{ bgcolor: "primary.dark", color: "contrast.textLight"}}
@@ -36,7 +36,7 @@ export default function ControlledAccordions() {
         onChange={handleChange("panel1")}
       >
         <AccordionSummary
-          expandIcon={<ExpandMoreIcon sx={{ color: "primary.contrastText" }} />}
+          expandIcon={<ExpandMoreIcon sx={{ color: "contrast.textLight" }} />}
           aria-controls="panel1bh-content"
           id="panel1bh-header"
           

@@ -39,7 +39,7 @@ class Portfolio extends Component {
           {/* === PORTFOLIO IMAGE OF ME === */}
           {/*//=========== GRID BOX ===============> */}
           <Grid item xs={11} md={5}>
-            <Item sx={{ bgcolor: "primary.main", color: "white" }}>
+            <Item elevation={14} sx={{ bgcolor: "primary.main", color: "white" }}>
               <Image
                 src={require("../images/me_ny.webp")}
                 style={{ borderRadius: 16 }}
@@ -51,7 +51,9 @@ class Portfolio extends Component {
           {/*//=========== GRID END ===============> */}
           {/*//=========== GRID BOX ===============> */}
           <Grid item xs={11} md={10}>
-            <Item sx={{ bgcolor: "primary.main", color: "header.textLight" }}>
+            <Item 
+            elevation={14}
+            sx={{ bgcolor: "primary.main", color: "header.textLight" }}>
               <Typography
                 variant="h4"
                 sx={{

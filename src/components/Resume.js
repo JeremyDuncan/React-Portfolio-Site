@@ -15,15 +15,6 @@ import "@fontsource/roboto/700.css";
 
 class Resume extends Component {
   render() {
-    const NestedList = () => {
-      const [open, setOpen] = React.useState(true);
-    
-      const handleClick = () => {
-        setOpen(!open);
-      };
-    };
-
-
     return (
       <Box
         sx={{
