@@ -56,7 +56,7 @@ export default function ControlledAccordions() {
           {/* </Box> */}
         </AccordionSummary>
         <AccordionDetails
-          sx={{ bgcolor: "secondary.main", color: "primary.contrastText" }}
+          sx={{ background: "radial-gradient(ellipse at center, #A1D1F4 0%, #6E91A7 100%)", color: "primary.contrastText" }}
         >
           <AboutMe />
           {/* <=={COMPONENT} */}
@@ -89,7 +89,7 @@ export default function ControlledAccordions() {
         </AccordionSummary>
         <AccordionDetails
           sx={{
-            bgcolor: "secondary.main",
+            background: "radial-gradient(ellipse at center, #A1D1F4 0%, #6E91A7 100%)",
             color: "contrast.textDark",
             textShadow: "0px 3px 8px #8a8a8a",
           }}
@@ -127,7 +127,7 @@ export default function ControlledAccordions() {
           </Typography>
         </AccordionSummary>
         <AccordionDetails
-          sx={{ bgcolor: "secondary.main", color: "primary.contrastText" }}
+          sx={{ background: "radial-gradient(ellipse at center, #A1D1F4 0%, #6E91A7 100%)", color: "primary.contrastText" }}
         >
           <College /> {/* <=={COMPONENT} */}
         </AccordionDetails>
@@ -158,7 +158,7 @@ export default function ControlledAccordions() {
           </Typography>
         </AccordionSummary>
         <AccordionDetails
-          sx={{ bgcolor: "secondary.main", color: "primary.contrastText" }}
+          sx={{ background: "radial-gradient(ellipse at center, #A1D1F4 0%, #6E91A7 100%)", color: "primary.contrastText" }}
         >
           <MilitaryExp />
           {/* <=={COMPONENT} */}
@@ -190,7 +190,7 @@ export default function ControlledAccordions() {
           </Typography>
         </AccordionSummary>
         <AccordionDetails
-          sx={{ bgcolor: "secondary.main", color: "primary.contrastText" }}
+          sx={{ background: "radial-gradient(ellipse at center, #A1D1F4 0%, #6E91A7 100%)", color: "primary.contrastText" }}
         >
           <Typography sx={{ paddingBottom: 2 }}></Typography>
           <Projects /> {/* <=={COMPONENT} */}

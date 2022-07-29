@@ -1,6 +1,10 @@
 body {
-  background-color: #5383a4;
+  background: #5383A4;
+  background: -moz-radial-gradient(center, #5383A4 0%, #304B5B 100%);
+  background: -webkit-radial-gradient(center, #5383A4 0%, #304B5B 100%);
+  background: radial-gradient(ellipse at center, #5383A4 0%, #304B5B 100%);
 }
+
 test {
-  color: #d9cbec;
+  color: #d2e8f7;
 }
