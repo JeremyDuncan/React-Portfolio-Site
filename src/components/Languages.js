@@ -61,7 +61,10 @@ class Languages extends Component {
           {/*//=========== GRID END ===============> */}
           {/*//=========== GRID BOX ===============> */}
           <Grid item xs={4} md={2}>
-            <Item elevation={6}sx={{ bgcolor: "primary.main", color: "white" }}>
+            <Item
+              elevation={6}
+              sx={{ bgcolor: "primary.main", color: "white" }}
+            >
               <Image
                 src={require("../images/languages/css-logo_Scaled.webp")}
                 style={{ borderRadius: 16 }}
@@ -80,7 +83,10 @@ class Languages extends Component {
           {/*//=========== GRID END ===============> */}
           {/*//=========== GRID BOX ===============> */}
           <Grid item xs={4} md={2}>
-            <Item elevation={6}sx={{ bgcolor: "primary.main", color: "white" }}>
+            <Item
+              elevation={6}
+              sx={{ bgcolor: "primary.main", color: "white" }}
+            >
               <Image
                 src={require("../images/languages/javascript_logo_Scaled.png")}
                 style={{ borderRadius: 16 }}
@@ -99,7 +105,10 @@ class Languages extends Component {
           {/*//=========== GRID END ===============> */}
           {/*//=========== GRID BOX ===============> */}
           <Grid item xs={4} md={2}>
-            <Item elevation={6}sx={{ bgcolor: "primary.main", color: "white" }}>
+            <Item
+              elevation={6}
+              sx={{ bgcolor: "primary.main", color: "white" }}
+            >
               <Image
                 src={require("../images/languages/react_Scaled.png")}
                 style={{ borderRadius: 16 }}
@@ -118,7 +127,10 @@ class Languages extends Component {
           {/*//=========== GRID END ===============> */}
           {/*//=========== GRID BOX ===============> */}
           <Grid item xs={4} md={2}>
-            <Item elevation={6}sx={{ bgcolor: "primary.main", color: "white" }}>
+            <Item
+              elevation={6}
+              sx={{ bgcolor: "primary.main", color: "white" }}
+            >
               <Image
                 src={require("../images/languages/Node.js_logo.png")}
                 style={{ borderRadius: 16 }}
@@ -138,7 +150,10 @@ class Languages extends Component {
           {/*//=========== GRID END ===============> */}
           {/*//=========== GRID BOX ===============> */}
           <Grid item xs={4} md={2}>
-            <Item elevation={6} sx={{ bgcolor: "primary.main", color: "white" }}>
+            <Item
+              elevation={6}
+              sx={{ bgcolor: "primary.main", color: "white" }}
+            >
               <Image
                 src={require("../images/languages/python_logo_Scaled.png")}
                 style={{ borderRadius: 16 }}
@@ -157,7 +172,10 @@ class Languages extends Component {
           {/*//=========== GRID END ===============> */}
           {/*//=========== GRID BOX ===============> */}
           <Grid item xs={4} md={2}>
-            <Item elevation={6} sx={{ bgcolor: "primary.main", color: "white" }}>
+            <Item
+              elevation={6}
+              sx={{ bgcolor: "primary.main", color: "white" }}
+            >
               <Image
                 src={require("../images/languages/java_logo_Scaled.png")}
                 style={{ borderRadius: 16 }}
@@ -176,7 +194,10 @@ class Languages extends Component {
           {/*//=========== GRID END ===============> */}
           {/*//=========== GRID BOX ===============> */}
           <Grid item xs={4} md={2}>
-            <Item elevation={6} sx={{ bgcolor: "primary.main", color: "white" }}>
+            <Item
+              elevation={6}
+              sx={{ bgcolor: "primary.main", color: "white" }}
+            >
               <Image
                 src={require("../images/languages/rails_logo_Scaled.png")}
                 style={{ borderRadius: 16 }}
@@ -195,7 +216,10 @@ class Languages extends Component {
           {/*//=========== GRID END ===============> */}
           {/*//=========== GRID BOX ===============> */}
           <Grid item xs={4} md={2}>
-            <Item elevation={6} sx={{ bgcolor: "primary.main", color: "white" }}>
+            <Item
+              elevation={6}
+              sx={{ bgcolor: "primary.main", color: "white" }}
+            >
               <Image
                 src={require("../images/languages/Postgresql_logo.png")}
                 style={{ borderRadius: 16 }}
@@ -214,7 +238,10 @@ class Languages extends Component {
           {/*//=========== GRID END ===============> */}
           {/*//=========== GRID BOX ===============> */}
           <Grid item xs={4} md={2}>
-            <Item elevation={6} sx={{ bgcolor: "primary.main", color: "white" }}>
+            <Item
+              elevation={6}
+              sx={{ bgcolor: "primary.main", color: "white" }}
+            >
               <Image
                 src={require("../images/languages/ruby_LOGO_Scaled.png")}
                 style={{ borderRadius: 16 }}
@@ -233,7 +260,10 @@ class Languages extends Component {
           {/*//=========== GRID END ===============> */}
           {/*//=========== GRID BOX ===============> */}
           <Grid item xs={4} md={2}>
-            <Item elevation={6} sx={{ bgcolor: "primary.main", color: "white" }}>
+            <Item
+              elevation={6}
+              sx={{ bgcolor: "primary.main", color: "white" }}
+            >
               <Image
                 src={require("../images/languages/pry_logo.png")}
                 style={{ borderRadius: 16 }}
@@ -252,7 +282,10 @@ class Languages extends Component {
           {/*//=========== GRID END ===============> */}
           {/*//=========== GRID BOX ===============> */}
           <Grid item xs={4} md={2}>
-            <Item elevation={6}sx={{ bgcolor: "primary.main", color: "white" }}>
+            <Item
+              elevation={6}
+              sx={{ bgcolor: "primary.main", color: "white" }}
+            >
               <Image
                 src={require("../images/languages/rspec_logo_Scaled.png")}
                 style={{ borderRadius: 16 }}
@@ -271,7 +304,10 @@ class Languages extends Component {
           {/*//=========== GRID END ===============> */}
           {/*//=========== GRID BOX ===============> */}
           <Grid item xs={4} md={2}>
-            <Item elevation={6} sx={{ bgcolor: "primary.main", color: "white" }}>
+            <Item
+              elevation={6}
+              sx={{ bgcolor: "primary.main", color: "white" }}
+            >
               <Image
                 src={require("../images/languages/jest_logo_Scaled.png")}
                 style={{ borderRadius: 16 }}
@@ -290,7 +326,10 @@ class Languages extends Component {
           {/*//=========== GRID END ===============> */}
           {/*//=========== GRID BOX ===============> */}
           <Grid item xs={4} md={2}>
-            <Item elevation={6} sx={{ bgcolor: "primary.main", color: "white" }}>
+            <Item
+              elevation={6}
+              sx={{ bgcolor: "primary.main", color: "white" }}
+            >
               <Image
                 src={require("../images/languages/cSharp_logo_Scaled.png")}
                 style={{ borderRadius: 16 }}
@@ -338,7 +377,10 @@ class Languages extends Component {
         >
           {/*//=========== CERTIFICATION GRID BOX START ===================> */}
           <Grid direction="column" item xs={12} sm={6} md={5.5} lg={3.8} xl={4}>
-            <Item elevation={6} sx={{ bgcolor: "primary.main", color: "white" }}>
+            <Item
+              elevation={6}
+              sx={{ bgcolor: "primary.main", color: "white" }}
+            >
               <Image
                 src={require("../images/languages/JavaScript_algo.png")}
                 style={{ borderRadius: 16 }}
@@ -369,7 +411,10 @@ class Languages extends Component {
           {/*//=========== CERTIFICATION GRID BOX END =====================> */}
           {/*//=========== CERTIFICATION GRID BOX START ===================> */}
           <Grid direction="column" item xs={12} sm={6} md={5.5} lg={3.8} xl={4}>
-            <Item elevation={6} sx={{ bgcolor: "primary.main", color: "white" }}>
+            <Item
+              elevation={6}
+              sx={{ bgcolor: "primary.main", color: "white" }}
+            >
               <Image
                 src={require("../images/languages/Responsive_Web_Design.png")}
                 style={{ borderRadius: 16 }}
@@ -387,7 +432,6 @@ class Languages extends Component {
             </Typography>
             <br />
             <Button
-           
               sx={{ mt: "5px", color: "button.textLight" }}
               href="https://www.freecodecamp.org/certification/jeremyduncan/responsive-web-design"
               target="_blank"
@@ -401,7 +445,10 @@ class Languages extends Component {
           {/*//=========== CERTIFICATION GRID BOX END =====================> */}
           {/*//=========== CERTIFICATION GRID BOX START ===================> */}
           <Grid direction="column" item xs={12} sm={6} md={5.5} lg={3.8} xl={4}>
-            <Item elevation={6} sx={{ bgcolor: "primary.main", color: "white" }}>
+            <Item
+              elevation={6}
+              sx={{ bgcolor: "primary.main", color: "white" }}
+            >
               <Image
                 src={require("../images/languages/Front_End_Dev.png")}
                 style={{ borderRadius: 16 }}
@@ -432,7 +479,10 @@ class Languages extends Component {
           {/*//=========== CERTIFICATION GRID BOX END =====================> */}
           {/*//=========== CERTIFICATION GRID BOX START ===================> */}
           <Grid direction="column" item xs={12} sm={6} md={5.5} lg={3.8} xl={4}>
-            <Item elevation={6} sx={{ bgcolor: "primary.main", color: "white" }}>
+            <Item
+              elevation={6}
+              sx={{ bgcolor: "primary.main", color: "white" }}
+            >
               <Image
                 src={require("../images/degrees/programming-essentials.webp")}
                 style={{ borderRadius: 16 }}
@@ -452,6 +502,40 @@ class Languages extends Component {
             <Button
               sx={{ mt: "5px", color: "button.textLight" }}
               href="https://www.parchment.com/u/award/877ddb7d34111e1741c380984dfeb7a4"
+              target="_blank"
+              rel="noopener"
+              variant="contained"
+              endIcon={<WorkspacePremiumIcon />}
+            >
+              Verify
+            </Button>
+          </Grid>
+          {/*//=========== CERTIFICATION GRID BOX END =====================> */}
+          {/*//=========== CERTIFICATION GRID BOX START ===================> */}
+          <Grid direction="column" item xs={12} sm={6} md={5.5} lg={3.8} xl={4}>
+            <Item
+              elevation={6}
+              sx={{ bgcolor: "primary.main", color: "white" }}
+            >
+              <Image
+                src={require("../images/certs/ux_cert1.webp")}
+                style={{ borderRadius: 16 }}
+                shift="top"
+                distance={400}
+              />
+            </Item>
+            <Typography
+              fontWeight="bold"
+              color="contrast.textDark"
+              sx={{ textShadow: "0px 3px 8px #8a8a8a" }}
+              variant="caption"
+            >
+              Foundations of UX Design
+            </Typography>
+            <br />
+            <Button
+              sx={{ mt: "5px", color: "button.textLight" }}
+              href="https://coursera.org/verify/PKK2Y2LQ9NRD"
               target="_blank"
               rel="noopener"
               variant="contained"

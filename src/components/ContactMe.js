@@ -1,6 +1,6 @@
 // *****************************************************************************
 // This component displays the Contact section in an Accordian Component
-// Goes to ==> App.js Component 
+// Goes to ==> App.js Component
 // *****************************************************************************
 
 import * as React from "react";
@@ -28,10 +28,10 @@ export default function ControlledAccordions() {
   };
 
   return (
-    <div sx={{boxShadow: "0px -18px 8px 3px rgba(0,0,0,1)"}}>
+    <div sx={{ boxShadow: "0px -18px 8px 3px rgba(0,0,0,1)" }}>
       {/* =============== === ACCORDIAN === ============*/}
       <Accordion
-        sx={{ bgcolor: "primary.dark", color: "contrast.textLight"}}
+        sx={{ bgcolor: "primary.dark", color: "contrast.textLight" }}
         expanded={expanded === "panel1"}
         onChange={handleChange("panel1")}
       >
@@ -39,9 +39,10 @@ export default function ControlledAccordions() {
           expandIcon={<ExpandMoreIcon sx={{ color: "contrast.textLight" }} />}
           aria-controls="panel1bh-content"
           id="panel1bh-header"
-          
         >
-          <Typography sx={{ flexShrink: 0, fontWeight: "bold", margin: "auto" }}>
+          <Typography
+            sx={{ flexShrink: 0, fontWeight: "bold", margin: "auto" }}
+          >
             Contact Info
           </Typography>
         </AccordionSummary>
@@ -56,11 +57,11 @@ export default function ControlledAccordions() {
               direction="row"
               justifyContent="center"
               alignItems="center"
-              sx={{borderRadius: "0px"}}
+              sx={{ borderRadius: "0px" }}
             >
               {/* ============CONTACT LINK ==================================*/}
               <Button
-              sx={{color: "contrast.textLight"}}
+                sx={{ color: "contrast.textLight" }}
                 href="mailto:jeremy.duncan1984@gmail.com"
                 target="_blank"
                 rel="noopener"
@@ -71,7 +72,7 @@ export default function ControlledAccordions() {
               {/* ============CONTACT LINK END ==============================*/}
               {/* ============CONTACT LINK ==================================*/}
               <Button
-              sx={{color: "contrast.textLight"}}
+                sx={{ color: "contrast.textLight" }}
                 href="tel:770-309-2046"
                 target="_blank"
                 rel="noopener"
@@ -82,7 +83,7 @@ export default function ControlledAccordions() {
               {/* ============CONTACT LINK END ==============================*/}
               {/* ============CONTACT LINK ==================================*/}
               <Button
-              sx={{color: "contrast.textLight"}}
+                sx={{ color: "contrast.textLight" }}
                 href="https://www.linkedin.com/in/jeremy-duncan2021/"
                 target="_blank"
                 rel="noopener"
@@ -93,7 +94,7 @@ export default function ControlledAccordions() {
               {/* ============CONTACT LINK END ==============================*/}
               {/* ============CONTACT LINK ==================================*/}
               <Button
-              sx={{color: "contrast.textLight"}}
+                sx={{ color: "contrast.textLight" }}
                 href="https://github.com/JeremyDuncan"
                 target="_blank"
                 rel="noopener"

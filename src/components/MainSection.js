@@ -38,17 +38,17 @@ export default function ControlledAccordions() {
         onChange={handleChange("panel1")}
       >
         <AccordionSummary
-          expandIcon={<ExpandMoreIcon sx={{  color: "contrast.textLight" }} />}
+          expandIcon={<ExpandMoreIcon sx={{ color: "contrast.textLight" }} />}
           aria-controls="panel1bh-content"
           id="panel1bh-header"
-          
         >
-          
           <Typography
-             sx={{
+            sx={{
               textShadow: "1.5px 1.5px 4px #292727",
-              width: "33%",flexShrink: 0,fontWeight: "bold", 
-              margin: { md: "auto", lg: "auto", sm: "auto" }
+              width: "33%",
+              flexShrink: 0,
+              fontWeight: "bold",
+              margin: { md: "auto", lg: "auto", sm: "auto" },
             }}
           >
             About Me
@@ -58,14 +58,15 @@ export default function ControlledAccordions() {
         <AccordionDetails
           sx={{ bgcolor: "secondary.main", color: "primary.contrastText" }}
         >
-          <AboutMe />{/* <=={COMPONENT} */}
+          <AboutMe />
+          {/* <=={COMPONENT} */}
         </AccordionDetails>
       </Accordion>
       {/* =============== === ACCORDIAN END === =============================*/}
       {/* =============== === ACCORDIAN START === ===========================*/}
       {/* === PROGRAMMING LANGUAGE SECTION === */}
       <Accordion
-        sx={{ bgcolor: "primary.dark", color: "contrast.textLight"  }}
+        sx={{ bgcolor: "primary.dark", color: "contrast.textLight" }}
         expanded={expanded === "panel2"}
         onChange={handleChange("panel2")}
       >
@@ -87,14 +88,16 @@ export default function ControlledAccordions() {
           </Typography>
         </AccordionSummary>
         <AccordionDetails
-          sx={{ bgcolor: "secondary.main", color: "contrast.textDark", textShadow: "0px 3px 8px #8a8a8a" }}
+          sx={{
+            bgcolor: "secondary.main",
+            color: "contrast.textDark",
+            textShadow: "0px 3px 8px #8a8a8a",
+          }}
         >
-          
           <Typography variant="h6" sx={{ paddingBottom: 2, paddingTop: 2 }}>
             <TerminalIcon sx={{ verticalAlign: "center", fontSize: "large" }} />
             &nbsp; Languages and Technologies Used
           </Typography>
-        
           <Languages /> {/* <=={COMPONENT} */}
         </AccordionDetails>
       </Accordion>
@@ -107,7 +110,7 @@ export default function ControlledAccordions() {
         onChange={handleChange("panel3")}
       >
         <AccordionSummary
-          expandIcon={<ExpandMoreIcon sx={{  color: "contrast.textLight" }} />}
+          expandIcon={<ExpandMoreIcon sx={{ color: "contrast.textLight" }} />}
           aria-controls="panel3bh-content"
           id="panel3bh-header"
         >
@@ -138,7 +141,7 @@ export default function ControlledAccordions() {
         onChange={handleChange("panel4")}
       >
         <AccordionSummary
-          expandIcon={<ExpandMoreIcon sx={{  color: "contrast.textLight" }} />}
+          expandIcon={<ExpandMoreIcon sx={{ color: "contrast.textLight" }} />}
           aria-controls="panel4bh-content"
           id="panel4bh-header"
         >
@@ -157,8 +160,8 @@ export default function ControlledAccordions() {
         <AccordionDetails
           sx={{ bgcolor: "secondary.main", color: "primary.contrastText" }}
         >
-          
-          <MilitaryExp />{/* <=={COMPONENT} */}
+          <MilitaryExp />
+          {/* <=={COMPONENT} */}
         </AccordionDetails>
       </Accordion>
       {/* =============== === ACCORDIAN END === =============================*/}
@@ -170,7 +173,7 @@ export default function ControlledAccordions() {
         onChange={handleChange("panel5")}
       >
         <AccordionSummary
-          expandIcon={<ExpandMoreIcon sx={{  color: "contrast.textLight" }} />}
+          expandIcon={<ExpandMoreIcon sx={{ color: "contrast.textLight" }} />}
           aria-controls="panel4bh-content"
           id="panel4bh-header"
         >
@@ -189,9 +192,7 @@ export default function ControlledAccordions() {
         <AccordionDetails
           sx={{ bgcolor: "secondary.main", color: "primary.contrastText" }}
         >
-          <Typography sx={{ paddingBottom: 2 }}>
-            
-          </Typography>
+          <Typography sx={{ paddingBottom: 2 }}></Typography>
           <Projects /> {/* <=={COMPONENT} */}
         </AccordionDetails>
       </Accordion>

@@ -1,6 +1,6 @@
 // *****************************************************************************
 // This component displays my Resume Information
-// Goes to to ==> MainSection.js Component 
+// Goes to to ==> MainSection.js Component
 // *****************************************************************************
 
 import React, { Component } from "react";
@@ -22,19 +22,19 @@ class Resume extends Component {
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
-          margin: "auto"
+          margin: "auto",
         }}
       >
-    <br/>
-    <Button sx={{color: "button.textLight"}}
-            href={MyResume}
-            download
-            variant="contained"
-            endIcon={<AssignmentIndRoundedIcon />}
-          >
-            Download My Resume
-          </Button>
-
+        <br />
+        <Button
+          sx={{ color: "button.textLight" }}
+          href={MyResume}
+          download
+          variant="contained"
+          endIcon={<AssignmentIndRoundedIcon />}
+        >
+          Download My Resume
+        </Button>
       </Box>
     );
   }

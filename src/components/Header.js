@@ -1,6 +1,6 @@
 // *****************************************************************************
 // This component displays the Header section and links
-// Goes to ==> App.js Component 
+// Goes to ==> App.js Component
 // *****************************************************************************
 
 import * as React from "react";
@@ -15,7 +15,7 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import Link from "@mui/material/Link";
-import EmojiPeopleIcon from '@mui/icons-material/EmojiPeople';
+import EmojiPeopleIcon from "@mui/icons-material/EmojiPeople";
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
@@ -23,7 +23,7 @@ import "@fontsource/roboto/700.css";
 
 const pages = [
   <Link
-    sx={{textShadow: "0px 1.5px 9px #292727"}}
+    sx={{ textShadow: "0px 1.5px 9px #292727" }}
     color="inherit"
     underline="none"
     target="_blank"
@@ -33,7 +33,7 @@ const pages = [
     Github Profile
   </Link>,
   <Link
-  sx={{textShadow: "0px 1.5px 9px #292727"}}
+    sx={{ textShadow: "0px 1.5px 9px #292727" }}
     color="inherit"
     underline="none"
     target="_blank"
@@ -43,7 +43,7 @@ const pages = [
     LinkedIn
   </Link>,
   <Link
-  sx={{textShadow: "0px 1.5px 9px #292727"}}
+    sx={{ textShadow: "0px 1.5px 9px #292727" }}
     color="inherit"
     underline="none"
     target="_blank"
@@ -71,13 +71,20 @@ const Header = () => {
   };
 
   return (
-    <AppBar  elevation={9} position="sticky">
+    <AppBar elevation={9} position="sticky">
       <Container
-        sx={{ display: "flex", justifyContent: {xs: "space-evenly", lg: "space-around"}}}
+        sx={{
+          display: "flex",
+          justifyContent: { xs: "space-evenly", lg: "space-around" },
+        }}
       >
         <Toolbar disableGutters>
           <EmojiPeopleIcon
-            sx={{ display: { xs: "none", md: "flex" }, mr: 1, color: "header.textLight" }}
+            sx={{
+              display: { xs: "none", md: "flex" },
+              mr: 1,
+              color: "header.textLight",
+            }}
           />
           <Typography
             variant="h6"
@@ -92,14 +99,13 @@ const Header = () => {
               letterSpacing: ".5rem",
               color: "header.textLight",
               textDecoration: "none",
-              textShadow: "1.5px 1.5px 4px #292727"
+              textShadow: "1.5px 1.5px 4px #292727",
             }}
           >
             {/* Desktop View */}
-            Jeremy Duncan 
-         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Jeremy Duncan
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </Typography>
-          
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
@@ -107,8 +113,7 @@ const Header = () => {
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
-              sx={{color: "header.textLight"}}
-              
+              sx={{ color: "header.textLight" }}
             >
               <MenuIcon />
             </IconButton>
@@ -127,7 +132,7 @@ const Header = () => {
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-                display: { xs: "block", md: "none" }
+                display: { xs: "block", md: "none" },
               }}
             >
               {pages.map((page) => (
@@ -139,10 +144,13 @@ const Header = () => {
           </Box>
           &nbsp;
           <EmojiPeopleIcon
-            sx={{ display: { xs: "flex", md: "none" }, mr: 1, color: "header.textLight" }}
+            sx={{
+              display: { xs: "flex", md: "none" },
+              mr: 1,
+              color: "header.textLight",
+            }}
           />
           <Typography
-  
             variant="h6"
             noWrap
             component="a"
@@ -156,13 +164,13 @@ const Header = () => {
               letterSpacing: ".3rem",
               color: "header.textLight",
               textDecoration: "none",
-              textShadow: "1.5px 1.5px 4px #292727"
+              textShadow: "1.5px 1.5px 4px #292727",
             }}
           >
             {/* Mobile View */}
-             Jeremy Duncan
+            Jeremy Duncan
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" }}}>
+          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
               <Button
                 key={page}
@@ -173,7 +181,6 @@ const Header = () => {
               </Button>
             ))}
           </Box>
-
           <Box sx={{ flexGrow: 0 }}>
             <Menu
               sx={{ mt: "45px" }}

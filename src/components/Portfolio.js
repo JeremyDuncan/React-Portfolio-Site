@@ -39,7 +39,10 @@ class Portfolio extends Component {
           {/* === PORTFOLIO IMAGE OF ME === */}
           {/*//=========== GRID BOX ===============> */}
           <Grid item xs={8} sm={6} md={5} lg={4} xl={3}>
-            <Item elevation={14} sx={{ bgcolor: "primary.main", color: "white" }}>
+            <Item
+              elevation={14}
+              sx={{ bgcolor: "primary.main", color: "white" }}
+            >
               <Image
                 src={require("../images/me_ny.webp")}
                 style={{ borderRadius: 16 }}
@@ -48,11 +51,11 @@ class Portfolio extends Component {
               />
             </Item>
           </Grid>
-          </Grid>
-          {/*//=========== GRID END ===============> */}
-          <br />
-          {/*//=========== GRID BOX ===============> */}
-          <Grid
+        </Grid>
+        {/*//=========== GRID END ===============> */}
+        <br />
+        {/*//=========== GRID BOX ===============> */}
+        <Grid
           container
           spacing={2}
           direction="row"
@@ -60,9 +63,10 @@ class Portfolio extends Component {
           alignItems="center"
         >
           <Grid display="column" item xs={11} md={11} lg={11} xl={6}>
-            <Item 
-            elevation={14}
-            sx={{ bgcolor: "primary.main", color: "header.textLight" }}>
+            <Item
+              elevation={14}
+              sx={{ bgcolor: "primary.main", color: "header.textLight" }}
+            >
               <Typography
                 variant="h4"
                 sx={{
