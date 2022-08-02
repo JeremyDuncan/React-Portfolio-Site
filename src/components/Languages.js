@@ -3,21 +3,21 @@
 // Goes to ==> MainSection.js Component
 // *****************************************************************************
 
-import React, { Component } from "react";
-import Image from "mui-image";
-import { styled } from "@mui/material/styles";
-import Box from "@mui/material/Box";
-import Paper from "@mui/material/Paper";
-import Grid from "@mui/material/Grid";
-import Divider from "@mui/material/Divider";
-import Typography from "@mui/material/Typography";
-import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium";
-import Button from "@mui/material/Button";
-import GitHubIcon from "@mui/icons-material/GitHub";
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import Divider from "@mui/material/Divider";
+import Grid from "@mui/material/Grid";
+import Paper from "@mui/material/Paper";
+import { styled } from "@mui/material/styles";
+import Typography from "@mui/material/Typography";
+import Image from "mui-image";
+import React, { Component } from "react";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",

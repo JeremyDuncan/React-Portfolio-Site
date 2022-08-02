@@ -3,23 +3,22 @@
 // Goes to ==> Portfolio.js Component
 // *****************************************************************************
 
-import * as React from "react";
-import Accordion from "@mui/material/Accordion";
-import AccordionDetails from "@mui/material/AccordionDetails";
-import AccordionSummary from "@mui/material/AccordionSummary";
-import Typography from "@mui/material/Typography";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import TerminalIcon from "@mui/icons-material/Terminal";
-
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import TerminalIcon from "@mui/icons-material/Terminal";
+import Accordion from "@mui/material/Accordion";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import Typography from "@mui/material/Typography";
+import * as React from "react";
 import AboutMe from "./AboutMe.js";
-import Projects from "./Projects";
-import Languages from "./Languages";
 import College from "./College";
+import Languages from "./Languages";
 import MilitaryExp from "./MilitaryExp";
+import Projects from "./Projects";
 
 export default function ControlledAccordions() {
   const [expanded, setExpanded] = React.useState(false);
@@ -56,7 +55,11 @@ export default function ControlledAccordions() {
           {/* </Box> */}
         </AccordionSummary>
         <AccordionDetails
-          sx={{ background: "linear-gradient(to right, #A6B7C3 0%, #D2E8F7 50%, #A6B7C3 100%)", color: "primary.contrastText" }}
+          sx={{
+            background:
+              "linear-gradient(to right, #A6B7C3 0%, #D2E8F7 50%, #A6B7C3 100%)",
+            color: "primary.contrastText",
+          }}
         >
           <AboutMe />
           {/* <=={COMPONENT} */}
@@ -89,7 +92,8 @@ export default function ControlledAccordions() {
         </AccordionSummary>
         <AccordionDetails
           sx={{
-            background: "linear-gradient(to right, #A6B7C3 0%, #D2E8F7 50%, #A6B7C3 100%)",
+            background:
+              "linear-gradient(to right, #A6B7C3 0%, #D2E8F7 50%, #A6B7C3 100%)",
             color: "contrast.textDark",
             textShadow: "0px 3px 8px #8a8a8a",
           }}
@@ -127,7 +131,11 @@ export default function ControlledAccordions() {
           </Typography>
         </AccordionSummary>
         <AccordionDetails
-          sx={{ background: "linear-gradient(to right, #A6B7C3 0%, #D2E8F7 50%, #A6B7C3 100%)", color: "primary.contrastText" }}
+          sx={{
+            background:
+              "linear-gradient(to right, #A6B7C3 0%, #D2E8F7 50%, #A6B7C3 100%)",
+            color: "primary.contrastText",
+          }}
         >
           <College /> {/* <=={COMPONENT} */}
         </AccordionDetails>
@@ -158,7 +166,11 @@ export default function ControlledAccordions() {
           </Typography>
         </AccordionSummary>
         <AccordionDetails
-          sx={{ background: "linear-gradient(to right, #A6B7C3 0%, #D2E8F7 50%, #A6B7C3 100%)", color: "primary.contrastText" }}
+          sx={{
+            background:
+              "linear-gradient(to right, #A6B7C3 0%, #D2E8F7 50%, #A6B7C3 100%)",
+            color: "primary.contrastText",
+          }}
         >
           <MilitaryExp />
           {/* <=={COMPONENT} */}
@@ -190,7 +202,11 @@ export default function ControlledAccordions() {
           </Typography>
         </AccordionSummary>
         <AccordionDetails
-          sx={{ background: "linear-gradient(to right, #A6B7C3 0%, #D2E8F7 50%, #A6B7C3 100%)", color: "primary.contrastText" }}
+          sx={{
+            background:
+              "linear-gradient(to right, #A6B7C3 0%, #D2E8F7 50%, #A6B7C3 100%)",
+            color: "primary.contrastText",
+          }}
         >
           <Typography sx={{ paddingBottom: 2 }}></Typography>
           <Projects /> {/* <=={COMPONENT} */}

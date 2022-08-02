@@ -1,15 +1,15 @@
-import * as React from "react";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
-import "./App.css";
-import Box from "@mui/material/Box";
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
-import Header from "./components/Header";
-import Portfolio from "./components/Portfolio";
+import Box from "@mui/material/Box";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+import * as React from "react";
+import "./App.css";
 import ContactMe from "./components/ContactMe";
 import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Portfolio from "./components/Portfolio";
 
 const theme = createTheme({
   palette: {
@@ -25,21 +25,21 @@ const theme = createTheme({
       dark: "#29434e",
       contrastText: "#000000",
     },
-    secondaryList: { 
+    secondaryList: {
       text: "#25222c",
     },
-    contrast: { 
+    contrast: {
       textLight: "#ffffff",
       textDark: "#000000",
     },
-    header: { 
+    header: {
       textLight: "#ffffff",
       textDark: "#000000",
     },
-    button: { 
+    button: {
       textLight: "#ffffff",
       textDark: "#000000",
-    }
+    },
   },
 });
 

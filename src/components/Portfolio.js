@@ -3,17 +3,17 @@
 // Goes to ==> App.js Component
 // *****************************************************************************
 
-import React, { Component } from "react";
-import { styled } from "@mui/material/styles";
-import Typography from "@mui/material/Typography";
-import Box from "@mui/material/Box";
-import Paper from "@mui/material/Paper";
-import Grid from "@mui/material/Grid";
-import Image from "mui-image";
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
+import Box from "@mui/material/Box";
+import Grid from "@mui/material/Grid";
+import Paper from "@mui/material/Paper";
+import { styled } from "@mui/material/styles";
+import Typography from "@mui/material/Typography";
+import Image from "mui-image";
+import React, { Component } from "react";
 import MainSection from "./MainSection";
 
 const Item = styled(Paper)(({ theme }) => ({

@@ -3,15 +3,15 @@
 // Goes to to ==> MainSection.js Component
 // *****************************************************************************
 
-import React, { Component } from "react";
-import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
-import MyResume from "./Jeremy_Duncan_Resume_All-11July2022.pdf";
-import AssignmentIndRoundedIcon from "@mui/icons-material/AssignmentIndRounded";
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
+import AssignmentIndRoundedIcon from "@mui/icons-material/AssignmentIndRounded";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import React, { Component } from "react";
+import MyResume from "./Jeremy_Duncan_Resume_All-11July2022.pdf";
 
 class Resume extends Component {
   render() {
