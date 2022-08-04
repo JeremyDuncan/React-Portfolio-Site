@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.b2be2cb9.css",
-    "main.js": "/static/js/main.59082f06.js",
+    "main.css": "/static/css/main.e2cf5cc8.css",
+    "main.js": "/static/js/main.8ea3b500.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/Jeremy_Duncan_Resume_All-11July2022.pdf": "/static/media/Jeremy_Duncan_Resume_All-11July2022.b9a1c1f9d8c359d6d40d.pdf",
     "static/media/JavaScript_algo.png": "/static/media/JavaScript_algo.b09a090f3ea764e693ab.png",
@@ -13,6 +13,7 @@
     "static/media/associate-degree.webp": "/static/media/associate-degree.39a1e54b4d7f52b1fd96.webp",
     "static/media/programming-essentials.webp": "/static/media/programming-essentials.c7b0d77f4f6d86b97d7d.webp",
     "static/media/cSharp_logo_Scaled.png": "/static/media/cSharp_logo_Scaled.559aa6b8e7568430ec2e.png",
+    "static/media/ux_process_edi_cert2.webp": "/static/media/ux_process_edi_cert2.f4d9616159b31c139175.webp",
     "static/media/python_logo_Scaled.png": "/static/media/python_logo_Scaled.707994e31a056ca95421.png",
     "static/media/ux_cert1.webp": "/static/media/ux_cert1.e944ef2311724d99742c.webp",
     "static/media/me_ny.webp": "/static/media/me_ny.04c910c2feb3688ef71d.webp",
@@ -71,12 +72,12 @@
     "static/media/roboto-greek-ext-300-normal.woff2": "/static/media/roboto-greek-ext-300-normal.35b9d6be04b95f0f0530.woff2",
     "index.html": "/index.html",
     "static/media/roboto-greek-ext-700-normal.woff2": "/static/media/roboto-greek-ext-700-normal.bd9854c751441ccc1a70.woff2",
-    "main.b2be2cb9.css.map": "/static/css/main.b2be2cb9.css.map",
-    "main.59082f06.js.map": "/static/js/main.59082f06.js.map",
+    "main.e2cf5cc8.css.map": "/static/css/main.e2cf5cc8.css.map",
+    "main.8ea3b500.js.map": "/static/js/main.8ea3b500.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b2be2cb9.css",
-    "static/js/main.59082f06.js"
+    "static/css/main.e2cf5cc8.css",
+    "static/js/main.8ea3b500.js"
   ]
 }
