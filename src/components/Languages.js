@@ -545,6 +545,40 @@ class Languages extends Component {
             </Button>
           </Grid>
           {/*//=========== CERTIFICATION GRID BOX END =====================> */}
+          {/*//=========== CERTIFICATION GRID BOX START ===================> */}
+          <Grid direction="column" item xs={12} sm={6} md={5.5} lg={3.8} xl={4}>
+            <Item
+              elevation={6}
+              sx={{ bgcolor: "primary.main", color: "white" }}
+            >
+              <Image
+                src={require("../images/certs/ux_process_edi_cert2.webp")}
+                style={{ borderRadius: 16 }}
+                shift="top"
+                distance={400}
+              />
+            </Item>
+            <Typography
+              fontWeight="bold"
+              color="contrast.textDark"
+              sx={{ textShadow: "0px 3px 8px #8a8a8a" }}
+              variant="caption"
+            >
+              Start the UX Design Process
+            </Typography>
+            <br />
+            <Button
+              sx={{ mt: "5px", color: "button.textLight" }}
+              href="https://www.coursera.org/account/accomplishments/verify/T5BDCFFMHLWD"
+              target="_blank"
+              rel="noopener"
+              variant="contained"
+              endIcon={<WorkspacePremiumIcon />}
+            >
+              Verify
+            </Button>
+          </Grid>
+          {/*//=========== CERTIFICATION GRID BOX END =====================> */}
         </Grid>
         <br />
         <Button
