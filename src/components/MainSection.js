@@ -15,6 +15,7 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import Typography from "@mui/material/Typography";
 import * as React from "react";
 import AboutMe from "./AboutMe.js";
+import Certifications from "./Certifications";
 import College from "./College";
 import Languages from "./Languages";
 import MilitaryExp from "./MilitaryExp";
@@ -142,11 +143,46 @@ export default function ControlledAccordions() {
       </Accordion>
       {/* =============== === ACCORDIAN END === =============================*/}
       {/* =============== === ACCORDIAN START === ===========================*/}
-      {/* === MILITARY EXPERIENCE SECTION === */}
+      {/* ===  CERTIFICATION SECTION === */}
       <Accordion
         sx={{ bgcolor: "primary.dark", color: "contrast.textLight" }}
         expanded={expanded === "panel4"}
         onChange={handleChange("panel4")}
+      >
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon sx={{ color: "contrast.textLight" }} />}
+          aria-controls="panel3bh-content"
+          id="panel3bh-header"
+        >
+          <Typography
+            sx={{
+              textShadow: "1.5px 1.5px 4px #292727",
+              width: "33%",
+              flexShrink: 0,
+              fontWeight: "bold",
+              margin: { md: "auto", lg: "auto", sm: "auto" },
+            }}
+          >
+            Certifications
+          </Typography>
+        </AccordionSummary>
+        <AccordionDetails
+          sx={{
+            background:
+              "linear-gradient(to right, #A6B7C3 0%, #D2E8F7 50%, #A6B7C3 100%)",
+            color: "primary.contrastText",
+          }}
+        >
+          <Certifications /> {/* <=={COMPONENT} */}
+        </AccordionDetails>
+      </Accordion>
+      {/* =============== === ACCORDIAN END === =============================*/}
+      {/* =============== === ACCORDIAN START === ===========================*/}
+      {/* === MILITARY EXPERIENCE SECTION === */}
+      <Accordion
+        sx={{ bgcolor: "primary.dark", color: "contrast.textLight" }}
+        expanded={expanded === "panel5"}
+        onChange={handleChange("panel5")}
       >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon sx={{ color: "contrast.textLight" }} />}
@@ -181,8 +217,8 @@ export default function ControlledAccordions() {
       {/* === PORTFOLIO SECTION === */}
       <Accordion
         sx={{ bgcolor: "primary.dark", color: "contrast.textLight" }}
-        expanded={expanded === "panel5"}
-        onChange={handleChange("panel5")}
+        expanded={expanded === "panel6"}
+        onChange={handleChange("panel6")}
       >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon sx={{ color: "contrast.textLight" }} />}
