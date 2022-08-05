@@ -272,17 +272,6 @@ class Certifications extends Component {
           </Grid>
           {/*//=========== CERTIFICATION GRID BOX END =====================> */}
         </Grid>
-        <br />
-        <Button
-          sx={{ color: "button.textLight" }}
-          href="https://github.com/JeremyDuncan"
-          target="_blank"
-          rel="noopener"
-          variant="contained"
-          endIcon={<GitHubIcon />}
-        >
-          Visit my GitHub
-        </Button>
       </Box>
     );
   }
