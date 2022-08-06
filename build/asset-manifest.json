@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e2cf5cc8.css",
-    "main.js": "/static/js/main.8ea3b500.js",
+    "main.js": "/static/js/main.0aefb466.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/Jeremy_Duncan_Resume_All-11July2022.pdf": "/static/media/Jeremy_Duncan_Resume_All-11July2022.b9a1c1f9d8c359d6d40d.pdf",
     "static/media/JavaScript_algo.png": "/static/media/JavaScript_algo.b09a090f3ea764e693ab.png",
@@ -16,6 +16,7 @@
     "static/media/ux_process_edi_cert2.webp": "/static/media/ux_process_edi_cert2.f4d9616159b31c139175.webp",
     "static/media/python_logo_Scaled.png": "/static/media/python_logo_Scaled.707994e31a056ca95421.png",
     "static/media/ux_cert1.webp": "/static/media/ux_cert1.e944ef2311724d99742c.webp",
+    "static/media/UX_Cert3.webp": "/static/media/UX_Cert3.81779ed985f0aa84660d.webp",
     "static/media/me_ny.webp": "/static/media/me_ny.04c910c2feb3688ef71d.webp",
     "static/media/Willis_Deluxe_Detail_Logo.jpg": "/static/media/Willis_Deluxe_Detail_Logo.29eac6da250741040b56.jpg",
     "static/media/react_Scaled.png": "/static/media/react_Scaled.895e38ad74522cef2cfd.png",
@@ -73,11 +74,11 @@
     "index.html": "/index.html",
     "static/media/roboto-greek-ext-700-normal.woff2": "/static/media/roboto-greek-ext-700-normal.bd9854c751441ccc1a70.woff2",
     "main.e2cf5cc8.css.map": "/static/css/main.e2cf5cc8.css.map",
-    "main.8ea3b500.js.map": "/static/js/main.8ea3b500.js.map",
+    "main.0aefb466.js.map": "/static/js/main.0aefb466.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e2cf5cc8.css",
-    "static/js/main.8ea3b500.js"
+    "static/js/main.0aefb466.js"
   ]
 }
