@@ -51,9 +51,9 @@ function App() {
             <Routes>
               <Route exact path="/" element={<Home />} />
               <Route path="/DeVry-University-Projects" element={<Devry />} />
-              <Route path="/contact" element={<Home />} />
+              {/* <Route path="/contact" element={<Home />} />
               <Route path="/blogs" element={<Home />} />
-              <Route path="/sign-up" element={<Home />} />
+              <Route path="/sign-up" element={<Home />} /> */}
             </Routes>
           </Router>
         </div>
