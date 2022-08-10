@@ -178,7 +178,7 @@ class College extends Component {
 
           <Button
             sx={{ color: "button.textLight" }}
-            href="https://www.jeremy-duncan.com/devry-projects/devry.html"
+            href="/DeVry-University-Projects"
             target="_blank"
             rel="noopener"
             variant="contained"
