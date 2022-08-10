@@ -179,8 +179,6 @@ class College extends Component {
           <Button
             sx={{ color: "button.textLight" }}
             href="/DeVry-University-Projects"
-            target="_blank"
-            rel="noopener"
             variant="contained"
             endIcon={<SchoolRoundedIcon />}
           >
