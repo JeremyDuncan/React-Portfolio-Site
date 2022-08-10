@@ -5,11 +5,10 @@ import "@fontsource/roboto/700.css";
 import Box from "@mui/material/Box";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import * as React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
-import ContactMe from "./components/ContactMe";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Portfolio from "./components/Portfolio";
+import Devry from "./pages/Devry";
+import Home from "./pages/Home";
 
 const theme = createTheme({
   palette: {
@@ -48,12 +47,15 @@ function App() {
     <Box>
       <ThemeProvider theme={theme}>
         <div className="App">
-          <Header />
-          <br />
-          <Portfolio />
-          <br />
-          <ContactMe />
-          <Footer />
+          <Router>
+            <Routes>
+              <Route exact path="/" element={<Home />} />
+              <Route path="/DeVry-University-Projects" element={<Devry />} />
+              <Route path="/contact" element={<Home />} />
+              <Route path="/blogs" element={<Home />} />
+              <Route path="/sign-up" element={<Home />} />
+            </Routes>
+          </Router>
         </div>
       </ThemeProvider>
     </Box>
