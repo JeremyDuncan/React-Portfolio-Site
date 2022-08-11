@@ -135,14 +135,14 @@ class MilitaryProjects extends Component {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              flexDirection: { xs: "column", sm: "column", md: "row" },
+              flexWrap: "wrap",
             }}
             ml={1}
             pb={5}
             pr={2}
             pl={3}
           >
-            <Grid item xs={10} sm={10} md={5} lg={5} xl={5.5}>
+            <Grid item xs={5} sm={5} md={2.5} lg={2.5} xl={2.5}>
               <Item
                 sx={{
                   bgcolor: "primary.secondary",
@@ -156,7 +156,7 @@ class MilitaryProjects extends Component {
                 />
               </Item>
             </Grid>
-            <Grid item xs={10} sm={10} md={5} lg={5} xl={5.5}>
+            <Grid item xs={5} sm={5} md={2.5} lg={2.5} xl={2.5}>
               <Item
                 sx={{
                   bgcolor: "primary.secondary",
@@ -170,7 +170,7 @@ class MilitaryProjects extends Component {
                 />
               </Item>
             </Grid>
-            <Grid item xs={10} sm={10} md={6.5} lg={6.5} xl={7.2}>
+            <Grid item xs={6.5} sm={6.5} md={3.3} lg={3.3} xl={3.3}>
               <Item
                 sx={{
                   bgcolor: "primary.secondary",
@@ -184,7 +184,7 @@ class MilitaryProjects extends Component {
                 />
               </Item>
             </Grid>
-            <Grid item xs={10} sm={10} md={3.6} lg={3.6} xl={4}>
+            <Grid item xs={3.6} sm={3.6} md={1.84} lg={1.84} xl={1.84}>
               <Item
                 sx={{
                   bgcolor: "primary.secondary",
@@ -224,7 +224,7 @@ class MilitaryProjects extends Component {
             ml={1}
             pb={5}
           >
-            <Grid item xs={10} sm={10} md={5} lg={5} xl={5.5}>
+            <Grid item xs={10} sm={5} md={5} lg={5} xl={5.5}>
               <Item
                 sx={{
                   bgcolor: "primary.secondary",
