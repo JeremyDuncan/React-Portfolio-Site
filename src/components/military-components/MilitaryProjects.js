@@ -128,10 +128,10 @@ class MilitaryProjects extends Component {
             }}
           />
 
-          {/*//========================= PHYS204 GRID BOX =====================> */}
+          {/*//========================= Pictures GRID BOX ================> */}
           <Grid
             sx={{
-              gap: { xs: ".3rem", sm: ".3rem", md: "5rem" },
+              gap: { xs: ".3rem", sm: ".3rem", md: "1rem", xl: "1rem" },
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
@@ -139,6 +139,8 @@ class MilitaryProjects extends Component {
             }}
             ml={1}
             pb={5}
+            pr={2}
+            pl={3}
           >
             <Grid item xs={10} sm={10} md={5} lg={5} xl={5.5}>
               <Item
@@ -149,70 +151,55 @@ class MilitaryProjects extends Component {
               >
                 {/*==> Image Link <== ===*/}
                 <Image
-                  src={require("../../images/devry-images/phys.webp")}
+                  src={require("../../images/military-images/me1.webp")}
                   sx={{ borderRadius: "5px" }}
                 />
               </Item>
             </Grid>
-
-            <Grid
-              item
-              xs={10}
-              sm={10}
-              md={5}
-              lg={5}
-              xl={4}
-              sx={{ display: "flex", alignItems: "center" }}
-            >
-              <Item sx={{ maxWidth: "900px" }} elevation={12}>
-                <Typography
-                  variant="h5"
-                  p={2}
-                  sx={{
-                    color: "#004787",
-                    textShadow: "1.5px 1.5px 4px lightgrey",
-                    fontWeight: "bold",
-                  }}
-                >
-                  PHYS204 Final Project:
-                </Typography>
-                <Typography
-                  variant="h6"
-                  sx={{
-                    color: "#004787",
-                    textShadow: "1.5px 1.5px 4px lightgrey",
-                  }}
-                >
-                  The Application of IoT Technology and Physics
-                </Typography>
-                <Typography
-                  pl={3}
-                  pr={3}
-                  sx={{
-                    color: "contrast.textDark",
-                    textShadow: "0px 3px 8px #8a8a8a",
-                  }}
-                  align="left"
-                >
-                  This is the final project for my DeVry class PHYS204. In this
-                  project I will be demonstrating fundamental concepts of the
-                  governing laws of physics by applying technologies from the
-                  growing field of Internet of Things (IoT).
-                </Typography>
-                <br />
-                <Button
-                  sx={{ color: "button.textLight" }}
-                  href={phys204}
-                  variant="contained"
-                  endIcon={<NavigateNextRoundedIcon />}
-                >
-                  View Project
-                </Button>
-                <br />
-                <br />
+            <Grid item xs={10} sm={10} md={5} lg={5} xl={5.5}>
+              <Item
+                sx={{
+                  bgcolor: "primary.secondary",
+                }}
+                elevation={12}
+              >
+                {/*==> Image Link <== ===*/}
+                <Image
+                  src={require("../../images/military-images/me2.webp")}
+                  sx={{ borderRadius: "5px" }}
+                />
+              </Item>
+            </Grid>
+            <Grid item xs={10} sm={10} md={6.5} lg={6.5} xl={7.2}>
+              <Item
+                sx={{
+                  bgcolor: "primary.secondary",
+                }}
+                elevation={12}
+              >
+                {/*==> Image Link <== ===*/}
+                <Image
+                  src={require("../../images/military-images/honor_guard.webp")}
+                  sx={{ borderRadius: "5px" }}
+                />
+              </Item>
+            </Grid>
+            <Grid item xs={10} sm={10} md={3.6} lg={3.6} xl={4}>
+              <Item
+                sx={{
+                  bgcolor: "primary.secondary",
+                }}
+                elevation={12}
+              >
+                {/*==> Image Link <== ===*/}
+                <Image
+                  src={require("../../images/military-images/me_hillary_clinton.webp")}
+                  sx={{ borderRadius: "5px" }}
+                />
               </Item>
             </Grid>
           </Grid>
+
           {/*//========================= GRID END =========================> */}
           <Grid
             elevation={24}
