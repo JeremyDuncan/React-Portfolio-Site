@@ -57,7 +57,7 @@ class MilitaryProjects extends Component {
                 display: { xs: "none", sm: "none", md: "initial" },
               }}
             >
-              College Portfolio
+              Military Training
             </Typography>
             <Typography
               variant="h4"
@@ -68,7 +68,7 @@ class MilitaryProjects extends Component {
                 display: { xs: "initial", sm: "initial", md: "none" },
               }}
             >
-              College Portfolio
+              Military Training
             </Typography>
 
             <Typography
@@ -80,7 +80,7 @@ class MilitaryProjects extends Component {
                 display: { xs: "none", sm: "none", md: "initial" },
               }}
             >
-              My Projects From DeVry
+              My Training From The US Navy
             </Typography>
             <Typography
               variant="h7"
@@ -91,7 +91,7 @@ class MilitaryProjects extends Component {
                 display: { xs: "initial", sm: "initial", md: "none" },
               }}
             >
-              My Projects From DeVry
+              My Training From The US Navy
             </Typography>
 
             <Grid
