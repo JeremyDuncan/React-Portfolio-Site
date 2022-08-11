@@ -97,7 +97,7 @@ class DevryProjects extends Component {
                 border: {
                   xs: "4px solid gray",
                   sm: "4px solid gray",
-                  md: "8px solid gray",
+                  md: "6px solid gray",
                 },
                 display: "flex",
                 justifyContent: "center",
@@ -209,7 +209,11 @@ class DevryProjects extends Component {
             mb={5}
             ml={1.2}
             xs={10}
-            sx={{ height: "1px", border: "2px solid gray" }}
+            sx={{
+              height: "1px",
+              border: "2px solid gray",
+              borderRadius: "20px",
+            }}
           />
           {/*//============== CLOUD COMOUTING GRID BOX ====================> */}
           <Grid
@@ -308,7 +312,11 @@ class DevryProjects extends Component {
             mb={5}
             ml={1.2}
             xs={10}
-            sx={{ height: "1px", border: "2px solid gray" }}
+            sx={{
+              height: "1px",
+              border: "2px solid gray",
+              borderRadius: "20px",
+            }}
           />
           {/*//========================= IOT GRID BOX =====================> */}
           <Grid
@@ -408,7 +416,11 @@ class DevryProjects extends Component {
             mb={5}
             ml={1.2}
             xs={10}
-            sx={{ height: "1px", border: "2px solid gray" }}
+            sx={{
+              height: "1px",
+              border: "2px solid gray",
+              borderRadius: "20px",
+            }}
           />
           {/*//========================= IOT GRID BOX =====================> */}
           <Grid
@@ -507,7 +519,11 @@ class DevryProjects extends Component {
             mb={5}
             ml={1.2}
             xs={10}
-            sx={{ height: "1px", border: "2px solid gray" }}
+            sx={{
+              height: "1px",
+              border: "2px solid gray",
+              borderRadius: "20px",
+            }}
           />
           {/*//=============== Network Security GRID BOX ==================> */}
           <Grid
