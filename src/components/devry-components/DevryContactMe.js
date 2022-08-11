@@ -31,7 +31,7 @@ export default function ControlledAccordions() {
     <div sx={{ boxShadow: "0px -18px 8px 3px rgba(0,0,0,1)" }}>
       {/* =============== === ACCORDIAN === ============*/}
       <Accordion
-        sx={{ bgcolor: "primary.dark", color: "contrast.textLight" }}
+        sx={{ bgcolor: "primary.main", color: "contrast.textLight" }}
         expanded={expanded === "panel1"}
         onChange={handleChange("panel1")}
       >
@@ -41,13 +41,17 @@ export default function ControlledAccordions() {
           id="panel1bh-header"
         >
           <Typography
-            sx={{ flexShrink: 0, fontWeight: "bold", margin: "auto" }}
+            sx={{
+              flexShrink: 0,
+              fontWeight: "bold",
+              margin: "auto",
+            }}
           >
             Connect With Jeremy
           </Typography>
         </AccordionSummary>
         <AccordionDetails
-          sx={{ bgcolor: "secondary.main", color: "primary.contrastText" }}
+          sx={{ bgcolor: "lightgrey", color: "primary.contrastText" }}
         >
           <Box sx={{ flexGrow: 1 }}>
             <Grid
