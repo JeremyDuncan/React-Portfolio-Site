@@ -102,6 +102,8 @@ class DevryProjects extends Component {
                   xs: "4px solid gray",
                   sm: "4px solid gray",
                   md: "6px solid gray",
+                  lg: "6px solid gray",
+                  xl: "6px solid gray",
                 },
                 display: "flex",
                 justifyContent: "center",
@@ -114,34 +116,38 @@ class DevryProjects extends Component {
               }}
             />
           </Grid>
+          <Grid
+            elevation={24}
+            mb={5}
+            ml={1.2}
+            xs={10}
+            sx={{
+              height: "1px",
+              border: "2px solid clear",
+              borderRadius: "20px",
+            }}
+          />
 
-          {/*//================== PHYSICS GRID BOX ========================> */}
+          {/*//========================= PHYS204 GRID BOX =====================> */}
           <Grid
             sx={{
+              gap: { xs: ".3rem", sm: ".3rem", md: "5rem" },
               display: "flex",
-              justifyContent: "space-evenly",
+              justifyContent: "center",
               alignItems: "center",
               flexDirection: { xs: "column", sm: "column", md: "row" },
             }}
             ml={1}
             pb={5}
           >
-            <Grid
-              item
-              xs={10}
-              sm={10}
-              md={6}
-              lg={5.5}
-              xl={3.5}
-              sx={{ pb: { xs: ".5rem", md: "0rem" } }}
-            >
+            <Grid item xs={10} sm={10} md={5} lg={5} xl={5.5}>
               <Item
                 sx={{
                   bgcolor: "primary.secondary",
                 }}
                 elevation={12}
               >
-                {/*==> Image Link <== ====*/}
+                {/*==> Image Link <== ===*/}
                 <Image
                   src={require("../../images/devry-images/phys.webp")}
                   sx={{ borderRadius: "5px" }}
@@ -154,11 +160,11 @@ class DevryProjects extends Component {
               xs={10}
               sm={10}
               md={5}
-              lg={5.5}
-              xl={3.5}
+              lg={5}
+              xl={4}
               sx={{ display: "flex", alignItems: "center" }}
             >
-              <Item elevation={12}>
+              <Item sx={{ maxWidth: "900px" }} elevation={12}>
                 <Typography
                   variant="h5"
                   p={2}
@@ -197,7 +203,6 @@ class DevryProjects extends Component {
                 <Button
                   sx={{ color: "button.textLight" }}
                   href={phys204}
-                  download
                   variant="contained"
                   endIcon={<NavigateNextRoundedIcon />}
                 >
@@ -220,33 +225,26 @@ class DevryProjects extends Component {
               borderRadius: "20px",
             }}
           />
-          {/*//============== CLOUD COMOUTING GRID BOX ====================> */}
+          {/*//========================= NETW211 GRID BOX =====================> */}
           <Grid
             sx={{
+              gap: { xs: ".3rem", sm: ".3rem", md: "5rem" },
               display: "flex",
-              justifyContent: "space-evenly",
+              justifyContent: "center",
               alignItems: "center",
               flexDirection: { xs: "column", sm: "column", md: "row" },
             }}
             ml={1}
             pb={5}
           >
-            <Grid
-              item
-              xs={10}
-              sm={10}
-              md={6}
-              lg={5.5}
-              xl={3.5}
-              sx={{ pb: { xs: ".5rem", md: "0rem" } }}
-            >
+            <Grid item xs={10} sm={10} md={5} lg={5} xl={5.5}>
               <Item
                 sx={{
                   bgcolor: "primary.secondary",
                 }}
                 elevation={12}
               >
-                {/*==> Image Link <== ====*/}
+                {/*==> Image Link <== ===*/}
                 <Image
                   src={require("../../images/devry-images/aws.webp")}
                   sx={{ borderRadius: "5px" }}
@@ -259,11 +257,11 @@ class DevryProjects extends Component {
               xs={10}
               sm={10}
               md={5}
-              lg={5.5}
-              xl={3.5}
+              lg={5}
+              xl={4}
               sx={{ display: "flex", alignItems: "center" }}
             >
-              <Item elevation={12}>
+              <Item sx={{ maxWidth: "900px" }} elevation={12}>
                 <Typography
                   variant="h5"
                   p={2}
@@ -273,7 +271,7 @@ class DevryProjects extends Component {
                     fontWeight: "bold",
                   }}
                 >
-                  NETW211 Final Project:
+                  NETW211 Final Project:{" "}
                 </Typography>
                 <Typography
                   variant="h6"
@@ -282,7 +280,7 @@ class DevryProjects extends Component {
                     textShadow: "1.5px 1.5px 4px lightgrey",
                   }}
                 >
-                  Cloud Computing Fundamentals
+                  Cloud Computing Fundamentals{" "}
                 </Typography>
                 <Typography
                   pl={3}
@@ -323,26 +321,19 @@ class DevryProjects extends Component {
               borderRadius: "20px",
             }}
           />
-          {/*//========================= IOT GRID BOX =====================> */}
+          {/*//========================= CEIS101 GRID BOX =====================> */}
           <Grid
             sx={{
+              gap: { xs: ".3rem", sm: ".3rem", md: "5rem" },
               display: "flex",
-              justifyContent: "space-evenly",
+              justifyContent: "center",
               alignItems: "center",
               flexDirection: { xs: "column", sm: "column", md: "row" },
             }}
             ml={1}
             pb={5}
           >
-            <Grid
-              item
-              xs={10}
-              sm={10}
-              md={6}
-              lg={5.5}
-              xl={3.5}
-              sx={{ pb: { xs: ".5rem", md: "0rem" } }}
-            >
+            <Grid item xs={10} sm={10} md={5} lg={5} xl={5.5}>
               <Item
                 sx={{
                   bgcolor: "primary.secondary",
@@ -362,11 +353,11 @@ class DevryProjects extends Component {
               xs={10}
               sm={10}
               md={5}
-              lg={5.5}
-              xl={3.5}
+              lg={5}
+              xl={4}
               sx={{ display: "flex", alignItems: "center" }}
             >
-              <Item elevation={12}>
+              <Item sx={{ maxWidth: "900px" }} elevation={12}>
                 <Typography
                   variant="h5"
                   p={2}
@@ -427,26 +418,19 @@ class DevryProjects extends Component {
               borderRadius: "20px",
             }}
           />
-          {/*//========================= IOT GRID BOX =====================> */}
+          {/*//========================= CEIS150 GRID BOX =====================> */}
           <Grid
             sx={{
+              gap: { xs: ".3rem", sm: ".3rem", md: "5rem" },
               display: "flex",
-              justifyContent: "space-evenly",
+              justifyContent: "center",
               alignItems: "center",
               flexDirection: { xs: "column", sm: "column", md: "row" },
             }}
             ml={1}
             pb={5}
           >
-            <Grid
-              item
-              xs={10}
-              sm={10}
-              md={6}
-              lg={5.5}
-              xl={3.5}
-              sx={{ pb: { xs: ".5rem", md: "0rem" } }}
-            >
+            <Grid item xs={10} sm={10} md={5} lg={5} xl={5.5}>
               <Item
                 sx={{
                   bgcolor: "primary.secondary",
@@ -466,11 +450,11 @@ class DevryProjects extends Component {
               xs={10}
               sm={10}
               md={5}
-              lg={5.5}
-              xl={3.5}
+              lg={5}
+              xl={4}
               sx={{ display: "flex", alignItems: "center" }}
             >
-              <Item elevation={12}>
+              <Item sx={{ maxWidth: "900px" }} elevation={12}>
                 <Typography
                   variant="h5"
                   p={2}
@@ -489,7 +473,7 @@ class DevryProjects extends Component {
                     textShadow: "1.5px 1.5px 4px lightgrey",
                   }}
                 >
-                  Object Oriented Programming
+                  Object Oriented Programming{" "}
                 </Typography>
                 <Typography
                   pl={3}
@@ -530,26 +514,19 @@ class DevryProjects extends Component {
               borderRadius: "20px",
             }}
           />
-          {/*//=============== Network Security GRID BOX ==================> */}
+          {/*//========================= SEC285 GRID BOX =====================> */}
           <Grid
             sx={{
+              gap: { xs: ".3rem", sm: ".3rem", md: "5rem" },
               display: "flex",
-              justifyContent: "space-evenly",
+              justifyContent: "center",
               alignItems: "center",
               flexDirection: { xs: "column", sm: "column", md: "row" },
             }}
             ml={1}
             pb={5}
           >
-            <Grid
-              item
-              xs={10}
-              sm={10}
-              md={6}
-              lg={5.5}
-              xl={3.5}
-              sx={{ pb: { xs: ".5rem", md: "0rem" } }}
-            >
+            <Grid item xs={10} sm={10} md={5} lg={5} xl={5.5}>
               <Item
                 sx={{
                   bgcolor: "primary.secondary",
@@ -569,11 +546,11 @@ class DevryProjects extends Component {
               xs={10}
               sm={10}
               md={5}
-              lg={5.5}
-              xl={3.5}
+              lg={5}
+              xl={4}
               sx={{ display: "flex", alignItems: "center" }}
             >
-              <Item elevation={12}>
+              <Item sx={{ maxWidth: "900px" }} elevation={12}>
                 <Typography
                   variant="h5"
                   p={2}
