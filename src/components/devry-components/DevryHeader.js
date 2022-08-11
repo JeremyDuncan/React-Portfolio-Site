@@ -8,10 +8,8 @@ import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
-import Link from "@mui/material/Link";
 import Paper from "@mui/material/Paper";
 import React, { Component } from "react";
 
@@ -25,21 +23,26 @@ class DevryHeader extends Component {
               sx={{
                 display: "flex",
                 justifyContent: "space-between",
-                p: "1.5rem",
+                pl: { xs: "1rem", sm: "1.5rem", md: "7.5rem" },
+                pr: { xs: "1rem", sm: "1.5rem", md: "7.5rem" },
+                pt: { xs: ".5rem", sm: ".5rem", md: "1rem" },
+                pb: { xs: ".5rem", sm: ".5rem", md: "1rem" },
               }}
             >
               <img
                 src={require("../../images/devry-images/DeVry_University_Logo1.png")}
                 distance={400}
                 width="130px"
+                alt="devry logo"
               />
               <Button
-                sx={{ color: "button.textLight" }}
+                sx={{ color: "#004787", fontWeight: "bold" }}
                 href="/"
-                variant="contained"
                 startIcon={<ArrowBackIcon />}
+                variant="outlined"
+                size="large"
               >
-                Home
+                Back
               </Button>
             </Grid>
           </Paper>
