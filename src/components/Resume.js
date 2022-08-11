@@ -11,7 +11,7 @@ import AssignmentIndRoundedIcon from "@mui/icons-material/AssignmentIndRounded";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import React, { Component } from "react";
-import MyResume from "./Jeremy_Duncan_Resume_All-11July2022.pdf";
+import MyResume from "../download/JeremyDuncan_Resume.docx";
 
 class Resume extends Component {
   render() {

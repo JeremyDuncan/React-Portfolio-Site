@@ -494,9 +494,7 @@ export default function NestedList() {
 
         <Button
           sx={{ color: "button.textLight", ml: 2 }}
-          href="https://jeremy-duncan.notion.site/Jeremy-Duncan-s-Military-Experience-7abdbb418a6b40e7b2abd161eed48cda"
-          target="_blank"
-          rel="noopener"
+          href="/Military-Training"
           variant="contained"
           endIcon={<MilitaryTechRoundedIcon />}
         >

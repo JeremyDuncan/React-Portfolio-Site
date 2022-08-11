@@ -9,6 +9,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Devry from "./pages/Devry";
 import Home from "./pages/Home";
+import Military from "./pages/Military";
 
 const theme = createTheme({
   palette: {
@@ -51,8 +52,8 @@ function App() {
             <Routes>
               <Route exact path="/" element={<Home />} />
               <Route path="/DeVry-University-Projects" element={<Devry />} />
-              {/* <Route path="/contact" element={<Home />} />
-              <Route path="/blogs" element={<Home />} />
+              <Route path="/Military-Training" element={<Military />} />
+              {/* <Route path="/blogs" element={<Home />} />
               <Route path="/sign-up" element={<Home />} /> */}
             </Routes>
           </Router>
