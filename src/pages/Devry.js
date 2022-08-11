@@ -8,11 +8,10 @@ import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 import Box from "@mui/material/Box";
 import React, { Component } from "react";
-import ContactMe from "../components/ContactMe";
+import DevryContactMe from "../components/devry-components/DevryContactMe";
+import DevryFooter from "../components/devry-components/DevryFooter";
 import DevryHeader from "../components/devry-components/DevryHeader";
 import DevryProjects from "../components/devry-components/DevryProjects";
-import Footer from "../components/Footer";
-import Portfolio from "../components/Portfolio";
 class Devry extends Component {
   render() {
     return (
@@ -21,8 +20,8 @@ class Devry extends Component {
         <br />
         <br />
         <DevryProjects />
-        <ContactMe />
-        <Footer />
+        <DevryContactMe />
+        <DevryFooter />
       </Box>
     );
   }
