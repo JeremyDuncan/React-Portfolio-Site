@@ -11,7 +11,6 @@ import "@fontsource/roboto/700.css";
 import NavigateNextRoundedIcon from "@mui/icons-material/NavigateNextRounded";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
-import Divider from "@mui/material/Divider";
 import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
 import { styled } from "@mui/material/styles";
@@ -53,7 +52,7 @@ class DevryProjects extends Component {
                 display: { xs: "none", sm: "none", md: "initial" },
               }}
             >
-              DeVry Portfolio
+              College Portfolio
             </Typography>
             <Typography
               variant="h4"
@@ -64,7 +63,7 @@ class DevryProjects extends Component {
                 display: { xs: "initial", sm: "initial", md: "none" },
               }}
             >
-              DeVry Portfolio
+              College Portfolio
             </Typography>
 
             <Typography
