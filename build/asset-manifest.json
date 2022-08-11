@@ -1,9 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.e2cf5cc8.css",
-    "main.js": "/static/js/main.0aefb466.js",
+    "main.js": "/static/js/main.64f52b34.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "static/media/NETW211_FinalProject_Jeremy-Duncan.pptx": "/static/media/NETW211_FinalProject_Jeremy-Duncan.369b4ad3c77d78a8dd71.pptx",
+    "static/media/CEIS101_FinalProject_Jeremy-Duncan.pptx": "/static/media/CEIS101_FinalProject_Jeremy-Duncan.806fcfbd3fa30f07b640.pptx",
+    "static/media/PHYS204_FinalProject_Jeremy-Duncan.pptx": "/static/media/PHYS204_FinalProject_Jeremy-Duncan.ecbe50804fe5312e7523.pptx",
+    "static/media/SEC285_FinalProject_Jeremy-Duncan.pptx": "/static/media/SEC285_FinalProject_Jeremy-Duncan.5ba37ac26a159b2a5924.pptx",
     "static/media/Jeremy_Duncan_Resume_All-11July2022.pdf": "/static/media/Jeremy_Duncan_Resume_All-11July2022.b9a1c1f9d8c359d6d40d.pdf",
+    "static/media/CEIS150_FinalProject_Jeremy-Duncan.pptx": "/static/media/CEIS150_FinalProject_Jeremy-Duncan.3433ce61a2e89ae535fb.pptx",
     "static/media/JavaScript_algo.png": "/static/media/JavaScript_algo.b09a090f3ea764e693ab.png",
     "static/media/Front_End_Dev.png": "/static/media/Front_End_Dev.249bd3886aff3aac48bf.png",
     "static/media/Responsive_Web_Design.png": "/static/media/Responsive_Web_Design.ac3a35fc4a78eb6ae025.png",
@@ -26,12 +31,16 @@
     "static/media/roboto-all-300-normal.woff": "/static/media/roboto-all-300-normal.168d6383e73339293ac3.woff",
     "static/media/Postgresql_logo.png": "/static/media/Postgresql_logo.14cff44b09e1efab0c64.png",
     "static/media/rspec_logo_Scaled.png": "/static/media/rspec_logo_Scaled.4180d2bc2eedba738840.png",
+    "static/media/DeVry_University_Logo1.png": "/static/media/DeVry_University_Logo1.181548b2d4675242ed3b.png",
     "static/media/java_logo_Scaled.png": "/static/media/java_logo_Scaled.e0ce4c71f7b949059828.png",
     "static/media/mad-libs.webp": "/static/media/mad-libs.d9688981bec47eab5c40.webp",
     "static/media/html_logo_Scaled.png": "/static/media/html_logo_Scaled.ca429e07054c77fa483a.png",
     "static/media/Node.js_logo.png": "/static/media/Node.js_logo.6dc320ffbc93bc18c370.png",
+    "static/media/IoT.webp": "/static/media/IoT.ef87a89cd02485c2747e.webp",
     "static/media/javascript_logo_Scaled.png": "/static/media/javascript_logo_Scaled.d87fd26a84e32c333acb.png",
+    "static/media/stock_tracker.webp": "/static/media/stock_tracker.c4934f787fbe7a70e310.webp",
     "static/media/robot-translator.webp": "/static/media/robot-translator.c80fab333904d1f92aa1.webp",
+    "static/media/CyberSecurity.webp": "/static/media/CyberSecurity.2bb58929485059d7de43.webp",
     "static/media/rock_paper_scissors.webp": "/static/media/rock_paper_scissors.9db6f7d2ec4afa67b454.webp",
     "static/media/jest_logo_Scaled.png": "/static/media/jest_logo_Scaled.74140281ffc812fb78fe.png",
     "static/media/roboto-latin-500-normal.woff2": "/static/media/roboto-latin-500-normal.f25d774ecfe0996f8eb5.woff2",
@@ -43,6 +52,8 @@
     "static/media/roboto-cyrillic-ext-500-normal.woff2": "/static/media/roboto-cyrillic-ext-500-normal.62ced72e5832f02c2796.woff2",
     "static/media/roboto-cyrillic-ext-700-normal.woff2": "/static/media/roboto-cyrillic-ext-700-normal.be4d02458ce53887dc37.woff2",
     "static/media/css-logo_Scaled.webp": "/static/media/css-logo_Scaled.20c7ef53aea31aee9216.webp",
+    "static/media/phys.webp": "/static/media/phys.631333db0a5dcf437184.webp",
+    "static/media/aws.webp": "/static/media/aws.aac7c3e8ba03f46ec243.webp",
     "static/media/battleship_Screenshot.webp": "/static/media/battleship_Screenshot.8d14fab84f54a1803e53.webp",
     "static/media/roboto-latin-ext-400-normal.woff2": "/static/media/roboto-latin-ext-400-normal.861b791f9de857a6e7bc.woff2",
     "static/media/roboto-latin-ext-700-normal.woff2": "/static/media/roboto-latin-ext-700-normal.ed67ad54b1a8f5d21150.woff2",
@@ -74,11 +85,11 @@
     "index.html": "/index.html",
     "static/media/roboto-greek-ext-700-normal.woff2": "/static/media/roboto-greek-ext-700-normal.bd9854c751441ccc1a70.woff2",
     "main.e2cf5cc8.css.map": "/static/css/main.e2cf5cc8.css.map",
-    "main.0aefb466.js.map": "/static/js/main.0aefb466.js.map",
+    "main.64f52b34.js.map": "/static/js/main.64f52b34.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e2cf5cc8.css",
-    "static/js/main.0aefb466.js"
+    "static/js/main.64f52b34.js"
   ]
 }
