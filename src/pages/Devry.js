@@ -18,6 +18,8 @@ class Devry extends Component {
     return (
       <Box>
         <DevryHeader />
+        <br />
+        <br />
         <DevryProjects />
         <ContactMe />
         <Footer />

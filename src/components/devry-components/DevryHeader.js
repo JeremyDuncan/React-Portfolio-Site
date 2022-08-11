@@ -7,7 +7,6 @@ import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-import MenuIcon from "@mui/icons-material/Menu";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
@@ -21,7 +20,7 @@ class DevryHeader extends Component {
     return (
       <AppBar elevation={9} position="sticky">
         <Grid sx={{ display: "flex", flexDirection: "column" }}>
-          <Paper sx={{ borderRadius: "0px" }}>
+          <Paper sx={{ borderRadius: "0px", bgcolor: "#ffffff" }}>
             <Grid
               sx={{
                 display: "flex",
@@ -40,7 +39,7 @@ class DevryHeader extends Component {
                 variant="contained"
                 startIcon={<ArrowBackIcon />}
               >
-                Back
+                Home
               </Button>
             </Grid>
           </Paper>
