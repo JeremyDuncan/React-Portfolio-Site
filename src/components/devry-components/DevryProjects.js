@@ -17,6 +17,11 @@ import { styled } from "@mui/material/styles";
 import Typography from "@mui/material/Typography";
 import Image from "mui-image";
 import React, { Component } from "react";
+import ceis101 from "../../download/CEIS101_FinalProject_Jeremy-Duncan.pptx";
+import ceis150 from "../../download/CEIS150_FinalProject_Jeremy-Duncan.pptx";
+import netw211 from "../../download/NETW211_FinalProject_Jeremy-Duncan.pptx";
+import phys204 from "../../download/PHYS204_FinalProject_Jeremy-Duncan.pptx";
+import sec285 from "../../download/SEC285_FinalProject_Jeremy-Duncan.pptx";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -191,7 +196,8 @@ class DevryProjects extends Component {
                 <br />
                 <Button
                   sx={{ color: "button.textLight" }}
-                  href="/"
+                  href={phys204}
+                  download
                   variant="contained"
                   endIcon={<NavigateNextRoundedIcon />}
                 >
@@ -294,7 +300,7 @@ class DevryProjects extends Component {
                 <br />
                 <Button
                   sx={{ color: "button.textLight" }}
-                  href="/"
+                  href={netw211}
                   variant="contained"
                   endIcon={<NavigateNextRoundedIcon />}
                 >
@@ -398,7 +404,7 @@ class DevryProjects extends Component {
                 <br />
                 <Button
                   sx={{ color: "button.textLight" }}
-                  href="/"
+                  href={ceis101}
                   variant="contained"
                   endIcon={<NavigateNextRoundedIcon />}
                 >
@@ -501,7 +507,7 @@ class DevryProjects extends Component {
                 <br />
                 <Button
                   sx={{ color: "button.textLight" }}
-                  href="/"
+                  href={ceis150}
                   variant="contained"
                   endIcon={<NavigateNextRoundedIcon />}
                 >
@@ -603,7 +609,7 @@ class DevryProjects extends Component {
                 <br />
                 <Button
                   sx={{ color: "button.textLight" }}
-                  href="/"
+                  href={sec285}
                   variant="contained"
                   endIcon={<NavigateNextRoundedIcon />}
                 >
