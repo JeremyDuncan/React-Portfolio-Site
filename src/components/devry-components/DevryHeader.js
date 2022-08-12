@@ -36,6 +36,7 @@ class DevryHeader extends Component {
                 alt="devry logo"
               />
               <Button
+                className="back"
                 sx={{ color: "#004787", fontWeight: "bold" }}
                 href="/"
                 startIcon={<ArrowBackIcon />}

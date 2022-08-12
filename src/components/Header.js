@@ -8,11 +8,16 @@ import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 import EmojiPeopleIcon from "@mui/icons-material/EmojiPeople";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import MenuIcon from "@mui/icons-material/Menu";
+import MilitaryTechIcon from "@mui/icons-material/MilitaryTech";
+import SchoolIcon from "@mui/icons-material/School";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Container from "@mui/material/Container";
+import Grid from "@mui/material/Grid";
 import IconButton from "@mui/material/IconButton";
 import Link from "@mui/material/Link";
 import Menu from "@mui/material/Menu";
@@ -23,14 +28,25 @@ import * as React from "react";
 
 const pages = [
   <Link
-    sx={{ textShadow: "0px 1.5px 9px #292727" }}
+    sx={{
+      textShadow: "0px 1.5px 9px #292727",
+    }}
     color="inherit"
     underline="none"
     target="_blank"
     rel="noopener"
     href="https://github.com/JeremyDuncan"
   >
-    Github Profile
+    <GitHubIcon
+      sx={{
+        display: "inline-flex",
+        verticalAlign: "text-bottom",
+        textAlign: "center",
+        fontSize: "large",
+        pr: { xs: ".5rem", sm: ".2rem" },
+      }}
+    />
+    Github
   </Link>,
   <Link
     sx={{ textShadow: "0px 1.5px 9px #292727" }}
@@ -40,7 +56,16 @@ const pages = [
     rel="noopener"
     href="https://www.linkedin.com/in/jeremy-duncan2021/"
   >
-    LinkedIn Profile
+    <LinkedInIcon
+      sx={{
+        display: "inline-flex",
+        verticalAlign: "text-bottom",
+        textAlign: "center",
+        fontSize: "large",
+        pr: { xs: ".5rem", sm: ".2rem" },
+      }}
+    />
+    LinkedIn
   </Link>,
   <Link
     sx={{ textShadow: "0px 1.5px 9px #292727" }}
@@ -48,7 +73,16 @@ const pages = [
     underline="none"
     href="/Military-Training"
   >
-    Military Training
+    <MilitaryTechIcon
+      sx={{
+        display: "inline-flex",
+        verticalAlign: "text-bottom",
+        textAlign: "center",
+        fontSize: "large",
+        pr: { xs: ".5rem", sm: "0rem" },
+      }}
+    />
+    Military
   </Link>,
   <Link
     sx={{ textShadow: "0px 1.5px 9px #292727" }}
@@ -56,7 +90,16 @@ const pages = [
     underline="none"
     href="/DeVry-University-Projects"
   >
-    College Projects
+    <SchoolIcon
+      sx={{
+        display: "inline-flex",
+        verticalAlign: "text-bottom",
+        textAlign: "center",
+        fontSize: "large",
+        pr: { xs: ".5rem", sm: ".3rem" },
+      }}
+    />
+    College
   </Link>,
 ];
 
@@ -183,19 +226,20 @@ const Header = () => {
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
-              <Button
-                variant="contained"
-                size="small"
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{
-                  my: 2,
-                  color: "white",
-                  bgcolor: "primary.dark",
-                }}
-              >
-                {page}
-              </Button>
+              <Grid sx={{ pr: ".5rem" }}>
+                <Button
+                  className="headerLink"
+                  size="small"
+                  key={page}
+                  onClick={handleCloseNavMenu}
+                  sx={{
+                    my: 2,
+                    color: "white",
+                  }}
+                >
+                  {page}
+                </Button>
+              </Grid>
             ))}
           </Box>
           <Box sx={{ flexGrow: 0 }}>
