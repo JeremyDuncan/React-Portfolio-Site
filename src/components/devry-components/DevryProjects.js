@@ -110,7 +110,7 @@ class DevryProjects extends Component {
                 textAlign: "center",
                 alignItem: "center",
                 margin: "auto",
-                width: "500px",
+                width: { xs: "350px", md: "500px" },
                 borderRadius: "20px",
                 marginBottom: "3rem",
               }}

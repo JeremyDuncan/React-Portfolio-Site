@@ -110,7 +110,7 @@ class MilitaryTraining extends Component {
                 textAlign: "center",
                 alignItem: "center",
                 margin: "auto",
-                width: "500px",
+                width: { xs: "350px", sm: "530px", md: "1150px" },
                 borderRadius: "20px",
                 marginBottom: ".2rem",
               }}
@@ -263,8 +263,8 @@ class MilitaryTraining extends Component {
                   elevation={12}
                 >
                   <Typography
-                    pl={15}
-                    pr={15}
+                    pl={12}
+                    pr={12}
                     sx={{
                       color: "#004787",
                       textShadow: "1.5px 1.5px 4px lightgrey",
@@ -747,8 +747,8 @@ class MilitaryTraining extends Component {
                   elevation={12}
                 >
                   <Typography
-                    pl={11}
-                    pr={11}
+                    pl={9}
+                    pr={9}
                     sx={{
                       color: "#004787",
                       textShadow: "1.5px 1.5px 4px lightgrey",
@@ -868,8 +868,8 @@ class MilitaryTraining extends Component {
                   elevation={12}
                 >
                   <Typography
-                    pl={14}
-                    pr={14}
+                    pl={12}
+                    pr={12}
                     sx={{
                       color: "#004787",
                       textShadow: "1.5px 1.5px 4px lightgrey",

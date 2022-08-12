@@ -17,7 +17,7 @@ import React, { Component } from "react";
 class MilitaryHeader extends Component {
   render() {
     return (
-      <AppBar elevation={9} position="sticky">
+      <AppBar elevation={9} position="sticky" sx={{ width: "100%" }}>
         <Grid sx={{ display: "flex", flexDirection: "column" }}>
           <Paper sx={{ borderRadius: "0px", bgcolor: "#ffffff" }}>
             <Grid
