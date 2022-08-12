@@ -26,18 +26,17 @@ class MilitaryHeader extends Component {
                 justifyContent: "space-between",
                 pl: { xs: "1rem", sm: "1.5rem", md: "7.5rem" },
                 pr: { xs: "1rem", sm: "1.5rem", md: "7.5rem" },
+                alignItems: "center",
               }}
             >
               <img
+                id="devryLogo"
                 src={require("../../images/military-images/us_navt_et_logo.png")}
-                distance={400}
-                width="130px"
                 alt="devry logo"
               />
               <Button
                 sx={{
                   display: "flex",
-                  mt: "1.5rem",
                   color: "#004787",
                   fontWeight: "bold",
                   height: "70px",

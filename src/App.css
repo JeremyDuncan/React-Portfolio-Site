@@ -5,6 +5,16 @@ body {
   background: radial-gradient(ellipse at center, #5383A4 0%, #304B5B 100%);
 }
 
-test {
-  color: #d2e8f7;
+#devryLogo {
+  width: 140px;
+}
+
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 812px)  {
+
+  #devryLogo {
+    width: 90px;
+    height: 95px;
+  }
 }

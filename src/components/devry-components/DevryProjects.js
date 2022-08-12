@@ -112,13 +112,13 @@ class DevryProjects extends Component {
                 margin: "auto",
                 width: { xs: "350px", md: "500px" },
                 borderRadius: "20px",
-                marginBottom: "3rem",
+                marginBottom: { xs: "1.2rem", sm: "3rem" },
               }}
             />
           </Grid>
           <Grid
             elevation={24}
-            mb={5}
+            mb={0}
             ml={1.2}
             xs={10}
             sx={{
