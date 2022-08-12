@@ -112,7 +112,7 @@ class MilitaryProjects extends Component {
                 margin: "auto",
                 width: "500px",
                 borderRadius: "20px",
-                marginBottom: "3rem",
+                marginBottom: ".2rem",
               }}
             />
           </Grid>
@@ -200,391 +200,234 @@ class MilitaryProjects extends Component {
             </Grid>
           </Grid>
 
-          {/*//========================= GRID END =========================> */}
+          {/*//================= PICTURE GRID END =========================> */}
           <Grid
             elevation={24}
             mb={5}
             ml={1.2}
             xs={10}
+            xl={11}
             sx={{
               height: "1px",
               border: "2px solid gray",
               borderRadius: "20px",
             }}
           />
-          {/*//========================= NETW211 GRID BOX =====================> */}
+
           <Grid
             sx={{
-              gap: { xs: ".3rem", sm: ".3rem", md: "5rem" },
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              flexDirection: { xs: "column", sm: "column", md: "row" },
+              flexDirection: "column",
             }}
-            ml={1}
-            pb={5}
           >
-            <Grid item xs={10} sm={5} md={5} lg={5} xl={5.5}>
-              <Item
-                sx={{
-                  bgcolor: "primary.secondary",
-                }}
-                elevation={12}
-              >
-                {/*==> Image Link <== ===*/}
-                <Image
-                  src={require("../../images/devry-images/aws.webp")}
-                  sx={{ borderRadius: "5px" }}
-                />
-              </Item>
-            </Grid>
-
+            {/*//============= Security SCHOOL GRID BOX ===================> */}
             <Grid
-              item
-              xs={10}
-              sm={10}
-              md={5}
-              lg={5}
-              xl={4}
-              sx={{ display: "flex", alignItems: "center" }}
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                flexDirection: "column",
+              }}
+              ml={1}
+              pb={2.5}
             >
-              <Item sx={{ maxWidth: "900px" }} elevation={12}>
-                <Typography
-                  variant="h5"
-                  p={2}
-                  sx={{
-                    color: "#004787",
-                    textShadow: "1.5px 1.5px 4px lightgrey",
-                    fontWeight: "bold",
-                  }}
-                >
-                  NETW211 Final Project:{" "}
-                </Typography>
-                <Typography
-                  variant="h6"
-                  sx={{
-                    color: "#004787",
-                    textShadow: "1.5px 1.5px 4px lightgrey",
-                  }}
-                >
-                  Cloud Computing Fundamentals{" "}
-                </Typography>
-                <Typography
-                  pl={3}
-                  pr={3}
-                  sx={{
-                    color: "contrast.textDark",
-                    textShadow: "0px 3px 8px #8a8a8a",
-                  }}
-                  align="left"
-                >
-                  This is the final project for my DeVry class NETW211. In this
-                  project I walk you through fundamental cloud computing
-                  concepts while using Amazon Web Services (AWS).
-                </Typography>
-                <br />
-                <Button
-                  sx={{ color: "button.textLight" }}
-                  href={netw211}
-                  variant="contained"
-                  endIcon={<NavigateNextRoundedIcon />}
-                >
-                  View Project
-                </Button>
-                <br />
-                <br />
-              </Item>
-            </Grid>
-          </Grid>
-          {/*//========================= GRID END =========================> */}
-          <Grid
-            elevation={24}
-            mb={5}
-            ml={1.2}
-            xs={10}
-            sx={{
-              height: "1px",
-              border: "2px solid gray",
-              borderRadius: "20px",
-            }}
-          />
-          {/*//========================= CEIS101 GRID BOX =====================> */}
-          <Grid
-            sx={{
-              gap: { xs: ".3rem", sm: ".3rem", md: "5rem" },
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              flexDirection: { xs: "column", sm: "column", md: "row" },
-            }}
-            ml={1}
-            pb={5}
-          >
-            <Grid item xs={10} sm={10} md={5} lg={5} xl={5.5}>
-              <Item
-                sx={{
-                  bgcolor: "primary.secondary",
-                }}
-                elevation={12}
+              <Grid
+                item
+                ml={1}
+                xs={10}
+                sm={10}
+                md={11}
+                lg={12}
+                xl={12}
+                sx={{ display: "flex", alignItems: "center" }}
               >
-                {/*==> Image Link <== ===*/}
-                <Image
-                  src={require("../../images/devry-images/IoT.webp")}
-                  sx={{ borderRadius: "5px" }}
-                />
-              </Item>
+                <Item elevation={12}>
+                  <Typography
+                    pl={3}
+                    pr={3}
+                    sx={{
+                      color: "#004787",
+                      textShadow: "1.5px 1.5px 4px lightgrey",
+                      fontWeight: "bold",
+                      fontSize: { xs: "1rem", sm: "1.3rem", md: "1.4rem" },
+                    }}
+                  >
+                    Security Reaction Force Advanced
+                  </Typography>
+                  <Typography
+                    sx={{
+                      color: "#2c2d30",
+                      textShadow: "1.5px 1.5px 4px lightgrey",
+                      fontSize: { xs: ".8rem", sm: ".9rem", md: "1.1rem" },
+                      textAlign: "center",
+                    }}
+                    pb={0.5}
+                  >
+                    Academi- Southwest — 2016
+                    <br />
+                    San Diego, CA
+                  </Typography>
+                </Item>
+              </Grid>
             </Grid>
+            {/*//========================= GRID END =========================> */}
 
+            {/*//========= Security basic SCHOOL GRID BOX =================> */}
             <Grid
-              item
-              xs={10}
-              sm={10}
-              md={5}
-              lg={5}
-              xl={4}
-              sx={{ display: "flex", alignItems: "center" }}
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+              ml={1}
+              pb={2.5}
             >
-              <Item sx={{ maxWidth: "900px" }} elevation={12}>
-                <Typography
-                  variant="h5"
-                  p={2}
-                  sx={{
-                    color: "#004787",
-                    textShadow: "1.5px 1.5px 4px lightgrey",
-                    fontWeight: "bold",
-                  }}
-                >
-                  CEIS101 Final Project:
-                </Typography>
-                <Typography
-                  variant="h6"
-                  sx={{
-                    color: "#004787",
-                    textShadow: "1.5px 1.5px 4px lightgrey",
-                  }}
-                >
-                  IoT: Internet of Things
-                </Typography>
-                <Typography
-                  pl={3}
-                  pr={3}
-                  sx={{
-                    color: "contrast.textDark",
-                    textShadow: "0px 3px 8px #8a8a8a",
-                  }}
-                  align="left"
-                >
-                  This is the final project for my DeVry class CEIS101. In this
-                  project I walk you through fundamental IoT concepts while
-                  using Arduino components to make an automated home security
-                  system.
-                </Typography>
-                <br />
-                <Button
-                  sx={{ color: "button.textLight" }}
-                  href={ceis101}
-                  variant="contained"
-                  endIcon={<NavigateNextRoundedIcon />}
-                >
-                  View Project
-                </Button>
-                <br />
-                <br />
-              </Item>
-            </Grid>
-          </Grid>
-          {/*//========================= GRID END =========================> */}
-          <Grid
-            elevation={24}
-            mb={5}
-            ml={1.2}
-            xs={10}
-            sx={{
-              height: "1px",
-              border: "2px solid gray",
-              borderRadius: "20px",
-            }}
-          />
-          {/*//========================= CEIS150 GRID BOX =====================> */}
-          <Grid
-            sx={{
-              gap: { xs: ".3rem", sm: ".3rem", md: "5rem" },
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              flexDirection: { xs: "column", sm: "column", md: "row" },
-            }}
-            ml={1}
-            pb={5}
-          >
-            <Grid item xs={10} sm={10} md={5} lg={5} xl={5.5}>
-              <Item
-                sx={{
-                  bgcolor: "primary.secondary",
-                }}
-                elevation={12}
+              <Grid
+                item
+                ml={1}
+                xs={10.2}
+                sm={10}
+                md={11}
+                lg={12}
+                xl={12}
+                sx={{ display: "flex", alignItems: "center" }}
               >
-                {/*==> Image Link <== ===*/}
-                <Image
-                  src={require("../../images/devry-images/stock_tracker.webp")}
-                  sx={{ borderRadius: "5px" }}
-                />
-              </Item>
+                <Item elevation={12}>
+                  <Typography
+                    pl={3}
+                    pr={3}
+                    sx={{
+                      color: "#004787",
+                      textShadow: "1.5px 1.5px 4px lightgrey",
+                      fontWeight: "bold",
+                      fontSize: { xs: "1rem", sm: "1.3rem", md: "1.4rem" },
+                    }}
+                  >
+                    Armed Sentry/Security Reaction Force- Basic 
+                  </Typography>
+                  <Typography
+                    sx={{
+                      color: "#424447",
+                      textShadow: "1.5px 1.5px 4px lightgrey",
+                      fontSize: { xs: ".8rem", sm: "1.1rem", md: "1.1rem" },
+                    }}
+                    pb={0.5}
+                  >
+                    Academi- Southwest — 2016
+                    <br />
+                    San Diego, CA
+                  </Typography>
+                </Item>
+              </Grid>
             </Grid>
+            {/*//========================= GRID END =======================> */}
 
+            {/*//=============SGSI SCHOOL GRID BOX ========================> */}
             <Grid
-              item
-              xs={10}
-              sm={10}
-              md={5}
-              lg={5}
-              xl={4}
-              sx={{ display: "flex", alignItems: "center" }}
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+              ml={1}
+              pb={2.5}
             >
-              <Item sx={{ maxWidth: "900px" }} elevation={12}>
-                <Typography
-                  variant="h5"
-                  p={2}
-                  sx={{
-                    color: "#004787",
-                    textShadow: "1.5px 1.5px 4px lightgrey",
-                    fontWeight: "bold",
-                  }}
-                >
-                  CEIS150 Final Project:
-                </Typography>
-                <Typography
-                  variant="h6"
-                  sx={{
-                    color: "#004787",
-                    textShadow: "1.5px 1.5px 4px lightgrey",
-                  }}
-                >
-                  Object Oriented Programming{" "}
-                </Typography>
-                <Typography
-                  pl={3}
-                  pr={3}
-                  sx={{
-                    color: "contrast.textDark",
-                    textShadow: "0px 3px 8px #8a8a8a",
-                  }}
-                  align="left"
-                >
-                  This is the final project for my DeVry class CEIS150. In this
-                  project I walk you through a stock tracking program I created
-                  using Python.
-                </Typography>
-                <br />
-                <Button
-                  sx={{ color: "button.textLight" }}
-                  href={ceis150}
-                  variant="contained"
-                  endIcon={<NavigateNextRoundedIcon />}
-                >
-                  View Project
-                </Button>
-                <br />
-                <br />
-              </Item>
-            </Grid>
-          </Grid>
-          {/*//========================= GRID END =========================> */}
-          <Grid
-            elevation={24}
-            mb={5}
-            ml={1.2}
-            xs={10}
-            sx={{
-              height: "1px",
-              border: "2px solid gray",
-              borderRadius: "20px",
-            }}
-          />
-          {/*//========================= SEC285 GRID BOX =====================> */}
-          <Grid
-            sx={{
-              gap: { xs: ".3rem", sm: ".3rem", md: "5rem" },
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              flexDirection: { xs: "column", sm: "column", md: "row" },
-            }}
-            ml={1}
-            pb={5}
-          >
-            <Grid item xs={10} sm={10} md={5} lg={5} xl={5.5}>
-              <Item
-                sx={{
-                  bgcolor: "primary.secondary",
-                }}
-                elevation={12}
+              <Grid
+                item
+                ml={1}
+                xs={10}
+                sm={10}
+                md={11}
+                lg={12}
+                xl={12}
+                sx={{ display: "flex", alignItems: "center" }}
               >
-                {/*==> Image Link <== ===*/}
-                <Image
-                  src={require("../../images/devry-images/CyberSecurity.webp")}
-                  sx={{ borderRadius: "5px" }}
-                />
-              </Item>
+                <Item elevation={12}>
+                  <Typography
+                    pl={3}
+                    pr={3}
+                    sx={{
+                      color: "#004787",
+                      textShadow: "1.5px 1.5px 4px lightgrey",
+                      fontWeight: "bold",
+                      fontSize: { xs: "1rem", sm: "1.3rem", md: "1.4rem" },
+                    }}
+                  >
+                    Stabilized Glide Slope Indicator and Wave Off Light System
+                    Maintenance
+                  </Typography>
+                  <Typography
+                    sx={{
+                      color: "#2c2d30",
+                      textShadow: "1.5px 1.5px 4px lightgrey",
+                      fontSize: { xs: ".8rem", sm: "1.1rem", md: "1.1rem" },
+                    }}
+                    pb={0.5}
+                  >
+                    Center for Naval Aviation Technical Training Unit, North
+                    Island — 2016
+                    <br />
+                    San Diego, CA
+                  </Typography>
+                </Item>
+              </Grid>
             </Grid>
+            {/*//========================= GRID END =======================> */}
 
+            {/*//============= Security SCHOOL GRID BOX =====================> */}
             <Grid
-              item
-              xs={10}
-              sm={10}
-              md={5}
-              lg={5}
-              xl={4}
-              sx={{ display: "flex", alignItems: "center" }}
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+              ml={1}
+              pb={2.5}
             >
-              <Item sx={{ maxWidth: "900px" }} elevation={12}>
-                <Typography
-                  variant="h5"
-                  p={2}
-                  sx={{
-                    color: "#004787",
-                    textShadow: "1.5px 1.5px 4px lightgrey",
-                    fontWeight: "bold",
-                  }}
-                >
-                  SEC285 Final Project:
-                </Typography>
-                <Typography
-                  variant="h6"
-                  sx={{
-                    color: "#004787",
-                    textShadow: "1.5px 1.5px 4px lightgrey",
-                  }}
-                >
-                  Information Security
-                </Typography>
-                <Typography
-                  pl={3}
-                  pr={3}
-                  sx={{
-                    color: "contrast.textDark",
-                    textShadow: "0px 3px 8px #8a8a8a",
-                  }}
-                  align="left"
-                >
-                  This is the final project for my DeVry class SEC285. In this
-                  project I walk you through information security fundamentals.
-                </Typography>
-                <br />
-                <Button
-                  sx={{ color: "button.textLight" }}
-                  href={sec285}
-                  variant="contained"
-                  endIcon={<NavigateNextRoundedIcon />}
-                >
-                  View Project
-                </Button>
-                <br />
-                <br />
-              </Item>
+              <Grid
+                item
+                ml={1}
+                xs={10}
+                sm={10}
+                md={11}
+                lg={12}
+                xl={12}
+                sx={{ display: "flex", alignItems: "center" }}
+              >
+                <Item elevation={12}>
+                  <Typography
+                    pl={3}
+                    pr={3}
+                    sx={{
+                      color: "#004787",
+                      textShadow: "1.5px 1.5px 4px lightgrey",
+                      fontWeight: "bold",
+                      fontSize: { xs: "1rem", sm: "1.3rem", md: "1.4rem" },
+                    }}
+                  >
+                    Stabilized Glide Slope Indicator and Wave Off Light System
+                    Maintenance
+                  </Typography>
+                  <Typography
+                    sx={{
+                      color: "#2c2d30",
+                      textShadow: "1.5px 1.5px 4px lightgrey",
+                      fontSize: { xs: ".8rem", sm: "1.1rem", md: "1.1rem" },
+                    }}
+                    pb={0.5}
+                  >
+                    Center for Naval Aviation Technical Training Unit, North
+                    Island — 2016
+                    <br />
+                    San Diego, CA
+                  </Typography>
+                </Item>
+              </Grid>
             </Grid>
+            {/*//========================= GRID END =======================> */}
           </Grid>
-          {/*//========================= GRID END =========================> */}
         </Grid>
       </Box>
     );
