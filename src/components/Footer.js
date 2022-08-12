@@ -27,7 +27,9 @@ class Footer extends Component {
   render() {
     return (
       <Box
-        sx={{ flexGrow: 1 }}
+        sx={{
+          flexGrow: 1,
+        }}
         container
         spacing={2}
         direction="row"

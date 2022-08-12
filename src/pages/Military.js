@@ -11,7 +11,7 @@ import React, { Component } from "react";
 import MilitaryContactMe from "../components/military-components/MilitaryContactMe";
 import MilitaryFooter from "../components/military-components/MilitaryFooter";
 import MilitaryHeader from "../components/military-components/MilitaryHeader";
-import MilitaryProjects from "../components/military-components/MilitaryProjects";
+import MilitaryTraining from "../components/military-components/MilitaryTraining";
 
 class Military extends Component {
   render() {
@@ -20,7 +20,7 @@ class Military extends Component {
         <MilitaryHeader />
         <br />
         <br />
-        <MilitaryProjects />
+        <MilitaryTraining />
         <MilitaryContactMe />
         <MilitaryFooter />
       </Box>

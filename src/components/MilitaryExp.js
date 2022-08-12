@@ -498,7 +498,7 @@ export default function NestedList() {
           variant="contained"
           endIcon={<MilitaryTechRoundedIcon />}
         >
-          See My Military Experience
+          See My Military Training
         </Button>
       </Grid>
     </Box>

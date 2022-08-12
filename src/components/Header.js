@@ -40,17 +40,23 @@ const pages = [
     rel="noopener"
     href="https://www.linkedin.com/in/jeremy-duncan2021/"
   >
-    LinkedIn
+    LinkedIn Profile
   </Link>,
   <Link
     sx={{ textShadow: "0px 1.5px 9px #292727" }}
     color="inherit"
     underline="none"
-    target="_blank"
-    rel="noopener"
-    href="https://jeremy-duncan.notion.site/Military-Experience-7abdbb418a6b40e7b2abd161eed48cda"
+    href="/Military-Training"
   >
-    Military Experience
+    Military Training
+  </Link>,
+  <Link
+    sx={{ textShadow: "0px 1.5px 9px #292727" }}
+    color="inherit"
+    underline="none"
+    href="/DeVry-University-Projects"
+  >
+    College Projects
   </Link>,
 ];
 
@@ -75,7 +81,12 @@ const Header = () => {
       <Container
         sx={{
           display: "flex",
-          justifyContent: { xs: "space-evenly", lg: "space-around" },
+          justifyContent: {
+            xs: "space-evenly",
+            lg: "space-around",
+          },
+
+          flexDirection: "column",
         }}
       >
         <Toolbar disableGutters>
@@ -173,9 +184,15 @@ const Header = () => {
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
               <Button
+                variant="contained"
+                size="small"
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
+                sx={{
+                  my: 2,
+                  color: "white",
+                  bgcolor: "primary.dark",
+                }}
               >
                 {page}
               </Button>

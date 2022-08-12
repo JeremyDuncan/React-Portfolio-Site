@@ -182,7 +182,7 @@ class College extends Component {
             variant="contained"
             endIcon={<SchoolRoundedIcon />}
           >
-            Visit My College Project Page
+            See My College Projects
           </Button>
         </Grid>
       </Box>
