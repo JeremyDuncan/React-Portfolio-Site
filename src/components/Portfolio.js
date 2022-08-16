@@ -11,9 +11,9 @@ import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
 import { styled } from "@mui/material/styles";
-import Typography from "@mui/material/Typography";
 import Image from "mui-image";
 import React, { Component } from "react";
+import AboutMe from "./AboutMe";
 import MainSection from "./MainSection";
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -54,6 +54,29 @@ class Portfolio extends Component {
         </Grid>
         {/*//=========== GRID END ===============> */}
         <br />
+        <Grid
+          container
+          spacing={2}
+          direction="row"
+          justifyContent="center"
+          alignItems="center"
+        >
+          <Grid display="column" item xs={11} md={11} lg={11} xl={6}>
+            <Item elevation={14} sx={{ bgcolor: "primary.light" }}>
+              <Item
+                sx={{
+                  background:
+                    "linear-gradient(to right, #A6B7C3 0%, #D2E8F7 50%, #A6B7C3 100%)",
+                  color: "contrast.textDark",
+                  textShadow: "0px 3px 8px #8a8a8a",
+                }}
+              >
+                <AboutMe />
+              </Item>
+            </Item>
+          </Grid>
+        </Grid>
+        <br />
         {/*//=========== GRID BOX ===============> */}
         <Grid
           container
@@ -67,15 +90,6 @@ class Portfolio extends Component {
               elevation={14}
               sx={{ bgcolor: "primary.main", color: "header.textLight" }}
             >
-              <Typography
-                variant="h4"
-                sx={{
-                  textShadow: "1.5px 1.5px 4px #292727",
-                  paddingBottom: 1,
-                }}
-              >
-                Hello! I'm Jeremy
-              </Typography>
               {/*=== ===*/}
               <MainSection />
               {/*<== === === === === === === === === {COMPONENT} */}
