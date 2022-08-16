@@ -7,7 +7,6 @@ import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
-import AssignmentIndRoundedIcon from "@mui/icons-material/AssignmentIndRounded";
 import DownloadIcon from "@mui/icons-material/Download";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
