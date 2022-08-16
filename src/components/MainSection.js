@@ -14,7 +14,6 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import Typography from "@mui/material/Typography";
 import * as React from "react";
-import AboutMe from "./AboutMe.js";
 import Certifications from "./Certifications";
 import College from "./College";
 import Languages from "./Languages";
@@ -31,42 +30,7 @@ export default function ControlledAccordions() {
   return (
     <div>
       {/* =============== === ACCORDIAN START === ===========================*/}
-      {/* === ABOUT ME SECTION === */}
-      <Accordion
-        sx={{ bgcolor: "primary.dark", color: "contrast.textLight" }}
-        expanded={expanded === "panel1"}
-        onChange={handleChange("panel1")}
-      >
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon sx={{ color: "contrast.textLight" }} />}
-          aria-controls="panel1bh-content"
-          id="panel1bh-header"
-        >
-          <Typography
-            sx={{
-              textShadow: "1.5px 1.5px 4px #292727",
-              width: "33%",
-              flexShrink: 0,
-              fontWeight: "bold",
-              margin: { md: "auto", lg: "auto", sm: "auto" },
-            }}
-          >
-            About Me
-          </Typography>
-          {/* </Box> */}
-        </AccordionSummary>
-        <AccordionDetails
-          sx={{
-            background:
-              "linear-gradient(to right, #A6B7C3 0%, #D2E8F7 50%, #A6B7C3 100%)",
-            color: "primary.contrastText",
-          }}
-        >
-          <AboutMe />
-          {/* <=={COMPONENT} */}
-        </AccordionDetails>
-      </Accordion>
-      {/* =============== === ACCORDIAN END === =============================*/}
+
       {/* =============== === ACCORDIAN START === ===========================*/}
       {/* === PROGRAMMING LANGUAGE SECTION === */}
       <Accordion
