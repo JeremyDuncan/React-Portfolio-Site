@@ -8,19 +8,9 @@ import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 import Box from "@mui/material/Box";
-import Paper from "@mui/material/Paper";
-import { styled } from "@mui/material/styles";
 import Typography from "@mui/material/Typography";
 import React, { Component } from "react";
 import Resume from "./Resume";
-
-const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
-  ...theme.typography.body2,
-  padding: theme.spacing(1),
-  textAlign: "center",
-  color: theme.palette.text.secondary,
-}));
 
 class AboutMe extends Component {
   render() {
