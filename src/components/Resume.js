@@ -8,6 +8,7 @@ import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 import AssignmentIndRoundedIcon from "@mui/icons-material/AssignmentIndRounded";
+import DownloadIcon from "@mui/icons-material/Download";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import React, { Component } from "react";
@@ -31,9 +32,9 @@ class Resume extends Component {
           href={MyResume}
           download
           variant="contained"
-          endIcon={<AssignmentIndRoundedIcon />}
+          endIcon={<DownloadIcon />}
         >
-          Download My Resume
+          My Resume
         </Button>
       </Box>
     );
