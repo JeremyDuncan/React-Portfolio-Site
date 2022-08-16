@@ -8,32 +8,24 @@ import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 import Box from "@mui/material/Box";
+import Paper from "@mui/material/Paper";
+import { styled } from "@mui/material/styles";
 import Typography from "@mui/material/Typography";
 import React, { Component } from "react";
 import Resume from "./Resume";
+
+const Item = styled(Paper)(({ theme }) => ({
+  backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
+  ...theme.typography.body2,
+  padding: theme.spacing(1),
+  textAlign: "center",
+  color: theme.palette.text.secondary,
+}));
 
 class AboutMe extends Component {
   render() {
     return (
       <Box color="contrast.textDark">
-        <Typography
-          variant="h4"
-          sx={{
-            paddingBottom: 1,
-            display: { xs: "none", sm: "initial" },
-          }}
-        >
-          Hello! I'm Jeremy
-        </Typography>
-        <Typography
-          variant="h5"
-          sx={{
-            paddingBottom: 1,
-            display: { xs: "inital", sm: "none" },
-          }}
-        >
-          Hello! I'm Jeremy
-        </Typography>
         <Typography sx={{ textShadow: "0px 3px 8px #8a8a8a" }} paragraph={true}>
           I'm a highly motivated veteran that has over a decade of experience as
           an Electronic Technician and Network Administrator. I love solving
