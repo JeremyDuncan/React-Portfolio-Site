@@ -53,8 +53,7 @@ function App() {
               <Route exact path="/" element={<Home />} />
               <Route path="/DeVry-University-Projects" element={<Devry />} />
               <Route path="/Military-Training" element={<Military />} />
-              {/* <Route path="/blogs" element={<Home />} />
-              <Route path="/sign-up" element={<Home />} /> */}
+              {/* <Route path="/Contact" element={<Contact />} /> */}
             </Routes>
           </Router>
         </div>
