@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.1959a623.css",
-    "main.js": "/static/js/main.56847d4e.js",
+    "main.js": "/static/js/main.f39a7a11.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/NETW211_FinalProject_Jeremy-Duncan.pptx": "/static/media/NETW211_FinalProject_Jeremy-Duncan.369b4ad3c77d78a8dd71.pptx",
     "static/media/CEIS101_FinalProject_Jeremy-Duncan.pptx": "/static/media/CEIS101_FinalProject_Jeremy-Duncan.806fcfbd3fa30f07b640.pptx",
@@ -16,6 +16,7 @@
     "static/media/pry_logo.png": "/static/media/pry_logo.a3f13a4e7e966158b02d.png",
     "static/media/associate-degree.webp": "/static/media/associate-degree.39a1e54b4d7f52b1fd96.webp",
     "static/media/programming-essentials.webp": "/static/media/programming-essentials.c7b0d77f4f6d86b97d7d.webp",
+    "static/media/UX_Cert4.webp": "/static/media/UX_Cert4.316621b4f4a914763305.webp",
     "static/media/cSharp_logo_Scaled.png": "/static/media/cSharp_logo_Scaled.559aa6b8e7568430ec2e.png",
     "static/media/ux_process_edi_cert2.webp": "/static/media/ux_process_edi_cert2.f4d9616159b31c139175.webp",
     "static/media/python_logo_Scaled.png": "/static/media/python_logo_Scaled.707994e31a056ca95421.png",
@@ -90,11 +91,11 @@
     "index.html": "/index.html",
     "static/media/roboto-greek-ext-700-normal.woff2": "/static/media/roboto-greek-ext-700-normal.bd9854c751441ccc1a70.woff2",
     "main.1959a623.css.map": "/static/css/main.1959a623.css.map",
-    "main.56847d4e.js.map": "/static/js/main.56847d4e.js.map",
+    "main.f39a7a11.js.map": "/static/js/main.f39a7a11.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1959a623.css",
-    "static/js/main.56847d4e.js"
+    "static/js/main.f39a7a11.js"
   ]
 }
