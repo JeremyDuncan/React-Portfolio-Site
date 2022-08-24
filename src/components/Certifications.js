@@ -304,6 +304,40 @@ class Certifications extends Component {
             </Button>
           </Grid>
           {/*//=========== CERTIFICATION GRID BOX END =====================> */}
+          {/*//=========== CERTIFICATION GRID BOX START ===================> */}
+          <Grid direction="column" item xs={12} sm={6} md={5.5} lg={3.8} xl={4}>
+            <Item
+              elevation={6}
+              sx={{ bgcolor: "primary.main", color: "white" }}
+            >
+              <Image
+                src={require("../images/certs/UX_Cert4.webp")}
+                style={{ borderRadius: 16 }}
+                shift="top"
+                distance={400}
+              />
+            </Item>
+            <Typography
+              fontWeight="bold"
+              color="contrast.textDark"
+              sx={{ textShadow: "0px 3px 8px #8a8a8a" }}
+              variant="caption"
+            >
+              Conduct UX Research & Test Early Concepts
+            </Typography>
+            <br />
+            <Button
+              sx={{ mt: "5px", color: "button.textLight" }}
+              href="https://www.coursera.org/account/accomplishments/verify/RK9Q2R26Z6UK"
+              target="_blank"
+              rel="noopener"
+              variant="contained"
+              endIcon={<WorkspacePremiumIcon />}
+            >
+              Verify
+            </Button>
+          </Grid>
+          {/*//=========== CERTIFICATION GRID BOX END =====================> */}
         </Grid>
       </Box>
     );
