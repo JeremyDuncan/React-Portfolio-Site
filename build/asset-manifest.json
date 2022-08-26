@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.1959a623.css",
-    "main.js": "/static/js/main.f39a7a11.js",
+    "main.css": "/static/css/main.ddec928c.css",
+    "main.js": "/static/js/main.927b2204.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/NETW211_FinalProject_Jeremy-Duncan.pptx": "/static/media/NETW211_FinalProject_Jeremy-Duncan.369b4ad3c77d78a8dd71.pptx",
     "static/media/CEIS101_FinalProject_Jeremy-Duncan.pptx": "/static/media/CEIS101_FinalProject_Jeremy-Duncan.806fcfbd3fa30f07b640.pptx",
@@ -25,14 +25,13 @@
     "static/media/me_ny.webp": "/static/media/me_ny.04c910c2feb3688ef71d.webp",
     "static/media/Willis_Deluxe_Detail_Logo.jpg": "/static/media/Willis_Deluxe_Detail_Logo.29eac6da250741040b56.jpg",
     "static/media/react_Scaled.png": "/static/media/react_Scaled.895e38ad74522cef2cfd.png",
+    "static/media/Jeremy_duncan_logo_React.webp": "/static/media/Jeremy_duncan_logo_React.7cfacbc574ed8c0a5828.webp",
     "static/media/roboto-all-500-normal.woff": "/static/media/roboto-all-500-normal.0ab669b7a0d19b178f57.woff",
     "static/media/roboto-all-700-normal.woff": "/static/media/roboto-all-700-normal.a457fde362a540fcadff.woff",
     "static/media/roboto-all-400-normal.woff": "/static/media/roboto-all-400-normal.c5d001fa922fa66a147f.woff",
     "static/media/roboto-all-300-normal.woff": "/static/media/roboto-all-300-normal.168d6383e73339293ac3.woff",
     "static/media/Postgresql_logo.png": "/static/media/Postgresql_logo.14cff44b09e1efab0c64.png",
     "static/media/rspec_logo_Scaled.png": "/static/media/rspec_logo_Scaled.4180d2bc2eedba738840.png",
-    "static/media/us_navt_et_logo.png": "/static/media/us_navt_et_logo.fd67f8119c54865d6df1.png",
-    "static/media/DeVry_University_Logo1.png": "/static/media/DeVry_University_Logo1.181548b2d4675242ed3b.png",
     "static/media/java_logo_Scaled.png": "/static/media/java_logo_Scaled.e0ce4c71f7b949059828.png",
     "static/media/JeremyDuncan_Resume.docx": "/static/media/JeremyDuncan_Resume.777249219b1a70459fc0.docx",
     "static/media/mad-libs.webp": "/static/media/mad-libs.d9688981bec47eab5c40.webp",
@@ -90,12 +89,12 @@
     "static/media/roboto-greek-ext-300-normal.woff2": "/static/media/roboto-greek-ext-300-normal.35b9d6be04b95f0f0530.woff2",
     "index.html": "/index.html",
     "static/media/roboto-greek-ext-700-normal.woff2": "/static/media/roboto-greek-ext-700-normal.bd9854c751441ccc1a70.woff2",
-    "main.1959a623.css.map": "/static/css/main.1959a623.css.map",
-    "main.f39a7a11.js.map": "/static/js/main.f39a7a11.js.map",
+    "main.ddec928c.css.map": "/static/css/main.ddec928c.css.map",
+    "main.927b2204.js.map": "/static/js/main.927b2204.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1959a623.css",
-    "static/js/main.f39a7a11.js"
+    "static/css/main.ddec928c.css",
+    "static/js/main.927b2204.js"
   ]
 }
