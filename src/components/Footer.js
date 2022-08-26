@@ -67,7 +67,7 @@ class Footer extends Component {
               </Link>
               .
             </Typography>
-            <Typography>Jeremy Duncan &copy; 2022</Typography>
+            <Typography>Copyright &copy; 2022 Jeremy Duncan</Typography>
           </Item>
         </Grid>
       </Box>
