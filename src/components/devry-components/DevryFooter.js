@@ -66,7 +66,7 @@ class DevryFooter extends Component {
               .
             </Typography>
             <Typography sx={{ fontWeight: "bold" }}>
-              Jeremy Duncan &copy; 2022
+              Copyright &copy; 2022 Jeremy Duncan
             </Typography>
           </Item>
         </Grid>
