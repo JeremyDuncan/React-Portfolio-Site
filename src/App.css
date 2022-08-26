@@ -8,13 +8,34 @@ body {
 #devryLogo {
   width: 140px;
 }
-
+#jeremyLogo {
+  width: 200px;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
 @media only screen 
 and (min-device-width: 375px) 
 and (max-device-width: 812px)  {
 
   #devryLogo {
     width: 90px;
+    height: 95px;
+  }
+}
+
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 812px)  {
+
+  #jeremyLogo {
+    width: 150px;
     height: 95px;
   }
 }
