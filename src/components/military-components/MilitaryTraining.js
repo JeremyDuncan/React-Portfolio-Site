@@ -8,20 +8,13 @@ import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
-import NavigateNextRoundedIcon from "@mui/icons-material/NavigateNextRounded";
 import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
 import { styled } from "@mui/material/styles";
 import Typography from "@mui/material/Typography";
 import Image from "mui-image";
 import React, { Component } from "react";
-import ceis101 from "../../download/CEIS101_FinalProject_Jeremy-Duncan.pptx";
-import ceis150 from "../../download/CEIS150_FinalProject_Jeremy-Duncan.pptx";
-import netw211 from "../../download/NETW211_FinalProject_Jeremy-Duncan.pptx";
-import phys204 from "../../download/PHYS204_FinalProject_Jeremy-Duncan.pptx";
-import sec285 from "../../download/SEC285_FinalProject_Jeremy-Duncan.pptx";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
