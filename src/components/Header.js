@@ -7,6 +7,7 @@ import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
+import ContactPageIcon from "@mui/icons-material/ContactPage";
 import EmojiPeopleIcon from "@mui/icons-material/EmojiPeople";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -100,6 +101,23 @@ const pages = [
       }}
     />
     College
+  </Link>,
+  <Link
+    sx={{ textShadow: "0px 1.5px 9px #292727" }}
+    color="inherit"
+    underline="none"
+    href="/Contact"
+  >
+    <ContactPageIcon
+      sx={{
+        display: "inline-flex",
+        verticalAlign: "text-bottom",
+        textAlign: "center",
+        fontSize: "large",
+        pr: { xs: ".5rem", sm: ".3rem" },
+      }}
+    />
+    Contact
   </Link>,
 ];
 
