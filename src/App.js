@@ -7,6 +7,7 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import * as React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
+import Contact from "./pages/Contact";
 import Devry from "./pages/Devry";
 import Home from "./pages/Home";
 import Military from "./pages/Military";
@@ -53,7 +54,7 @@ function App() {
               <Route exact path="/" element={<Home />} />
               <Route path="/DeVry-University-Projects" element={<Devry />} />
               <Route path="/Military-Training" element={<Military />} />
-              {/* <Route path="/Contact" element={<Contact />} /> */}
+              <Route path="/Contact" element={<Contact />} />
             </Routes>
           </Router>
         </div>
