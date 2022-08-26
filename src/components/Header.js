@@ -9,8 +9,7 @@ import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 import ContactPageIcon from "@mui/icons-material/ContactPage";
 import EmojiPeopleIcon from "@mui/icons-material/EmojiPeople";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import HomeIcon from "@mui/icons-material/Home";
 import MenuIcon from "@mui/icons-material/Menu";
 import MilitaryTechIcon from "@mui/icons-material/MilitaryTech";
 import SchoolIcon from "@mui/icons-material/School";
@@ -29,45 +28,23 @@ import * as React from "react";
 
 const pages = [
   <Link
-    sx={{
-      textShadow: "0px 1.5px 9px #292727",
-    }}
-    color="inherit"
-    underline="none"
-    target="_blank"
-    rel="noopener"
-    href="https://github.com/JeremyDuncan"
-  >
-    <GitHubIcon
-      sx={{
-        display: "inline-flex",
-        verticalAlign: "text-bottom",
-        textAlign: "center",
-        fontSize: "large",
-        pr: { xs: ".5rem", sm: ".2rem" },
-      }}
-    />
-    Github
-  </Link>,
-  <Link
     sx={{ textShadow: "0px 1.5px 9px #292727" }}
     color="inherit"
     underline="none"
-    target="_blank"
-    rel="noopener"
-    href="https://www.linkedin.com/in/jeremy-duncan2021/"
+    href="/"
   >
-    <LinkedInIcon
+    <HomeIcon
       sx={{
         display: "inline-flex",
         verticalAlign: "text-bottom",
         textAlign: "center",
         fontSize: "large",
-        pr: { xs: ".5rem", sm: ".2rem" },
+        pr: { xs: ".5rem", sm: ".3rem" },
       }}
     />
-    LinkedIn
+    Home
   </Link>,
+
   <Link
     sx={{ textShadow: "0px 1.5px 9px #292727" }}
     color="inherit"

@@ -1,6 +1,6 @@
 // *****************************************************************************
-// This is the MilitaryProjects Component.
-// Goes to ==> Contact.js Component
+// This is the DevryProjects Component.
+// Goes to ==> Devry.js Component
 // Images need to be 600w x 300h for best look
 // *****************************************************************************
 
@@ -8,7 +8,12 @@ import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
+import EmailRoundedIcon from "@mui/icons-material/EmailRounded";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import PhoneIcon from "@mui/icons-material/Phone";
 import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
 import { styled } from "@mui/material/styles";
@@ -24,14 +29,14 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 
-class MilitaryTraining extends Component {
+class ContactInfo extends Component {
   render() {
     return (
       <Box sx={{ flexGrow: 1 }}>
         <Grid
           container
           spacing={2}
-          direction="row"
+          direction="column"
           justifyContent="center"
           alignItems="center"
         >
@@ -103,24 +108,12 @@ class MilitaryTraining extends Component {
                 textAlign: "center",
                 alignItem: "center",
                 margin: "auto",
-                width: { xs: "350px", sm: "530px", md: "1150px" },
+                width: { xs: "350px", md: "500px" },
                 borderRadius: "20px",
-                marginBottom: ".2rem",
+                marginBottom: { xs: "3rem", sm: "3rem" },
               }}
             />
           </Grid>
-          <Grid
-            elevation={24}
-            mb={5}
-            ml={1.2}
-            xs={10}
-            sx={{
-              height: "1px",
-              border: "2px solid clear",
-              borderRadius: "20px",
-            }}
-          />
-
           {/*//========================= Pictures GRID BOX ================> */}
           <Grid
             sx={{
@@ -128,31 +121,74 @@ class MilitaryTraining extends Component {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
+              pt: { xs: "0rem", md: "1rem" },
             }}
-            pr={2}
-            pl={3}
           >
-            <Grid item xs={12} sm={12} md={6} lg={6} xl={12}>
-              <Typography>Call</Typography>
-              <Typography>Email</Typography>
-              <Typography>LinkedIn</Typography>
-              <Typography>GitHub</Typography>
-            </Grid>
-
-            <Grid item xs={12} sm={12} md={6} lg={6} xl={12}>
+            <Grid item xs={6} sm={6} md={5} lg={5} xl={5}>
               {/*==> Image Link <== ===*/}
               <Image
                 src={require("../../images/Jeremy_duncan_logo_React.webp")}
                 sx={{ borderRadius: "5px" }}
-                shift="right"
+                shift="bottom"
                 distance={400}
               />
             </Grid>
           </Grid>
           {/*//================= PICTURE GRID END =========================> */}
+
+          <Grid
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              pt: "3.2rem",
+              pb: "30rem",
+              gap: "1rem",
+            }}
+          >
+            <Item sx={{ bgcolor: "darkGrey", borderRadius: "150px" }}>
+              <Button
+                className="headerLink"
+                href="tel:770-309-2046"
+                target="_blank"
+                rel="noopener"
+                sx={{ color: "white" }}
+              >
+                <PhoneIcon fontSize="large" />
+              </Button>
+
+              <Button
+                className="headerLink"
+                href="mailto:jeremy.duncan1984@gmail.com"
+                target="_blank"
+                rel="noopener"
+                sx={{ color: "white" }}
+              >
+                <EmailRoundedIcon fontSize="large" />
+              </Button>
+              <Button
+                className="headerLink"
+                href="https://www.linkedin.com/in/jeremy-duncan2021/"
+                target="_blank"
+                rel="noopener"
+                sx={{ color: "white" }}
+              >
+                <LinkedInIcon fontSize="large" />
+              </Button>
+              <Button
+                className="headerLink"
+                href="https://github.com/JeremyDuncan"
+                target="_blank"
+                rel="noopener"
+                sx={{ color: "white" }}
+              >
+                <GitHubIcon fontSize="large" />
+              </Button>
+            </Item>
+          </Grid>
         </Grid>
       </Box>
     );
   }
 }
-export default MilitaryTraining;
+export default ContactInfo;

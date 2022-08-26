@@ -38,8 +38,8 @@ class ContactFooter extends Component {
         <Grid item xs={12}>
           <Item
             sx={{
-              bgcolor: "#ffffff",
-              color: "#004787",
+              bgcolor: "primary.main",
+              color: "white",
               borderRadius: "0px",
             }}
           >

@@ -8,6 +8,7 @@ import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
+import SchoolIcon from "@mui/icons-material/School";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
@@ -31,7 +32,7 @@ class MilitaryTraining extends Component {
         <Grid
           container
           spacing={2}
-          direction="row"
+          direction="column"
           justifyContent="center"
           alignItems="center"
         >
@@ -103,7 +104,7 @@ class MilitaryTraining extends Component {
                 textAlign: "center",
                 alignItem: "center",
                 margin: "auto",
-                width: { xs: "350px", sm: "530px", md: "1150px" },
+                width: { xs: "350px", md: "100%" },
                 borderRadius: "20px",
                 marginBottom: ".2rem",
               }}
@@ -210,8 +211,9 @@ class MilitaryTraining extends Component {
             xl={11}
             sx={{
               height: "1px",
-              border: "2px solid gray",
-              borderRadius: "20px",
+              border: "5px solid gray",
+              borderRadius: "5px",
+              width: "70%",
             }}
           />
 
@@ -223,967 +225,690 @@ class MilitaryTraining extends Component {
               flexDirection: "column",
             }}
           >
-            {/*//============= Security SCHOOL GRID BOX ===================> */}
             <Grid
+              item
+              xs={10.5}
+              sm={10.5}
+              md={10.5}
+              lg={10.5}
+              xl={10.5}
               sx={{
                 display: "flex",
                 justifyContent: "center",
-                alignItems: "center",
+                alignItems: "left",
                 flexDirection: "column",
               }}
-              ml={1}
-              pb={2.5}
             >
-              <Grid
-                item
-                ml={1}
-                xs={10}
-                sm={10}
-                md={10}
-                lg={10}
-                xl={10}
-                sx={{ display: "flex", alignItems: "center" }}
-              >
-                <Item
-                  sx={{
-                    width: {
-                      xs: "initial",
-                      sm: "700px",
-                      md: "1000px",
-                      lg: "1200px",
-                    },
-                  }}
-                  elevation={12}
-                >
-                  <Typography
-                    pl={12}
-                    pr={12}
-                    sx={{
-                      color: "#004787",
-                      textShadow: "1.5px 1.5px 4px lightgrey",
-                      fontWeight: "bold",
-                      fontSize: { xs: "1rem", sm: "1.3rem", md: "1.4rem" },
-                    }}
-                  >
-                    Security Reaction Force Advanced
-                  </Typography>
-                  <Typography
-                    sx={{
-                      color: "#2c2d30",
-                      textShadow: "1.5px 1.5px 4px lightgrey",
-                      fontSize: { xs: ".8rem", sm: ".9rem", md: "1.1rem" },
-                      textAlign: "center",
-                    }}
-                    pb={0.5}
-                  >
-                    Academi- Southwest — 2016
-                    <br />
-                    San Diego, CA
-                  </Typography>
-                </Item>
-              </Grid>
-            </Grid>
-            {/*//========================= GRID END =========================> */}
+              {/*//============= Security SCHOOL GRID BOX ===================> */}
 
-            {/*//========= Security basic SCHOOL GRID BOX =================> */}
-            <Grid
-              sx={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-              ml={1}
-              pb={2.5}
-            >
-              <Grid
-                item
-                ml={1}
-                xs={10}
-                sm={10}
-                md={10}
-                lg={10}
-                xl={10}
-                sx={{ display: "flex", alignItems: "center" }}
+              <Typography
+                sx={{
+                  color: "lightgray",
+                  textShadow: ".5px .5px 2px black",
+                  fontWeight: "bold",
+                  fontSize: { xs: "1rem", sm: "1.3rem", md: "1.4rem" },
+                  textAlign: "left",
+                }}
               >
-                <Item
-                  sx={{
-                    width: {
-                      xs: "initial",
-                      sm: "700px",
-                      md: "1000px",
-                      lg: "1200px",
-                    },
-                  }}
-                  elevation={12}
-                >
-                  <Typography
-                    pl={8}
-                    pr={8}
-                    sx={{
-                      color: "#004787",
-                      textShadow: "1.5px 1.5px 4px lightgrey",
-                      fontWeight: "bold",
-                      fontSize: { xs: "1rem", sm: "1.3rem", md: "1.4rem" },
-                    }}
-                  >
-                    Armed Sentry/Security Reaction Force- Basic 
-                  </Typography>
-                  <Typography
-                    sx={{
-                      color: "#424447",
-                      textShadow: "1.5px 1.5px 4px lightgrey",
-                      fontSize: { xs: ".8rem", sm: "1.1rem", md: "1.1rem" },
-                    }}
-                    pb={0.5}
-                  >
-                    Academi- Southwest — 2016
-                    <br />
-                    San Diego, CA
-                  </Typography>
-                </Item>
-              </Grid>
-            </Grid>
-            {/*//========================= GRID END =======================> */}
+                <SchoolIcon fontSize="small" /> Security Reaction Force Advanced
+              </Typography>
+              <Typography
+                sx={{
+                  color: "lightgray",
+                  textShadow: ".5px .5px 2px black",
+                  fontSize: { xs: "1rem", sm: "1rem", md: "1.1rem" },
+                  textAlign: "left",
+                }}
+                pb={4}
+                pl={4}
+              >
+                Academi-Southwest — 2016 | San Diego, CA
+              </Typography>
 
-            {/*//=============SGSI SCHOOL GRID BOX ========================> */}
-            <Grid
-              sx={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-              ml={1}
-              pb={2.5}
-            >
-              <Grid
-                item
-                ml={1}
-                xs={10}
-                sm={10}
-                md={10}
-                lg={10}
-                xl={10}
-                sx={{ display: "flex", alignItems: "center" }}
-              >
-                <Item
-                  sx={{
-                    width: {
-                      xs: "initial",
-                      sm: "700px",
-                      md: "1000px",
-                      lg: "1200px",
-                    },
-                  }}
-                  elevation={12}
-                >
-                  <Typography
-                    pl={3}
-                    pr={3}
-                    sx={{
-                      color: "#004787",
-                      textShadow: "1.5px 1.5px 4px lightgrey",
-                      fontWeight: "bold",
-                      fontSize: { xs: "1rem", sm: "1.3rem", md: "1.4rem" },
-                    }}
-                  >
-                    Stabilized Glide Slope Indicator and Wave Off Light System
-                    Maintenance
-                  </Typography>
-                  <Typography
-                    sx={{
-                      color: "#2c2d30",
-                      textShadow: "1.5px 1.5px 4px lightgrey",
-                      fontSize: { xs: ".8rem", sm: "1.1rem", md: "1.1rem" },
-                    }}
-                    pb={0.5}
-                  >
-                    Center for Naval Aviation Technical Training Unit, North
-                    Island — 2016
-                    <br />
-                    San Diego, CA
-                  </Typography>
-                </Item>
-              </Grid>
-            </Grid>
-            {/*//========================= GRID END =======================> */}
+              {/*//========================= GRID END =========================> */}
 
-            {/*//============= IVCS SCHOOL GRID BOX =====================> */}
-            <Grid
-              sx={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-              ml={1}
-              pb={2.5}
-            >
               <Grid
-                item
-                ml={1}
+                elevation={24}
+                mb={5}
+                ml={1.2}
                 xs={10}
-                sm={10}
-                md={10}
-                lg={10}
-                xl={10}
-                sx={{ display: "flex", alignItems: "center" }}
-              >
-                <Item
-                  sx={{
-                    width: {
-                      xs: "initial",
-                      sm: "700px",
-                      md: "1000px",
-                      lg: "1200px",
-                    },
-                  }}
-                  elevation={12}
-                >
-                  <Typography
-                    pl={3}
-                    pr={3}
-                    sx={{
-                      color: "#004787",
-                      textShadow: "1.5px 1.5px 4px lightgrey",
-                      fontWeight: "bold",
-                      fontSize: { xs: "1rem", sm: "1.3rem", md: "1.4rem" },
-                    }}
-                  >
-                    MarCom Integrated Voice Communication System (IVCS)
-                  </Typography>
-                  <Typography
-                    sx={{
-                      color: "#2c2d30",
-                      textShadow: "1.5px 1.5px 4px lightgrey",
-                      fontSize: { xs: ".8rem", sm: "1.1rem", md: "1.1rem" },
-                    }}
-                    pb={0.5}
-                  >
-                    Center for Surface Combat Systems — 2015
-                    <br />
-                    San Diego, CA
-                  </Typography>
-                </Item>
-              </Grid>
-            </Grid>
-            {/*//========================= GRID END =======================> */}
+                xl={11}
+                sx={{
+                  height: ".5px",
+                  border: ".5px solid gray",
+                  borderRadius: "5px",
+                  width: "100%",
+                }}
+              />
 
-            {/*//============= Data Link SCHOOL GRID BOX ==================> */}
-            <Grid
-              sx={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-              ml={1}
-              pb={2.5}
-            >
-              <Grid
-                item
-                ml={1}
-                xs={10}
-                sm={10}
-                md={10}
-                lg={10}
-                xl={10}
-                sx={{ display: "flex", alignItems: "center" }}
-              >
-                <Item
-                  sx={{
-                    width: {
-                      xs: "initial",
-                      sm: "700px",
-                      md: "1000px",
-                      lg: "1200px",
-                    },
-                  }}
-                  elevation={12}
-                >
-                  <Typography
-                    pl={3}
-                    pr={3}
-                    sx={{
-                      color: "#004787",
-                      textShadow: "1.5px 1.5px 4px lightgrey",
-                      fontWeight: "bold",
-                      fontSize: { xs: "1rem", sm: "1.3rem", md: "1.4rem" },
-                    }}
-                  >
-                    Data Link Communication System Maintenance Technician
-                    (DLCSMT)
-                  </Typography>
-                  <Typography
-                    sx={{
-                      color: "#2c2d30",
-                      textShadow: "1.5px 1.5px 4px lightgrey",
-                      fontSize: { xs: ".8rem", sm: "1.1rem", md: "1.1rem" },
-                    }}
-                    pb={0.5}
-                  >
-                    Center for Surface Combat Systems, Dam Neck — 2015
-                    <br />
-                    Virginia Beach, VA
-                  </Typography>
-                </Item>
-              </Grid>
-            </Grid>
-            {/*//========================= GRID END =======================> */}
+              {/*//========= Security basic SCHOOL GRID BOX =================> */}
 
-            {/*//============= WSN-7 SCHOOL GRID BOX ======================> */}
-            <Grid
-              sx={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-              ml={1}
-              pb={2.5}
-            >
-              <Grid
-                item
-                ml={1}
-                xs={10}
-                sm={10}
-                md={10}
-                lg={10}
-                xl={10}
-                sx={{ display: "flex", alignItems: "center" }}
+              <Typography
+                sx={{
+                  color: "lightgray",
+                  textShadow: ".5px .5px 2px black",
+                  fontWeight: "bold",
+                  fontSize: { xs: "1.2rem", sm: "1.3rem", md: "1.4rem" },
+                  textAlign: "left",
+                }}
               >
-                <Item
-                  sx={{
-                    width: {
-                      xs: "initial",
-                      sm: "700px",
-                      md: "1000px",
-                      lg: "1200px",
-                    },
-                  }}
-                  elevation={12}
-                >
-                  <Typography
-                    pl={3}
-                    pr={3}
-                    sx={{
-                      color: "#004787",
-                      textShadow: "1.5px 1.5px 4px lightgrey",
-                      fontWeight: "bold",
-                      fontSize: { xs: "1rem", sm: "1.3rem", md: "1.4rem" },
-                    }}
-                  >
-                    AN/WSN-7(V) INS and AN/WSN-7B(V) RLG Operation and
-                    Maintenance
-                  </Typography>
-                  <Typography
-                    sx={{
-                      color: "#2c2d30",
-                      textShadow: "1.5px 1.5px 4px lightgrey",
-                      fontSize: { xs: ".8rem", sm: "1.1rem", md: "1.1rem" },
-                    }}
-                    pb={0.5}
-                  >
-                    Center for Surface Combat Systems, Dam Neck — 2014 <br />
-                    Virginia Beach, VA
-                  </Typography>
-                </Item>
-              </Grid>
-            </Grid>
-            {/*//========================= GRID END =======================> */}
+                <SchoolIcon fontSize="small" /> Armed Sentry/Security Reaction
+                Force- Basic 
+              </Typography>
+              <Typography
+                sx={{
+                  color: "lightgray",
+                  textShadow: ".5px .5px 2px black",
+                  fontSize: { xs: "1rem", sm: "1rem", md: "1.1rem" },
+                  textAlign: "left",
+                }}
+                pb={4}
+                pl={4}
+              >
+                Academi- Southwest — 2016 | San Diego, CA
+              </Typography>
 
-            {/*//============= ISM SCHOOL GRID BOX ========================> */}
-            <Grid
-              sx={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-              ml={1}
-              pb={2.5}
-            >
-              <Grid
-                item
-                ml={1}
-                xs={10}
-                sm={10}
-                md={10}
-                lg={10}
-                xl={10}
-                sx={{ display: "flex", alignItems: "center" }}
-              >
-                <Item
-                  sx={{
-                    width: {
-                      xs: "initial",
-                      sm: "700px",
-                      md: "1000px",
-                      lg: "1200px",
-                    },
-                  }}
-                  elevation={12}
-                >
-                  <Typography
-                    pl={3}
-                    pr={3}
-                    sx={{
-                      color: "#004787",
-                      textShadow: "1.5px 1.5px 4px lightgrey",
-                      fontWeight: "bold",
-                      fontSize: { xs: "1rem", sm: "1.3rem", md: "1.4rem" },
-                    }}
-                  >
-                    Information Systems Maintenance Technician School
-                  </Typography>
-                  <Typography
-                    sx={{
-                      color: "#2c2d30",
-                      textShadow: "1.5px 1.5px 4px lightgrey",
-                      fontSize: { xs: ".8rem", sm: "1.1rem", md: "1.1rem" },
-                    }}
-                    pb={0.5}
-                  >
-                    Center for Information Dominance, Dam Neck — 2012 <br />
-                    Virginia Beach, VA
-                  </Typography>
-                </Item>
-              </Grid>
-            </Grid>
-            {/*//========================= GRID END =======================> */}
+              {/*//========================= GRID END =======================> */}
 
-            {/*//============= Instructor SCHOOL GRID BOX =================> */}
-            <Grid
-              sx={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-              ml={1}
-              pb={2.5}
-            >
               <Grid
-                item
-                ml={1}
+                elevation={24}
+                mb={5}
+                ml={1.2}
                 xs={10}
-                sm={10}
-                md={10}
-                lg={10}
-                xl={10}
-                sx={{ display: "flex", alignItems: "center" }}
-              >
-                <Item
-                  sx={{
-                    width: {
-                      xs: "initial",
-                      sm: "700px",
-                      md: "1000px",
-                      lg: "1200px",
-                    },
-                  }}
-                  elevation={12}
-                >
-                  <Typography
-                    pl={3}
-                    pr={3}
-                    sx={{
-                      color: "#004787",
-                      textShadow: "1.5px 1.5px 4px lightgrey",
-                      fontWeight: "bold",
-                      fontSize: { xs: "1rem", sm: "1.3rem", md: "1.4rem" },
-                    }}
-                  >
-                    Instructional Delivery Continuum (IDC) - Journeyman
-                    Instructor Training (JIT) - Basic Instructor
-                  </Typography>
-                  <Typography
-                    sx={{
-                      color: "#2c2d30",
-                      textShadow: "1.5px 1.5px 4px lightgrey",
-                      fontSize: { xs: ".8rem", sm: "1.1rem", md: "1.1rem" },
-                    }}
-                    pb={0.5}
-                  >
-                    Navy Leadership Training — 2011
-                    <br />
-                    Norfolk, VA
-                  </Typography>
-                </Item>
-              </Grid>
-            </Grid>
-            {/*//========================= GRID END =======================> */}
+                xl={11}
+                sx={{
+                  height: ".5px",
+                  border: ".5px solid gray",
+                  borderRadius: "5px",
+                  width: "100%",
+                }}
+              />
 
-            {/*//============= micro 2m SCHOOL GRID BOX =================> */}
-            <Grid
-              sx={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-              ml={1}
-              pb={2.5}
-            >
-              <Grid
-                item
-                ml={1}
-                xs={10}
-                sm={10}
-                md={10}
-                lg={10}
-                xl={10}
-                sx={{ display: "flex", alignItems: "center" }}
-              >
-                <Item
-                  sx={{
-                    width: {
-                      xs: "initial",
-                      sm: "700px",
-                      md: "1000px",
-                      lg: "1200px",
-                    },
-                  }}
-                  elevation={12}
-                >
-                  <Typography
-                    pl={9}
-                    pr={9}
-                    sx={{
-                      color: "#004787",
-                      textShadow: "1.5px 1.5px 4px lightgrey",
-                      fontWeight: "bold",
-                      fontSize: { xs: "1rem", sm: "1.3rem", md: "1.4rem" },
-                    }}
-                  >
-                    Microminiature Electronics Repair
-                  </Typography>
-                  <Typography
-                    sx={{
-                      color: "#2c2d30",
-                      textShadow: "1.5px 1.5px 4px lightgrey",
-                      fontSize: { xs: ".8rem", sm: "1.1rem", md: "1.1rem" },
-                    }}
-                    pb={0.5}
-                  >
-                    Fleet Training Center — 2010
-                    <br />
-                    Norfolk, VA
-                  </Typography>
-                </Item>
-              </Grid>
-            </Grid>
-            {/*//========================= GRID END =======================> */}
+              {/*//=============SGSI SCHOOL GRID BOX ========================> */}
 
-            {/*//============= sps-73 SCHOOL GRID BOX =====================> */}
-            <Grid
-              sx={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-              ml={1}
-              pb={2.5}
-            >
-              <Grid
-                item
-                ml={1}
-                xs={10}
-                sm={10}
-                md={10}
-                lg={10}
-                xl={10}
-                sx={{ display: "flex", alignItems: "center" }}
+              <Typography
+                sx={{
+                  color: "lightgray",
+                  textShadow: ".5px .5px 2px black",
+                  fontWeight: "bold",
+                  fontSize: { xs: "1rem", sm: "1.3rem", md: "1.4rem" },
+                  textAlign: "left",
+                }}
               >
-                <Item
-                  sx={{
-                    width: {
-                      xs: "initial",
-                      sm: "700px",
-                      md: "1000px",
-                      lg: "1200px",
-                    },
-                  }}
-                  elevation={12}
-                >
-                  <Typography
-                    pl={3}
-                    pr={3}
-                    sx={{
-                      color: "#004787",
-                      textShadow: "1.5px 1.5px 4px lightgrey",
-                      fontWeight: "bold",
-                      fontSize: { xs: "1rem", sm: "1.3rem", md: "1.4rem" },
-                    }}
-                  >
-                    AN/SPS-73 Surface Search Radar Set Combined Maintenance
-                    School
-                  </Typography>
-                  <Typography
-                    sx={{
-                      color: "#2c2d30",
-                      textShadow: "1.5px 1.5px 4px lightgrey",
-                      fontSize: { xs: ".8rem", sm: "1.1rem", md: "1.1rem" },
-                    }}
-                    pb={0.5}
-                  >
-                    Center for Surface Combat Systems — 2010
-                    <br />
-                    Norfolk, VA
-                  </Typography>
-                </Item>
-              </Grid>
-            </Grid>
-            {/*//========================= GRID END =======================> */}
+                <SchoolIcon fontSize="small" /> Stabilized Glide Slope Indicator
+                and Wave Off Light System Maintenance
+              </Typography>
+              <Typography
+                sx={{
+                  color: "lightgray",
+                  textShadow: ".5px .5px 2px black",
+                  fontSize: { xs: "1rem", sm: "1rem", md: "1.1rem" },
+                  textAlign: "left",
+                }}
+                pb={4}
+                pl={4}
+              >
+                Center for Naval Aviation Technical Training Unit, North Island
+                — 2016 | San Diego, CA
+              </Typography>
 
-            {/*//============= mini 2m SCHOOL GRID BOX =====================> */}
-            <Grid
-              sx={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-              ml={1}
-              pb={2.5}
-            >
-              <Grid
-                item
-                ml={1}
-                xs={10}
-                sm={10}
-                md={10}
-                lg={10}
-                xl={10}
-                sx={{ display: "flex", alignItems: "center" }}
-              >
-                <Item
-                  sx={{
-                    width: {
-                      xs: "initial",
-                      sm: "700px",
-                      md: "1000px",
-                      lg: "1200px",
-                    },
-                  }}
-                  elevation={12}
-                >
-                  <Typography
-                    pl={12}
-                    pr={12}
-                    sx={{
-                      color: "#004787",
-                      textShadow: "1.5px 1.5px 4px lightgrey",
-                      fontWeight: "bold",
-                      fontSize: { xs: "1rem", sm: "1.3rem", md: "1.4rem" },
-                    }}
-                  >
-                    Miniature Electronics Repair
-                  </Typography>
-                  <Typography
-                    sx={{
-                      color: "#2c2d30",
-                      textShadow: "1.5px 1.5px 4px lightgrey",
-                      fontSize: { xs: ".8rem", sm: "1.1rem", md: "1.1rem" },
-                    }}
-                    pb={0.5}
-                  >
-                    Center for Surface Combat Systems — 2007 <br />
-                    Norfolk, VA
-                  </Typography>
-                </Item>
-              </Grid>
-            </Grid>
-            {/*//========================= GRID END =======================> */}
+              {/*//========================= GRID END =======================> */}
 
-            {/*//============= AN/SYQ-7 SCHOOL GRID BOX ===================> */}
-            <Grid
-              sx={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-              ml={1}
-              pb={2.5}
-            >
               <Grid
-                item
-                ml={1}
+                elevation={24}
+                mb={5}
+                ml={1.2}
                 xs={10}
-                sm={10}
-                md={10}
-                lg={10}
-                xl={10}
-                sx={{ display: "flex", alignItems: "center" }}
-              >
-                <Item
-                  sx={{
-                    width: {
-                      xs: "initial",
-                      sm: "700px",
-                      md: "1000px",
-                      lg: "1200px",
-                    },
-                  }}
-                  elevation={12}
-                >
-                  <Typography
-                    pl={3}
-                    pr={3}
-                    sx={{
-                      color: "#004787",
-                      textShadow: "1.5px 1.5px 4px lightgrey",
-                      fontWeight: "bold",
-                      fontSize: { xs: "1rem", sm: "1.3rem", md: "1.4rem" },
-                    }}
-                  >
-                    AN/SYQ-7 (V) 2 Naval Modular Automated Communications
-                    Systems Maintenance School
-                  </Typography>
-                  <Typography
-                    sx={{
-                      color: "#2c2d30",
-                      textShadow: "1.5px 1.5px 4px lightgrey",
-                      fontSize: { xs: ".8rem", sm: "1.1rem", md: "1.1rem" },
-                    }}
-                    pb={0.5}
-                  >
-                    Fleet Training Center — 2006 <br />
-                    San Diego, CA
-                  </Typography>
-                </Item>
-              </Grid>
-            </Grid>
-            {/*//========================= GRID END =======================> */}
+                xl={11}
+                sx={{
+                  height: ".5px",
+                  border: ".5px solid gray",
+                  borderRadius: "5px",
+                  width: "100%",
+                }}
+              />
 
-            {/*//============= (UHF)  SCHOOL GRID BOX =====================> */}
-            <Grid
-              sx={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-              ml={1}
-              pb={2.5}
-            >
-              <Grid
-                item
-                ml={1}
-                xs={10}
-                sm={10}
-                md={10}
-                lg={10}
-                xl={10}
-                sx={{ display: "flex", alignItems: "center" }}
-              >
-                <Item
-                  sx={{
-                    width: {
-                      xs: "initial",
-                      sm: "700px",
-                      md: "1000px",
-                      lg: "1200px",
-                    },
-                  }}
-                  elevation={12}
-                >
-                  <Typography
-                    pl={3}
-                    pr={3}
-                    sx={{
-                      color: "#004787",
-                      textShadow: "1.5px 1.5px 4px lightgrey",
-                      fontWeight: "bold",
-                      fontSize: { xs: "1rem", sm: "1.3rem", md: "1.4rem" },
-                    }}
-                  >
-                    Ultra High Frequency Systems (UHF) Technician School
-                  </Typography>
-                  <Typography
-                    sx={{
-                      color: "#2c2d30",
-                      textShadow: "1.5px 1.5px 4px lightgrey",
-                      fontSize: { xs: ".8rem", sm: "1.1rem", md: "1.1rem" },
-                    }}
-                    pb={0.5}
-                  >
-                    Center for Service Support Learning — 2006
-                    <br />
-                    San Diego, CA
-                  </Typography>
-                </Item>
-              </Grid>
-            </Grid>
-            {/*//========================= GRID END =======================> */}
+              {/*//============= IVCS SCHOOL GRID BOX =====================> */}
 
-            {/*//============= (HF)  SCHOOL GRID BOX =====================> */}
-            <Grid
-              sx={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-              ml={1}
-              pb={2.5}
-            >
-              <Grid
-                item
-                ml={1}
-                xs={10}
-                sm={10}
-                md={10}
-                lg={10}
-                xl={10}
-                sx={{ display: "flex", alignItems: "center" }}
+              <Typography
+                sx={{
+                  color: "lightgray",
+                  textShadow: ".5px .5px 2px black",
+                  fontWeight: "bold",
+                  fontSize: { xs: "1rem", sm: "1.3rem", md: "1.4rem" },
+                  textAlign: "left",
+                }}
               >
-                <Item
-                  sx={{
-                    width: {
-                      xs: "initial",
-                      sm: "700px",
-                      md: "1000px",
-                      lg: "1200px",
-                    },
-                  }}
-                  elevation={12}
-                >
-                  <Typography
-                    pl={3}
-                    pr={3}
-                    sx={{
-                      color: "#004787",
-                      textShadow: "1.5px 1.5px 4px lightgrey",
-                      fontWeight: "bold",
-                      fontSize: { xs: "1rem", sm: "1.3rem", md: "1.4rem" },
-                    }}
-                  >
-                    High Frequency Systems (HF) Maintenance Technician School
-                  </Typography>
-                  <Typography
-                    sx={{
-                      color: "#2c2d30",
-                      textShadow: "1.5px 1.5px 4px lightgrey",
-                      fontSize: { xs: ".8rem", sm: "1.1rem", md: "1.1rem" },
-                    }}
-                    pb={0.5}
-                  >
-                    Center for Service Support Learning — 2006
-                    <br />
-                    San Diego, CA
-                  </Typography>
-                </Item>
-              </Grid>
-            </Grid>
-            {/*//========================= GRID END =======================> */}
+                <SchoolIcon fontSize="small" /> MarCom Integrated Voice
+                Communication System (IVCS)
+              </Typography>
+              <Typography
+                sx={{
+                  color: "lightgray",
+                  textShadow: ".5px .5px 2px black",
+                  fontSize: { xs: "1rem", sm: "1rem", md: "1.1rem" },
+                  textAlign: "left",
+                }}
+                pb={4}
+                pl={4}
+              >
+                Center for Surface Combat Systems — 2015 | San Diego, CA
+              </Typography>
 
-            {/*//============= ET A  SCHOOL GRID BOX =====================> */}
-            <Grid
-              sx={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-              ml={1}
-              pb={2.5}
-            >
-              <Grid
-                item
-                ml={1}
-                xs={10}
-                sm={10}
-                md={10}
-                lg={10}
-                xl={10}
-                sx={{ display: "flex", alignItems: "center" }}
-              >
-                <Item
-                  sx={{
-                    width: {
-                      xs: "initial",
-                      sm: "700px",
-                      md: "1000px",
-                      lg: "1200px",
-                    },
-                  }}
-                  elevation={12}
-                >
-                  <Typography
-                    pl={12}
-                    pr={12}
-                    sx={{
-                      color: "#004787",
-                      textShadow: "1.5px 1.5px 4px lightgrey",
-                      fontWeight: "bold",
-                      fontSize: { xs: "1rem", sm: "1.3rem", md: "1.4rem" },
-                    }}
-                  >
-                    Electronics Technician (ET) A School
-                  </Typography>
-                  <Typography
-                    sx={{
-                      color: "#2c2d30",
-                      textShadow: "1.5px 1.5px 4px lightgrey",
-                      fontSize: { xs: ".8rem", sm: "1.1rem", md: "1.1rem" },
-                    }}
-                    pb={0.5}
-                  >
-                    Center for Surface Combat Systems — 2005-2006
-                    <br />
-                    Great Lakes, IL
-                  </Typography>
-                </Item>
-              </Grid>
-            </Grid>
-            {/*//========================= GRID END =======================> */}
+              {/*//========================= GRID END =======================> */}
 
-            {/*//======== apprentice training SCHOOL GRID BOX =============> */}
-            <Grid
-              sx={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-              ml={1}
-              pb={2.5}
-            >
               <Grid
-                item
-                ml={1}
+                elevation={24}
+                mb={5}
+                ml={1.2}
                 xs={10}
-                sm={10}
-                md={10}
-                lg={10}
-                xl={10}
-                sx={{ display: "flex", alignItems: "center" }}
+                xl={11}
+                sx={{
+                  height: ".5px",
+                  border: ".5px solid gray",
+                  borderRadius: "5px",
+                  width: "100%",
+                }}
+              />
+
+              {/*//============= Data Link SCHOOL GRID BOX ==================> */}
+
+              <Typography
+                sx={{
+                  color: "lightgray",
+                  textShadow: ".5px .5px 2px black",
+                  fontWeight: "bold",
+                  fontSize: { xs: "1rem", sm: "1.3rem", md: "1.4rem" },
+                  textAlign: "left",
+                }}
               >
-                <Item
-                  sx={{
-                    width: {
-                      xs: "initial",
-                      sm: "700px",
-                      md: "1000px",
-                      lg: "1200px",
-                    },
-                  }}
-                  elevation={12}
-                >
-                  <Typography
-                    pl={3}
-                    pr={3}
-                    sx={{
-                      color: "#004787",
-                      textShadow: "1.5px 1.5px 4px lightgrey",
-                      fontWeight: "bold",
-                      fontSize: { xs: "1rem", sm: "1.3rem", md: "1.4rem" },
-                    }}
-                  >
-                    Electronics Technician Apprentice Technical Training
-                  </Typography>
-                  <Typography
-                    sx={{
-                      color: "#2c2d30",
-                      textShadow: "1.5px 1.5px 4px lightgrey",
-                      fontSize: { xs: ".8rem", sm: "1.1rem", md: "1.1rem" },
-                    }}
-                    pb={0.5}
-                  >
-                    Center for Surface Combat Systems — 2005 <br />
-                    Great Lakes, IL
-                  </Typography>
-                </Item>
-              </Grid>
+                <SchoolIcon fontSize="small" /> Data Link Communication System
+                Maintenance Technician (DLCSMT)
+              </Typography>
+              <Typography
+                sx={{
+                  color: "lightgray",
+                  textShadow: ".5px .5px 2px black",
+                  fontSize: { xs: "1rem", sm: "1rem", md: "1.1rem" },
+                  textAlign: "left",
+                }}
+                pb={4}
+                pl={4}
+              >
+                Center for Surface Combat Systems, Dam Neck — 2015 | Virginia
+                Beach, VA
+              </Typography>
+
+              {/*//========================= GRID END =======================> */}
+
+              <Grid
+                elevation={24}
+                mb={5}
+                ml={1.2}
+                xs={10}
+                xl={11}
+                sx={{
+                  height: ".5px",
+                  border: ".5px solid gray",
+                  borderRadius: "5px",
+                  width: "100%",
+                }}
+              />
+
+              {/*//============= WSN-7 SCHOOL GRID BOX ======================> */}
+              <Typography
+                sx={{
+                  color: "lightgray",
+                  textShadow: ".5px .5px 2px black",
+                  fontWeight: "bold",
+                  fontSize: { xs: "1rem", sm: "1.3rem", md: "1.4rem" },
+                  textAlign: "left",
+                }}
+              >
+                <SchoolIcon fontSize="small" /> AN/WSN-7(V) INS and AN/WSN-7B(V)
+                RLG Operation and Maintenance
+              </Typography>
+              <Typography
+                sx={{
+                  color: "lightgray",
+                  textShadow: ".5px .5px 2px black",
+                  fontSize: { xs: "1rem", sm: "1rem", md: "1.1rem" },
+                  textAlign: "left",
+                }}
+                pb={4}
+                pl={4}
+              >
+                Center for Surface Combat Systems, Dam Neck — 2014 | Virginia
+                Beach, VA
+              </Typography>
+
+              {/*//========================= GRID END =======================> */}
+
+              <Grid
+                elevation={24}
+                mb={5}
+                ml={1.2}
+                xs={10}
+                xl={11}
+                sx={{
+                  height: ".5px",
+                  border: ".5px solid gray",
+                  borderRadius: "5px",
+                  width: "100%",
+                }}
+              />
+
+              {/*//============= ISM SCHOOL GRID BOX ========================> */}
+
+              <Typography
+                sx={{
+                  color: "lightgray",
+                  textShadow: ".5px .5px 2px black",
+                  fontWeight: "bold",
+                  fontSize: { xs: "1rem", sm: "1.3rem", md: "1.4rem" },
+                  textAlign: "left",
+                }}
+              >
+                <SchoolIcon fontSize="small" /> Information Systems Maintenance
+                Technician School
+              </Typography>
+              <Typography
+                sx={{
+                  color: "lightgray",
+                  textShadow: ".5px .5px 2px black",
+                  fontSize: { xs: "1rem", sm: "1rem", md: "1.1rem" },
+                  textAlign: "left",
+                }}
+                pb={4}
+                pl={4}
+              >
+                Center for Information Dominance, Dam Neck — 2012 | Virginia
+                Beach, VA
+              </Typography>
+
+              {/*//========================= GRID END =======================> */}
+
+              <Grid
+                elevation={24}
+                mb={5}
+                ml={1.2}
+                xs={10}
+                xl={11}
+                sx={{
+                  height: ".5px",
+                  border: ".5px solid gray",
+                  borderRadius: "5px",
+                  width: "100%",
+                }}
+              />
+
+              {/*//============= Instructor SCHOOL GRID BOX =================> */}
+
+              <Typography
+                sx={{
+                  color: "lightgray",
+                  textShadow: ".5px .5px 2px black",
+                  fontWeight: "bold",
+                  fontSize: { xs: "1rem", sm: "1.3rem", md: "1.4rem" },
+                  textAlign: "left",
+                }}
+              >
+                <SchoolIcon fontSize="small" /> Instructional Delivery Continuum
+                (IDC) - Journeyman Instructor Training (JIT) - Basic Instructor
+              </Typography>
+              <Typography
+                sx={{
+                  color: "lightgray",
+                  textShadow: ".5px .5px 2px black",
+                  fontSize: { xs: "1rem", sm: "1rem", md: "1.1rem" },
+                  textAlign: "left",
+                }}
+                pb={4}
+                pl={4}
+              >
+                Navy Leadership Training — 2011 | Norfolk, VA
+              </Typography>
+
+              {/*//========================= GRID END =======================> */}
+
+              <Grid
+                elevation={24}
+                mb={5}
+                ml={1.2}
+                xs={10}
+                xl={11}
+                sx={{
+                  height: ".5px",
+                  border: ".5px solid gray",
+                  borderRadius: "5px",
+                  width: "100%",
+                }}
+              />
+
+              {/*//============= micro 2m SCHOOL GRID BOX =================> */}
+
+              <Typography
+                sx={{
+                  color: "lightgray",
+                  textShadow: ".5px .5px 2px black",
+                  fontWeight: "bold",
+                  fontSize: { xs: "1rem", sm: "1.3rem", md: "1.4rem" },
+                  textAlign: "left",
+                }}
+              >
+                <SchoolIcon fontSize="small" /> Microminiature Electronics
+                Repair
+              </Typography>
+              <Typography
+                sx={{
+                  color: "lightgray",
+                  textShadow: ".5px .5px 2px black",
+                  fontSize: { xs: "1rem", sm: "1rem", md: "1.1rem" },
+                  textAlign: "left",
+                }}
+                pb={4}
+                pl={4}
+              >
+                Fleet Training Center — 2010 | Norfolk, VA
+              </Typography>
+
+              {/*//========================= GRID END =======================> */}
+
+              <Grid
+                elevation={24}
+                mb={5}
+                ml={1.2}
+                xs={10}
+                xl={11}
+                sx={{
+                  height: ".5px",
+                  border: ".5px solid gray",
+                  borderRadius: "5px",
+                  width: "100%",
+                }}
+              />
+
+              {/*//============= sps-73 SCHOOL GRID BOX =====================> */}
+              <Typography
+                sx={{
+                  color: "lightgray",
+                  textShadow: ".5px .5px 2px black",
+                  fontWeight: "bold",
+                  fontSize: { xs: "1rem", sm: "1.3rem", md: "1.4rem" },
+                  textAlign: "left",
+                }}
+              >
+                <SchoolIcon fontSize="small" /> AN/SPS-73 Surface Search Radar
+                Set Combined Maintenance School
+              </Typography>
+              <Typography
+                sx={{
+                  color: "lightgray",
+                  textShadow: ".5px .5px 2px black",
+                  fontSize: { xs: "1rem", sm: "1rem", md: "1.1rem" },
+                  textAlign: "left",
+                }}
+                pb={4}
+                pl={4}
+              >
+                Center for Surface Combat Systems — 2010 | Norfolk, VA
+              </Typography>
+
+              {/*//========================= GRID END =======================> */}
+
+              <Grid
+                elevation={24}
+                mb={5}
+                ml={1.2}
+                xs={10}
+                xl={11}
+                sx={{
+                  height: ".5px",
+                  border: ".5px solid gray",
+                  borderRadius: "5px",
+                  width: "100%",
+                }}
+              />
+
+              {/*//============= mini 2m SCHOOL GRID BOX =====================> */}
+
+              <Typography
+                sx={{
+                  color: "lightgray",
+                  textShadow: ".5px .5px 2px black",
+                  fontWeight: "bold",
+                  fontSize: { xs: "1rem", sm: "1.3rem", md: "1.4rem" },
+                  textAlign: "left",
+                }}
+              >
+                <SchoolIcon fontSize="small" /> Miniature Electronics Repair
+              </Typography>
+              <Typography
+                sx={{
+                  color: "lightgray",
+                  textShadow: ".5px .5px 2px black",
+                  fontSize: { xs: "1rem", sm: "1rem", md: "1.1rem" },
+                  textAlign: "left",
+                }}
+                pb={4}
+                pl={4}
+              >
+                Center for Surface Combat Systems — 2007 | Norfolk, VA
+              </Typography>
+
+              {/*//========================= GRID END =======================> */}
+
+              <Grid
+                elevation={24}
+                mb={5}
+                ml={1.2}
+                xs={10}
+                xl={11}
+                sx={{
+                  height: ".5px",
+                  border: ".5px solid gray",
+                  borderRadius: "5px",
+                  width: "100%",
+                }}
+              />
+
+              {/*//============= AN/SYQ-7 SCHOOL GRID BOX ===================> */}
+
+              <Typography
+                sx={{
+                  color: "lightgray",
+                  textShadow: ".5px .5px 2px black",
+                  fontWeight: "bold",
+                  fontSize: { xs: "1rem", sm: "1.3rem", md: "1.4rem" },
+                  textAlign: "left",
+                }}
+              >
+                <SchoolIcon fontSize="small" /> AN/SYQ-7 (V) 2 Naval Modular
+                Automated Communications Systems Maintenance School
+              </Typography>
+              <Typography
+                sx={{
+                  color: "lightgray",
+                  textShadow: ".5px .5px 2px black",
+                  fontSize: { xs: "1rem", sm: "1rem", md: "1.1rem" },
+                  textAlign: "left",
+                }}
+                pb={4}
+                pl={4}
+              >
+                Fleet Training Center — 2006 | San Diego, CA
+              </Typography>
+
+              {/*//========================= GRID END =======================> */}
+
+              <Grid
+                elevation={24}
+                mb={5}
+                ml={1.2}
+                xs={10}
+                xl={11}
+                sx={{
+                  height: ".5px",
+                  border: ".5px solid gray",
+                  borderRadius: "5px",
+                  width: "100%",
+                }}
+              />
+
+              {/*//============= (UHF)  SCHOOL GRID BOX =====================> */}
+              <Typography
+                sx={{
+                  color: "lightgray",
+                  textShadow: ".5px .5px 2px black",
+                  fontWeight: "bold",
+                  fontSize: { xs: "1rem", sm: "1.3rem", md: "1.4rem" },
+                  textAlign: "left",
+                }}
+              >
+                <SchoolIcon fontSize="small" /> Ultra High Frequency Systems
+                (UHF) Technician School
+              </Typography>
+              <Typography
+                sx={{
+                  color: "lightgray",
+                  textShadow: ".5px .5px 2px black",
+                  fontSize: { xs: "1rem", sm: "1rem", md: "1.1rem" },
+                  textAlign: "left",
+                }}
+                pb={4}
+                pl={4}
+              >
+                Center for Service Support Learning — 2006 | San Diego, CA
+              </Typography>
+
+              {/*//========================= GRID END =======================> */}
+
+              <Grid
+                elevation={24}
+                mb={5}
+                ml={1.2}
+                xs={10}
+                xl={11}
+                sx={{
+                  height: ".5px",
+                  border: ".5px solid gray",
+                  borderRadius: "5px",
+                  width: "100%",
+                }}
+              />
+
+              {/*//============= (HF)  SCHOOL GRID BOX =====================> */}
+
+              <Typography
+                sx={{
+                  color: "lightgray",
+                  textShadow: ".5px .5px 2px black",
+                  fontWeight: "bold",
+                  fontSize: { xs: "1rem", sm: "1.3rem", md: "1.4rem" },
+                  textAlign: "left",
+                }}
+              >
+                <SchoolIcon fontSize="small" /> High Frequency Systems (HF)
+                Maintenance Technician School
+              </Typography>
+              <Typography
+                sx={{
+                  color: "lightgray",
+                  textShadow: ".5px .5px 2px black",
+                  fontSize: { xs: "1rem", sm: "1rem", md: "1.1rem" },
+                  textAlign: "left",
+                }}
+                pb={4}
+                pl={4}
+              >
+                Center for Service Support Learning — 2006 | San Diego, CA
+              </Typography>
+
+              {/*//========================= GRID END =======================> */}
+
+              <Grid
+                elevation={24}
+                mb={5}
+                ml={1.2}
+                xs={10}
+                xl={11}
+                sx={{
+                  height: ".5px",
+                  border: ".5px solid gray",
+                  borderRadius: "5px",
+                  width: "100%",
+                }}
+              />
+
+              {/*//============= ET A  SCHOOL GRID BOX =====================> */}
+
+              <Typography
+                sx={{
+                  color: "lightgray",
+                  textShadow: ".5px .5px 2px black",
+                  fontWeight: "bold",
+                  fontSize: { xs: "1rem", sm: "1.3rem", md: "1.4rem" },
+                  textAlign: "left",
+                }}
+              >
+                <SchoolIcon fontSize="small" /> Electronics Technician (ET) A
+                School
+              </Typography>
+              <Typography
+                sx={{
+                  color: "lightgray",
+                  textShadow: ".5px .5px 2px black",
+                  fontSize: { xs: "1rem", sm: "1rem", md: "1.1rem" },
+                  textAlign: "left",
+                }}
+                pb={4}
+                pl={4}
+              >
+                Center for Surface Combat Systems — 2005-2006 | Great Lakes, IL
+              </Typography>
+
+              {/*//========================= GRID END =======================> */}
+
+              <Grid
+                elevation={24}
+                mb={5}
+                ml={1.2}
+                xs={10}
+                xl={11}
+                sx={{
+                  height: ".5px",
+                  border: ".5px solid gray",
+                  borderRadius: "5px",
+                  width: "100%",
+                }}
+              />
+
+              {/*//======== apprentice training SCHOOL GRID BOX =============> */}
+
+              <Typography
+                sx={{
+                  color: "lightgray",
+                  textShadow: ".5px .5px 2px black",
+                  fontWeight: "bold",
+                  fontSize: { xs: "1rem", sm: "1.3rem", md: "1.4rem" },
+                  textAlign: "left",
+                }}
+              >
+                <SchoolIcon fontSize="small" /> Electronics Technician
+                Apprentice Technical Training
+              </Typography>
+              <Typography
+                sx={{
+                  color: "lightgray",
+                  textShadow: ".5px .5px 2px black",
+                  fontSize: { xs: "1rem", sm: "1rem", md: "1.1rem" },
+                  textAlign: "left",
+                }}
+                pb={4}
+                pl={4}
+              >
+                Center for Surface Combat Systems — 2005 | Great Lakes, IL
+              </Typography>
             </Grid>
             {/*//========================= GRID END =======================> */}
           </Grid>

@@ -8,21 +8,21 @@ import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 import Box from "@mui/material/Box";
 import React, { Component } from "react";
-import MilitaryContactMe from "../components/military-components/MilitaryContactMe";
-import MilitaryFooter from "../components/military-components/MilitaryFooter";
-import MilitaryHeader from "../components/military-components/MilitaryHeader";
+import ContactMe from "../components/ContactMe";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
 import MilitaryTraining from "../components/military-components/MilitaryTraining";
 
 class Military extends Component {
   render() {
     return (
       <Box>
-        <MilitaryHeader />
+        <Header />
         <br />
         <br />
         <MilitaryTraining />
-        <MilitaryContactMe />
-        <MilitaryFooter />
+        <ContactMe />
+        <Footer />
       </Box>
     );
   }
