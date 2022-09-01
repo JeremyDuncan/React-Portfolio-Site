@@ -30,7 +30,9 @@ class AboutMe extends Component {
           internships and mentorship.
         </Typography>
         <Typography sx={{ textShadow: "0px 3px 8px #8a8a8a" }} paragraph={true}>
-          Thank you for taking the time to view my portfolio.
+          Thank you for taking the time to view my portfolio site I created
+          using HTML, CSS, and JavaScript in conjuction with the React.js and
+          Material UI libraries.
         </Typography>
         <Resume />
       </Box>
