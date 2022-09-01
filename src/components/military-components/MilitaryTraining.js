@@ -31,7 +31,6 @@ class MilitaryTraining extends Component {
       <Box sx={{ flexGrow: 1 }}>
         <Grid
           container
-          spacing={2}
           direction="column"
           justifyContent="center"
           alignItems="center"
@@ -111,9 +110,8 @@ class MilitaryTraining extends Component {
             />
           </Grid>
           <Grid
-            elevation={24}
+            elevation={12}
             mb={5}
-            ml={1.2}
             xs={10}
             sx={{
               height: "1px",
@@ -121,7 +119,6 @@ class MilitaryTraining extends Component {
               borderRadius: "20px",
             }}
           />
-
           {/*//========================= Pictures GRID BOX ================> */}
           <Grid
             sx={{
@@ -131,10 +128,9 @@ class MilitaryTraining extends Component {
               alignItems: "center",
               flexWrap: "wrap",
             }}
-            ml={1}
             pb={5}
             pr={2}
-            pl={3}
+            pl={2.5}
           >
             <Grid item xs={5} sm={5} md={2.5} lg={2.5} xl={2.5}>
               <Item
@@ -201,7 +197,6 @@ class MilitaryTraining extends Component {
               </Item>
             </Grid>
           </Grid>
-
           {/*//================= PICTURE GRID END =========================> */}
           <Grid
             elevation={24}
@@ -216,7 +211,6 @@ class MilitaryTraining extends Component {
               width: "70%",
             }}
           />
-
           <Grid
             sx={{
               display: "flex",
