@@ -37,7 +37,6 @@ class DevryProjects extends Component {
       <Box sx={{ flexGrow: 1 }}>
         <Grid
           container
-          spacing={2}
           direction="row"
           justifyContent="center"
           alignItems="center"
