@@ -35,7 +35,6 @@ class ContactInfo extends Component {
       <Box sx={{ flexGrow: 1 }}>
         <Grid
           container
-          spacing={2}
           direction="column"
           justifyContent="center"
           alignItems="center"
@@ -70,7 +69,7 @@ class ContactInfo extends Component {
             </Typography>
 
             <Typography
-              variant="h4"
+              variant="h3"
               mb={1}
               sx={{
                 color: "lightgrey",
@@ -81,7 +80,7 @@ class ContactInfo extends Component {
               My Contact Info
             </Typography>
             <Typography
-              variant="h7"
+              variant="h5"
               mb={1}
               sx={{
                 color: "lightgrey",
@@ -110,43 +109,125 @@ class ContactInfo extends Component {
                 margin: "auto",
                 width: { xs: "350px", md: "500px" },
                 borderRadius: "20px",
-                marginBottom: { xs: "3rem", sm: "3rem" },
+                marginBottom: { xs: "2rem", sm: "2rem" },
               }}
             />
           </Grid>
-          {/*//========================= Pictures GRID BOX ================> */}
-          <Grid
-            sx={{
-              gap: { xs: ".3rem", sm: ".3rem", md: "1rem", xl: "1rem" },
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              pt: { xs: "0rem", md: "1rem" },
-            }}
-          >
-            <Grid item xs={6} sm={6} md={5} lg={5} xl={5}>
-              {/*==> Image Link <== ===*/}
-              <Image
-                src={require("../../images/Jeremy_duncan_logo_React.webp")}
-                sx={{ borderRadius: "5px" }}
-                shift="bottom"
-                distance={400}
-              />
-            </Grid>
+          <Grid>
+            <Item elevation={12} sx={{ bgcolor: "darkGrey" }}>
+              <Typography
+                variant="h4"
+                mb={1}
+                sx={{
+                  color: "white",
+                  fontWeight: "bold",
+                  textAlign: "center",
+                  display: { xs: "none", sm: "none", md: "initial" },
+                }}
+              >
+                Phone:
+              </Typography>
+              <br />
+              <Typography
+                variant="h5"
+                mb={1}
+                sx={{
+                  color: "white",
+                  textAlign: "center",
+                  display: { xs: "none", sm: "none", md: "initial" },
+                }}
+              >
+                (770) 309-2046
+              </Typography>
+
+              <Typography
+                variant="h5"
+                mb={1}
+                sx={{
+                  color: "white",
+                  fontWeight: "bold",
+                  textAlign: "center",
+                  display: { xs: "initial", sm: "initial", md: "none" },
+                }}
+              >
+                Phone:
+              </Typography>
+              <br />
+              <Typography
+                variant="h6"
+                mb={1}
+                sx={{
+                  color: "white",
+                  textAlign: "center",
+                  display: { xs: "initial", sm: "initial", md: "none" },
+                }}
+              >
+                (770) 309-2046
+              </Typography>
+              <br />
+              <Typography
+                variant="h4"
+                mb={1}
+                sx={{
+                  color: "white",
+                  fontWeight: "bold",
+                  textAlign: "center",
+                  display: { xs: "none", sm: "none", md: "initial" },
+                }}
+              >
+                Email:
+              </Typography>
+              <br />
+              <Typography
+                variant="h5"
+                mb={1}
+                sx={{
+                  color: "white",
+                  textAlign: "center",
+                  display: { xs: "none", sm: "none", md: "initial" },
+                }}
+              >
+                jeremy.duncan1984@gmail.com
+              </Typography>
+              <Typography
+                variant="h5"
+                mb={1}
+                sx={{
+                  color: "white",
+                  fontWeight: "bold",
+                  textAlign: "center",
+                  display: { xs: "initial", sm: "initial", md: "none" },
+                }}
+              >
+                Email:
+              </Typography>
+              <br />
+              <Typography
+                mb={1}
+                variant="h6"
+                sx={{
+                  color: "white",
+                  textAlign: "center",
+                  fontSize: "1.15rem",
+                  display: { xs: "initial", sm: "initial", md: "none" },
+                }}
+              >
+                jeremy.duncan1984@gmail.com
+              </Typography>
+            </Item>
           </Grid>
-          {/*//================= PICTURE GRID END =========================> */}
 
           <Grid
             sx={{
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              pt: "3.2rem",
-              pb: "30rem",
+              pt: ".8rem",
+              pb: "3rem",
               gap: "1rem",
             }}
           >
-            <Item sx={{ bgcolor: "darkGrey", borderRadius: "150px" }}>
+            <Item elevation={12} sx={{ bgcolor: "darkGrey" }}>
               <Button
                 className="headerLink"
                 href="tel:770-309-2046"
@@ -186,6 +267,27 @@ class ContactInfo extends Component {
               </Button>
             </Item>
           </Grid>
+          {/*//========================= Pictures GRID BOX ================> */}
+          <Grid
+            sx={{
+              gap: { xs: ".3rem", sm: ".3rem", md: "1rem", xl: "1rem" },
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              pt: { xs: "0rem", md: "1rem" },
+            }}
+          >
+            <Grid item xs={6} sm={6} md={5} lg={5} xl={5} mb={10}>
+              {/*==> Image Link <== ===*/}
+              <Image
+                src={require("../../images/Jeremy_duncan_logo_React.webp")}
+                sx={{ borderRadius: "5px" }}
+                shift="top"
+                distance={400}
+              />
+            </Grid>
+          </Grid>
+          {/*//================= PICTURE GRID END =========================> */}
         </Grid>
       </Box>
     );
