@@ -30,8 +30,6 @@ export default function ControlledAccordions() {
   return (
     <div>
       {/* =============== === ACCORDIAN START === ===========================*/}
-
-      {/* =============== === ACCORDIAN START === ===========================*/}
       {/* === PROGRAMMING LANGUAGE SECTION === */}
       <Accordion
         sx={{ bgcolor: "primary.dark", color: "contrast.textLight" }}
