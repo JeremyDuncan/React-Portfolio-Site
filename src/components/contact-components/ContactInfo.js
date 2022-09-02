@@ -109,162 +109,243 @@ class ContactInfo extends Component {
                 margin: "auto",
                 width: { xs: "350px", md: "500px" },
                 borderRadius: "20px",
-                marginBottom: { xs: "2rem", sm: "2rem" },
+                marginBottom: { xs: "1rem", sm: "1.3rem" },
               }}
             />
           </Grid>
+          {/* //============== Contact Info Section =======================||*/}
           <Grid>
+            {/* //=== Big screen format === */}
             <Item elevation={12} sx={{ bgcolor: "darkGrey" }}>
-              <Typography
-                variant="h4"
-                mb={1}
+              <Item
                 sx={{
-                  color: "white",
-                  fontWeight: "bold",
-                  textAlign: "center",
-                  display: { xs: "none", sm: "none", md: "initial" },
+                  bgcolor: "primary.dark",
+                  display: { xs: "none", sm: "none", md: "flex" },
+                  justifyContent: "center",
                 }}
               >
-                Phone:
-              </Typography>
-              <br />
-              <Typography
-                variant="h5"
-                mb={1}
+                <Typography
+                  variant="h4"
+                  mb={1}
+                  sx={{
+                    color: "white",
+                    fontWeight: "bold",
+                    textAlign: "center",
+                    display: { xs: "none", sm: "none", md: "initial" },
+                  }}
+                >
+                  Phone:
+                </Typography>
+              </Item>
+              <Item
                 sx={{
-                  color: "white",
-                  textAlign: "center",
-                  display: { xs: "none", sm: "none", md: "initial" },
+                  background:
+                    "linear-gradient(to right, #A6B7C3 0%, #D2E8F7 50%, #A6B7C3 100%)",
+                  color: "contrast.textDark",
+                  textShadow: "0px 3px 8px #8a8a8a",
+                  display: { xs: "none", sm: "none", md: "flex" },
+                  justifyContent: "center",
                 }}
               >
-                (770) 309-2046
-              </Typography>
+                <Typography
+                  variant="h5"
+                  mb={1}
+                  sx={{
+                    textAlign: "center",
+                    display: { xs: "none", sm: "none", md: "initial" },
+                  }}
+                >
+                  (770) 309-2046
+                </Typography>
+              </Item>
+              {/* //=== Small screen format === */}
+              <Item
+                sx={{
+                  bgcolor: "primary.dark",
+                  display: { xs: "flex", sm: "flex", md: "none" },
+                  justifyContent: "center",
+                }}
+              >
+                <Typography
+                  variant="h5"
+                  mb={1}
+                  sx={{
+                    color: "white",
+                    fontWeight: "bold",
+                    textAlign: "center",
+                    display: { xs: "initial", sm: "initial", md: "none" },
+                  }}
+                >
+                  Phone:
+                </Typography>
+              </Item>
+              <Item
+                sx={{
+                  background:
+                    "linear-gradient(to right, #A6B7C3 0%, #D2E8F7 50%, #A6B7C3 100%)",
+                  color: "contrast.textDark",
+                  textShadow: "0px 3px 8px #8a8a8a",
+                  display: { xs: "flex", sm: "flex", md: "none" },
+                  justifyContent: "center",
+                }}
+              >
+                <Typography
+                  variant="h6"
+                  mb={1}
+                  sx={{
+                    textAlign: "center",
+                    display: { xs: "initial", sm: "initial", md: "none" },
+                  }}
+                >
+                  (770) 309-2046
+                </Typography>
+              </Item>
 
-              <Typography
-                variant="h5"
-                mb={1}
+              {/* //=== Big screen format === */}
+              <Item
                 sx={{
-                  color: "white",
-                  fontWeight: "bold",
-                  textAlign: "center",
-                  display: { xs: "initial", sm: "initial", md: "none" },
+                  bgcolor: "primary.dark",
+                  display: { xs: "none", sm: "none", md: "flex" },
+                  justifyContent: "center",
                 }}
               >
-                Phone:
-              </Typography>
-              <br />
-              <Typography
-                variant="h6"
-                mb={1}
+                <Typography
+                  variant="h4"
+                  mb={1}
+                  sx={{
+                    color: "white",
+                    fontWeight: "bold",
+                    textAlign: "center",
+                    display: { xs: "none", sm: "none", md: "initial" },
+                  }}
+                >
+                  Email:
+                </Typography>
+              </Item>
+              <Item
                 sx={{
-                  color: "white",
-                  textAlign: "center",
-                  display: { xs: "initial", sm: "initial", md: "none" },
+                  background:
+                    "linear-gradient(to right, #A6B7C3 0%, #D2E8F7 50%, #A6B7C3 100%)",
+                  color: "contrast.textDark",
+                  textShadow: "0px 3px 8px #8a8a8a",
+                  display: { xs: "none", sm: "none", md: "flex" },
+                  justifyContent: "center",
                 }}
               >
-                (770) 309-2046
-              </Typography>
-              <br />
-              <Typography
-                variant="h4"
-                mb={1}
+                <Typography
+                  variant="h5"
+                  mb={1}
+                  sx={{
+                    textAlign: "center",
+                    display: { xs: "none", sm: "none", md: "initial" },
+                  }}
+                >
+                  jeremy.duncan1984@gmail.com
+                </Typography>
+              </Item>
+              {/* //=== Small screen format === */}
+              <Item
                 sx={{
-                  color: "white",
-                  fontWeight: "bold",
-                  textAlign: "center",
-                  display: { xs: "none", sm: "none", md: "initial" },
+                  bgcolor: "primary.dark",
+                  display: { xs: "flex", sm: "flex", md: "none" },
+                  justifyContent: "center",
                 }}
               >
-                Email:
-              </Typography>
-              <br />
-              <Typography
-                variant="h5"
-                mb={1}
+                <Typography
+                  variant="h5"
+                  mb={1}
+                  sx={{
+                    color: "white",
+                    fontWeight: "bold",
+                    textAlign: "center",
+                    display: { xs: "initial", sm: "initial", md: "none" },
+                  }}
+                >
+                  Email:
+                </Typography>
+              </Item>
+              <Item
                 sx={{
-                  color: "white",
-                  textAlign: "center",
-                  display: { xs: "none", sm: "none", md: "initial" },
+                  background:
+                    "linear-gradient(to right, #A6B7C3 0%, #D2E8F7 50%, #A6B7C3 100%)",
+                  color: "contrast.textDark",
+                  textShadow: "0px 3px 8px #8a8a8a",
+                  display: { xs: "flex", sm: "flex", md: "none" },
+                  justifyContent: "center",
                 }}
               >
-                jeremy.duncan1984@gmail.com
-              </Typography>
-              <Typography
-                variant="h5"
-                mb={1}
-                sx={{
-                  color: "white",
-                  fontWeight: "bold",
-                  textAlign: "center",
-                  display: { xs: "initial", sm: "initial", md: "none" },
-                }}
-              >
-                Email:
-              </Typography>
-              <br />
-              <Typography
-                mb={1}
-                variant="h6"
-                sx={{
-                  color: "white",
-                  textAlign: "center",
-                  fontSize: "1.15rem",
-                  display: { xs: "initial", sm: "initial", md: "none" },
-                }}
-              >
-                jeremy.duncan1984@gmail.com
-              </Typography>
+                <Typography
+                  mb={1}
+                  variant="h6"
+                  sx={{
+                    textAlign: "center",
+                    fontSize: "1.15rem",
+                    display: { xs: "initial", sm: "initial", md: "none" },
+                  }}
+                >
+                  jeremy.duncan1984@gmail.com
+                </Typography>
+              </Item>
             </Item>
           </Grid>
+          {/* //============== END Contact Info Section ===================||*/}
 
           <Grid
             sx={{
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              pt: ".8rem",
+              pt: ".3rem",
               pb: "3rem",
               gap: "1rem",
             }}
           >
             <Item elevation={12} sx={{ bgcolor: "darkGrey" }}>
-              <Button
-                className="headerLink"
-                href="tel:770-309-2046"
-                target="_blank"
-                rel="noopener"
-                sx={{ color: "white" }}
-              >
-                <PhoneIcon fontSize="large" />
-              </Button>
+              <Item
+                sx={{
+                  bgcolor: "primary.dark",
 
-              <Button
-                className="headerLink"
-                href="mailto:jeremy.duncan1984@gmail.com"
-                target="_blank"
-                rel="noopener"
-                sx={{ color: "white" }}
+                  justifyContent: "center",
+                }}
               >
-                <EmailRoundedIcon fontSize="large" />
-              </Button>
-              <Button
-                className="headerLink"
-                href="https://www.linkedin.com/in/jeremy-duncan2021/"
-                target="_blank"
-                rel="noopener"
-                sx={{ color: "white" }}
-              >
-                <LinkedInIcon fontSize="large" />
-              </Button>
-              <Button
-                className="headerLink"
-                href="https://github.com/JeremyDuncan"
-                target="_blank"
-                rel="noopener"
-                sx={{ color: "white" }}
-              >
-                <GitHubIcon fontSize="large" />
-              </Button>
+                <Button
+                  className="headerLink"
+                  href="tel:770-309-2046"
+                  target="_blank"
+                  rel="noopener"
+                  sx={{ color: "white" }}
+                >
+                  <PhoneIcon fontSize="large" />
+                </Button>
+
+                <Button
+                  className="headerLink"
+                  href="mailto:jeremy.duncan1984@gmail.com"
+                  target="_blank"
+                  rel="noopener"
+                  sx={{ color: "white" }}
+                >
+                  <EmailRoundedIcon fontSize="large" />
+                </Button>
+                <Button
+                  className="headerLink"
+                  href="https://www.linkedin.com/in/jeremy-duncan2021/"
+                  target="_blank"
+                  rel="noopener"
+                  sx={{ color: "white" }}
+                >
+                  <LinkedInIcon fontSize="large" />
+                </Button>
+                <Button
+                  className="headerLink"
+                  href="https://github.com/JeremyDuncan"
+                  target="_blank"
+                  rel="noopener"
+                  sx={{ color: "white" }}
+                >
+                  <GitHubIcon fontSize="large" />
+                </Button>
+              </Item>
             </Item>
           </Grid>
           {/*//========================= Pictures GRID BOX ================> */}
