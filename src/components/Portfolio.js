@@ -63,7 +63,7 @@ class Portfolio extends Component {
           alignItems="center"
         >
           <Grid display="column" item xs={11} md={11} lg={11} xl={6}>
-            <Item elevation={14} sx={{ bgcolor: "primary.light" }}>
+            <Item elevation={14} sx={{ bgcolor: "primary.main" }}>
               <Item
                 sx={{
                   bgcolor: "primary.dark",
@@ -79,7 +79,8 @@ class Portfolio extends Component {
                     display: { xs: "none", sm: "initial" },
                   }}
                 >
-                  Hello! I'm Jeremy
+                  <span className="highlight"> &#60;</span>Hello! I'm Jeremy
+                  <span className="highlight">&#47;&gt; </span>
                 </Typography>
                 <Typography
                   variant="h5"
@@ -88,7 +89,8 @@ class Portfolio extends Component {
                     display: { xs: "inital", sm: "none" },
                   }}
                 >
-                  Hello! I'm Jeremy
+                  <span className="highlight"> &#60;</span>Hello! I'm Jeremy
+                  <span className="highlight">&#47;&gt; </span>
                 </Typography>
               </Item>
               <Item

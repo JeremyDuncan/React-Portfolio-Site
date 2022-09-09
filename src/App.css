@@ -11,6 +11,9 @@ body {
 #jeremyLogo {
   width: 200px;
 }
+.highlight {
+  color: rgb(93, 137, 173);
+}
 .footer {
   position: fixed;
   left: 0;
