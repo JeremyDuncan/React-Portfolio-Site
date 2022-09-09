@@ -1,6 +1,10 @@
 // *****************************************************************************
 // This component displays the Header section and links
-// Goes to ==> App.js Component
+// Goes to:
+// ==> Home.js      // Homepage of portfolio site
+// ==> Military.js  // Military training information
+// ==> Devry.js     // Devry college projects / portfolio
+// ==> Contact.js   // Contact information and media links
 // *****************************************************************************
 
 import "@fontsource/roboto/300.css";
