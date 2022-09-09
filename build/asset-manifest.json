@@ -1,8 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.ddec928c.css",
-    "main.js": "/static/js/main.53e762a0.js",
-    "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "main.css": "/static/css/main.16940f97.css",
+    "main.js": "/static/js/main.f14c355f.js",
     "static/media/NETW211_FinalProject_Jeremy-Duncan.pptx": "/static/media/NETW211_FinalProject_Jeremy-Duncan.369b4ad3c77d78a8dd71.pptx",
     "static/media/CEIS101_FinalProject_Jeremy-Duncan.pptx": "/static/media/CEIS101_FinalProject_Jeremy-Duncan.806fcfbd3fa30f07b640.pptx",
     "static/media/PHYS204_FinalProject_Jeremy-Duncan.pptx": "/static/media/PHYS204_FinalProject_Jeremy-Duncan.ecbe50804fe5312e7523.pptx",
@@ -89,12 +88,11 @@
     "static/media/roboto-greek-ext-300-normal.woff2": "/static/media/roboto-greek-ext-300-normal.35b9d6be04b95f0f0530.woff2",
     "index.html": "/index.html",
     "static/media/roboto-greek-ext-700-normal.woff2": "/static/media/roboto-greek-ext-700-normal.bd9854c751441ccc1a70.woff2",
-    "main.ddec928c.css.map": "/static/css/main.ddec928c.css.map",
-    "main.53e762a0.js.map": "/static/js/main.53e762a0.js.map",
-    "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
+    "main.16940f97.css.map": "/static/css/main.16940f97.css.map",
+    "main.f14c355f.js.map": "/static/js/main.f14c355f.js.map"
   },
   "entrypoints": [
-    "static/css/main.ddec928c.css",
-    "static/js/main.53e762a0.js"
+    "static/css/main.16940f97.css",
+    "static/js/main.f14c355f.js"
   ]
 }
