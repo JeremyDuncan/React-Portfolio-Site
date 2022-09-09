@@ -1,3 +1,12 @@
+// *****************************************************************************
+// This React app is designed to be a multi-page website using React Routes.
+// Current Routes:
+// ==> Home.js      // Homepage of portfolio site
+// ==> Military.js  // Military training information
+// ==> Devry.js     // Devry college projects / portfolio
+// ==> Contact.js   // Contact information and media links
+// *****************************************************************************
+
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
