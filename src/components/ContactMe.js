@@ -1,6 +1,9 @@
 // *****************************************************************************
 // This component displays the Contact section in an Accordian Component
-// Goes to ==> App.js Component
+// Goes to:
+// ==> Home.js      // Homepage of portfolio site
+// ==> Military.js  // Military training information
+// ==> Devry.js     // Devry college projects / portfolio
 // *****************************************************************************
 
 import "@fontsource/roboto/300.css";
