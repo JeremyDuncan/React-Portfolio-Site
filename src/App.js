@@ -21,6 +21,7 @@ import Devry from "./pages/Devry";
 import Home from "./pages/Home";
 import Military from "./pages/Military";
 
+// Creates custom theme colors for webpages
 const theme = createTheme({
   palette: {
     primary: {
