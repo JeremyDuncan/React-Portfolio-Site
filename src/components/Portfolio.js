@@ -1,6 +1,6 @@
 // *****************************************************************************
 // This is the main portfiolio section. Contains MainSection Component
-// Goes to ==> App.js Component
+// Goes to ==> Home.js Component
 // *****************************************************************************
 
 import "@fontsource/roboto/300.css";
