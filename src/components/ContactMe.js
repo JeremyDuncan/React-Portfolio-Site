@@ -22,10 +22,10 @@ import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
-import * as React from "react";
+import React, { useState } from "react";
 
-export default function ControlledAccordions() {
-  const [expanded, setExpanded] = React.useState(false);
+const ContactMe = () => {
+  const [expanded, setExpanded] = useState(false);
   const handleChange = (panel) => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);
   };
@@ -44,6 +44,7 @@ export default function ControlledAccordions() {
           id="panel1bh-header"
         >
           <Typography
+            className="foot"
             sx={{ flexShrink: 0, fontWeight: "bold", margin: "auto" }}
           >
             Connect With Jeremy
@@ -64,6 +65,7 @@ export default function ControlledAccordions() {
             >
               {/* ============CONTACT LINK ==================================*/}
               <Button
+                className="btn"
                 sx={{ color: "contrast.textLight" }}
                 href="mailto:jeremy.duncan1984@gmail.com"
                 target="_blank"
@@ -75,6 +77,7 @@ export default function ControlledAccordions() {
               {/* ============CONTACT LINK END ==============================*/}
               {/* ============CONTACT LINK ==================================*/}
               <Button
+                className="btn"
                 sx={{ color: "contrast.textLight" }}
                 href="tel:770-309-2046"
                 target="_blank"
@@ -86,6 +89,7 @@ export default function ControlledAccordions() {
               {/* ============CONTACT LINK END ==============================*/}
               {/* ============CONTACT LINK ==================================*/}
               <Button
+                className="btn"
                 sx={{ color: "contrast.textLight" }}
                 href="https://www.linkedin.com/in/jeremy-duncan2021/"
                 target="_blank"
@@ -97,6 +101,7 @@ export default function ControlledAccordions() {
               {/* ============CONTACT LINK END ==============================*/}
               {/* ============CONTACT LINK ==================================*/}
               <Button
+                className="btn"
                 sx={{ color: "contrast.textLight" }}
                 href="https://github.com/JeremyDuncan"
                 target="_blank"
@@ -112,4 +117,6 @@ export default function ControlledAccordions() {
       </Accordion>
     </div>
   );
-}
+};
+
+export default ContactMe;

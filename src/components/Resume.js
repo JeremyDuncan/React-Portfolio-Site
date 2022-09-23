@@ -7,36 +7,40 @@ import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
-import DownloadIcon from "@mui/icons-material/Download";
+// import DownloadIcon from "@mui/icons-material/Download";
+import DescriptionIcon from "@mui/icons-material/Description";
+
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
-import React, { Component } from "react";
-import MyResume from "../download/JeremyDuncan_Resume.docx";
+// import MyResume from "../download/JeremyDuncan_Resume.docx";
 
-class Resume extends Component {
-  render() {
-    return (
-      <Box
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
-          margin: "auto",
-        }}
+const Resume = () => {
+  return (
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+        margin: "auto",
+      }}
+    >
+      <br />
+      <Button
+        className="btn"
+        sx={{ color: "button.textLight" }}
+        href="https://docs.google.com/document/d/1snAOXQbBoo5nFXIvBxIIokE2Ld9oTf9V/edit?usp=sharing&ouid=112160917683681091638&rtpof=true&sd=true"
+        target="_blank"
+        rel="noopener"
+        // href={MyResume}
+        // download
+        variant="contained"
+        endIcon={<DescriptionIcon />}
       >
-        <br />
-        <Button
-          sx={{ color: "button.textLight" }}
-          href={MyResume}
-          download
-          variant="contained"
-          endIcon={<DownloadIcon />}
-        >
-          My Resume
-        </Button>
-      </Box>
-    );
-  }
-}
+        My Resume
+      </Button>
+    </Box>
+  );
+};
+
 export default Resume;

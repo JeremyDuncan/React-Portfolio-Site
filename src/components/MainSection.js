@@ -13,16 +13,15 @@ import Accordion from "@mui/material/Accordion";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import Typography from "@mui/material/Typography";
-import * as React from "react";
+import React, { useState } from "react";
 import Certifications from "./Certifications";
 import College from "./College";
 import Languages from "./Languages";
 import MilitaryExp from "./MilitaryExp";
 import Projects from "./Projects";
 
-export default function ControlledAccordions() {
-  const [expanded, setExpanded] = React.useState(false);
-
+const MainSection = () => {
+  const [expanded, setExpanded] = useState(false);
   const handleChange = (panel) => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);
   };
@@ -42,6 +41,7 @@ export default function ControlledAccordions() {
           id="panel2bh-header"
         >
           <Typography
+            className="accordian"
             sx={{
               textShadow: "1.5px 1.5px 4px #292727",
               width: "33%",
@@ -82,6 +82,7 @@ export default function ControlledAccordions() {
           id="panel3bh-header"
         >
           <Typography
+            className="accordian"
             sx={{
               textShadow: "1.5px 1.5px 4px #292727",
               width: "33%",
@@ -117,6 +118,7 @@ export default function ControlledAccordions() {
           id="panel3bh-header"
         >
           <Typography
+            className="accordian"
             sx={{
               textShadow: "1.5px 1.5px 4px #292727",
               width: "33%",
@@ -152,6 +154,7 @@ export default function ControlledAccordions() {
           id="panel4bh-header"
         >
           <Typography
+            className="accordian"
             sx={{
               textShadow: "1.5px 1.5px 4px #292727",
               width: "33%",
@@ -188,6 +191,7 @@ export default function ControlledAccordions() {
           id="panel4bh-header"
         >
           <Typography
+            className="accordian"
             sx={{
               textShadow: "1.5px 1.5px 4px #292727",
               width: "33%",
@@ -213,4 +217,6 @@ export default function ControlledAccordions() {
       {/* =============== === ACCORDIAN END === =============================*/}
     </div>
   );
-}
+};
+
+export default MainSection;

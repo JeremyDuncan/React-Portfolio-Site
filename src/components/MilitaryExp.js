@@ -22,7 +22,7 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import React from "react";
 
-export default function NestedList() {
+const MilitaryExp = () => {
   const [open, setOpen] = React.useState("");
 
   const handleClick = (e) => {
@@ -503,4 +503,6 @@ export default function NestedList() {
       </Grid>
     </Box>
   );
-}
+};
+
+export default MilitaryExp;

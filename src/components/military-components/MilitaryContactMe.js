@@ -19,10 +19,10 @@ import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
-import * as React from "react";
+import React, { useState } from "react";
 
-export default function ControlledAccordions() {
-  const [expanded, setExpanded] = React.useState(false);
+const MilitaryContactMe = () => {
+  const [expanded, setExpanded] = useState(false);
   const handleChange = (panel) => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);
   };
@@ -113,4 +113,6 @@ export default function ControlledAccordions() {
       </Accordion>
     </div>
   );
-}
+};
+
+export default MilitaryContactMe;
