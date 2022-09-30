@@ -149,6 +149,62 @@ const Projects = () => {
           </Item>
         </Grid>
         {/*//=========== GRID END =======================================> */}
+
+        {/*//========================= GRID BOX ===================================> */}
+        <Grid item xs={11} md={3.5}>
+          <Item sx={{ bgcolor: "primary.main", color: "white" }}>
+            {/*==> Image Link <== =========================================*/}
+            <Image src={require("../images/tic-tac-toe.webp")} />
+            <Accordion sx={{ bgcolor: "primary.dark" }}>
+              <AccordionSummary
+                expandIcon={
+                  <ExpandMoreIcon sx={{ color: "contrast.textLight" }} />
+                }
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+              >
+                <Typography
+                  sx={{
+                    color: "contrast.textLight",
+                    textShadow: "1.5px 1.5px 4px #292727",
+                  }}
+                >
+                  Tic-Tac-Toe Game
+                </Typography>
+              </AccordionSummary>
+              <AccordionDetails
+                sx={{
+                  bgcolor: "secondary.main",
+                }}
+              >
+                {/*==> Description Text <== ===============================*/}
+                <Typography
+                  sx={{
+                    color: "contrast.textDark",
+                    textShadow: "0px 3px 8px #8a8a8a",
+                  }}
+                >
+                  This is a game I created using the React library and
+                  Material-UI CSS framework.
+                </Typography>
+                <br />
+                <Button
+                  sx={{ color: "button.textLight" }}
+                  /*==> URL Link <== =======================================*/
+                  href="https://www.jeremyduncan.tech/tic-tac-toe/"
+                  target="_blank"
+                  rel="noopener"
+                  variant="contained"
+                  endIcon={<NavigateNextRoundedIcon />}
+                >
+                  Visit
+                </Button>
+              </AccordionDetails>
+            </Accordion>
+          </Item>
+        </Grid>
+        {/*//========================= GRID END ===================================> */}
+
         {/*//=========== GRID BOX START =================================> */}
         <Grid item xs={11} md={3.5}>
           <Item sx={{ bgcolor: "primary.main", color: "white" }}>
