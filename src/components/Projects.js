@@ -114,7 +114,7 @@ const Projects = () => {
                     textShadow: "1.5px 1.5px 4px #292727",
                   }}
                 >
-                  BattleShip Game
+                  BattleShip
                 </Typography>
               </AccordionSummary>
               <AccordionDetails
@@ -169,7 +169,7 @@ const Projects = () => {
                     textShadow: "1.5px 1.5px 4px #292727",
                   }}
                 >
-                  Tic-Tac-Toe Game
+                  Tic-Tac-Toe
                 </Typography>
               </AccordionSummary>
               <AccordionDetails
@@ -192,6 +192,61 @@ const Projects = () => {
                   sx={{ color: "button.textLight" }}
                   /*==> URL Link <== =======================================*/
                   href="https://www.jeremyduncan.tech/tic-tac-toe/"
+                  target="_blank"
+                  rel="noopener"
+                  variant="contained"
+                  endIcon={<NavigateNextRoundedIcon />}
+                >
+                  Visit
+                </Button>
+              </AccordionDetails>
+            </Accordion>
+          </Item>
+        </Grid>
+        {/*//========================= GRID END ===================================> */}
+
+        {/*//========================= GRID BOX ===================================> */}
+        <Grid item xs={11} md={3.5}>
+          <Item sx={{ bgcolor: "primary.main", color: "white" }}>
+            {/*==> Image Link <== =========================================*/}
+            <Image src={require("../images/pig.webp")} />
+            <Accordion sx={{ bgcolor: "primary.dark" }}>
+              <AccordionSummary
+                expandIcon={
+                  <ExpandMoreIcon sx={{ color: "contrast.textLight" }} />
+                }
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+              >
+                <Typography
+                  sx={{
+                    color: "contrast.textLight",
+                    textShadow: "1.5px 1.5px 4px #292727",
+                  }}
+                >
+                  Pig Latin Translator
+                </Typography>
+              </AccordionSummary>
+              <AccordionDetails
+                sx={{
+                  bgcolor: "secondary.main",
+                }}
+              >
+                {/*==> Description Text <== ===============================*/}
+                <Typography
+                  sx={{
+                    color: "contrast.textDark",
+                    textShadow: "0px 3px 8px #8a8a8a",
+                  }}
+                >
+                  This app translates english to pig latin. I used React.js and
+                  Material-UI for this project.
+                </Typography>
+                <br />
+                <Button
+                  sx={{ color: "button.textLight" }}
+                  /*==> URL Link <== =======================================*/
+                  href="https://www.jeremyduncan.tech/pig-latin-converter/"
                   target="_blank"
                   rel="noopener"
                   variant="contained"
@@ -570,7 +625,7 @@ const Projects = () => {
                     textShadow: "1.5px 1.5px 4px #292727",
                   }}
                 >
-                  Light Switch App
+                  Light-Switch
                 </Typography>
               </AccordionSummary>
               <AccordionDetails
@@ -628,7 +683,7 @@ const Projects = () => {
                     textShadow: "1.5px 1.5px 4px #292727",
                   }}
                 >
-                  React Robot Translator
+                  Robot Translator
                 </Typography>
               </AccordionSummary>
               <AccordionDetails
@@ -685,7 +740,7 @@ const Projects = () => {
                     textShadow: "1.5px 1.5px 4px #292727",
                   }}
                 >
-                  Treasure Hunt Game
+                  Treasure Hunt
                 </Typography>
               </AccordionSummary>
               <AccordionDetails
@@ -799,13 +854,14 @@ const Projects = () => {
                     textShadow: "1.5px 1.5px 4px #292727",
                   }}
                 >
-                  Rock Paper Scissors Game
+                  Rock Paper Scissors
                 </Typography>
               </AccordionSummary>
               <AccordionDetails
                 sx={{
                   bgcolor: "secondary.main",
                   color: "primary.contrastText",
+                  
                 }}
               >
                 {/*==> Description Text <== ===============================*/}
