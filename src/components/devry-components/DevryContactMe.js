@@ -1,6 +1,6 @@
 // *****************************************************************************
-// This component displays the Contact section in an Accordian Component
-// Goes to ==> App.js Component
+// This component displays the Contact section in an Accordion Component
+// Goes to ==> Devry.js Component
 // *****************************************************************************
 
 import "@fontsource/roboto/300.css";

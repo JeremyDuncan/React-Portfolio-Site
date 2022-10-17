@@ -1,7 +1,8 @@
 // *****************************************************************************
 // This is the DevryProjects Component.
 // Goes to ==> Devry.js Component
-// Images need to be 600w x 300h for best look
+//
+//  == Images need to be 600w x 300h for best look ==
 // *****************************************************************************
 
 import "@fontsource/roboto/300.css";

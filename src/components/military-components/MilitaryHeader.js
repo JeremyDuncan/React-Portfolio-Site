@@ -1,6 +1,7 @@
 // *****************************************************************************
-// This is the Header Component
-// Goes to => Military.js
+// This component displays the Military header section
+// Goes to:
+// ==>  Military.js Component
 // *****************************************************************************
 
 import "@fontsource/roboto/300.css";

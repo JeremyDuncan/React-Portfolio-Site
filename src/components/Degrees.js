@@ -1,5 +1,5 @@
 // *****************************************************************************
-// This component displays the programming languages and certifications
+// This component displays college degrees
 // Goes to ==> MainSection.js Component
 // *****************************************************************************
 

@@ -53,8 +53,12 @@ const Projects = () => {
               >
                 <Typography
                   sx={{
+                    display: "flex",
                     color: "contrast.textLight",
                     textShadow: "1.5px 1.5px 4px #292727",
+                    height: "60px",
+                    alignItems: "center",
+                    justifyContent: "center"
                   }}
                 >
                   Business Website
@@ -110,11 +114,15 @@ const Projects = () => {
               >
                 <Typography
                   sx={{
+                    display: "flex",
                     color: "contrast.textLight",
                     textShadow: "1.5px 1.5px 4px #292727",
+                    height: "60px",
+                    alignItems: "center",
+                    justifyContent: "center"
                   }}
                 >
-                  BattleShip
+                  BattleShip Game
                 </Typography>
               </AccordionSummary>
               <AccordionDetails
@@ -165,11 +173,15 @@ const Projects = () => {
               >
                 <Typography
                   sx={{
+                    display: "flex",
                     color: "contrast.textLight",
                     textShadow: "1.5px 1.5px 4px #292727",
+                    height: "60px",
+                    alignItems: "center",
+                    justifyContent: "center"
                   }}
                 >
-                  Tic-Tac-Toe
+                  Tic-Tac-Toe Game
                 </Typography>
               </AccordionSummary>
               <AccordionDetails
@@ -220,8 +232,12 @@ const Projects = () => {
               >
                 <Typography
                   sx={{
+                    display: "flex",
                     color: "contrast.textLight",
                     textShadow: "1.5px 1.5px 4px #292727",
+                    height: "60px",
+                    alignItems: "center",
+                    justifyContent: "center"
                   }}
                 >
                   Pig Latin Translator
@@ -277,8 +293,12 @@ const Projects = () => {
               >
                 <Typography
                   sx={{
+                    display: "flex",
                     color: "contrast.textLight",
                     textShadow: "1.5px 1.5px 4px #292727",
+                    height: "60px",
+                    alignItems: "center",
+                    justifyContent: "center"
                   }}
                 >
                   Markdown Previewer
@@ -334,8 +354,12 @@ const Projects = () => {
               >
                 <Typography
                   sx={{
+                    display: "flex",
                     color: "contrast.textLight",
                     textShadow: "1.5px 1.5px 4px #292727",
+                    height: "60px",
+                    alignItems: "center",
+                    justifyContent: "center"
                   }}
                 >
                   Drum Machine
@@ -391,8 +415,12 @@ const Projects = () => {
               >
                 <Typography
                   sx={{
+                    display: "flex",
                     color: "contrast.textLight",
                     textShadow: "1.5px 1.5px 4px #292727",
+                    height: "60px",
+                    alignItems: "center",
+                    justifyContent: "center"
                   }}
                 >
                   Calculator
@@ -448,8 +476,12 @@ const Projects = () => {
               >
                 <Typography
                   sx={{
+                    display: "flex",
                     color: "contrast.textLight",
                     textShadow: "1.5px 1.5px 4px #292727",
+                    height: "60px",
+                    alignItems: "center",
+                    justifyContent: "center"
                   }}
                 >
                   25 + 5 Clock
@@ -506,8 +538,12 @@ const Projects = () => {
               >
                 <Typography
                   sx={{
+                    display: "flex",
                     color: "contrast.textLight",
                     textShadow: "1.5px 1.5px 4px #292727",
+                    height: "60px",
+                    alignItems: "center",
+                    justifyContent: "center"
                   }}
                 >
                   Food Decision Maker
@@ -564,8 +600,12 @@ const Projects = () => {
               >
                 <Typography
                   sx={{
+                    display: "flex",
                     color: "contrast.textLight",
                     textShadow: "1.5px 1.5px 4px #292727",
+                    height: "60px",
+                    alignItems: "center",
+                    justifyContent: "center"
                   }}
                 >
                   Quote Generator
@@ -621,8 +661,12 @@ const Projects = () => {
               >
                 <Typography
                   sx={{
+                    display: "flex",
                     color: "contrast.textLight",
                     textShadow: "1.5px 1.5px 4px #292727",
+                    height: "60px",
+                    alignItems: "center",
+                    justifyContent: "center"
                   }}
                 >
                   Light-Switch
@@ -679,8 +723,12 @@ const Projects = () => {
               >
                 <Typography
                   sx={{
+                    display: "flex",
                     color: "contrast.textLight",
                     textShadow: "1.5px 1.5px 4px #292727",
+                    height: "60px",
+                    alignItems: "center",
+                    justifyContent: "center"
                   }}
                 >
                   Robot Translator
@@ -736,8 +784,12 @@ const Projects = () => {
               >
                 <Typography
                   sx={{
+                    display: "flex",
                     color: "contrast.textLight",
                     textShadow: "1.5px 1.5px 4px #292727",
+                    height: "60px",
+                    alignItems: "center",
+                    justifyContent: "center"
                   }}
                 >
                   Treasure Hunt
@@ -793,8 +845,12 @@ const Projects = () => {
               >
                 <Typography
                   sx={{
+                    display: "flex",
                     color: "contrast.textLight",
                     textShadow: "1.5px 1.5px 4px #292727",
+                    height: "60px",
+                    alignItems: "center",
+                    justifyContent: "center"
                   }}
                 >
                   Mad Libs
@@ -850,11 +906,15 @@ const Projects = () => {
               >
                 <Typography
                   sx={{
+                    display: "flex",
                     color: "contrast.textLight",
                     textShadow: "1.5px 1.5px 4px #292727",
+                    height: "60px",
+                    alignItems: "center",
+                    justifyContent: "center"
                   }}
                 >
-                  Rock Paper Scissors
+                  Rock Paper Scissors Game
                 </Typography>
               </AccordionSummary>
               <AccordionDetails

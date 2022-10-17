@@ -1,6 +1,7 @@
 // *****************************************************************************
-// This component displays the Devry Footer section
-// Imported to Military.js Component ==>
+// This component displays the Military Footer section
+// Goes to:
+// ==>  Military.js Component
 // *****************************************************************************
 
 import "@fontsource/roboto/300.css";

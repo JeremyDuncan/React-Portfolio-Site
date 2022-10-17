@@ -1,7 +1,7 @@
 // *****************************************************************************
-// This is the MilitaryProjects Component.
-// Goes to ==> Military.js Component
-// Images need to be 600w x 300h for best look
+// This component displays the Military training section
+// Goes to:
+// ==>  Military.js Component
 // *****************************************************************************
 
 import "@fontsource/roboto/300.css";

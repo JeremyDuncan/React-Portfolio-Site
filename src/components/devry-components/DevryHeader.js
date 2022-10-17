@@ -1,5 +1,7 @@
 // *****************************************************************************
-// This is the Home Page
+// This component displays the Devry Header section
+// Goes to:
+// ==>  Devry.js Component
 // *****************************************************************************
 
 import "@fontsource/roboto/300.css";

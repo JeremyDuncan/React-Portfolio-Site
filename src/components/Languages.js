@@ -1,5 +1,5 @@
 // *****************************************************************************
-// This component displays the programming languages and certifications
+// This component displays the programming languages and technologies experience
 // Goes to ==> MainSection.js Component
 // *****************************************************************************
 

@@ -1,7 +1,7 @@
 // *****************************************************************************
-// This is the DevryProjects Component.
-// Goes to ==> Devry.js Component
-// Images need to be 600w x 300h for best look
+// This is the ContactInfo Component.
+// Goes to:
+// ==> Contact.js Component
 // *****************************************************************************
 
 import "@fontsource/roboto/300.css";

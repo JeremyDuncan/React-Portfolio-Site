@@ -1,6 +1,7 @@
 // *****************************************************************************
-// This component displays the Devry Footer section
-// Imported to Contact.js Component ==>
+// This component displays the Footer section
+// Goes to:
+// ==> Contact.js Component 
 // *****************************************************************************
 
 import "@fontsource/roboto/300.css";

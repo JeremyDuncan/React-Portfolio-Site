@@ -1,5 +1,5 @@
 // *****************************************************************************
-// This is the main portfiolio section. Contains MainSection Component
+// This is the main portfolio section. Contains MainSection Component
 // Goes to ==> Home.js Component
 // *****************************************************************************
 
