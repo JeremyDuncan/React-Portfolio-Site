@@ -1,5 +1,5 @@
 // *****************************************************************************
-// This component displays the Contact section in an Accordian Component
+// This component displays the Contact section in an Accordion Component
 // Goes to:
 // ==> Home.js      // Homepage of portfolio site
 // ==> Military.js  // Military training information
