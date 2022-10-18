@@ -29,9 +29,9 @@ const Resume = () => {
       <Button
         className="btn"
         sx={{ color: "button.textLight" }}
-        href="https://drive.google.com/file/d/1t7qbc7LQWGPxcacmS7VNBkr9IOxqOUBG/view?usp=sharing"
-        target="_blank"
+        href="https://drive.google.com/file/d/1uAKcdu2vc-K0bI1fdGXAYkCGKxsux4K-/view?usp=sharing"
         rel="noopener"
+        target="_blank"
         // href={MyResume}
         // download
         variant="contained"

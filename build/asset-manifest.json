@@ -1,12 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.091bfd2f.css",
-    "main.js": "/static/js/main.21af26dc.js",
-    "static/media/NETW211_FinalProject_Jeremy-Duncan.pptx": "/static/media/NETW211_FinalProject_Jeremy-Duncan.369b4ad3c77d78a8dd71.pptx",
-    "static/media/CEIS101_FinalProject_Jeremy-Duncan.pptx": "/static/media/CEIS101_FinalProject_Jeremy-Duncan.806fcfbd3fa30f07b640.pptx",
-    "static/media/PHYS204_FinalProject_Jeremy-Duncan.pptx": "/static/media/PHYS204_FinalProject_Jeremy-Duncan.ecbe50804fe5312e7523.pptx",
-    "static/media/SEC285_FinalProject_Jeremy-Duncan.pptx": "/static/media/SEC285_FinalProject_Jeremy-Duncan.5ba37ac26a159b2a5924.pptx",
-    "static/media/CEIS150_FinalProject_Jeremy-Duncan.pptx": "/static/media/CEIS150_FinalProject_Jeremy-Duncan.3433ce61a2e89ae535fb.pptx",
+    "main.js": "/static/js/main.c1b7930c.js",
     "static/media/JavaScript_algo.png": "/static/media/JavaScript_algo.b09a090f3ea764e693ab.png",
     "static/media/Front_End_Dev.png": "/static/media/Front_End_Dev.249bd3886aff3aac48bf.png",
     "static/media/Responsive_Web_Design.png": "/static/media/Responsive_Web_Design.ac3a35fc4a78eb6ae025.png",
@@ -90,10 +85,10 @@
     "index.html": "/index.html",
     "static/media/roboto-greek-ext-700-normal.woff2": "/static/media/roboto-greek-ext-700-normal.bd9854c751441ccc1a70.woff2",
     "main.091bfd2f.css.map": "/static/css/main.091bfd2f.css.map",
-    "main.21af26dc.js.map": "/static/js/main.21af26dc.js.map"
+    "main.c1b7930c.js.map": "/static/js/main.c1b7930c.js.map"
   },
   "entrypoints": [
     "static/css/main.091bfd2f.css",
-    "static/js/main.21af26dc.js"
+    "static/js/main.c1b7930c.js"
   ]
 }
