@@ -12,7 +12,7 @@ body {
   width: 200px;
 }
 .highlight {
-  color:rgb(183, 208, 217);
+  color: #a4a4a4;
 }
 
 .accordian:hover {
@@ -80,4 +80,8 @@ z-index: 95;
   transform: scale(1.02);
   box-shadow: 9px 8px 4px black; */
   }
-
+.highlightBlue {
+  color: #5383A4;
+  text-shadow: 1px 1px 1px black;
+}
+  
