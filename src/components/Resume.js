@@ -29,7 +29,7 @@ const Resume = () => {
       <Button
         className="btn"
         sx={{ color: "button.textLight" }}
-        href="https://docs.google.com/document/d/1snAOXQbBoo5nFXIvBxIIokE2Ld9oTf9V/edit?usp=sharing&ouid=112160917683681091638&rtpof=true&sd=true"
+        href="https://drive.google.com/file/d/1t7qbc7LQWGPxcacmS7VNBkr9IOxqOUBG/view?usp=sharing"
         target="_blank"
         rel="noopener"
         // href={MyResume}
