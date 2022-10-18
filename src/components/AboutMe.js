@@ -61,7 +61,7 @@ const AboutMe = () => {
         mission readiness and passing certifications. This helped lead to the
         successful commissioning of one of the Navy's first ever Aluminum
         Tri-Hull Independence class ships in time for the visit and inspection
-        of the Honorable Joe Biden, Hilary Clinton, and Gabrielle Giffords.
+        from the Honorable Joe Biden, Hilary Clinton, and Gabrielle Giffords.
       </Typography>
 
       <Typography variant="h6" sx={{ textShadow: "0px 3px 8px #8a8a8a", mr: "1rem" }}>
