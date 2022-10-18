@@ -85,7 +85,7 @@ const AboutMe = () => {
       >
         This has also led me to completing a Full-Stack Engineering program at
         LEARN Academy in which I'm gaining real world practical skills in Pair
-        Programming, Test Driven Development, a Full Tech Stack which consists
+        Programming, Test Driven Development, and a Full Tech Stack which consists
         of JavaScript, React, HTML, CSS, Ruby, Ruby on Rails, Jest, RSpec, and
         PostgreSQL.
       </Typography>
