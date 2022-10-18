@@ -8,14 +8,17 @@ import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 import Box from "@mui/material/Box";
+import Link from "@mui/material/Link";
 import Typography from "@mui/material/Typography";
-
 import Resume from "./Resume";
 
 const AboutMe = () => {
   return (
     <Box color="contrast.textDark">
-      <Typography variant="h6" sx={{ textShadow: "0px 3px 8px #8a8a8a", mr: "1rem" }}>
+      <Typography
+        variant="h6"
+        sx={{ textShadow: "0px 3px 8px #8a8a8a", mr: "1rem" }}
+      >
         <span className="highlightBlue">&#10100;</span> About Me{" "}
         <span className="highlightBlue">&#10101;</span>
       </Typography>
@@ -29,7 +32,10 @@ const AboutMe = () => {
         projects.
       </Typography>
 
-      <Typography variant="h6" sx={{ textShadow: "0px 3px 8px #8a8a8a", mr: "1rem" }}>
+      <Typography
+        variant="h6"
+        sx={{ textShadow: "0px 3px 8px #8a8a8a", mr: "1rem" }}
+      >
         <span className="highlightBlue">&#10100;</span> Professional
         Accomplishments <span className="highlightBlue">&#10101;</span>
       </Typography>
@@ -54,17 +60,39 @@ const AboutMe = () => {
         Equipment programs for the commands I was attached to.
       </Typography>
       <Typography
-        sx={{ textShadow: "0px 3px 8px #8a8a8a", textAlign: "left" }}
+        sx={{
+          textShadow: "0px 3px 8px #8a8a8a",
+          textAlign: "left",
+        }}
         paragraph={true}
       >
         As Work Center Supervisor I stood up and led an entire work center to
         mission readiness and passing certifications. This helped lead to the
         successful commissioning of one of the Navy's first ever Aluminum
         Tri-Hull Independence class ships in time for the visit and inspection
-        from the Honorable Joe Biden, Hilary Clinton, and Gabrielle Giffords.
+        from the honorable Joe Biden, Nancy Pelosi, Hilary Clinton, Scott Kelly
+        and Gabrielle Giffords.
+        <span className="highlightBlue">&#10100;</span>{" "}
+        <Link
+          sx={{
+            color: "button.textDark",
+            textAlign: "center",
+            marginBottom: "10px",
+          }}
+          /*==> URL Link <== =======================================*/
+          href="https://www.youtube.com/watch?v=nwp21fFBa4g "
+          target="_blank"
+          rel="noopener"
+        >
+          You can view the commissioning here.
+        </Link>{" "}
+        <span className="highlightBlue">&#10101;</span>
       </Typography>
 
-      <Typography variant="h6" sx={{ textShadow: "0px 3px 8px #8a8a8a", mr: "1rem" }}>
+      <Typography
+        variant="h6"
+        sx={{ textShadow: "0px 3px 8px #8a8a8a", mr: "1rem" }}
+      >
         <span className="highlightBlue">&#10100;</span> Passion and Drive{" "}
         <span className="highlightBlue">&#10101;</span>
       </Typography>
@@ -85,14 +113,15 @@ const AboutMe = () => {
       >
         This has also led me to completing a Full-Stack Engineering program at
         LEARN Academy in which I'm gaining real world practical skills in Pair
-        Programming, Test Driven Development, and a Full Tech Stack which consists
-        of JavaScript, React, HTML, CSS, Ruby, Ruby on Rails, Jest, RSpec, and
-        PostgreSQL.
+        Programming, Test Driven Development, and a Full Tech Stack which
+        consists of JavaScript, React, HTML, CSS, Ruby, Ruby on Rails, Jest,
+        RSpec, and PostgreSQL.
       </Typography>
       <Typography
         variant="h6"
         sx={{
-          textShadow: "0px 3px 8px #8a8a8a", mr: "1rem"
+          textShadow: "0px 3px 8px #8a8a8a",
+          mr: "1rem",
         }}
       >
         <span className="highlightBlue">&#10100;</span> Goals{" "}
@@ -106,7 +135,10 @@ const AboutMe = () => {
         mentorship. I wish to be a great asset for a company wanting a motivated
         developer.
       </Typography>
-      <Typography variant="h6" sx={{ textShadow: "0px 3px 8px #8a8a8a", mr: "1rem" }}>
+      <Typography
+        variant="h6"
+        sx={{ textShadow: "0px 3px 8px #8a8a8a", mr: "1rem" }}
+      >
         <span className="highlightBlue">&#10100;</span> Thank You{" "}
         <span className="highlightBlue">&#10101;</span>
       </Typography>
