@@ -17,11 +17,11 @@ import Paper from "@mui/material/Paper";
 import { styled } from "@mui/material/styles";
 import Typography from "@mui/material/Typography";
 import Image from "mui-image";
-import ceis101 from "../../download/CEIS101_FinalProject_Jeremy-Duncan.pptx";
-import ceis150 from "../../download/CEIS150_FinalProject_Jeremy-Duncan.pptx";
-import netw211 from "../../download/NETW211_FinalProject_Jeremy-Duncan.pptx";
-import phys204 from "../../download/PHYS204_FinalProject_Jeremy-Duncan.pptx";
-import sec285 from "../../download/SEC285_FinalProject_Jeremy-Duncan.pptx";
+// import ceis101 from "../../download/CEIS101_FinalProject_Jeremy-Duncan.pptx";
+// import ceis150 from "../../download/CEIS150_FinalProject_Jeremy-Duncan.pptx";
+// import netw211 from "../../download/NETW211_FinalProject_Jeremy-Duncan.pptx";
+// import phys204 from "../../download/PHYS204_FinalProject_Jeremy-Duncan.pptx";
+// import sec285 from "../../download/SEC285_FinalProject_Jeremy-Duncan.pptx";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -200,7 +200,11 @@ const DevryProjects = () => {
               <br />
               <Button
                 sx={{ color: "button.textLight" }}
-                href={phys204}
+                href="https://docs.google.com/presentation/d/1tOTy0smToRhWYqRabzWCBa7iCLiUAPtI/edit?usp=sharing&ouid=112160917683681091638&rtpof=true&sd=true"
+                target="_blank"
+                rel="noopener"
+                // href={MyResume}
+                // download
                 variant="contained"
                 endIcon={<NavigateNextRoundedIcon />}
               >
@@ -296,7 +300,11 @@ const DevryProjects = () => {
               <br />
               <Button
                 sx={{ color: "button.textLight" }}
-                href={netw211}
+                href="https://docs.google.com/presentation/d/1tDQQ0gfrQpxlnwI62_F_Y0xk-WlLqrpx/edit?usp=sharing&ouid=112160917683681091638&rtpof=true&sd=true"
+                target="_blank"
+                rel="noopener"
+                // href={MyResume}
+                // download
                 variant="contained"
                 endIcon={<NavigateNextRoundedIcon />}
               >
@@ -392,7 +400,11 @@ const DevryProjects = () => {
               <br />
               <Button
                 sx={{ color: "button.textLight" }}
-                href={ceis101}
+                href="https://docs.google.com/presentation/d/1tXsRcINDKMztrRautEQdOwSKAODtZoyv/edit?usp=sharing&ouid=112160917683681091638&rtpof=true&sd=true"
+                target="_blank"
+                rel="noopener"
+                // href={MyResume}
+                // download
                 variant="contained"
                 endIcon={<NavigateNextRoundedIcon />}
               >
@@ -488,7 +500,11 @@ const DevryProjects = () => {
               <br />
               <Button
                 sx={{ color: "button.textLight" }}
-                href={ceis150}
+                href="https://docs.google.com/presentation/d/1taM1MTHQYk66JAMAFRPBVIlxSlBCkTlX/edit?usp=sharing&ouid=112160917683681091638&rtpof=true&sd=true"
+                target="_blank"
+                rel="noopener"
+                // href={MyResume}
+                // download
                 variant="contained"
                 endIcon={<NavigateNextRoundedIcon />}
               >
@@ -583,7 +599,11 @@ const DevryProjects = () => {
               <br />
               <Button
                 sx={{ color: "button.textLight" }}
-                href={sec285}
+                href="https://docs.google.com/presentation/d/1th9NXCW1OBInQ96nvF-7X5Py67qfEdnr/edit?usp=sharing&ouid=112160917683681091638&rtpof=true&sd=true"
+                target="_blank"
+                rel="noopener"
+                // href={MyResume}
+                // download
                 variant="contained"
                 endIcon={<NavigateNextRoundedIcon />}
               >
