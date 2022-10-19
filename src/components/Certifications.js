@@ -178,7 +178,7 @@ const Certifications = () => {
           <br />
           <Button
             sx={{ mt: "5px", color: "button.textLight" }}
-            href="https://www.parchment.com/u/award/877ddb7d34111e1741c380984dfeb7a4"
+            href="https://www.parchment.com/u/award/9e66944ca488283bbf0b98b11a420511"
             target="_blank"
             rel="noopener"
             variant="contained"

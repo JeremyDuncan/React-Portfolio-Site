@@ -45,19 +45,19 @@ const AboutMe = () => {
       >
         In my Navy career I have worn many hats of responsibility. As a Ship
         Supervisor, I was responsible for leading teams of 27 personnel in
-        completing projects that were critical in the mission readiness of the
-        Navy.
+        completing maintenance and repair projects that were critical to the
+        mission readiness of the Navy.
       </Typography>
       <Typography
         sx={{ textShadow: "0px 3px 8px #8a8a8a", textAlign: "left" }}
         paragraph={true}
       >
-        I was a Lead Field Technician and Network Administrator, responsible for
+        As Lead Field Technician and Network Administrator I was responsible for
         the testing and deployment of critical Windows desktop images used for
-        training the Navy's fleet. I've been responsible for establishing and
-        obtaining certifications of new programs such as Fleet Calibration
+        training the Navy's fleet. I was responsible for establishing and
+        obtaining certifications for new programs such as Fleet Calibration
         Activity (FCA), 2M Micro-Miniature Repair Activity, and Electronic Test
-        Equipment programs for the commands I was attached to.
+        Equipment programs.
       </Typography>
       <Typography
         sx={{
@@ -66,12 +66,12 @@ const AboutMe = () => {
         }}
         paragraph={true}
       >
-        As Work Center Supervisor I stood up and led an entire work center to
-        mission readiness and passing certifications. This helped lead to the
-        successful commissioning of one of the Navy's first ever Aluminum
-        Tri-Hull Independence class ships in time for the visit and inspection
-        from the honorable Joe Biden, Nancy Pelosi, Hilary Clinton, Scott Kelly
-        and Gabrielle Giffords.
+        I established and led a combat systems department to completing all
+        certifications as Work Center Supervisor. This helped lead to the
+        successful commissioning of the Navy's new aluminum tri-hull
+        Independence class ship USS Gabrielle Giffords in time for
+        special visits from the honorable Joe Biden, Nancy Pelosi, Hilary
+        Clinton, Scott Kelly and Gabrielle Giffords.
         <span className="highlightBlue">&#10100;</span>{" "}
         <Link
           sx={{
@@ -84,7 +84,7 @@ const AboutMe = () => {
           target="_blank"
           rel="noopener"
         >
-          You can view the commissioning here.
+          You can view the commissioning here
         </Link>{" "}
         <span className="highlightBlue">&#10101;</span>
       </Typography>
@@ -102,8 +102,8 @@ const AboutMe = () => {
       >
         I've come to discover I have a passion for solving complex problems with
         the creation of logical solutions. This has led me to transitioning from
-        my military career to a new career as a Software Developer. During this
-        transition I have been going to DeVry University full-time working
+        my military career to a new career as a Full-Stack Developer. During
+        this transition I have been going to DeVry University full-time working
         towards a Bachelor's of Science in Computer Information Systems with a
         focus in Software Programming.
       </Typography>
