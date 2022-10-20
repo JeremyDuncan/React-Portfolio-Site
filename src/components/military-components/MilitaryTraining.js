@@ -50,7 +50,7 @@ const MilitaryTraining = () => {
               display: { xs: "none", sm: "none", md: "initial" },
             }}
           >
-            Military Training
+            Military Career
           </Typography>
           <Typography
             variant="h4"
@@ -61,53 +61,10 @@ const MilitaryTraining = () => {
               display: { xs: "initial", sm: "initial", md: "none" },
             }}
           >
-            Military Training
+            Military Career
           </Typography>
 
-          <Typography
-            variant="h4"
-            mb={1}
-            sx={{
-              color: "lightgrey",
-              textAlign: "center",
-              display: { xs: "none", sm: "none", md: "initial" },
-            }}
-          >
-            My Training From The US Navy
-          </Typography>
-          <Typography
-            variant="h7"
-            mb={1}
-            sx={{
-              color: "lightgrey",
-              textAlign: "center",
-              display: { xs: "initial", sm: "initial", md: "none" },
-            }}
-          >
-            My Training From The US Navy
-          </Typography>
-
-          <Grid
-            xs={6}
-            sx={{
-              height: "1px",
-              border: {
-                xs: "4px solid gray",
-                sm: "4px solid gray",
-                md: "6px solid gray",
-                lg: "6px solid gray",
-                xl: "6px solid gray",
-              },
-              display: "flex",
-              justifyContent: "center",
-              textAlign: "center",
-              alignItem: "center",
-              margin: "auto",
-              width: { xs: "350px", md: "100%" },
-              borderRadius: "20px",
-              marginBottom: ".2rem",
-            }}
-          />
+ 
         </Grid>
         <Grid
           elevation={12}
@@ -198,6 +155,7 @@ const MilitaryTraining = () => {
           </Grid>
         </Grid>
         {/*//================= PICTURE GRID END =========================> */}
+     
         {/* ================================================================ */}
         <Grid
         container
@@ -254,6 +212,29 @@ const MilitaryTraining = () => {
 
 {/* ================================================================ */}
 
+<Typography
+            variant="h4"
+            mb={1}
+            sx={{
+              color: "lightgrey",
+              textAlign: "center",
+              display: { xs: "none", sm: "none", md: "initial" },
+            }}
+          >
+            My Training From The US Navy
+          </Typography>
+          <Typography
+            variant="h5"
+            mb={1}
+            sx={{
+              color: "lightgrey",
+              textAlign: "center",
+              display: { xs: "initial", sm: "initial", md: "none" },
+              fontWeight: "bold"
+            }}
+          >
+            My Training From The US Navy
+          </Typography>
       
         <Grid
           elevation={24}
