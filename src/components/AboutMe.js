@@ -42,70 +42,96 @@ const AboutMe = () => {
           md={5}
           lg={4}
           xl={3}
-          sx={{display: { xs: "none", sm: "none", md: "flex" }}}
+          sx={{ display: { xs: "none", sm: "none", md: "flex" } }}
         >
           {/*//=========== GRID BOX ===============> */}
-          <Item elevation={14} sx={{ bgcolor: "primary.main", color: "white",  }}>
+          <Item elevation={14} sx={{ bgcolor: "primary.main", color: "white" }}>
             <Image
               src={require("../images/me_ny.webp")}
               style={{ borderRadius: 16 }}
               shift="top"
               distance={400}
-              
             />
           </Item>
         </Grid>
-
-
 
         {/*//=========== PORTFOLIO IMAGE OF ME GRID END ===============> */}
 
         <Grid item xs={12} sm={12} md={8} lg={8} xl={8}>
           <Box sx={{ display: "flex", flexDirection: "column" }}>
-            
-{/* =============================================================================== */}
+            {/* =============================================================================== */}
 
-       {/* === PORTFOLIO IMAGE OF ME === ============================= */}
-        <Grid
-          container
-          direction="row"
-          justifyContent="center"
-          alignItems="center"
-          item
-          xs={8}
-          sm={5.5}
-          md={5}
-          lg={4}
-          xl={3}
-          sx={{display: { sm: "flex", md: "none" }, alignItems: "center", justifyContent: "center", margin: "auto"}}
-        >
-          {/*//=========== GRID BOX ===============> */}
-          <Item elevation={14} sx={{ bgcolor: "primary.main", color: "white",  }}>
-            <Image
-              src={require("../images/me_ny.webp")}
-              style={{ borderRadius: 16 }}
-              shift="top"
-              distance={400}
-              
-            />
-          </Item>
-        </Grid>
-        
-{/* =============================================================================== */}
-
-            <Typography
-              variant="h6"
+            {/* === PORTFOLIO IMAGE OF ME === ============================= */}
+            <Grid
+              container
+              direction="row"
+              justifyContent="center"
+              alignItems="center"
+              item
+              xs={8}
+              sm={5.5}
+              md={5}
+              lg={4}
+              xl={3}
               sx={{
-                textShadow: "0px 3px 8px #8a8a8a",
-               
-                textAlign: "center",
-                
+                display: { sm: "flex", md: "none" },
+                alignItems: "center",
+                justifyContent: "center",
+                margin: "auto",
+                marginBottom: "15px"
               }}
             >
-               About Me<br/>-Full Stack Developer-
-             
-             
+              {/*//=========== GRID BOX ===============> */}
+              <Item
+                elevation={14}
+                sx={{ bgcolor: "primary.main", color: "white" }}
+              >
+                <Image
+                  src={require("../images/me_ny.webp")}
+                  style={{ borderRadius: 16 }}
+                  shift="top"
+                  distance={400}
+                />
+              </Item>
+            </Grid>
+
+            {/* =============================================================================== */}
+
+            <Typography
+              variant="h3"
+              sx={{
+                textShadow: "0px 3px 8px #8a8a8a",
+                textAlign: "center",
+                display: { xs: "none", sm: "none", md: "initial" }
+              }}
+            >
+              Full Stack Developer
             </Typography>
+
+            <Typography
+              variant="h4"
+              sx={{
+                textShadow: "0px 3px 8px #8a8a8a",
+                textAlign: "center",
+                display: { xs: "none", sm: "initial", md: "none" }
+              }}
+            >
+              Full Stack Developer
+            </Typography>
+
+            <Typography
+              variant="h5"
+              sx={{
+                textShadow: "0px 3px 8px #8a8a8a",
+                textAlign: "center",
+                display: { xs: "initial", sm: "none" },
+                fontWeight: "500"
+              }}
+            >
+              Full Stack Developer
+            </Typography>
+
+            
             <Typography
               sx={{ textShadow: "0px 3px 8px #8a8a8a", textAlign: "left" }}
               paragraph={true}
