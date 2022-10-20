@@ -7,8 +7,9 @@ import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
+import CodeIcon from "@mui/icons-material/Code";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import NavigateNextRoundedIcon from "@mui/icons-material/NavigateNextRounded";
+import OndemandVideoIcon from "@mui/icons-material/OndemandVideo";
 import Accordion from "@mui/material/Accordion";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
@@ -58,7 +59,7 @@ const Projects = () => {
                     textShadow: "1.5px 1.5px 4px #292727",
                     height: "60px",
                     alignItems: "center",
-                    justifyContent: "center"
+                    justifyContent: "center",
                   }}
                 >
                   Business Website
@@ -75,22 +76,58 @@ const Projects = () => {
                     color: "contrast.textDark",
                     textShadow: "0px 3px 8px #8a8a8a",
                   }}
+                  textAlign="left"
                 >
                   This is a website I created for a family member's car
                   detailing business using React and Material UI.
                 </Typography>
                 <br />
-                <Button
-                  sx={{ color: "button.textLight" }}
-                  /*==> URL Link <== =======================================*/
-                  href="https://www.willisdeluxedetailing.com"
-                  target="_blank"
-                  rel="noopener"
-                  variant="contained"
-                  endIcon={<NavigateNextRoundedIcon />}
+
+                {/* ==================== RESPONSIVE BUTTON SECTION ================== */}
+                <Box
+                  sx={{
+                    display: "flex",
+                    flexDirection: {
+                      xs: "row",
+                      sm: "row",
+                      md: "column",
+                      lg: "column",
+                    },
+                    gap: "10px",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
                 >
-                  Visit
-                </Button>
+                  <Button
+                    sx={{
+                      color: "button.textLight",
+                      width: "125px",
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                    }}
+                    /*==> URL Link <== =======================================*/
+                    href="https://www.willisdeluxedetailing.com"
+                    target="_blank"
+                    rel="noopener"
+                    variant="contained"
+                    endIcon={<OndemandVideoIcon />}
+                  >
+                    Demo
+                  </Button>
+                  <Button
+                    sx={{ color: "button.textLight" }}
+                    /*==> URL Link <== =======================================*/
+                    href="https://github.com/JeremyDuncan/car-detailing-website"
+                    target="_blank"
+                    rel="noopener"
+                    variant="contained"
+                    endIcon={<CodeIcon />}
+                  >
+                    Source
+                  </Button>
+                </Box>
+                {/* ================================ RESP BUTTON END ============================= */}
               </AccordionDetails>
             </Accordion>
           </Item>
@@ -119,7 +156,7 @@ const Projects = () => {
                     textShadow: "1.5px 1.5px 4px #292727",
                     height: "60px",
                     alignItems: "center",
-                    justifyContent: "center"
+                    justifyContent: "center",
                   }}
                 >
                   BattleShip Game
@@ -136,21 +173,57 @@ const Projects = () => {
                     color: "contrast.textDark",
                     textShadow: "0px 3px 8px #8a8a8a",
                   }}
+                  textAlign="left"
                 >
                   This is a battleship game I created using HTML, CSS, and
                   JavaScript. Contains a custom AI to make it more challenging.
                 </Typography>
                 <br />
-                <Button
-                  sx={{ color: "button.textLight" }}
-                  href="https://jeremyduncan.github.io/Battleship/"
-                  target="_blank"
-                  rel="noopener"
-                  variant="contained"
-                  endIcon={<NavigateNextRoundedIcon />}
+                {/* ==================== RESPONSIVE BUTTON SECTION ================== */}
+                <Box
+                  sx={{
+                    display: "flex",
+                    flexDirection: {
+                      xs: "row",
+                      sm: "row",
+                      md: "column",
+                      lg: "column",
+                    },
+                    gap: "10px",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
                 >
-                  Visit
-                </Button>
+                  <Button
+                    sx={{
+                      color: "button.textLight",
+                      width: "125px",
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                    }}
+                    /*==> URL Link <== =======================================*/
+                    href="https://jeremyduncan.github.io/Battleship/"
+                    target="_blank"
+                    rel="noopener"
+                    variant="contained"
+                    endIcon={<OndemandVideoIcon />}
+                  >
+                    Demo
+                  </Button>
+                  <Button
+                    sx={{ color: "button.textLight" }}
+                    /*==> URL Link <== =======================================*/
+                    href="https://github.com/JeremyDuncan/Battleship"
+                    target="_blank"
+                    rel="noopener"
+                    variant="contained"
+                    endIcon={<CodeIcon />}
+                  >
+                    Source
+                  </Button>
+                </Box>
+                {/* ================================ RESP BUTTON END ============================= */}
               </AccordionDetails>
             </Accordion>
             {/* =============== === ACCORDIAN END === =====================*/}
@@ -178,7 +251,7 @@ const Projects = () => {
                     textShadow: "1.5px 1.5px 4px #292727",
                     height: "60px",
                     alignItems: "center",
-                    justifyContent: "center"
+                    justifyContent: "center",
                   }}
                 >
                   Tic-Tac-Toe Game
@@ -195,22 +268,58 @@ const Projects = () => {
                     color: "contrast.textDark",
                     textShadow: "0px 3px 8px #8a8a8a",
                   }}
+                  textAlign="left"
                 >
                   This is a game I created using the React library and
                   Material-UI CSS framework.
                 </Typography>
                 <br />
-                <Button
-                  sx={{ color: "button.textLight" }}
-                  /*==> URL Link <== =======================================*/
-                  href="https://www.jeremyduncan.tech/tic-tac-toe/"
-                  target="_blank"
-                  rel="noopener"
-                  variant="contained"
-                  endIcon={<NavigateNextRoundedIcon />}
+                {/* ==================== RESPONSIVE BUTTON SECTION ================== */}
+                <Box
+                  sx={{
+                    display: "flex",
+                    flexDirection: {
+                      xs: "row",
+                      sm: "row",
+                      md: "column",
+                      lg: "column",
+                    },
+                    gap: "10px",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
                 >
-                  Visit
-                </Button>
+                  <Button
+                    sx={{
+                      color: "button.textLight",
+                      width: "125px",
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                    }}
+                    /*==> URL Link <== =======================================*/
+                    href="https://www.jeremyduncan.tech/tic-tac-toe/"
+                    target="_blank"
+                    rel="noopener"
+                    variant="contained"
+                    endIcon={<OndemandVideoIcon />}
+                  >
+                    Demo
+                  </Button>
+                  <Button
+                    sx={{ color: "button.textLight" }}
+                    /*==> URL Link <== =======================================*/
+                    href="https://github.com/JeremyDuncan/tic-tac-toe"
+                    target="_blank"
+                    rel="noopener"
+                    variant="contained"
+                    endIcon={<CodeIcon />}
+                  >
+                    Source
+                  </Button>
+                </Box>
+                {/* ================================ RESP BUTTON END ============================= */}
+  
               </AccordionDetails>
             </Accordion>
           </Item>
@@ -237,7 +346,7 @@ const Projects = () => {
                     textShadow: "1.5px 1.5px 4px #292727",
                     height: "60px",
                     alignItems: "center",
-                    justifyContent: "center"
+                    justifyContent: "center",
                   }}
                 >
                   Pig Latin Translator
@@ -254,22 +363,57 @@ const Projects = () => {
                     color: "contrast.textDark",
                     textShadow: "0px 3px 8px #8a8a8a",
                   }}
+                  textAlign="left"
                 >
                   This app translates english to pig latin. I used React.js and
                   Material-UI for this project.
                 </Typography>
                 <br />
-                <Button
-                  sx={{ color: "button.textLight" }}
-                  /*==> URL Link <== =======================================*/
-                  href="https://www.jeremyduncan.tech/pig-latin-converter/"
-                  target="_blank"
-                  rel="noopener"
-                  variant="contained"
-                  endIcon={<NavigateNextRoundedIcon />}
+                {/* ==================== RESPONSIVE BUTTON SECTION ================== */}
+                <Box
+                  sx={{
+                    display: "flex",
+                    flexDirection: {
+                      xs: "row",
+                      sm: "row",
+                      md: "column",
+                      lg: "column",
+                    },
+                    gap: "10px",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
                 >
-                  Visit
-                </Button>
+                  <Button
+                    sx={{
+                      color: "button.textLight",
+                      width: "125px",
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                    }}
+                    /*==> URL Link <== =======================================*/
+                    href="https://www.jeremyduncan.tech/pig-latin-converter/"
+                    target="_blank"
+                    rel="noopener"
+                    variant="contained"
+                    endIcon={<OndemandVideoIcon />}
+                  >
+                    Demo
+                  </Button>
+                  <Button
+                    sx={{ color: "button.textLight" }}
+                    /*==> URL Link <== =======================================*/
+                    href="https://github.com/JeremyDuncan/pig-latin-converter"
+                    target="_blank"
+                    rel="noopener"
+                    variant="contained"
+                    endIcon={<CodeIcon />}
+                  >
+                    Source
+                  </Button>
+                </Box>
+                {/* ================================ RESP BUTTON END ============================= */}
               </AccordionDetails>
             </Accordion>
           </Item>
@@ -298,7 +442,7 @@ const Projects = () => {
                     textShadow: "1.5px 1.5px 4px #292727",
                     height: "60px",
                     alignItems: "center",
-                    justifyContent: "center"
+                    justifyContent: "center",
                   }}
                 >
                   Markdown Previewer
@@ -315,21 +459,58 @@ const Projects = () => {
                     color: "contrast.textDark",
                     textShadow: "0px 3px 8px #8a8a8a",
                   }}
+                  textAlign="left"
                 >
                   This app allows you to see your HTML and CSS updates
                   real-time.
                 </Typography>{" "}
                 <br />
-                <Button
-                  sx={{ color: "button.textLight" }}
-                  href="https://jeremyduncan.github.io/React-Markdown-Previewer/"
-                  target="_blank"
-                  rel="noopener"
-                  variant="contained"
-                  endIcon={<NavigateNextRoundedIcon />}
+                {/* ==================== RESPONSIVE BUTTON SECTION ================== */}
+                <Box
+                  sx={{
+                    display: "flex",
+                    flexDirection: {
+                      xs: "row",
+                      sm: "row",
+                      md: "column",
+                      lg: "column",
+                    },
+                    gap: "10px",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
                 >
-                  Visit
-                </Button>
+                  <Button
+                    sx={{
+                      color: "button.textLight",
+                      width: "125px",
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                    }}
+                    /*==> URL Link <== =======================================*/
+                    href="https://jeremyduncan.github.io/React-Markdown-Previewer/"
+                    target="_blank"
+                    rel="noopener"
+                    variant="contained"
+                    endIcon={<OndemandVideoIcon />}
+                  >
+                    Demo
+                  </Button>
+                  <Button
+                    sx={{ color: "button.textLight" }}
+                    /*==> URL Link <== =======================================*/
+                    href="https://github.com/JeremyDuncan/React-Markdown-Previewer"
+                    target="_blank"
+                    rel="noopener"
+                    variant="contained"
+                    endIcon={<CodeIcon />}
+                  >
+                    Source
+                  </Button>
+                </Box>
+                {/* ================================ RESP BUTTON END ============================= */}
+
               </AccordionDetails>
             </Accordion>
             {/* =============== === ACCORDIAN END === =====================*/}
@@ -359,7 +540,7 @@ const Projects = () => {
                     textShadow: "1.5px 1.5px 4px #292727",
                     height: "60px",
                     alignItems: "center",
-                    justifyContent: "center"
+                    justifyContent: "center",
                   }}
                 >
                   Drum Machine
@@ -377,22 +558,57 @@ const Projects = () => {
                     color: "contrast.textDark",
                     textShadow: "0px 3px 8px #8a8a8a",
                   }}
+                  textAlign="left"
                 >
                   This is a drum machine program I created using HTML, CSS,
                   JavaScript and the React.js library.
                 </Typography>
                 <br />
-                <Button
-                  sx={{ color: "button.textLight" }}
-                  /*==> URL Link <== =======================================*/
-                  href="https://jeremyduncan.github.io/drum-machine/"
-                  target="_blank"
-                  rel="noopener"
-                  variant="contained"
-                  endIcon={<NavigateNextRoundedIcon />}
+                {/* ==================== RESPONSIVE BUTTON SECTION ================== */}
+                <Box
+                  sx={{
+                    display: "flex",
+                    flexDirection: {
+                      xs: "row",
+                      sm: "row",
+                      md: "column",
+                      lg: "column",
+                    },
+                    gap: "10px",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
                 >
-                  Visit
-                </Button>
+                  <Button
+                    sx={{
+                      color: "button.textLight",
+                      width: "125px",
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                    }}
+                    /*==> URL Link <== =======================================*/
+                    href="https://jeremyduncan.github.io/drum-machine/"
+                    target="_blank"
+                    rel="noopener"
+                    variant="contained"
+                    endIcon={<OndemandVideoIcon />}
+                  >
+                    Demo
+                  </Button>
+                  <Button
+                    sx={{ color: "button.textLight" }}
+                    /*==> URL Link <== =======================================*/
+                    href="https://github.com/JeremyDuncan/drum-machine"
+                    target="_blank"
+                    rel="noopener"
+                    variant="contained"
+                    endIcon={<CodeIcon />}
+                  >
+                    Source
+                  </Button>
+                </Box>
+                {/* ================================ RESP BUTTON END ============================= */}
               </AccordionDetails>
             </Accordion>
           </Item>
@@ -420,7 +636,7 @@ const Projects = () => {
                     textShadow: "1.5px 1.5px 4px #292727",
                     height: "60px",
                     alignItems: "center",
-                    justifyContent: "center"
+                    justifyContent: "center",
                   }}
                 >
                   Calculator
@@ -438,22 +654,57 @@ const Projects = () => {
                     color: "contrast.textDark",
                     textShadow: "0px 3px 8px #8a8a8a",
                   }}
+                  textAlign="left"
                 >
                   This is a calculator I created using JavaScript, HTML, CSS,
                   and the React.js library.
                 </Typography>
                 <br />
-                <Button
-                  sx={{ color: "button.textLight" }}
-                  /*==> URL Link <== =======================================*/
-                  href="https://jeremyduncan.github.io/Calculator/"
-                  target="_blank"
-                  rel="noopener"
-                  variant="contained"
-                  endIcon={<NavigateNextRoundedIcon />}
+                {/* ==================== RESPONSIVE BUTTON SECTION ================== */}
+                <Box
+                  sx={{
+                    display: "flex",
+                    flexDirection: {
+                      xs: "row",
+                      sm: "row",
+                      md: "column",
+                      lg: "column",
+                    },
+                    gap: "10px",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
                 >
-                  Visit
-                </Button>
+                  <Button
+                    sx={{
+                      color: "button.textLight",
+                      width: "125px",
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                    }}
+                    /*==> URL Link <== =======================================*/
+                    href="https://jeremyduncan.github.io/Calculator/"
+                    target="_blank"
+                    rel="noopener"
+                    variant="contained"
+                    endIcon={<OndemandVideoIcon />}
+                  >
+                    Demo
+                  </Button>
+                  <Button
+                    sx={{ color: "button.textLight" }}
+                    /*==> URL Link <== =======================================*/
+                    href="https://github.com/JeremyDuncan/Calculator"
+                    target="_blank"
+                    rel="noopener"
+                    variant="contained"
+                    endIcon={<CodeIcon />}
+                  >
+                    Source
+                  </Button>
+                </Box>
+                {/* ================================ RESP BUTTON END ============================= */}
               </AccordionDetails>
             </Accordion>
           </Item>
@@ -481,7 +732,7 @@ const Projects = () => {
                     textShadow: "1.5px 1.5px 4px #292727",
                     height: "60px",
                     alignItems: "center",
-                    justifyContent: "center"
+                    justifyContent: "center",
                   }}
                 >
                   25 + 5 Clock
@@ -499,23 +750,58 @@ const Projects = () => {
                     color: "contrast.textDark",
                     textShadow: "0px 3px 8px #8a8a8a",
                   }}
+                  textAlign="left"
                 >
                   This is timer I made that counts down work session time and
                   break times using Javascript, HTML, and CSS with the React.js
                   library.
                 </Typography>
                 <br />
-                <Button
-                  sx={{ color: "button.textLight" }}
-                  /*==> URL Link <== =======================================*/
-                  href="https://jeremyduncan.github.io/25-Plus-5-Clock/"
-                  target="_blank"
-                  rel="noopener"
-                  variant="contained"
-                  endIcon={<NavigateNextRoundedIcon />}
+                {/* ==================== RESPONSIVE BUTTON SECTION ================== */}
+                <Box
+                  sx={{
+                    display: "flex",
+                    flexDirection: {
+                      xs: "row",
+                      sm: "row",
+                      md: "column",
+                      lg: "column",
+                    },
+                    gap: "10px",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
                 >
-                  Visit
-                </Button>
+                  <Button
+                    sx={{
+                      color: "button.textLight",
+                      width: "125px",
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                    }}
+                    /*==> URL Link <== =======================================*/
+                    href="https://jeremyduncan.github.io/25-Plus-5-Clock/"
+                    target="_blank"
+                    rel="noopener"
+                    variant="contained"
+                    endIcon={<OndemandVideoIcon />}
+                  >
+                    Demo
+                  </Button>
+                  <Button
+                    sx={{ color: "button.textLight" }}
+                    /*==> URL Link <== =======================================*/
+                    href="https://github.com/JeremyDuncan/25-Plus-5-Clock"
+                    target="_blank"
+                    rel="noopener"
+                    variant="contained"
+                    endIcon={<CodeIcon />}
+                  >
+                    Source
+                  </Button>
+                </Box>
+                {/* ================================ RESP BUTTON END ============================= */}
               </AccordionDetails>
             </Accordion>
           </Item>
@@ -543,7 +829,7 @@ const Projects = () => {
                     textShadow: "1.5px 1.5px 4px #292727",
                     height: "60px",
                     alignItems: "center",
-                    justifyContent: "center"
+                    justifyContent: "center",
                   }}
                 >
                   Food Decision Maker
@@ -561,23 +847,58 @@ const Projects = () => {
                     color: "contrast.textDark",
                     textShadow: "0px 3px 8px #8a8a8a",
                   }}
+                  textAlign="left"
                 >
                   This is an app I created to help make a decision when it comes
                   food. I used JavaScript, HTML, and CSS, and the React.js
                   library.
                 </Typography>
                 <br />
-                <Button
-                  sx={{ color: "button.textLight" }}
-                  /*==> URL Link <== =======================================*/
-                  href="https://jeremyduncan.github.io/decision-maker/"
-                  target="_blank"
-                  rel="noopener"
-                  variant="contained"
-                  endIcon={<NavigateNextRoundedIcon />}
+                {/* ==================== RESPONSIVE BUTTON SECTION ================== */}
+                <Box
+                  sx={{
+                    display: "flex",
+                    flexDirection: {
+                      xs: "row",
+                      sm: "row",
+                      md: "column",
+                      lg: "column",
+                    },
+                    gap: "10px",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
                 >
-                  Visit
-                </Button>
+                  <Button
+                    sx={{
+                      color: "button.textLight",
+                      width: "125px",
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                    }}
+                    /*==> URL Link <== =======================================*/
+                    href="https://jeremyduncan.github.io/decision-maker/"
+                    target="_blank"
+                    rel="noopener"
+                    variant="contained"
+                    endIcon={<OndemandVideoIcon />}
+                  >
+                    Demo
+                  </Button>
+                  <Button
+                    sx={{ color: "button.textLight" }}
+                    /*==> URL Link <== =======================================*/
+                    href="https://github.com/JeremyDuncan/decision-maker"
+                    target="_blank"
+                    rel="noopener"
+                    variant="contained"
+                    endIcon={<CodeIcon />}
+                  >
+                    Source
+                  </Button>
+                </Box>
+                {/* ================================ RESP BUTTON END ============================= */}
               </AccordionDetails>
             </Accordion>
           </Item>
@@ -605,7 +926,7 @@ const Projects = () => {
                     textShadow: "1.5px 1.5px 4px #292727",
                     height: "60px",
                     alignItems: "center",
-                    justifyContent: "center"
+                    justifyContent: "center",
                   }}
                 >
                   Quote Generator
@@ -623,22 +944,58 @@ const Projects = () => {
                     color: "contrast.textDark",
                     textShadow: "0px 3px 8px #8a8a8a",
                   }}
+                  textAlign="left"
                 >
                   This is a React app I made that generates a random
                   motivational quote.
                 </Typography>
                 <br />
-                <Button
-                  sx={{ color: "button.textLight" }}
-                  /*==> URL Link <== =======================================*/
-                  href="https://jeremyduncan.github.io/Quote-Generator/"
-                  target="_blank"
-                  rel="noopener"
-                  variant="contained"
-                  endIcon={<NavigateNextRoundedIcon />}
+                {/* ==================== RESPONSIVE BUTTON SECTION ================== */}
+                <Box
+                  sx={{
+                    display: "flex",
+                    flexDirection: {
+                      xs: "row",
+                      sm: "row",
+                      md: "column",
+                      lg: "column",
+                    },
+                    gap: "10px",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
                 >
-                  Visit
-                </Button>
+                  <Button
+                    sx={{
+                      color: "button.textLight",
+                      width: "125px",
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                    }}
+                    /*==> URL Link <== =======================================*/
+                    href="https://jeremyduncan.github.io/Quote-Generator/"
+                    target="_blank"
+                    rel="noopener"
+                    variant="contained"
+                    endIcon={<OndemandVideoIcon />}
+                  >
+                    Demo
+                  </Button>
+                  <Button
+                    sx={{ color: "button.textLight" }}
+                    /*==> URL Link <== =======================================*/
+                    href="https://github.com/JeremyDuncan/Quote-Generator"
+                    target="_blank"
+                    rel="noopener"
+                    variant="contained"
+                    endIcon={<CodeIcon />}
+                  >
+                    Source
+                  </Button>
+                </Box>
+                {/* ================================ RESP BUTTON END ============================= */}
+
               </AccordionDetails>
             </Accordion>
           </Item>
@@ -666,7 +1023,7 @@ const Projects = () => {
                     textShadow: "1.5px 1.5px 4px #292727",
                     height: "60px",
                     alignItems: "center",
-                    justifyContent: "center"
+                    justifyContent: "center",
                   }}
                 >
                   Light-Switch
@@ -684,23 +1041,59 @@ const Projects = () => {
                     color: "contrast.textDark",
                     textShadow: "0px 3px 8px #8a8a8a",
                   }}
+                  textAlign="left"
                 >
                   This is a React app I made that allows you to create or remove
                   any number of lightswitches and independently flip the light
                   on or off on each one.
                 </Typography>
                 <br />
-                <Button
-                  sx={{ color: "button.textLight" }}
-                  /*==> URL Link <== =======================================*/
-                  href="https://jeremyduncan.github.io/images-jeremy/"
-                  target="_blank"
-                  rel="noopener"
-                  variant="contained"
-                  endIcon={<NavigateNextRoundedIcon />}
+                {/* ==================== RESPONSIVE BUTTON SECTION ================== */}
+                <Box
+                  sx={{
+                    display: "flex",
+                    flexDirection: {
+                      xs: "row",
+                      sm: "row",
+                      md: "column",
+                      lg: "column",
+                    },
+                    gap: "10px",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
                 >
-                  Visit
-                </Button>
+                  <Button
+                    sx={{
+                      color: "button.textLight",
+                      width: "125px",
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                    }}
+                    /*==> URL Link <== =======================================*/
+                    href="https://jeremyduncan.github.io/images-jeremy/"
+                    target="_blank"
+                    rel="noopener"
+                    variant="contained"
+                    endIcon={<OndemandVideoIcon />}
+                  >
+                    Demo
+                  </Button>
+                  <Button
+                    sx={{ color: "button.textLight" }}
+                    /*==> URL Link <== =======================================*/
+                    href="https://github.com/JeremyDuncan/images-jeremy"
+                    target="_blank"
+                    rel="noopener"
+                    variant="contained"
+                    endIcon={<CodeIcon />}
+                  >
+                    Source
+                  </Button>
+                </Box>
+                {/* ================================ RESP BUTTON END ============================= */}
+
               </AccordionDetails>
             </Accordion>
           </Item>
@@ -728,7 +1121,7 @@ const Projects = () => {
                     textShadow: "1.5px 1.5px 4px #292727",
                     height: "60px",
                     alignItems: "center",
-                    justifyContent: "center"
+                    justifyContent: "center",
                   }}
                 >
                   Robot Translator
@@ -746,22 +1139,57 @@ const Projects = () => {
                     color: "contrast.textDark",
                     textShadow: "0px 3px 8px #8a8a8a",
                   }}
+                  textAlign="left"
                 >
                   This takes a user's input and outputs it on each individual
                   robot module and then modifies it based on module parameters.
                 </Typography>
                 <br />
-                <Button
-                  sx={{ color: "button.textLight" }}
-                  /*==> URL Link <== =======================================*/
-                  href="https://jeremyduncan.github.io/inputs-jeremy/"
-                  target="_blank"
-                  rel="noopener"
-                  variant="contained"
-                  endIcon={<NavigateNextRoundedIcon />}
+                {/* ==================== RESPONSIVE BUTTON SECTION ================== */}
+                <Box
+                  sx={{
+                    display: "flex",
+                    flexDirection: {
+                      xs: "row",
+                      sm: "row",
+                      md: "column",
+                      lg: "column",
+                    },
+                    gap: "10px",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
                 >
-                  Visit
-                </Button>
+                  <Button
+                    sx={{
+                      color: "button.textLight",
+                      width: "125px",
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                    }}
+                    /*==> URL Link <== =======================================*/
+                    href="https://jeremyduncan.github.io/inputs-jeremy/"
+                    target="_blank"
+                    rel="noopener"
+                    variant="contained"
+                    endIcon={<OndemandVideoIcon />}
+                  >
+                    Demo
+                  </Button>
+                  <Button
+                    sx={{ color: "button.textLight" }}
+                    /*==> URL Link <== =======================================*/
+                    href="https://github.com/JeremyDuncan/inputs-jeremy"
+                    target="_blank"
+                    rel="noopener"
+                    variant="contained"
+                    endIcon={<CodeIcon />}
+                  >
+                    Source
+                  </Button>
+                </Box>
+                {/* ================================ RESP BUTTON END ============================= */}
               </AccordionDetails>
             </Accordion>
           </Item>
@@ -789,7 +1217,7 @@ const Projects = () => {
                     textShadow: "1.5px 1.5px 4px #292727",
                     height: "60px",
                     alignItems: "center",
-                    justifyContent: "center"
+                    justifyContent: "center",
                   }}
                 >
                   Treasure Hunt
@@ -807,22 +1235,57 @@ const Projects = () => {
                     color: "contrast.textDark",
                     textShadow: "0px 3px 8px #8a8a8a",
                   }}
+                  textAlign="left"
                 >
                   A game I created where the player has to find the treasure to
                   win. The player loses if they find the bomb.
                 </Typography>
                 <br />
-                <Button
-                  sx={{ color: "button.textLight" }}
-                  /*==> URL Link <== =======================================*/
-                  href="https://www.jeremyduncan.tech/treasure_hunt/"
-                  target="_blank"
-                  rel="noopener"
-                  variant="contained"
-                  endIcon={<NavigateNextRoundedIcon />}
+                {/* ==================== RESPONSIVE BUTTON SECTION ================== */}
+                <Box
+                  sx={{
+                    display: "flex",
+                    flexDirection: {
+                      xs: "row",
+                      sm: "row",
+                      md: "column",
+                      lg: "column",
+                    },
+                    gap: "10px",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
                 >
-                  Visit
-                </Button>
+                  <Button
+                    sx={{
+                      color: "button.textLight",
+                      width: "125px",
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                    }}
+                    /*==> URL Link <== =======================================*/
+                    href="https://www.jeremyduncan.tech/treasure_hunt/"
+                    target="_blank"
+                    rel="noopener"
+                    variant="contained"
+                    endIcon={<OndemandVideoIcon />}
+                  >
+                    Demo
+                  </Button>
+                  <Button
+                    sx={{ color: "button.textLight" }}
+                    /*==> URL Link <== =======================================*/
+                    href="https://github.com/JeremyDuncan/treasure_hunt"
+                    target="_blank"
+                    rel="noopener"
+                    variant="contained"
+                    endIcon={<CodeIcon />}
+                  >
+                    Source
+                  </Button>
+                </Box>
+                {/* ================================ RESP BUTTON END ============================= */}
               </AccordionDetails>
             </Accordion>
           </Item>
@@ -850,7 +1313,7 @@ const Projects = () => {
                     textShadow: "1.5px 1.5px 4px #292727",
                     height: "60px",
                     alignItems: "center",
-                    justifyContent: "center"
+                    justifyContent: "center",
                   }}
                 >
                   Mad Libs
@@ -868,22 +1331,57 @@ const Projects = () => {
                     color: "contrast.textDark",
                     textShadow: "0px 3px 8px #8a8a8a",
                   }}
+                  textAlign="left"
                 >
                   This is a React app I created that takes the inputs of the
                   user and turns it into a mad lib.
                 </Typography>
                 <br />
-                <Button
-                  sx={{ color: "button.textLight" }}
-                  /*==> URL Link <== =======================================*/
-                  href="https://jeremyduncan.github.io/forms-jeremy/"
-                  target="_blank"
-                  rel="noopener"
-                  variant="contained"
-                  endIcon={<NavigateNextRoundedIcon />}
+                {/* ==================== RESPONSIVE BUTTON SECTION ================== */}
+                <Box
+                  sx={{
+                    display: "flex",
+                    flexDirection: {
+                      xs: "row",
+                      sm: "row",
+                      md: "column",
+                      lg: "column",
+                    },
+                    gap: "10px",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
                 >
-                  Visit
-                </Button>
+                  <Button
+                    sx={{
+                      color: "button.textLight",
+                      width: "125px",
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                    }}
+                    /*==> URL Link <== =======================================*/
+                    href="https://jeremyduncan.github.io/forms-jeremy/"
+                    target="_blank"
+                    rel="noopener"
+                    variant="contained"
+                    endIcon={<OndemandVideoIcon />}
+                  >
+                    Demo
+                  </Button>
+                  <Button
+                    sx={{ color: "button.textLight" }}
+                    /*==> URL Link <== =======================================*/
+                    href="https://github.com/JeremyDuncan/forms-jeremy"
+                    target="_blank"
+                    rel="noopener"
+                    variant="contained"
+                    endIcon={<CodeIcon />}
+                  >
+                    Source
+                  </Button>
+                </Box>
+                {/* ================================ RESP BUTTON END ============================= */}
               </AccordionDetails>
             </Accordion>
           </Item>
@@ -911,7 +1409,7 @@ const Projects = () => {
                     textShadow: "1.5px 1.5px 4px #292727",
                     height: "60px",
                     alignItems: "center",
-                    justifyContent: "center"
+                    justifyContent: "center",
                   }}
                 >
                   Rock Paper Scissors Game
@@ -921,7 +1419,6 @@ const Projects = () => {
                 sx={{
                   bgcolor: "secondary.main",
                   color: "primary.contrastText",
-                  
                 }}
               >
                 {/*==> Description Text <== ===============================*/}
@@ -930,22 +1427,57 @@ const Projects = () => {
                     color: "contrast.textDark",
                     textShadow: "0px 3px 8px #8a8a8a",
                   }}
+                  textAlign="left"
                 >
                   This is a rocks, paper, and scissors game I created using
                   HTML, CSS, and JavaScript.
                 </Typography>
                 <br />
-                <Button
-                  sx={{ color: "button.textLight" }}
-                  /*==> URL Link <== =======================================*/
-                  href="https://jeremyduncan.github.io/The-Odin-Project/Rock_Paper_Scissors/"
-                  target="_blank"
-                  rel="noopener"
-                  variant="contained"
-                  endIcon={<NavigateNextRoundedIcon />}
+                {/* ==================== RESPONSIVE BUTTON SECTION ================== */}
+                <Box
+                  sx={{
+                    display: "flex",
+                    flexDirection: {
+                      xs: "row",
+                      sm: "row",
+                      md: "column",
+                      lg: "column",
+                    },
+                    gap: "10px",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
                 >
-                  Visit
-                </Button>
+                  <Button
+                    sx={{
+                      color: "button.textLight",
+                      width: "125px",
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                    }}
+                    /*==> URL Link <== =======================================*/
+                    href="https://jeremyduncan.github.io/The-Odin-Project/Rock_Paper_Scissors/"
+                    target="_blank"
+                    rel="noopener"
+                    variant="contained"
+                    endIcon={<OndemandVideoIcon />}
+                  >
+                    Demo
+                  </Button>
+                  <Button
+                    sx={{ color: "button.textLight" }}
+                    /*==> URL Link <== =======================================*/
+                    href="https://github.com/JeremyDuncan/The-Odin-Project/tree/main/Rock_Paper_Scissors"
+                    target="_blank"
+                    rel="noopener"
+                    variant="contained"
+                    endIcon={<CodeIcon />}
+                  >
+                    Source
+                  </Button>
+                </Box>
+                {/* ================================ RESP BUTTON END ============================= */}
               </AccordionDetails>
             </Accordion>
           </Item>
