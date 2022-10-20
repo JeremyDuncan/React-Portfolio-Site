@@ -7,6 +7,7 @@ import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
+import { Divider } from '@mui/material';
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
@@ -14,6 +15,7 @@ import { styled } from "@mui/material/styles";
 import Typography from "@mui/material/Typography";
 import Image from "mui-image";
 import Resume from "./Resume";
+
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -41,7 +43,7 @@ const AboutMe = () => {
           sm={3}
           md={5}
           lg={4}
-          xl={3}
+          xl={4}
           sx={{ display: { xs: "none", sm: "none", md: "flex" } }}
         >
           {/*//=========== GRID BOX ===============> */}
@@ -98,10 +100,13 @@ const AboutMe = () => {
             {/* =============================================================================== */}
 
             <Typography
-              variant="h3"
+            mb={1}
+              variant="h4"
               sx={{
                 textShadow: "0px 3px 8px #8a8a8a",
                 textAlign: "center",
+                fontSize: "2.4rem",
+                fontWeight: "500",
                 display: { xs: "none", sm: "none", md: "initial" }
               }}
             >
@@ -109,10 +114,12 @@ const AboutMe = () => {
             </Typography>
 
             <Typography
+            mb={1}
               variant="h4"
               sx={{
                 textShadow: "0px 3px 8px #8a8a8a",
                 textAlign: "center",
+                fontWeight: "500",
                 display: { xs: "none", sm: "initial", md: "none" }
               }}
             >
@@ -120,19 +127,23 @@ const AboutMe = () => {
             </Typography>
 
             <Typography
-              variant="h5"
+              mb={1}
               sx={{
                 textShadow: "0px 3px 8px #8a8a8a",
                 textAlign: "center",
                 display: { xs: "initial", sm: "none" },
-                fontWeight: "500"
+                fontWeight: "500",
+                fontSize: "2rem",
+                lineHeight: "2rem"
               }}
             >
               Full Stack Developer
+              
             </Typography>
-
+            <Divider />
             
             <Typography
+              mt={2}
               sx={{ textShadow: "0px 3px 8px #8a8a8a", textAlign: "left" }}
               paragraph={true}
             >
