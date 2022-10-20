@@ -11,8 +11,6 @@ import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
 import { styled } from "@mui/material/styles";
-import Typography from "@mui/material/Typography";
-import Image from "mui-image";
 import AboutMe from "./AboutMe";
 import MainSection from "./MainSection";
 
@@ -28,27 +26,7 @@ const Item = styled(Paper)(({ theme }) => ({
 const Portfolio = () => {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <Grid
-        container
-        spacing={2}
-        direction="row"
-        justifyContent="center"
-        alignItems="center"
-      >
-        {/* === PORTFOLIO IMAGE OF ME === */}
-        {/*//=========== GRID BOX ===============> */}
-        <Grid item xs={8} sm={6} md={5} lg={4} xl={3}>
-          <Item elevation={14} sx={{ bgcolor: "primary.main", color: "white" }}>
-            <Image
-              src={require("../images/me_ny.webp")}
-              style={{ borderRadius: 16 }}
-              shift="top"
-              distance={400}
-            />
-          </Item>
-        </Grid>
-      </Grid>
-      {/*//=========== GRID END ===============> */}
+      
       <br />
       <Grid
         container
@@ -59,35 +37,7 @@ const Portfolio = () => {
       >
         <Grid display="column" item xs={11} md={11} lg={11} xl={6}>
           <Item elevation={14} sx={{ bgcolor: "primary.main" }}>
-            <Item
-              sx={{
-                bgcolor: "primary.dark",
-                color: "contrast.textLight",
-                textShadow: "1.5px 1.5px 4px #292727",
-                fontWeight: "bold",
-              }}
-            >
-              <Typography
-                variant="h4"
-                sx={{
-                  paddingBottom: 1,
-                  display: { xs: "none", sm: "initial" },
-                }}
-              >
-                Full Stack Developer
-                
-              </Typography>
-              <Typography
-                variant="h5"
-                sx={{
-                  paddingBottom: 0,
-                  display: { xs: "inital", sm: "none" },
-                }}
-              >
-                Full Stack Developer
-                
-              </Typography>
-            </Item>
+    
             <Item
               sx={{
                 background:
