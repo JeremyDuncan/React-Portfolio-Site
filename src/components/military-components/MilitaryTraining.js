@@ -14,6 +14,8 @@ import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
 import { styled } from "@mui/material/styles";
 import Typography from "@mui/material/Typography";
+import NavyAbout from "./NavyAbout";
+
 import Image from "mui-image";
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -196,6 +198,63 @@ const MilitaryTraining = () => {
           </Grid>
         </Grid>
         {/*//================= PICTURE GRID END =========================> */}
+        {/* ================================================================ */}
+        <Grid
+        container
+        spacing={2}
+        direction="row"
+        justifyContent="center"
+        alignItems="center"
+      >
+        <Grid display="column" item xs={11} md={11} lg={11} xl={6}>
+          <Item elevation={14} sx={{ bgcolor: "primary.main" }}>
+            <Item
+              sx={{
+                bgcolor: "primary.dark",
+                color: "contrast.textLight",
+                textShadow: "1.5px 1.5px 4px #292727",
+                fontWeight: "bold",
+              }}
+            >
+              <Typography
+                variant="h4"
+                sx={{
+                  paddingBottom: 1,
+                  display: { xs: "none", sm: "initial" },
+                }}
+              >
+               Professional Accomplishments
+                
+              </Typography>
+              <Typography
+                variant="h5"
+                sx={{
+                  paddingBottom: 0,
+                  display: { xs: "inital", sm: "none" },
+                }}
+              >
+                Professional Accomplishments
+                
+              </Typography>
+            </Item>
+            <Item
+              sx={{
+                background:
+                  "linear-gradient(to right, #A6B7C3 0%, #D2E8F7 50%, #A6B7C3 100%)",
+                color: "contrast.textDark",
+                textShadow: "0px 3px 8px #8a8a8a",
+              }}
+            >
+              <NavyAbout />
+            </Item>
+          </Item>
+        </Grid>
+      </Grid>
+      <br />      
+
+{/* ================================================================ */}
+
+      
         <Grid
           elevation={24}
           mb={5}

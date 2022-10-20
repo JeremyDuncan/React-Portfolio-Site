@@ -74,8 +74,8 @@ const Portfolio = () => {
                   display: { xs: "none", sm: "initial" },
                 }}
               >
-                <span className="highlight"> &#60;</span>Hello! I'm Jeremy
-                <span className="highlight">&#47;&gt; </span>
+                Full Stack Developer
+                
               </Typography>
               <Typography
                 variant="h5"
@@ -84,8 +84,8 @@ const Portfolio = () => {
                   display: { xs: "inital", sm: "none" },
                 }}
               >
-                <span className="highlight"> &#60;</span>Hello! I'm Jeremy
-                <span className="highlight">&#47;&gt; </span>
+                Full Stack Developer
+                
               </Typography>
             </Item>
             <Item

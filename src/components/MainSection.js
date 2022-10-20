@@ -29,6 +29,44 @@ const MainSection = () => {
   return (
     <div>
       {/* =============== === ACCORDIAN START === ===========================*/}
+      {/* =============== === ACCORDIAN START === ===========================*/}
+      {/* === PORTFOLIO SECTION === */}
+      <Accordion
+        sx={{ bgcolor: "primary.dark", color: "contrast.textLight" }}
+        expanded={expanded === "panel6"}
+        onChange={handleChange("panel6")}
+      >
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon sx={{ color: "contrast.textLight" }} />}
+          aria-controls="panel4bh-content"
+          id="panel4bh-header"
+        >
+          <Typography
+            className="accordian"
+            sx={{
+              textShadow: "1.5px 1.5px 4px #292727",
+              width: "33%",
+              flexShrink: 0,
+              fontWeight: "bold",
+              margin: { md: "auto", lg: "auto", sm: "auto" },
+            }}
+          >
+            Portfolio Projects
+          </Typography>
+        </AccordionSummary>
+        <AccordionDetails
+          sx={{
+            background:
+              "linear-gradient(to right, #A6B7C3 0%, #D2E8F7 50%, #A6B7C3 100%)",
+            color: "primary.contrastText",
+          }}
+        >
+          <Typography sx={{ paddingBottom: 2 }}></Typography>
+          <Projects /> {/* <=={COMPONENT} */}
+        </AccordionDetails>
+      </Accordion>
+      {/* =============== === ACCORDIAN END === =============================*/}
+
       {/* === PROGRAMMING LANGUAGE SECTION === */}
       <Accordion
         sx={{ bgcolor: "primary.dark", color: "contrast.textLight" }}
@@ -178,43 +216,7 @@ const MainSection = () => {
         </AccordionDetails>
       </Accordion>
       {/* =============== === ACCORDIAN END === =============================*/}
-      {/* =============== === ACCORDIAN START === ===========================*/}
-      {/* === PORTFOLIO SECTION === */}
-      <Accordion
-        sx={{ bgcolor: "primary.dark", color: "contrast.textLight" }}
-        expanded={expanded === "panel6"}
-        onChange={handleChange("panel6")}
-      >
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon sx={{ color: "contrast.textLight" }} />}
-          aria-controls="panel4bh-content"
-          id="panel4bh-header"
-        >
-          <Typography
-            className="accordian"
-            sx={{
-              textShadow: "1.5px 1.5px 4px #292727",
-              width: "33%",
-              flexShrink: 0,
-              fontWeight: "bold",
-              margin: { md: "auto", lg: "auto", sm: "auto" },
-            }}
-          >
-            My Portfolio Projects
-          </Typography>
-        </AccordionSummary>
-        <AccordionDetails
-          sx={{
-            background:
-              "linear-gradient(to right, #A6B7C3 0%, #D2E8F7 50%, #A6B7C3 100%)",
-            color: "primary.contrastText",
-          }}
-        >
-          <Typography sx={{ paddingBottom: 2 }}></Typography>
-          <Projects /> {/* <=={COMPONENT} */}
-        </AccordionDetails>
-      </Accordion>
-      {/* =============== === ACCORDIAN END === =============================*/}
+
     </div>
   );
 };
