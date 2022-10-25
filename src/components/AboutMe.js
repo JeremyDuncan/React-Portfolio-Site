@@ -133,7 +133,7 @@ const AboutMe = () => {
                 textAlign: "center",
                 display: { xs: "initial", sm: "none" },
                 fontWeight: "500",
-                fontSize: "2rem",
+                fontSize: "1.6rem",
                 lineHeight: "2rem"
               }}
             >
