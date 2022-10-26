@@ -80,8 +80,16 @@ z-index: 95;
   transform: scale(1.02);
   box-shadow: 9px 8px 4px black; */
   }
+  
 .highlightBlue {
   color: #5383A4;
   text-shadow: 1px 1px 1px black;
 }
-  
+ 
+#root > div > div > div > div.MuiBottomNavigation-root.css-16lloyr-MuiBottomNavigation-root {
+
+  background-color: rgba(255, 0, 0, 0);
+}
+#root > div > div > div > div.MuiBottomNavigation-root.css-l8ag82-MuiBottomNavigation-root {
+  background-color: rgba(255, 0, 0, 0);
+}

@@ -31,7 +31,7 @@ const ContactMe = () => {
   };
 
   return (
-    <div sx={{ boxShadow: "0px -18px 8px 3px rgba(0,0,0,1)" }}>
+    <div sx={{ boxShadow: "0px -18px 8px 3px rgba(0,0,0,1)", mt: "400px" }}>
       {/* =============== === ACCORDIAN === ============*/}
       <Accordion
         sx={{ bgcolor: "primary.dark", color: "contrast.textLight" }}

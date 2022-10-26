@@ -8,12 +8,16 @@ import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
+import BottomNavigation from '@mui/material/BottomNavigation';
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import Link from "@mui/material/Link";
 import Paper from "@mui/material/Paper";
 import { styled } from "@mui/material/styles";
 import Typography from "@mui/material/Typography";
+import ContactMe from "../ContactMe";
+
+
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -25,6 +29,8 @@ const Item = styled(Paper)(({ theme }) => ({
 
 const ContactFooter = () => {
   return (
+    <BottomNavigation sx={{marginTop: "180px"}}>
+     
     <Box
       sx={{ flexGrow: 1 }}
       container
@@ -33,7 +39,9 @@ const ContactFooter = () => {
       justifyContent="center"
       alignItems="center"
       className="footer"
+    
     >
+       <ContactMe/>
       <Grid item xs={12}>
         <Item
           sx={{
@@ -71,6 +79,7 @@ const ContactFooter = () => {
         </Item>
       </Grid>
     </Box>
+    </BottomNavigation>
   );
 };
 

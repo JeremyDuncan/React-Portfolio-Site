@@ -7,9 +7,8 @@ import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 import Box from "@mui/material/Box";
-import ContactMe from "../components/ContactMe";
+import ContactFooter from "../components/contact-components/ContactFooter";
 import DevryProjects from "../components/devry-components/DevryProjects";
-import Footer from "../components/Footer";
 import Header from "../components/Header";
 
 const Devry = () => {
@@ -19,8 +18,7 @@ const Devry = () => {
       <br />
       <br />
       <DevryProjects />
-      <ContactMe />
-      <Footer />
+      <ContactFooter />
     </Box>
   );
 };
