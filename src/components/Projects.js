@@ -1,6 +1,7 @@
 // *****************************************************************************
 // This component displays the Projects I've completed
 // Goes to ==> MainSection.js Component
+// Images need to be 300*300px
 // *****************************************************************************
 
 import "@fontsource/roboto/300.css";
@@ -39,6 +40,101 @@ const Projects = () => {
         justifyContent="center"
         alignItems="center"
       >
+
+        {/*//========================= GRID BOX ===================================> */}
+        <Grid item xs={11} md={3.5}>
+          <Item sx={{ bgcolor: "primary.main", color: "white" }}>
+            {/*==> Image Link <== =========================================*/}
+            <Image src={require("../images/cat-tinder.webp")} />
+            <Accordion sx={{ bgcolor: "primary.dark" }}>
+              <AccordionSummary
+                expandIcon={
+                  <ExpandMoreIcon sx={{ color: "contrast.textLight" }} />
+                }
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+              >
+                <Typography
+                  sx={{
+                    display: "flex",
+                    color: "contrast.textLight",
+                    textShadow: "1.5px 1.5px 4px #292727",
+                    height: "60px",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                >
+                  Cat Tinder
+                </Typography>
+              </AccordionSummary>
+              <AccordionDetails
+                sx={{
+                  bgcolor: "secondary.main",
+                }}
+              >
+                {/*==> Description Text <== ===============================*/}
+                <Typography
+                  sx={{
+                    color: "contrast.textDark",
+                    textShadow: "0px 3px 8px #8a8a8a",
+                  }}
+                  textAlign="left"
+                >
+                  This a full-stack web application developed using Pair-Programming. Technologies used include JavaScript, React.js, ReactStrap, HTML, CSS, Ruby, Ruby on Rails, and PostgreSQL.
+                </Typography>
+                <br />
+
+                {/* ==================== RESPONSIVE BUTTON SECTION ================== */}
+                <Box
+                  sx={{
+                    display: "flex",
+                    flexDirection: {
+                      xs: "row",
+                      sm: "row",
+                      md: "column",
+                      lg: "column",
+                    },
+                    gap: "10px",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                >
+                  <Button
+                    sx={{
+                      color: "button.textLight",
+                      width: "125px",
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                    }}
+                    /*==> URL Link <== =======================================*/
+                    href="https://cat-tinder-foba.onrender.com/"
+                    target="_blank"
+                    rel="noopener"
+                    variant="contained"
+                    endIcon={<OndemandVideoIcon />}
+                  >
+                    Demo
+                  </Button>
+                  <Button
+                    sx={{ color: "button.textLight" }}
+                    /*==> URL Link <== =======================================*/
+                    href="https://github.com/JeremyDuncan/cat-tinder-frontend-higher-order-coders"
+                    target="_blank"
+                    rel="noopener"
+                    variant="contained"
+                    endIcon={<CodeIcon />}
+                  >
+                    Source
+                  </Button>
+                </Box>
+                {/* ================================ RESP BUTTON END ============================= */}
+              </AccordionDetails>
+            </Accordion>
+          </Item>
+        </Grid>
+        {/*//========================= GRID END ===================================> */}
+
         {/*//========================= GRID BOX ===================================> */}
         <Grid item xs={11} md={3.5}>
           <Item sx={{ bgcolor: "primary.main", color: "white" }}>

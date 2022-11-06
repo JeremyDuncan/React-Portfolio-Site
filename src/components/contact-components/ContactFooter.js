@@ -39,6 +39,7 @@ const ContactFooter = () => {
       justifyContent="center"
       alignItems="center"
       className="footer"
+      elevation={24}
     
     >
        <ContactMe/>
