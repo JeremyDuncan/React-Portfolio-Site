@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.b55b609e.css",
-    "main.js": "/static/js/main.b21bbe39.js",
+    "main.js": "/static/js/main.487ba9d5.js",
     "static/media/JavaScript_algo.png": "/static/media/JavaScript_algo.b09a090f3ea764e693ab.png",
     "static/media/Front_End_Dev.png": "/static/media/Front_End_Dev.249bd3886aff3aac48bf.png",
     "static/media/Responsive_Web_Design.png": "/static/media/Responsive_Web_Design.ac3a35fc4a78eb6ae025.png",
@@ -32,6 +32,7 @@
     "static/media/honor_guard.webp": "/static/media/honor_guard.0982e9b9c6f501eb6633.webp",
     "static/media/IoT.webp": "/static/media/IoT.b25c00427eed2f37fe4f.webp",
     "static/media/Node.js_logo.png": "/static/media/Node.js_logo.6dc320ffbc93bc18c370.png",
+    "static/media/data-structures.webp": "/static/media/data-structures.5d795a7ba8c3033bf7b5.webp",
     "static/media/javascript_logo_Scaled.png": "/static/media/javascript_logo_Scaled.d87fd26a84e32c333acb.png",
     "static/media/stock_tracker.webp": "/static/media/stock_tracker.28e81f8b1911bcb6ca0d.webp",
     "static/media/robot-translator.webp": "/static/media/robot-translator.c80fab333904d1f92aa1.webp",
@@ -65,6 +66,7 @@
     "static/media/roboto-cyrillic-700-normal.woff2": "/static/media/roboto-cyrillic-700-normal.d010f1f324e111a22e53.woff2",
     "static/media/roboto-cyrillic-400-normal.woff2": "/static/media/roboto-cyrillic-400-normal.71a33b6b50457b2c903a.woff2",
     "static/media/roboto-cyrillic-300-normal.woff2": "/static/media/roboto-cyrillic-300-normal.1431d1cef06ad04f5458.woff2",
+    "static/media/cat-tinder.webp": "/static/media/cat-tinder.46f70f650378eed2a746.webp",
     "static/media/pig.webp": "/static/media/pig.f6e7ca75350197770d69.webp",
     "static/media/Portfolio_screenshot_D-M.webp": "/static/media/Portfolio_screenshot_D-M.94cb9376eb3b78459ee2.webp",
     "static/media/roboto-greek-300-normal.woff2": "/static/media/roboto-greek-300-normal.db2632771401f61463fe.woff2",
@@ -86,10 +88,10 @@
     "index.html": "/index.html",
     "static/media/roboto-greek-ext-700-normal.woff2": "/static/media/roboto-greek-ext-700-normal.bd9854c751441ccc1a70.woff2",
     "main.b55b609e.css.map": "/static/css/main.b55b609e.css.map",
-    "main.b21bbe39.js.map": "/static/js/main.b21bbe39.js.map"
+    "main.487ba9d5.js.map": "/static/js/main.487ba9d5.js.map"
   },
   "entrypoints": [
     "static/css/main.b55b609e.css",
-    "static/js/main.b21bbe39.js"
+    "static/js/main.487ba9d5.js"
   ]
 }
