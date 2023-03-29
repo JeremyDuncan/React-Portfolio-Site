@@ -10,6 +10,15 @@ import Box from "@mui/material/Box";
 import ContactInfo from "../components/contact-components/ContactInfo";
 
 const Contact = () => {
+
+  // Add the Google Analytics tracking code
+  React.useEffect(() => {
+    window.gtag('config', 'G-6S5BDFXFJW', {
+      'page_title': 'Contact Page',
+      'page_path': window.location.pathname,
+    });
+  }, []);
+
   return (
     <Box>
       <br />
