@@ -15,8 +15,8 @@ import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import Link from "@mui/material/Link";
 import Paper from "@mui/material/Paper";
-import { styled } from "@mui/material/styles";
 import Typography from "@mui/material/Typography";
+import { styled } from "@mui/material/styles";
 import ContactMe from "./ContactMe";
 
 
@@ -77,7 +77,7 @@ const Footer = () => {
             </Link>
             .
           </Typography>
-          <Typography>Copyright &copy; 2022 Jeremy Duncan</Typography>
+          <Typography>Copyright &copy; 2023 Jeremy Duncan</Typography>
         </Item>
       </Grid>
     </Box>

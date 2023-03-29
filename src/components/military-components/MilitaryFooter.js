@@ -65,7 +65,7 @@ const MilitaryFooter = () => {
             .
           </Typography>
           <Typography sx={{ fontWeight: "bold" }}>
-            Copyright &copy; 2022 Jeremy Duncan
+            Copyright &copy; 2023 Jeremy Duncan
           </Typography>
         </Item>
       </Grid>
