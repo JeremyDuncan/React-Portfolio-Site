@@ -28,10 +28,10 @@ const MainSection = () => {
 
   return (
     <div>
-      {/* =============== === ACCORDIAN START === ===========================*/}
-      {/* =============== === ACCORDIAN START === ===========================*/}
+      {/* =============== === ACCORDION START === ===========================*/}
       {/* === PORTFOLIO SECTION === */}
       <Accordion
+        className="ga-btn"
         sx={{ bgcolor: "primary.dark", color: "contrast.textLight" }}
         expanded={expanded === "panel6"}
         onChange={handleChange("panel6")}
@@ -42,7 +42,7 @@ const MainSection = () => {
           id="panel4bh-header"
         >
           <Typography
-            className="accordian"
+            className="accordian ga-btn"
             sx={{
               textShadow: "1.5px 1.5px 4px #292727",
               width: "33%",
@@ -69,6 +69,7 @@ const MainSection = () => {
 
       {/* === PROGRAMMING LANGUAGE SECTION === */}
       <Accordion
+        className="ga-btn"
         sx={{ bgcolor: "primary.dark", color: "contrast.textLight" }}
         expanded={expanded === "panel2"}
         onChange={handleChange("panel2")}
@@ -79,7 +80,7 @@ const MainSection = () => {
           id="panel2bh-header"
         >
           <Typography
-            className="accordian"
+            className="accordian ga-btn"
             sx={{
               textShadow: "1.5px 1.5px 4px #292727",
               width: "33%",
@@ -110,6 +111,7 @@ const MainSection = () => {
       {/* =============== === ACCORDIAN START === ===========================*/}
       {/* === COLLEGE EDUCATION SECTION === */}
       <Accordion
+        className="ga-btn"
         sx={{ bgcolor: "primary.dark", color: "contrast.textLight" }}
         expanded={expanded === "panel3"}
         onChange={handleChange("panel3")}
@@ -120,7 +122,7 @@ const MainSection = () => {
           id="panel3bh-header"
         >
           <Typography
-            className="accordian"
+            className="accordian ga-btn"
             sx={{
               textShadow: "1.5px 1.5px 4px #292727",
               width: "33%",
@@ -146,6 +148,7 @@ const MainSection = () => {
       {/* =============== === ACCORDIAN START === ===========================*/}
       {/* ===  CERTIFICATION SECTION === */}
       <Accordion
+        className="ga-btn"
         sx={{ bgcolor: "primary.dark", color: "contrast.textLight" }}
         expanded={expanded === "panel4"}
         onChange={handleChange("panel4")}
@@ -156,7 +159,7 @@ const MainSection = () => {
           id="panel3bh-header"
         >
           <Typography
-            className="accordian"
+            className="accordian ga-btn"
             sx={{
               textShadow: "1.5px 1.5px 4px #292727",
               width: "33%",
@@ -182,6 +185,7 @@ const MainSection = () => {
       {/* =============== === ACCORDIAN START === ===========================*/}
       {/* === MILITARY EXPERIENCE SECTION === */}
       <Accordion
+        className="ga-btn"
         sx={{ bgcolor: "primary.dark", color: "contrast.textLight" }}
         expanded={expanded === "panel5"}
         onChange={handleChange("panel5")}
@@ -192,7 +196,7 @@ const MainSection = () => {
           id="panel4bh-header"
         >
           <Typography
-            className="accordian"
+            className="accordian ga-btn"
             sx={{
               textShadow: "1.5px 1.5px 4px #292727",
               width: "33%",
