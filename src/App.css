@@ -5,10 +5,9 @@ body {
   background: radial-gradient(ellipse at center, #5383A4 0%, #304B5B 100%);
 }
 
-.css-l8ag82-MuiBottomNavigation-root {
+.MuiBottomNavigation-root {
   background-color: transparent !important;
 }
-
 #devryLogo {
   width: 140px;
 }
