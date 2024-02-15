@@ -12,7 +12,7 @@ import MilitaryTraining from "../components/military-components/MilitaryTraining
 const Military = () => {
 
   // Add the Google Analytics tracking code
-  React.useEffect(() => {
+  useEffect(() => {
     window.gtag('config', 'G-6S5BDFXFJW', {
       'page_title': 'Military Page',
       'page_path': window.location.pathname,

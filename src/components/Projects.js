@@ -21,6 +21,7 @@ import Paper from "@mui/material/Paper";
 import { styled } from "@mui/material/styles";
 import Typography from "@mui/material/Typography";
 import Image from "mui-image";
+import React, { useState } from 'react';
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -31,22 +32,120 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 const Projects = () => {
+  const [expandedPanel, setExpandedPanel] = useState(false);
+  const handleChangePanel = (panel) => (event, isExpanded) => {
+    setExpandedPanel(isExpanded ? panel : false);
+  };
+
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <Grid
-        container
-        spacing={2}
-        direction="row"
-        justifyContent="center"
-        alignItems="center"
-      >
+      <Grid container spacing={2} direction="row" justifyContent="center" alignItems="center">
+        {/*//========================= GRID BOX ===================================> */}
+        <Grid item xs={11} md={3.5}>
+          <Item sx={{ bgcolor: "primary.main", color: "white" }}>
+            {/*==> Image Link <== =========================================*/}
+            <Image src={require("../images/wildflower-design.webp")} />
+            <Accordion 
+            expanded={expandedPanel === 'panel1'} 
+            onChange={handleChangePanel('panel1')}
+            sx={{ bgcolor: "primary.dark" }}>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon sx={{ color: "contrast.textLight" }} />}
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+              >
+                <Typography
+                  className="ga-btn"
+                  sx={{
+                    display: "flex",
+                    color: "contrast.textLight",
+                    textShadow: "1.5px 1.5px 4px #292727",
+                    height: "60px",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                >
+                  Wildflower Designs
+                </Typography>
+              </AccordionSummary>
+              <AccordionDetails
+                sx={{
+                  bgcolor: "secondary.main",
+                }}
+              >
+                {/*==> Description Text <== ===============================*/}
+                <Typography
+                  sx={{
+                    color: "contrast.textDark",
+                    textShadow: "0px 3px 8px #8a8a8a",
+                  }}
+                  textAlign="left"
+                >
+                  This a Ruby on Rails application for selling arts and crafts style merchandise. Technologies used include JavaScript, Slim, jQuery, HTML, CSS, SCSS, Ruby, Ruby on Rails, AWS, PostgreSQL, and AI generated images.
+                </Typography>
+                <br />
+                {/* ==================== RESPONSIVE BUTTON SECTION ================== */}
+                <Box
+                  sx={{
+                    display: "flex",
+                    flexDirection: {
+                      xs: "row",
+                      sm: "row",
+                      md: "column",
+                      lg: "column",
+                    },
+                    gap: "10px",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                >
+                  <Button
+                    className="ga-btn"
+                    sx={{
+                      color: "button.textLight",
+                      width: "125px",
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                    }}
+                    /*==> URL Link <== =======================================*/
+                    href="https://www.wild-flower-designs.com"
+                    target="_blank"
+                    rel="noopener"
+                    variant="contained"
+                    endIcon={<OndemandVideoIcon />}
+                  >
+                    Demo
+                  </Button>
+                  <Button
+                    className="ga-btn"
+                    sx={{ color: "button.textLight" }}
+                    /*==> URL Link <== =======================================*/
+                    href="https://github.com/JeremyDuncan/wildflower_designs"
+                    target="_blank"
+                    rel="noopener"
+                    variant="contained"
+                    endIcon={<CodeIcon />}
+                  >
+                    Source
+                  </Button>
+                </Box>
+                {/* ================================ RESP BUTTON END ============================= */}
+              </AccordionDetails>
+            </Accordion>
+          </Item>
+        </Grid>
+        {/*//========================= GRID END ===================================> */}
 
         {/*//========================= GRID BOX ===================================> */}
         <Grid item xs={11} md={3.5}>
           <Item sx={{ bgcolor: "primary.main", color: "white" }}>
             {/*==> Image Link <== =========================================*/}
-            <Image src={require("../images/cat-tinder.webp")} />
-            <Accordion sx={{ bgcolor: "primary.dark" }}>
+            <Image src={require("../images/cosmic-defender.webp")} />
+            <Accordion 
+            expanded={expandedPanel === 'panel2'} 
+            onChange={handleChangePanel('panel2')}
+            sx={{ bgcolor: "primary.dark" }}>
               <AccordionSummary
                 expandIcon={
                   <ExpandMoreIcon sx={{ color: "contrast.textLight" }} />
@@ -55,6 +154,205 @@ const Projects = () => {
                 id="panel1a-header"
               >
                 <Typography
+                  className="ga-btn"
+                  sx={{
+                    display: "flex",
+                    color: "contrast.textLight",
+                    textShadow: "1.5px 1.5px 4px #292727",
+                    height: "60px",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                >
+                  Cosmic Defender
+                </Typography>
+              </AccordionSummary>
+              <AccordionDetails
+                sx={{
+                  bgcolor: "secondary.main",
+                }}
+              >
+                {/*==> Description Text <== ===============================*/}
+                <Typography
+                  sx={{
+                    color: "contrast.textDark",
+                    textShadow: "0px 3px 8px #8a8a8a",
+                  }}
+                  textAlign="left"
+                >
+                  This a Ruby on Rails application. Technologies used include JavaScript, Phaser.js, Slim, jQuery, HTML, CSS, Ruby, Ruby on Rails, and PostgreSQL.
+                </Typography>
+                <br />
+                {/* ==================== RESPONSIVE BUTTON SECTION ================== */}
+                <Box
+                  sx={{
+                    display: "flex",
+                    flexDirection: {
+                      xs: "row",
+                      sm: "row",
+                      md: "column",
+                      lg: "column",
+                    },
+                    gap: "10px",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                >
+                  <Button
+                    className="ga-btn"
+                    sx={{
+                      color: "button.textLight",
+                      width: "125px",
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                    }}
+                    /*==> URL Link <== =======================================*/
+                    href="https://cosmicdefender.jeremyd.net"
+                    target="_blank"
+                    rel="noopener"
+                    variant="contained"
+                    endIcon={<OndemandVideoIcon />}
+                  >
+                    Demo
+                  </Button>
+                  <Button
+                    className="ga-btn"
+                    sx={{ color: "button.textLight" }}
+                    /*==> URL Link <== =======================================*/
+                    href="https://github.com/JeremyDuncan/CosmicDefender"
+                    target="_blank"
+                    rel="noopener"
+                    variant="contained"
+                    endIcon={<CodeIcon />}
+                  >
+                    Source
+                  </Button>
+                </Box>
+                {/* ================================ RESP BUTTON END ============================= */}
+              </AccordionDetails>
+            </Accordion>
+          </Item>
+        </Grid>
+        {/*//========================= GRID END ===================================> */}
+
+        {/*//========================= GRID BOX ===================================> */}
+        <Grid item xs={11} md={3.5}>
+          <Item sx={{ bgcolor: "primary.main", color: "white" }}>
+            {/*==> Image Link <== =========================================*/}
+            <Image src={require("../images/ecs.webp")} />
+            <Accordion 
+            expanded={expandedPanel === 'panel3'} 
+            onChange={handleChangePanel('panel3')}
+            sx={{ bgcolor: "primary.dark" }}>
+              <AccordionSummary
+                expandIcon={
+                  <ExpandMoreIcon sx={{ color: "contrast.textLight" }} />
+                }
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+              >
+                <Typography
+                  className="ga-btn"
+                  sx={{
+                    display: "flex",
+                    color: "contrast.textLight",
+                    textShadow: "1.5px 1.5px 4px #292727",
+                    height: "60px",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                >
+                  Equipment Checkout System
+                </Typography>
+              </AccordionSummary>
+              <AccordionDetails
+                sx={{
+                  bgcolor: "secondary.main",
+                }}
+              >
+                {/*==> Description Text <== ===============================*/}
+                <Typography
+                  sx={{
+                    color: "contrast.textDark",
+                    textShadow: "0px 3px 8px #8a8a8a",
+                  }}
+                  textAlign="left"
+                >
+                  This a Ruby on Rails application. Technologies used include JavaScript, Slim, jQuery, Minio(S3 buckets), HTML, CSS, Ruby, Ruby on Rails, and PostgreSQL.
+                </Typography>
+                <br />
+                {/* ==================== RESPONSIVE BUTTON SECTION ================== */}
+                <Box
+                  sx={{
+                    display: "flex",
+                    flexDirection: {
+                      xs: "row",
+                      sm: "row",
+                      md: "column",
+                      lg: "column",
+                    },
+                    gap: "10px",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                >
+                  <Button
+                    className="ga-btn"
+                    sx={{
+                      color: "button.textLight",
+                      width: "125px",
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                    }}
+                    /*==> URL Link <== =======================================*/
+                    href="https://ecs.jeremyd.net"
+                    target="_blank"
+                    rel="noopener"
+                    variant="contained"
+                    endIcon={<OndemandVideoIcon />}
+                  >
+                    Demo
+                  </Button>
+                  <Button
+                    className="ga-btn"
+                    sx={{ color: "button.textLight" }}
+                    /*==> URL Link <== =======================================*/
+                    href="https://github.com/JeremyDuncan/EquipmentCheckoutSystem"
+                    target="_blank"
+                    rel="noopener"
+                    variant="contained"
+                    endIcon={<CodeIcon />}
+                  >
+                    Source
+                  </Button>
+                </Box>
+                {/* ================================ RESP BUTTON END ============================= */}
+              </AccordionDetails>
+            </Accordion>
+          </Item>
+        </Grid>
+        {/*//========================= GRID END ===================================> */}
+
+        {/*//========================= GRID BOX ===================================> */}
+        <Grid item xs={11} md={3.5}>
+          <Item sx={{ bgcolor: "primary.main", color: "white" }}>
+            {/*==> Image Link <== =========================================*/}
+            <Image src={require("../images/cat-tinder.webp")} />
+            <Accordion 
+            expanded={expandedPanel === 'panel4'} 
+            onChange={handleChangePanel('panel4')}
+            sx={{ bgcolor: "primary.dark" }}>
+              <AccordionSummary
+                expandIcon={
+                  <ExpandMoreIcon sx={{ color: "contrast.textLight" }} />
+                }
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+              >
+                <Typography
+                  className="ga-btn"
                   sx={{
                     display: "flex",
                     color: "contrast.textLight",
@@ -80,10 +378,9 @@ const Projects = () => {
                   }}
                   textAlign="left"
                 >
-                  This a full-stack web application developed using Pair-Programming. Technologies used include JavaScript, React.js, ReactStrap, HTML, CSS, Ruby, Ruby on Rails, and PostgreSQL.
+                  This a Ruby on Rails application. Technologies used include JavaScript, React.js, Slim, jQuery, Minio(S3 buckets), ReactStrap, HTML, CSS, SASS, Ruby, Ruby on Rails, and PostgreSQL.
                 </Typography>
                 <br />
-
                 {/* ==================== RESPONSIVE BUTTON SECTION ================== */}
                 <Box
                   sx={{
@@ -100,6 +397,7 @@ const Projects = () => {
                   }}
                 >
                   <Button
+                    className="ga-btn"
                     sx={{
                       color: "button.textLight",
                       width: "125px",
@@ -108,7 +406,7 @@ const Projects = () => {
                       alignItems: "center",
                     }}
                     /*==> URL Link <== =======================================*/
-                    href="https://cat-tinder-foba.onrender.com/"
+                    href="https://cattinder.jeremyd.net/"
                     target="_blank"
                     rel="noopener"
                     variant="contained"
@@ -117,6 +415,7 @@ const Projects = () => {
                     Demo
                   </Button>
                   <Button
+                    className="ga-btn"
                     sx={{ color: "button.textLight" }}
                     /*==> URL Link <== =======================================*/
                     href="https://github.com/JeremyDuncan/cat-tinder-frontend-higher-order-coders"
@@ -140,7 +439,10 @@ const Projects = () => {
           <Item sx={{ bgcolor: "primary.main", color: "white" }}>
             {/*==> Image Link <== =========================================*/}
             <Image src={require("../images/Willis_Deluxe_Detail_Logo.jpg")} />
-            <Accordion sx={{ bgcolor: "primary.dark" }}>
+            <Accordion 
+            expanded={expandedPanel === 'panel5'} 
+            onChange={handleChangePanel('panel5')}
+            sx={{ bgcolor: "primary.dark" }}>
               <AccordionSummary
                 expandIcon={
                   <ExpandMoreIcon sx={{ color: "contrast.textLight" }} />
@@ -149,6 +451,7 @@ const Projects = () => {
                 id="panel1a-header"
               >
                 <Typography
+                  className="ga-btn"
                   sx={{
                     display: "flex",
                     color: "contrast.textLight",
@@ -236,6 +539,8 @@ const Projects = () => {
             <Image src={require("../images/battleship_Screenshot.webp")} />
             {/* =============== === ACCORDIAN START === ===================*/}
             <Accordion
+              expanded={expandedPanel === 'panel6'} 
+              onChange={handleChangePanel('panel6')}
               sx={{ bgcolor: "primary.dark", color: "primary.contrastText" }}
             >
               <AccordionSummary
@@ -332,7 +637,10 @@ const Projects = () => {
           <Item sx={{ bgcolor: "primary.main", color: "white" }}>
             {/*==> Image Link <== =========================================*/}
             <Image src={require("../images/tic-tac-toe.webp")} />
-            <Accordion sx={{ bgcolor: "primary.dark" }}>
+            <Accordion 
+            expanded={expandedPanel === 'panel7'} 
+            onChange={handleChangePanel('panel7')}
+            sx={{ bgcolor: "primary.dark" }}>
               <AccordionSummary
                 expandIcon={
                   <ExpandMoreIcon sx={{ color: "contrast.textLight" }} />
@@ -394,7 +702,7 @@ const Projects = () => {
                       alignItems: "center",
                     }}
                     /*==> URL Link <== =======================================*/
-                    href="https://www.jeremyduncan.tech/tic-tac-toe/"
+                    href="https://jeremyduncan.github.io/tic-tac-toe/"
                     target="_blank"
                     rel="noopener"
                     variant="contained"
@@ -415,7 +723,7 @@ const Projects = () => {
                   </Button>
                 </Box>
                 {/* ================================ RESP BUTTON END ============================= */}
-  
+
               </AccordionDetails>
             </Accordion>
           </Item>
@@ -427,7 +735,10 @@ const Projects = () => {
           <Item sx={{ bgcolor: "primary.main", color: "white" }}>
             {/*==> Image Link <== =========================================*/}
             <Image src={require("../images/pig.webp")} />
-            <Accordion sx={{ bgcolor: "primary.dark" }}>
+            <Accordion 
+            expanded={expandedPanel === 'panel28'} 
+            onChange={handleChangePanel('panel28')}
+            sx={{ bgcolor: "primary.dark" }}>
               <AccordionSummary
                 expandIcon={
                   <ExpandMoreIcon sx={{ color: "contrast.textLight" }} />
@@ -489,7 +800,7 @@ const Projects = () => {
                       alignItems: "center",
                     }}
                     /*==> URL Link <== =======================================*/
-                    href="https://www.jeremyduncan.tech/pig-latin-converter/"
+                    href="https://jeremyduncan.github.io/pig-latin-converter/"
                     target="_blank"
                     rel="noopener"
                     variant="contained"
@@ -522,6 +833,8 @@ const Projects = () => {
             <Image src={require("../images/markup_editor_screenshot.webp")} />
             {/* =============== === ACCORDIAN START === =================*/}
             <Accordion
+              expanded={expandedPanel === 'panel8'} 
+              onChange={handleChangePanel('panel8')}
               sx={{ bgcolor: "primary.dark", color: "primary.contrastText" }}
             >
               <AccordionSummary
@@ -620,6 +933,8 @@ const Projects = () => {
             <Image src={require("../images/drum-machine_screenshot.webp")} />
             {/* =============== === ACCORDIAN START === ===================*/}
             <Accordion
+              expanded={expandedPanel === 'panel9'} 
+              onChange={handleChangePanel('panel9')}
               sx={{ bgcolor: "primary.dark", color: "primary.contrastText" }}
             >
               <AccordionSummary
@@ -716,6 +1031,8 @@ const Projects = () => {
             {/*==> Image Link <== =========================================*/}
             <Image src={require("../images//calculator_screenshot.webp")} />
             <Accordion
+              expanded={expandedPanel === 'panel10'} 
+              onChange={handleChangePanel('panel10')}
               sx={{ bgcolor: "primary.dark", color: "primary.contrastText" }}
             >
               <AccordionSummary
@@ -812,6 +1129,8 @@ const Projects = () => {
             {/*==> Image Link <== =========================================*/}
             <Image src={require("../images/clock_screenshot.webp")} />
             <Accordion
+              expanded={expandedPanel === 'panel11'} 
+              onChange={handleChangePanel('panel11')}
               sx={{ bgcolor: "primary.dark", color: "primary.contrastText" }}
             >
               <AccordionSummary
@@ -909,6 +1228,8 @@ const Projects = () => {
             {/*==> Image Link <== =========================================*/}
             <Image src={require("../images/Portfolio_screenshot_D-M.webp")} />
             <Accordion
+              expanded={expandedPanel === 'panel12'} 
+              onChange={handleChangePanel('panel12')}
               sx={{ bgcolor: "primary.dark", color: "primary.contrastText" }}
             >
               <AccordionSummary
@@ -1006,6 +1327,8 @@ const Projects = () => {
             {/*==> Image Link <== =========================================*/}
             <Image src={require("../images/quote-gen_screenshot.webp")} />
             <Accordion
+              expanded={expandedPanel === 'panel13'} 
+              onChange={handleChangePanel('panel13')}
               sx={{ bgcolor: "primary.dark", color: "primary.contrastText" }}
             >
               <AccordionSummary
@@ -1103,6 +1426,8 @@ const Projects = () => {
             {/*==> Image Link <== =========================================*/}
             <Image src={require("../images/light_switch.webp")} />
             <Accordion
+              expanded={expandedPanel === 'panel14'} 
+              onChange={handleChangePanel('panel14')}
               sx={{ bgcolor: "primary.dark", color: "primary.contrastText" }}
             >
               <AccordionSummary
@@ -1201,6 +1526,8 @@ const Projects = () => {
             {/*==> Image Link <== =========================================*/}
             <Image src={require("../images/robot-translator.webp")} />
             <Accordion
+              expanded={expandedPanel === 'panel16'} 
+              onChange={handleChangePanel('panel16')}
               sx={{ bgcolor: "primary.dark", color: "primary.contrastText" }}
             >
               <AccordionSummary
@@ -1297,6 +1624,8 @@ const Projects = () => {
             {/*==> Image Link <== =========================================*/}
             <Image src={require("../images/treasurehunt.webp")} />
             <Accordion
+              expanded={expandedPanel === 'panel17'} 
+              onChange={handleChangePanel('panel17')}
               sx={{ bgcolor: "primary.dark", color: "primary.contrastText" }}
             >
               <AccordionSummary
@@ -1361,7 +1690,7 @@ const Projects = () => {
                       alignItems: "center",
                     }}
                     /*==> URL Link <== =======================================*/
-                    href="https://www.jeremyduncan.tech/treasure_hunt/"
+                    href="https://jeremyduncan.github.io/treasure_hunt/"
                     target="_blank"
                     rel="noopener"
                     variant="contained"
@@ -1393,6 +1722,8 @@ const Projects = () => {
             {/*==> Image Link <== =========================================*/}
             <Image src={require("../images/mad-libs.webp")} />
             <Accordion
+              expanded={expandedPanel === 'panel18'} 
+              onChange={handleChangePanel('panel18')}
               sx={{ bgcolor: "primary.dark", color: "primary.contrastText" }}
             >
               <AccordionSummary
@@ -1489,6 +1820,8 @@ const Projects = () => {
             {/*==> Image Link <== =========================================*/}
             <Image src={require("../images/rock_paper_scissors.webp")} />
             <Accordion
+              expanded={expandedPanel === 'panel19'} 
+              onChange={handleChangePanel('panel19')}
               sx={{ bgcolor: "primary.dark", color: "primary.contrastText" }}
             >
               <AccordionSummary

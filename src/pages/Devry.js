@@ -12,7 +12,7 @@ import DevryProjects from "../components/devry-components/DevryProjects";
 const Devry = () => {
   
   // Add the Google Analytics tracking code
-  React.useEffect(() => {
+  useEffect(() => {
     window.gtag('config', 'G-6S5BDFXFJW', {
       'page_title': 'College Page',
       'page_path': window.location.pathname,

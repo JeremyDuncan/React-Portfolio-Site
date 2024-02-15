@@ -74,9 +74,7 @@ const ContactFooter = () => {
             </Link>
             .
           </Typography>
-          <Typography sx={{ fontWeight: "bold" }}>
-            Copyright &copy; 2023 Jeremy Duncan
-          </Typography>
+          <Typography>Copyright &copy; {new Date().getFullYear()} Jeremy Duncan</Typography>
         </Item>
       </Grid>
     </Box>

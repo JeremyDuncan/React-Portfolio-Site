@@ -58,11 +58,13 @@ const MilitaryExp = () => {
           {/* === === === === === WORKCENTER SUPERVISOR === === === === */}
 
           {/* === List Item Button === */}
-          <ListItemButton onClick={handleClick}>
+          <ListItemButton className="ga-btn" onClick={handleClick}>
+            
             <ListItemIcon>
               <AssignmentIndRoundedIcon sx={{ color: "contrast.textdark" }} />
             </ListItemIcon>
             <ListItemText
+              className="ga-btn"
               sx={{
                 color: "contrast.textDark",
                 textShadow: "0px 3px 8px #8a8a8a",

@@ -11,8 +11,8 @@ import { Divider } from '@mui/material';
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
-import { styled } from "@mui/material/styles";
 import Typography from "@mui/material/Typography";
+import { styled } from "@mui/material/styles";
 import Image from "mui-image";
 import Resume from "./Resume";
 
@@ -147,7 +147,7 @@ const AboutMe = () => {
               sx={{ textShadow: "0px 3px 8px #8a8a8a", textAlign: "left" }}
               paragraph={true}
             >
-              I'm a highly motivated Full Stack Developer that has over a decade
+              I'm a highly motivated Full Stack Engineer that has over a decade
               of proven experience in the US Navy.
             </Typography>
 
@@ -156,10 +156,11 @@ const AboutMe = () => {
               paragraph={true}
             >
               I have a passion for technology and solving complex problems with
-              the creation of logical solutions. I'm currently going to DeVry
-              University for a Bachelor's of Science in Computer Information
-              Systems with a focus in Software Programming as well as completing
-              a Full-Stack Engineering program at LEARN Academy
+              the creation of logical solutions. I have earned a Bachelor of Science 
+              in Computer Information Systems majoring in Software Programming 
+              with Summa Cum Laude honors. To augment my degree and professional 
+              skills, I also completed a Full-Stack Engineering program at LEARN 
+              Academy.
             </Typography>
             <Typography
               sx={{ textShadow: "0px 3px 8px #8a8a8a", textAlign: "left" }}

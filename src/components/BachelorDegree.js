@@ -39,7 +39,7 @@ const Degrees = () => {
         <Grid item xs={12} sm={6} md={6}>
           <Item elevation={6} sx={{ bgcolor: "primary.main", color: "white" }}>
             <Image
-              src={require("../images/degrees/associate-degree.webp")}
+              src={require("../images/degrees/bachelor-degree.webp")}
               style={{ borderRadius: 16 }}
               shift="top"
               distance={400}
@@ -57,7 +57,7 @@ const Degrees = () => {
       >
         <Button
           sx={{ mt: "5px", color: "button.textLight" }}
-          href="https://www.parchment.com/u/award/877ddb7d34111e1741c380984dfeb7a4"
+          href="https://www.parchment.com/u/award/1849b0b0895e9e86b45d54af3e2d1823"
           target="_blank"
           rel="noopener"
           variant="contained"

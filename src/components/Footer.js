@@ -77,7 +77,8 @@ const Footer = () => {
             </Link>
             .
           </Typography>
-          <Typography>Copyright &copy; 2023 Jeremy Duncan</Typography>
+          <Typography>Copyright &copy; {new Date().getFullYear()} Jeremy Duncan</Typography>
+
         </Item>
       </Grid>
     </Box>

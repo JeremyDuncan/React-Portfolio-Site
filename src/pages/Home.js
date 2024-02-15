@@ -12,7 +12,7 @@ import Portfolio from "../components/Portfolio";
 const Home = () => {
 
   // Add the Google Analytics tracking code
-  React.useEffect(() => {
+  useEffect(() => {
     window.gtag('config', 'G-6S5BDFXFJW', {
       'page_title': 'Home Page',
       'page_path': window.location.pathname,
