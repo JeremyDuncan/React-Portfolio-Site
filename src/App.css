@@ -5,6 +5,10 @@ body {
   background: radial-gradient(ellipse at center, #5383A4 0%, #304B5B 100%);
 }
 
+.css-l8ag82-MuiBottomNavigation-root {
+  background-color: transparent !important;
+}
+
 #devryLogo {
   width: 140px;
 }
@@ -80,8 +84,21 @@ z-index: 95;
   transform: scale(1.02);
   box-shadow: 9px 8px 4px black; */
   }
+  
 .highlightBlue {
   color: #5383A4;
   text-shadow: 1px 1px 1px black;
 }
-  
+ 
+#root > div > div > div > div.MuiBottomNavigation-root.css-16lloyr-MuiBottomNavigation-root {
+
+  background-color: rgba(0, 0, 0, 0);
+}
+#root > div > div > div > div.MuiBottomNavigation-root.css-l8ag82-MuiBottomNavigation-root {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#panel1bh-header {
+  background-color: #494949;
+  text-shadow: 1.5px 1.5px 4px #292727
+}

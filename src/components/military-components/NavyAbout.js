@@ -16,13 +16,6 @@ const NavyAbout = () => {
   return (
     <Box color="contrast.textDark">
       <Typography
-        variant="h6"
-        sx={{ textShadow: "0px 3px 8px #8a8a8a", mr: "1rem" }}
-      >
-        <span className="highlightBlue">&#10100;</span> Navy Career{" "}
-        <span className="highlightBlue">&#10101;</span>
-      </Typography>
-      <Typography
         sx={{ textShadow: "0px 3px 8px #8a8a8a", textAlign: "left" }}
         paragraph={true}
       >

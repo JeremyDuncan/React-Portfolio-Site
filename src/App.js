@@ -19,6 +19,8 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import * as React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
+import Footer from "./components/contact-components/ContactFooter";
+import Header from "./components/Header";
 import Contact from "./pages/Contact";
 import Devry from "./pages/Devry";
 import Home from "./pages/Home";
@@ -62,6 +64,7 @@ function App() {
     <Box>
       <ThemeProvider theme={theme}>
         <div className="App">
+          <Header/>
           <Router>
             <Routes>
               <Route exact path="/" element={<Home />} />
@@ -70,6 +73,7 @@ function App() {
               <Route path="/Contact" element={<Contact />} />
             </Routes>
           </Router>
+          <Footer/>
         </div>
       </ThemeProvider>
     </Box>

@@ -111,6 +111,7 @@ const DevryProjects = () => {
               width: { xs: "350px", md: "500px" },
               borderRadius: "20px",
               marginBottom: { xs: "1.2rem", sm: "3rem" },
+              bgcolor: "gray"
             }}
           />
         </Grid>
@@ -125,6 +126,110 @@ const DevryProjects = () => {
             borderRadius: "20px",
           }}
         />
+
+        {/*//========================= CIS295 GRID BOX =====================> */}
+        <Grid
+          sx={{
+            gap: { xs: ".3rem", sm: ".3rem", md: "5rem" },
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            flexDirection: { xs: "column", sm: "column", md: "row" },
+          }}
+          ml={1}
+          pb={5}
+        >
+          <Grid item xs={10} sm={10} md={5} lg={5} xl={5.5}>
+            <Item
+              sx={{
+                bgcolor: "primary.secondary",
+              }}
+              elevation={12}
+            >
+              {/*==> Image Link <== ===*/}
+              <Image
+                src={require("../../images/devry-images/data-structures.webp")}
+                sx={{ borderRadius: "5px" }}
+              />
+            </Item>
+          </Grid>
+
+          <Grid
+            item
+            xs={10}
+            sm={10}
+            md={5}
+            lg={5}
+            xl={4}
+            sx={{ display: "flex", alignItems: "center" }}
+          >
+            <Item sx={{ maxWidth: "900px" }} elevation={12}>
+              <Typography
+                variant="h5"
+                p={2}
+                sx={{
+                  color: "#004787",
+                  textShadow: "1.5px 1.5px 4px lightgrey",
+                  fontWeight: "bold",
+                }}
+              >
+                CEIS295 Final Project:
+              </Typography>
+              <Typography
+                variant="h6"
+                sx={{
+                  color: "#004787",
+                  textShadow: "1.5px 1.5px 4px lightgrey",
+                }}
+              >
+               Data Structures and Algorithms
+              </Typography>
+              <Typography
+                pl={3}
+                pr={3}
+                sx={{
+                  color: "contrast.textDark",
+                  textShadow: "0px 3px 8px #8a8a8a",
+                }}
+                align="left"
+              >
+                This is the final project for my DeVry class CEIS295. In this
+                project I will be demonstrating fundamental data structure amd 
+                algorithm concepts by developing applications that measure the 
+                performance of different algorithmic approaches.
+              </Typography>
+              <br />
+              <Button
+                sx={{ color: "button.textLight" }}
+                href="https://drive.google.com/file/d/1vyRzjmeAOtjm0wzWIB4jy-1GyRldLyQm/view?usp=sharing"
+                target="_blank"
+                rel="noopener"
+                // href={MyResume}
+                // download
+                variant="contained"
+                endIcon={<NavigateNextRoundedIcon />}
+              >
+                View Project
+              </Button>
+              <br />
+              <br />
+            </Item>
+          </Grid>
+        </Grid>
+        {/*//========================= GRID END =========================> */}
+        <Grid
+          elevation={24}
+          mb={5}
+          ml={1.2}
+          xs={10}
+          sx={{
+            height: "1px",
+            border: "2px solid gray",
+            borderRadius: "20px",
+            bgcolor: "gray"
+          }}
+        />
+
 
         {/*//========================= CIS355A GRID BOX =====================> */}
         <Grid
@@ -224,6 +329,7 @@ const DevryProjects = () => {
             height: "1px",
             border: "2px solid gray",
             borderRadius: "20px",
+            bgcolor: "gray"
           }}
         />
 
@@ -326,6 +432,7 @@ const DevryProjects = () => {
             height: "1px",
             border: "2px solid gray",
             borderRadius: "20px",
+            bgcolor: "gray"
           }}
         />
         {/*//========================= NETW211 GRID BOX =====================> */}
@@ -426,6 +533,7 @@ const DevryProjects = () => {
             height: "1px",
             border: "2px solid gray",
             borderRadius: "20px",
+            bgcolor: "gray"
           }}
         />
         {/*//========================= CEIS101 GRID BOX =====================> */}
@@ -526,6 +634,7 @@ const DevryProjects = () => {
             height: "1px",
             border: "2px solid gray",
             borderRadius: "20px",
+            bgcolor: "gray"
           }}
         />
         {/*//========================= CEIS150 GRID BOX =====================> */}
@@ -626,6 +735,7 @@ const DevryProjects = () => {
             height: "1px",
             border: "2px solid gray",
             borderRadius: "20px",
+            bgcolor: "gray"
           }}
         />
         {/*//========================= SEC285 GRID BOX =====================> */}

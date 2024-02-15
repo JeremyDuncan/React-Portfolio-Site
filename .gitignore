@@ -2,3 +2,15 @@ node_modules
 .DS_Store
 .DS_Store
 .DS_Store
+
+# Yarn files and directory
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+*.yarn
+.yarn/install-state.gz
+
+#build files
+build/*

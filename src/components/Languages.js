@@ -206,7 +206,7 @@ const Languages = () => {
             variant="caption"
             color="contrast.textDark"
           >
-            Postgresql
+            PostgreSQL
           </Typography>
         </Grid>
         {/*//=========== GRID END ===============> */}
