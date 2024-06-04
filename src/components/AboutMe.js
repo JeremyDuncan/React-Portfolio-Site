@@ -110,7 +110,7 @@ const AboutMe = () => {
                 display: { xs: "none", sm: "none", md: "initial" }
               }}
             >
-              Full Stack Developer
+              Full Stack Engineer
             </Typography>
 
             <Typography
@@ -123,7 +123,7 @@ const AboutMe = () => {
                 display: { xs: "none", sm: "initial", md: "none" }
               }}
             >
-              Full Stack Developer
+              Full Stack Engineer
             </Typography>
 
             <Typography
@@ -137,8 +137,7 @@ const AboutMe = () => {
                 lineHeight: "2rem"
               }}
             >
-              Full Stack Developer
-              
+              Full Stack Engineer
             </Typography>
             <Divider />
             
@@ -147,8 +146,7 @@ const AboutMe = () => {
               sx={{ textShadow: "0px 3px 8px #8a8a8a", textAlign: "left" }}
               paragraph={true}
             >
-              I'm a highly motivated Full Stack Engineer that has over a decade
-              of proven experience in the US Navy.
+              I'm a Full Stack Software Engineer and 13-year United States Navy Veteran with professional experience in software development, electronics and information systems.
             </Typography>
 
             <Typography
@@ -156,21 +154,27 @@ const AboutMe = () => {
               paragraph={true}
             >
               I have a passion for technology and solving complex problems with
-              the creation of logical solutions. I have earned a Bachelor of Science 
-              in Computer Information Systems majoring in Software Programming 
-              with Summa Cum Laude honors. To augment my degree and professional 
-              skills, I also completed a Full-Stack Engineering program at LEARN 
-              Academy.
+              the creation of logical solutions. I have a B.S. in Computer Information Systems and Software Programming 
+              (Summa Cum Laude), and an A.S. in Information Technology and Networking.
             </Typography>
             <Typography
               sx={{ textShadow: "0px 3px 8px #8a8a8a", textAlign: "left" }}
               paragraph={true}
             >
-              I have practical skills in Pair Programming, Test Driven
-              Development, and a Full Tech Stack which consists of JavaScript,
-              React, HTML, CSS, Ruby, Ruby on Rails, Jest, RSpec, and
-              PostgreSQL.
+              My professional experience as a Ruby on Rails Engineer has allowed me to hone skills in Pair 
+              Programming, Test Driven Development, and with languages and technologies such as 
+              JavaScript, React, HTML, CSS, SASS, Ruby, PHP, Ruby on Rails, Laravel, Lumen, Docker, AWS, Jest, RSpec, 
+              MySQL, and PostgreSQL.
             </Typography>
+
+            <Typography
+              sx={{ textShadow: "0px 3px 8px #8a8a8a", textAlign: "left" }}
+              paragraph={true}
+            >
+              My time in the Navy instilled in me a disciplined, detail-oriented approach to problem-solving and project 
+              management, which I have successfully applied in my software engineering career.
+            </Typography>
+
           </Box>
         </Grid>
       </Box>

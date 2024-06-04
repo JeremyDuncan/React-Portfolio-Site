@@ -68,7 +68,7 @@ const Certifications = () => {
         <Grid direction="column" item xs={12} sm={6} md={5.5} lg={3.4} xl={3.4}>
           <Item elevation={6} sx={{ bgcolor: "primary.main", color: "white" }}>
             <Image
-              src={require("../images/languages/JavaScript_algo.png")}
+              src={require("../images/languages/JavaScript_algo.webp")}
               style={{ borderRadius: 16 }}
               shift="top"
               distance={400}
@@ -99,7 +99,7 @@ const Certifications = () => {
         <Grid direction="column" item xs={12} sm={6} md={5.5} lg={3.4} xl={3.4}>
           <Item elevation={6} sx={{ bgcolor: "primary.main", color: "white" }}>
             <Image
-              src={require("../images/languages/Responsive_Web_Design.png")}
+              src={require("../images/languages/Responsive_Web_Design.webp")}
               style={{ borderRadius: 16 }}
               shift="top"
               distance={400}
@@ -130,7 +130,7 @@ const Certifications = () => {
         <Grid direction="column" item xs={12} sm={6} md={5.5} lg={3.4} xl={3.4}>
           <Item elevation={6} sx={{ bgcolor: "primary.main", color: "white" }}>
             <Image
-              src={require("../images/languages/Front_End_Dev.png")}
+              src={require("../images/languages/Front_End_Dev.webp")}
               style={{ borderRadius: 16 }}
               shift="top"
               distance={400}

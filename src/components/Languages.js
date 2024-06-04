@@ -42,7 +42,7 @@ const Languages = () => {
         <Grid item xs={4} sm={3} md={2} lg={1.5}>
           <Item elevation={6} sx={{ bgcolor: "primary.main" }}>
             <Image
-              src={require("../images/languages/html_logo_Scaled.png")}
+              src={require("../images/languages/html_logo_Scaled.webp")}
               style={{ borderRadius: 16 }}
               shift="top"
               distance={400}
@@ -80,7 +80,7 @@ const Languages = () => {
         <Grid item xs={4} sm={3} md={2} lg={1.5}>
           <Item elevation={6} sx={{ bgcolor: "primary.main", color: "white" }}>
             <Image
-              src={require("../images/languages/javascript_logo_Scaled.png")}
+              src={require("../images/languages/javascript_logo_Scaled.webp")}
               style={{ borderRadius: 16 }}
               shift="top"
               distance={400}
@@ -95,50 +95,35 @@ const Languages = () => {
           </Typography>
         </Grid>
         {/*//=========== GRID END ===============> */}
-        {/*//=========== GRID BOX ===============> */}
-        <Grid item xs={4} sm={3} md={2} lg={1.5}>
-          <Item elevation={6} sx={{ bgcolor: "primary.main", color: "white" }}>
-            <Image
-              src={require("../images/languages/react_Scaled.png")}
-              style={{ borderRadius: 16 }}
-              shift="top"
-              distance={400}
-            />
-          </Item>
-          <Typography
-            fontWeight="bold"
-            variant="caption"
-            color="contrast.textDark"
-          >
-            React.js
-          </Typography>
-        </Grid>
-        {/*//=========== GRID END ===============> */}
-        {/*//=========== GRID BOX ===============> */}
-        <Grid item xs={4} sm={3} md={2} lg={1.5}>
-          <Item elevation={6} sx={{ bgcolor: "primary.main", color: "white" }}>
-            <Image
-              src={require("../images/languages/Node.js_logo.png")}
-              style={{ borderRadius: 16 }}
-              shift="top"
-              distance={400}
-            />
-          </Item>
-          <Typography
-            fontWeight="bold"
-            variant="caption"
-            color="contrast.textDark"
-          >
-            Node.js
-          </Typography>
-        </Grid>
 
-        {/*//=========== GRID END ===============> */}
         {/*//=========== GRID BOX ===============> */}
         <Grid item xs={4} sm={3} md={2} lg={1.5}>
           <Item elevation={6} sx={{ bgcolor: "primary.main", color: "white" }}>
             <Image
-              src={require("../images/languages/python_logo_Scaled.png")}
+              src={require("../images/languages/php_logo.webp")}
+              style={{ borderRadius: 16 }}
+              shift="top"
+              distance={400}
+            />
+          </Item>
+          <Typography
+            fontWeight="bold"
+            variant="caption"
+            color="contrast.textDark"
+          >
+            PHP
+          </Typography>
+        </Grid>
+        {/*//=========== GRID END ===============> */}
+
+
+
+
+        {/*//=========== GRID BOX ===============> */}
+        <Grid item xs={4} sm={3} md={2} lg={1.5}>
+          <Item elevation={6} sx={{ bgcolor: "primary.main", color: "white" }}>
+            <Image
+              src={require("../images/languages/python_logo_Scaled.webp")}
               style={{ borderRadius: 16 }}
               shift="top"
               distance={400}
@@ -157,7 +142,7 @@ const Languages = () => {
         <Grid item xs={4} sm={3} md={2} lg={1.5}>
           <Item elevation={6} sx={{ bgcolor: "primary.main", color: "white" }}>
             <Image
-              src={require("../images/languages/java_logo_Scaled.png")}
+              src={require("../images/languages/java_logo_Scaled.webp")}
               style={{ borderRadius: 16 }}
               shift="top"
               distance={400}
@@ -176,7 +161,7 @@ const Languages = () => {
         <Grid item xs={4} sm={3} md={2} lg={1.5}>
           <Item elevation={6} sx={{ bgcolor: "primary.main", color: "white" }}>
             <Image
-              src={require("../images/languages/rails_logo_Scaled.png")}
+              src={require("../images/languages/cSharp_logo_Scaled.webp")}
               style={{ borderRadius: 16 }}
               shift="top"
               distance={400}
@@ -187,34 +172,16 @@ const Languages = () => {
             variant="caption"
             color="contrast.textDark"
           >
-            Rails
+            C#
           </Typography>
         </Grid>
         {/*//=========== GRID END ===============> */}
+
         {/*//=========== GRID BOX ===============> */}
         <Grid item xs={4} sm={3} md={2} lg={1.5}>
           <Item elevation={6} sx={{ bgcolor: "primary.main", color: "white" }}>
             <Image
-              src={require("../images/languages/Postgresql_logo.png")}
-              style={{ borderRadius: 16 }}
-              shift="top"
-              distance={400}
-            />
-          </Item>
-          <Typography
-            fontWeight="bold"
-            variant="caption"
-            color="contrast.textDark"
-          >
-            PostgreSQL
-          </Typography>
-        </Grid>
-        {/*//=========== GRID END ===============> */}
-        {/*//=========== GRID BOX ===============> */}
-        <Grid item xs={4} sm={3} md={2} lg={1.5}>
-          <Item elevation={6} sx={{ bgcolor: "primary.main", color: "white" }}>
-            <Image
-              src={require("../images/languages/ruby_LOGO_Scaled.png")}
+              src={require("../images/languages/ruby_LOGO_Scaled.webp")}
               style={{ borderRadius: 16 }}
               shift="top"
               distance={400}
@@ -229,11 +196,233 @@ const Languages = () => {
           </Typography>
         </Grid>
         {/*//=========== GRID END ===============> */}
+
         {/*//=========== GRID BOX ===============> */}
         <Grid item xs={4} sm={3} md={2} lg={1.5}>
           <Item elevation={6} sx={{ bgcolor: "primary.main", color: "white" }}>
             <Image
-              src={require("../images/languages/pry_logo.png")}
+              src={require("../images/languages/react_Scaled.webp")}
+              style={{ borderRadius: 16 }}
+              shift="top"
+              distance={400}
+            />
+          </Item>
+          <Typography
+            fontWeight="bold"
+            variant="caption"
+            color="contrast.textDark"
+          >
+            React.js
+          </Typography>
+        </Grid>
+        {/*//=========== GRID END ===============> */}
+        {/*//=========== GRID BOX ===============> */}
+        <Grid item xs={4} sm={3} md={2} lg={1.5}>
+          <Item elevation={6} sx={{ bgcolor: "primary.main", color: "white" }}>
+            <Image
+              src={require("../images/languages/Node.js_logo.webp")}
+              style={{ borderRadius: 16 }}
+              shift="top"
+              distance={400}
+            />
+          </Item>
+          <Typography
+            fontWeight="bold"
+            variant="caption"
+            color="contrast.textDark"
+          >
+            Node.js
+          </Typography>
+        </Grid>
+
+        {/*//=========== GRID END ===============> */}
+
+        {/*//=========== GRID BOX ===============> */}
+        <Grid item xs={4} sm={3} md={2} lg={1.5}>
+          <Item elevation={6} sx={{ bgcolor: "primary.main", color: "white" }}>
+            <Image
+              src={require("../images/languages/rails_logo_Scaled.webp")}
+              style={{ borderRadius: 16 }}
+              shift="top"
+              distance={400}
+            />
+          </Item>
+          <Typography
+            fontWeight="bold"
+            variant="caption"
+            color="contrast.textDark"
+          >
+            Rails
+          </Typography>
+        </Grid>
+        {/*//=========== GRID END ===============> */}
+
+        {/*//=========== GRID BOX ===============> */}
+        <Grid item xs={4} sm={3} md={2} lg={1.5}>
+          <Item elevation={6} sx={{ bgcolor: "primary.main", color: "white" }}>
+            <Image
+              src={require("../images/languages/laravel_logo.webp")}
+              style={{ borderRadius: 16 }}
+              shift="top"
+              distance={400}
+            />
+          </Item>
+          <Typography
+            fontWeight="bold"
+            variant="caption"
+            color="contrast.textDark"
+          >
+            Laravel
+          </Typography>
+        </Grid>
+        {/*//=========== GRID END ===============> */}
+
+        {/*//=========== GRID BOX ===============> */}
+        <Grid item xs={4} sm={3} md={2} lg={1.5}>
+          <Item elevation={6} sx={{ bgcolor: "primary.main", color: "white" }}>
+            <Image
+              src={require("../images/languages/lumen_logo.webp")}
+              style={{ borderRadius: 16 }}
+              shift="top"
+              distance={400}
+            />
+          </Item>
+          <Typography
+            fontWeight="bold"
+            variant="caption"
+            color="contrast.textDark"
+          >
+            Lumen
+          </Typography>
+        </Grid>
+        {/*//=========== GRID END ===============> */}
+
+        {/*//=========== GRID BOX ===============> */}
+        <Grid item xs={4} sm={3} md={2} lg={1.5}>
+          <Item elevation={6} sx={{ bgcolor: "primary.main", color: "white" }}>
+            <Image
+              src={require("../images/languages/mysql_logo.webp")}
+              style={{ borderRadius: 16 }}
+              shift="top"
+              distance={400}
+            />
+          </Item>
+          <Typography
+            fontWeight="bold"
+            variant="caption"
+            color="contrast.textDark"
+          >
+            MySQL
+          </Typography>
+        </Grid>
+        {/*//=========== GRID END ===============> */}
+
+        {/*//=========== GRID BOX ===============> */}
+        <Grid item xs={4} sm={3} md={2} lg={1.5}>
+          <Item elevation={6} sx={{ bgcolor: "primary.main", color: "white" }}>
+            <Image
+              src={require("../images/languages/Postgresql_logo.webp")}
+              style={{ borderRadius: 16 }}
+              shift="top"
+              distance={400}
+            />
+          </Item>
+          <Typography
+            fontWeight="bold"
+            variant="caption"
+            color="contrast.textDark"
+          >
+            PostgreSQL
+          </Typography>
+        </Grid>
+        {/*//=========== GRID END ===============> */}
+
+        {/*//=========== GRID BOX ===============> */}
+        <Grid item xs={4} sm={3} md={2} lg={1.5}>
+          <Item elevation={6} sx={{ bgcolor: "primary.main", color: "white" }}>
+            <Image
+              src={require("../images/languages/redis_logo.webp")}
+              style={{ borderRadius: 16 }}
+              shift="top"
+              distance={400}
+            />
+          </Item>
+          <Typography
+            fontWeight="bold"
+            variant="caption"
+            color="contrast.textDark"
+          >
+            Redis
+          </Typography>
+        </Grid>
+        {/*//=========== GRID END ===============> */}
+
+        {/*//=========== GRID BOX ===============> */}
+        <Grid item xs={4} sm={3} md={2} lg={1.5}>
+          <Item elevation={6} sx={{ bgcolor: "primary.main", color: "white" }}>
+            <Image
+              src={require("../images/languages/aws_logo.webp")}
+              style={{ borderRadius: 16 }}
+              shift="top"
+              distance={400}
+            />
+          </Item>
+          <Typography
+            fontWeight="bold"
+            variant="caption"
+            color="contrast.textDark"
+          >
+            AWS
+          </Typography>
+        </Grid>
+        {/*//=========== GRID END ===============> */}
+
+        {/*//=========== GRID BOX ===============> */}
+        <Grid item xs={4} sm={3} md={2} lg={1.5}>
+          <Item elevation={6} sx={{ bgcolor: "primary.main", color: "white" }}>
+            <Image
+              src={require("../images/languages/docker_logo.webp")}
+              style={{ borderRadius: 16 }}
+              shift="top"
+              distance={400}
+            />
+          </Item>
+          <Typography
+            fontWeight="bold"
+            variant="caption"
+            color="contrast.textDark"
+          >
+            Docker
+          </Typography>
+        </Grid>
+        {/*//=========== GRID END ===============> */}
+
+        {/*//=========== GRID BOX ===============> */}
+        <Grid item xs={4} sm={3} md={2} lg={1.5}>
+          <Item elevation={6} sx={{ bgcolor: "primary.main", color: "white" }}>
+            <Image
+              src={require("../images/languages/nginx_logo.webp")}
+              style={{ borderRadius: 16 }}
+              shift="top"
+              distance={400}
+            />
+          </Item>
+          <Typography
+            fontWeight="bold"
+            variant="caption"
+            color="contrast.textDark"
+          >
+            NGINX
+          </Typography>
+        </Grid>
+        {/*//=========== GRID END ===============> */}
+
+
+        {/*//=========== GRID BOX ===============> */}
+        <Grid item xs={4} sm={3} md={2} lg={1.5}>
+          <Item elevation={6} sx={{ bgcolor: "primary.main", color: "white" }}>
+            <Image
+              src={require("../images/languages/pry_logo.webp")}
               style={{ borderRadius: 16 }}
               shift="top"
               distance={400}
@@ -252,7 +441,7 @@ const Languages = () => {
         <Grid item xs={4} sm={3} md={2} lg={1.5}>
           <Item elevation={6} sx={{ bgcolor: "primary.main", color: "white" }}>
             <Image
-              src={require("../images/languages/rspec_logo_Scaled.png")}
+              src={require("../images/languages/rspec_logo_Scaled.webp")}
               style={{ borderRadius: 16 }}
               shift="top"
               distance={400}
@@ -271,7 +460,7 @@ const Languages = () => {
         <Grid item xs={4} sm={3} md={2} lg={1.5}>
           <Item elevation={6} sx={{ bgcolor: "primary.main", color: "white" }}>
             <Image
-              src={require("../images/languages/jest_logo_Scaled.png")}
+              src={require("../images/languages/jest_logo_Scaled.webp")}
               style={{ borderRadius: 16 }}
               shift="top"
               distance={400}
@@ -286,25 +475,7 @@ const Languages = () => {
           </Typography>
         </Grid>
         {/*//=========== GRID END ===============> */}
-        {/*//=========== GRID BOX ===============> */}
-        <Grid item xs={4} sm={3} md={2} lg={1.5}>
-          <Item elevation={6} sx={{ bgcolor: "primary.main", color: "white" }}>
-            <Image
-              src={require("../images/languages/cSharp_logo_Scaled.png")}
-              style={{ borderRadius: 16 }}
-              shift="top"
-              distance={400}
-            />
-          </Item>
-          <Typography
-            fontWeight="bold"
-            variant="caption"
-            color="contrast.textDark"
-          >
-            C#
-          </Typography>
-        </Grid>
-        {/*//=========== GRID END ===============> */}
+
       </Grid>
       <br />
       <Button

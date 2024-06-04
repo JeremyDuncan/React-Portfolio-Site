@@ -438,7 +438,7 @@ const Projects = () => {
         <Grid item xs={11} md={3.5}>
           <Item sx={{ bgcolor: "primary.main", color: "white" }}>
             {/*==> Image Link <== =========================================*/}
-            <Image src={require("../images/Willis_Deluxe_Detail_Logo.jpg")} />
+            <Image src={require("../images/Willis_Deluxe_Detail_Logo.webp")} />
             <Accordion 
             expanded={expandedPanel === 'panel5'} 
             onChange={handleChangePanel('panel5')}
@@ -1618,6 +1618,7 @@ const Projects = () => {
           </Item>
         </Grid>
         {/*//========================= GRID END ===================================> */}
+
         {/*//========================= GRID BOX ===================================> */}
         <Grid item xs={11} md={3.5}>
           <Item sx={{ bgcolor: "primary.main", color: "white" }}>
@@ -1716,202 +1717,7 @@ const Projects = () => {
           </Item>
         </Grid>
         {/*//========================= GRID END ===================================> */}
-        {/*//========================= GRID BOX ===================================> */}
-        <Grid item xs={11} md={3.5}>
-          <Item sx={{ bgcolor: "primary.main", color: "white" }}>
-            {/*==> Image Link <== =========================================*/}
-            <Image src={require("../images/mad-libs.webp")} />
-            <Accordion
-              expanded={expandedPanel === 'panel18'} 
-              onChange={handleChangePanel('panel18')}
-              sx={{ bgcolor: "primary.dark", color: "primary.contrastText" }}
-            >
-              <AccordionSummary
-                expandIcon={
-                  <ExpandMoreIcon sx={{ color: "contrast.textLight" }} />
-                }
-                aria-controls="panel1a-content"
-                id="panel1a-header"
-              >
-                <Typography
-                  sx={{
-                    display: "flex",
-                    color: "contrast.textLight",
-                    textShadow: "1.5px 1.5px 4px #292727",
-                    height: "60px",
-                    alignItems: "center",
-                    justifyContent: "center",
-                  }}
-                >
-                  Mad Libs
-                </Typography>
-              </AccordionSummary>
-              <AccordionDetails
-                sx={{
-                  bgcolor: "secondary.main",
-                  color: "primary.contrastText",
-                }}
-              >
-                {/*==> Description Text <== ===============================*/}
-                <Typography
-                  sx={{
-                    color: "contrast.textDark",
-                    textShadow: "0px 3px 8px #8a8a8a",
-                  }}
-                  textAlign="left"
-                >
-                  This is a React app I created that takes the inputs of the
-                  user and turns it into a mad lib.
-                </Typography>
-                <br />
-                {/* ==================== RESPONSIVE BUTTON SECTION ================== */}
-                <Box
-                  sx={{
-                    display: "flex",
-                    flexDirection: {
-                      xs: "row",
-                      sm: "row",
-                      md: "column",
-                      lg: "column",
-                    },
-                    gap: "10px",
-                    alignItems: "center",
-                    justifyContent: "center",
-                  }}
-                >
-                  <Button
-                    sx={{
-                      color: "button.textLight",
-                      width: "125px",
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                    }}
-                    /*==> URL Link <== =======================================*/
-                    href="https://jeremyduncan.github.io/forms-jeremy/"
-                    target="_blank"
-                    rel="noopener"
-                    variant="contained"
-                    endIcon={<OndemandVideoIcon />}
-                  >
-                    Demo
-                  </Button>
-                  <Button
-                    sx={{ color: "button.textLight" }}
-                    /*==> URL Link <== =======================================*/
-                    href="https://github.com/JeremyDuncan/forms-jeremy"
-                    target="_blank"
-                    rel="noopener"
-                    variant="contained"
-                    endIcon={<CodeIcon />}
-                  >
-                    Source
-                  </Button>
-                </Box>
-                {/* ================================ RESP BUTTON END ============================= */}
-              </AccordionDetails>
-            </Accordion>
-          </Item>
-        </Grid>
-        {/*//========================= GRID END ===================================> */}
-        {/*//========================= GRID BOX ===================================> */}
-        <Grid item xs={11} md={3.5}>
-          <Item sx={{ bgcolor: "primary.main", color: "white" }}>
-            {/*==> Image Link <== =========================================*/}
-            <Image src={require("../images/rock_paper_scissors.webp")} />
-            <Accordion
-              expanded={expandedPanel === 'panel19'} 
-              onChange={handleChangePanel('panel19')}
-              sx={{ bgcolor: "primary.dark", color: "primary.contrastText" }}
-            >
-              <AccordionSummary
-                expandIcon={
-                  <ExpandMoreIcon sx={{ color: "contrast.textLight" }} />
-                }
-                aria-controls="panel1a-content"
-                id="panel1a-header"
-              >
-                <Typography
-                  sx={{
-                    display: "flex",
-                    color: "contrast.textLight",
-                    textShadow: "1.5px 1.5px 4px #292727",
-                    height: "60px",
-                    alignItems: "center",
-                    justifyContent: "center",
-                  }}
-                >
-                  Rock Paper Scissors Game
-                </Typography>
-              </AccordionSummary>
-              <AccordionDetails
-                sx={{
-                  bgcolor: "secondary.main",
-                  color: "primary.contrastText",
-                }}
-              >
-                {/*==> Description Text <== ===============================*/}
-                <Typography
-                  sx={{
-                    color: "contrast.textDark",
-                    textShadow: "0px 3px 8px #8a8a8a",
-                  }}
-                  textAlign="left"
-                >
-                  This is a rocks, paper, and scissors game I created using
-                  HTML, CSS, and JavaScript.
-                </Typography>
-                <br />
-                {/* ==================== RESPONSIVE BUTTON SECTION ================== */}
-                <Box
-                  sx={{
-                    display: "flex",
-                    flexDirection: {
-                      xs: "row",
-                      sm: "row",
-                      md: "column",
-                      lg: "column",
-                    },
-                    gap: "10px",
-                    alignItems: "center",
-                    justifyContent: "center",
-                  }}
-                >
-                  <Button
-                    sx={{
-                      color: "button.textLight",
-                      width: "125px",
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                    }}
-                    /*==> URL Link <== =======================================*/
-                    href="https://jeremyduncan.github.io/The-Odin-Project/Rock_Paper_Scissors/"
-                    target="_blank"
-                    rel="noopener"
-                    variant="contained"
-                    endIcon={<OndemandVideoIcon />}
-                  >
-                    Demo
-                  </Button>
-                  <Button
-                    sx={{ color: "button.textLight" }}
-                    /*==> URL Link <== =======================================*/
-                    href="https://github.com/JeremyDuncan/The-Odin-Project/tree/main/Rock_Paper_Scissors"
-                    target="_blank"
-                    rel="noopener"
-                    variant="contained"
-                    endIcon={<CodeIcon />}
-                  >
-                    Source
-                  </Button>
-                </Box>
-                {/* ================================ RESP BUTTON END ============================= */}
-              </AccordionDetails>
-            </Accordion>
-          </Item>
-        </Grid>
-        {/*//========================= GRID END ===================================> */}
+
       </Grid>
     </Box>
   );
