@@ -3,10 +3,10 @@
 // Goes to ==> MainSection.js Component
 // Images need to be 300*300px
 // *****************************************************************************
-import { Accordion, AccordionDetails, AccordionSummary, Box, Button, Collapse, Divider, Grid, List, ListItemButton, ListItemIcon, ListItemText, Paper, styled, Typography } from "@mui/material";
-import { CodeIcon, ExpandMoreIcon, OndemandVideoIcon } from "../mui-icons";
+import { Accordion, AccordionDetails, AccordionSummary, Box, Button, Grid, Paper, styled, Typography } from "@mui/material";
 import Image from "mui-image";
 import React, { useState } from 'react';
+import { CodeIcon, ExpandMoreIcon, OndemandVideoIcon } from "../mui-icons";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
