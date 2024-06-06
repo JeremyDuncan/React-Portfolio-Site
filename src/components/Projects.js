@@ -3,18 +3,8 @@
 // Goes to ==> MainSection.js Component
 // Images need to be 300*300px
 // *****************************************************************************
-import CodeIcon from "@mui/icons-material/Code";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import OndemandVideoIcon from "@mui/icons-material/OndemandVideo";
-import Accordion from "@mui/material/Accordion";
-import AccordionDetails from "@mui/material/AccordionDetails";
-import AccordionSummary from "@mui/material/AccordionSummary";
-import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
-import Grid from "@mui/material/Grid";
-import Paper from "@mui/material/Paper";
-import { styled } from "@mui/material/styles";
-import Typography from "@mui/material/Typography";
+import { Accordion, AccordionDetails, AccordionSummary, Box, Button, Collapse, Divider, Grid, List, ListItemButton, ListItemIcon, ListItemText, Paper, styled, Typography } from "@mui/material";
+import { CodeIcon, ExpandMoreIcon, OndemandVideoIcon } from "../mui-icons";
 import Image from "mui-image";
 import React, { useState } from 'react';
 

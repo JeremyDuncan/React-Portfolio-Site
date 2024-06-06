@@ -2,10 +2,7 @@
 // This is the main portfolio section. Contains MainSection Component
 // Goes to ==> Home.js Component
 // *****************************************************************************
-import Box from "@mui/material/Box";
-import Grid from "@mui/material/Grid";
-import Paper from "@mui/material/Paper";
-import { styled } from "@mui/material/styles";
+import { Box, Grid, Paper, styled } from "@mui/material";
 import AboutMe from "./AboutMe";
 import MainSection from "./MainSection";
 

@@ -4,10 +4,7 @@
 // ==>  Military.js Component
 // *****************************************************************************
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-import AppBar from "@mui/material/AppBar";
-import Button from "@mui/material/Button";
-import Grid from "@mui/material/Grid";
-import Paper from "@mui/material/Paper";
+import { Button, Grid, Paper,  AppBar } from "@mui/material";
 
 const MilitaryHeader = () => {
   return (

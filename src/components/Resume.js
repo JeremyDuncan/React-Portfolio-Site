@@ -3,8 +3,7 @@
 // Goes to to ==> MainSection.js Component
 // *****************************************************************************
 import DescriptionIcon from "@mui/icons-material/Description";
-import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
+import { Box, Button } from "@mui/material";
 
 const Resume = () => {
   return (

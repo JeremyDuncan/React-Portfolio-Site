@@ -2,19 +2,8 @@
 // This component displays my Military Experience
 // Goes to ==> MainSection.js Component
 // *****************************************************************************
-import AssignmentIndRoundedIcon from "@mui/icons-material/AssignmentIndRounded";
-import ExpandLess from "@mui/icons-material/ExpandLess";
-import ExpandMore from "@mui/icons-material/ExpandMore";
-import MilitaryTechRoundedIcon from "@mui/icons-material/MilitaryTechRounded";
-import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
-import Collapse from "@mui/material/Collapse";
-import Divider from "@mui/material/Divider";
-import Grid from "@mui/material/Grid";
-import List from "@mui/material/List";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemIcon from "@mui/material/ListItemIcon";
-import ListItemText from "@mui/material/ListItemText";
+import { Box, Button, Collapse, Divider, Grid, List, ListItemButton, ListItemIcon, ListItemText } from "@mui/material";
+import { AssignmentIndRoundedIcon, ExpandLessIcon, ExpandMoreIcon, MilitaryTechRoundedIcon} from "../mui-icons";
 import React from "react";
 
 const MilitaryExp = () => {
@@ -68,7 +57,7 @@ const MilitaryExp = () => {
               primary="Work Center Supervisor"
             />
             {/* if open equals "WCS" then show details... */}
-            {open === "WCS" ? <ExpandLess /> : <ExpandMore />}
+            {open === "WCS" ? <ExpandLessIcon/> : <ExpandMoreIcon />}
           </ListItemButton>
 
           {/* === COLLAPSE LIST === */}
@@ -118,7 +107,7 @@ const MilitaryExp = () => {
               Id="LINK"
               primary="Electronics Data Systems Technician"
             />
-            {open === "LINK" ? <ExpandLess /> : <ExpandMore />}
+            {open === "LINK" ? <ExpandLessIcon /> : <ExpandMoreIcon />}
           </ListItemButton>
 
           {/* === COLLAPSE LIST === */}
@@ -167,7 +156,7 @@ const MilitaryExp = () => {
               Id="IVCS"
               primary="Internal Voice Communication Technician"
             />
-            {open === "IVCS" ? <ExpandLess /> : <ExpandMore />}
+            {open === "IVCS" ? <ExpandLessIcon /> : <ExpandMoreIcon />}
           </ListItemButton>
 
           {/* === COLLAPSE LIST === */}
@@ -214,7 +203,7 @@ const MilitaryExp = () => {
               Id="IT"
               primary="Information System Maintenance Technician"
             />
-            {open === "IT" ? <ExpandLess /> : <ExpandMore />}
+            {open === "IT" ? <ExpandLessIcon /> : <ExpandMoreIcon />}
           </ListItemButton>
 
           {/* === COLLAPSE LIST === */}
@@ -263,7 +252,7 @@ const MilitaryExp = () => {
               Id="INSTRUCTOR"
               primary="US Navy Instructor"
             />
-            {open === "INSTRUCTOR" ? <ExpandLess /> : <ExpandMore />}
+            {open === "INSTRUCTOR" ? <ExpandLessIcon /> : <ExpandMoreIcon />}
           </ListItemButton>
 
           {/* === COLLAPSE LIST === */}
@@ -308,7 +297,7 @@ const MilitaryExp = () => {
               Id="RADAR"
               primary="Electronics Radar Systems Technician"
             />
-            {open === "RADAR" ? <ExpandLess /> : <ExpandMore />}
+            {open === "RADAR" ? <ExpandLessIcon /> : <ExpandMoreIcon />}
           </ListItemButton>
 
           {/* === COLLAPSE LIST === */}
@@ -357,7 +346,7 @@ const MilitaryExp = () => {
               Id="GAGE"
               primary="Gage and Meter Calibrator"
             />
-            {open === "GAGE" ? <ExpandLess /> : <ExpandMore />}
+            {open === "GAGE" ? <ExpandLessIcon /> : <ExpandMoreIcon />}
           </ListItemButton>
 
           {/* === COLLAPSE LIST === */}
@@ -406,7 +395,7 @@ const MilitaryExp = () => {
               Id="2M"
               primary="2M Micro Miniature Repair Technician"
             />
-            {open === "2M" ? <ExpandLess /> : <ExpandMore />}
+            {open === "2M" ? <ExpandLessIcon /> : <ExpandMoreIcon />}
           </ListItemButton>
 
           {/* === COLLAPSE LIST === */}
@@ -455,7 +444,7 @@ const MilitaryExp = () => {
               Id="ET"
               primary="Electronics Technician"
             />
-            {open === "ET" ? <ExpandLess /> : <ExpandMore />}
+            {open === "ET" ? <ExpandLessIcon /> : <ExpandMoreIcon />}
           </ListItemButton>
 
           {/* === COLLAPSE LIST === */}

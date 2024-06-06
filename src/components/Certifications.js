@@ -3,13 +3,7 @@
 // Goes to ==> MainSection.js Component
 // *****************************************************************************
 import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium";
-import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
-import Divider from "@mui/material/Divider";
-import Grid from "@mui/material/Grid";
-import Paper from "@mui/material/Paper";
-import { styled } from "@mui/material/styles";
-import Typography from "@mui/material/Typography";
+import { Box, Button, Divider, Grid, Paper, Typography, styled } from "@mui/material";
 import Image from "mui-image";
 
 const Item = styled(Paper)(({ theme }) => ({

@@ -2,10 +2,7 @@
 // This component displays the Navy About Me section and Resume
 // Goes to ==> Military.js Component
 // *****************************************************************************
-import Box from "@mui/material/Box";
-import Link from "@mui/material/Link";
-import Typography from "@mui/material/Typography";
-
+import {Box, Link, Typography } from "@mui/material";
 
 const NavyAbout = () => {
   return (

@@ -4,11 +4,10 @@
 // ==>  Military.js Component
 // *****************************************************************************
 import SchoolIcon from "@mui/icons-material/School";
-import { Box, Divider, Grid, Paper, Typography } from '@mui/material';
-import { styled } from "@mui/material/styles";
+import { Box, Divider, Grid, Paper, Typography, styled } from '@mui/material';
+
 import Image from "mui-image";
 import NavyAbout from "./NavyAbout";
-
 import honor_guard from '../../images/military-images/honor_guard.webp';
 import me1 from '../../images/military-images/me1.webp';
 import me2 from '../../images/military-images/me2.webp';

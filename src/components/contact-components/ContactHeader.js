@@ -2,11 +2,6 @@
 // This is the Header Component
 // Goes to => Contact.js
 // *****************************************************************************
-
-import "@fontsource/roboto/300.css";
-import "@fontsource/roboto/400.css";
-import "@fontsource/roboto/500.css";
-import "@fontsource/roboto/700.css";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import AppBar from "@mui/material/AppBar";
 import Button from "@mui/material/Button";

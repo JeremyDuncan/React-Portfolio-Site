@@ -6,27 +6,9 @@
 // ==> Devry.js     // Devry college projects / portfolio
 // ==> Contact.js   // Contact information and media links
 // *****************************************************************************
-
-import ContactPageIcon from "@mui/icons-material/ContactPage";
-import DescriptionIcon from "@mui/icons-material/Description";
-import EmojiPeopleIcon from "@mui/icons-material/EmojiPeople";
-import RssFeedIcon from "@mui/icons-material/RssFeed";
-import HomeIcon from "@mui/icons-material/Home";
-import MenuIcon from "@mui/icons-material/Menu";
-import MilitaryTechIcon from "@mui/icons-material/MilitaryTech";
-import SchoolIcon from "@mui/icons-material/School";
-import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
-import Container from "@mui/material/Container";
-import Grid from "@mui/material/Grid";
-import IconButton from "@mui/material/IconButton";
-import Link from "@mui/material/Link";
-import Menu from "@mui/material/Menu";
-import MenuItem from "@mui/material/MenuItem";
-import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
+import { AppBar, Box, Button, Container, Grid, IconButton, Link, Menu, MenuItem, Toolbar, Typography } from "@mui/material";
 import React, { useState } from "react";
+import { ContactPageIcon, DescriptionIcon, EmojiPeopleIcon, HomeIcon, MenuIcon, MilitaryTechIcon, RssFeedIcon, SchoolIcon, } from "../mui-icons";
 
 const pages = [
   <Link

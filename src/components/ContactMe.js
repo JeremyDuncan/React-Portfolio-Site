@@ -5,18 +5,8 @@
 // ==> Military.js  // Military training information
 // ==> Devry.js     // Devry college projects / portfolio
 // *****************************************************************************
-import EmailRoundedIcon from "@mui/icons-material/EmailRounded";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import PermPhoneMsgRoundedIcon from "@mui/icons-material/PermPhoneMsgRounded";
-import Accordion from "@mui/material/Accordion";
-import AccordionDetails from "@mui/material/AccordionDetails";
-import AccordionSummary from "@mui/material/AccordionSummary";
-import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
-import Grid from "@mui/material/Grid";
-import Typography from "@mui/material/Typography";
+import { EmailRoundedIcon, ExpandMoreIcon, GitHubIcon, LinkedInIcon, PermPhoneMsgRoundedIcon } from "../mui-icons";
+import { Accordion, AccordionDetails, AccordionSummary, Box, Button, Grid, Typography } from "@mui/material";
 import React, { useState } from "react";
 
 const ContactMe = () => {

@@ -2,23 +2,17 @@
 // This component has the accordion section that holds the section components
 // Goes to ==> Portfolio.js Component
 // *****************************************************************************
-import WorkIcon from "@mui/icons-material/Work";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import MilitaryTechIcon from "@mui/icons-material/MilitaryTech";
-import SchoolIcon from "@mui/icons-material/School";
-import TerminalIcon from "@mui/icons-material/Terminal";
-import VerifiedIcon from "@mui/icons-material/Verified";
-import Accordion from "@mui/material/Accordion";
-import AccordionDetails from "@mui/material/AccordionDetails";
-import AccordionSummary from "@mui/material/AccordionSummary";
-import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
-import React, { useState } from "react";
+import { Accordion, AccordionDetails, AccordionSummary, Box, Typography } from "@mui/material";
+import { ExpandMoreIcon, MilitaryTechIcon, SchoolIcon, TerminalIcon, VerifiedIcon, WorkIcon } from "../mui-icons";
+
+
 import Certifications from "./Certifications";
 import College from "./College";
 import MilitaryExp from "./MilitaryExp";
 import Projects from "./Projects";
 import Skills from "./Skills";
+
+import React, { useState } from "react";
 
 const sections = [
   {
