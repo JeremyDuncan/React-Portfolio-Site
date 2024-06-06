@@ -12,7 +12,9 @@ import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 import ContactPageIcon from "@mui/icons-material/ContactPage";
+import DescriptionIcon from "@mui/icons-material/Description";
 import EmojiPeopleIcon from "@mui/icons-material/EmojiPeople";
+import RssFeedIcon from "@mui/icons-material/RssFeed";
 import HomeIcon from "@mui/icons-material/Home";
 import MenuIcon from "@mui/icons-material/Menu";
 import MilitaryTechIcon from "@mui/icons-material/MilitaryTech";
@@ -48,7 +50,44 @@ const pages = [
     />
     Home
   </Link>,
-
+  <Link
+    sx={{ textShadow: "0px 1.5px 9px #292727" }}
+    color="inherit"
+    underline="none"
+    href="https://drive.google.com/file/d/1PGlstEol5OUk9diDouneruzw6PQe3Hx9/view?usp=sharing"
+    target="_blank"
+    rel="noopener"
+  >
+    <DescriptionIcon
+      sx={{
+        display: "inline-flex",
+        verticalAlign: "text-bottom",
+        textAlign: "center",
+        fontSize: "large",
+        pr: { xs: ".5rem", sm: ".3rem" },
+      }}
+    />
+    Resume
+  </Link>,
+    <Link
+    sx={{ textShadow: "0px 1.5px 9px #292727" }}
+    color="inherit"
+    underline="none"
+    href="https://www.gingertechblog.com"
+    target="_blank"
+    rel="noopener"
+  >
+    <RssFeedIcon
+      sx={{
+        display: "inline-flex",
+        verticalAlign: "text-bottom",
+        textAlign: "center",
+        fontSize: "large",
+        pr: { xs: ".5rem", sm: ".3rem" },
+      }}
+    />
+    Blog
+  </Link>,
   <Link
     sx={{ textShadow: "0px 1.5px 9px #292727" }}
     color="inherit"
