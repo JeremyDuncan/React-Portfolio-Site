@@ -10,179 +10,75 @@ import "@fontsource/roboto/700.css";
 import SchoolRoundedIcon from "@mui/icons-material/SchoolRounded";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
-import Divider from "@mui/material/Divider";
 import Grid from "@mui/material/Grid";
 import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import ListItemIcon from "@mui/material/ListItemIcon";
-import ListItemText from "@mui/material/ListItemText";
+import Typography from "@mui/material/Typography";
+import React from 'react';
 import BachelorDegree from "./BachelorDegree.js";
 import Degrees from "./Degrees.js";
 
+const degreeData = [
+  {
+    type: "Bachelor of Science",
+    title: "Computer Information Systems, Software Programming",
+    university: "DeVry University",
+    date: "May 2021 - October 2023",
+    grade: "4.0 GPA, Summa Cum Laude",
+    component: <BachelorDegree />,
+  },
+  {
+    type: "Associate of Applied Science",
+    title: "Information Technology and Networking",
+    university: "DeVry University",
+    date: "May 2021 - June 2022",
+    grade: "4.0 GPA, Honors",
+    component: <Degrees />,
+  },
+];
+
 const College = () => {
   return (
-    <Box container direction="row" justifyContent="center" alignItems="center">
-      <Grid
-        container
-        spacing={0}
-        direction="column"
-        justifyContent="center"
-        alignItems="center"
-      >
-        <List
-          sx={{
-            width: "100%",
-            maxWidth: 750,
-            bgcolor: "primary.secondary",
-            color: "contrast.textDark",
-          }}
-        >
-
-<ListItem sx={{ textShadow: "0px 3px 8px #8a8a8a" }}>
-            <ListItemIcon>
-              <SchoolRoundedIcon sx={{ color: "contrast.textDark" }} />
-            </ListItemIcon>
-            <ListItemText
-              primary="Bachelor of Science - Computer Information Systems, Major:
-          Software Programming"
-            />
-          </ListItem>
-
-          <ListItem
-            sx={{
-              color: "secondaryList.text",
-              textShadow: "0px 3px 8px #8a8a8a",
-            }}
-          >
-            <ListItemText
-              inset
-              disableTypography
-              secondary="– DeVry University 2021 - October-2023"
-            />
-          </ListItem>
-
-          <ListItem
-            sx={{
-              color: "secondaryList.text",
-              textShadow: "0px 3px 8px #8a8a8a",
-            }}
-          >
-            <ListItemText
-              inset
-              disableTypography
-              secondary="– Grade: 4.0 GPA, With Honors: Summa Cum Laude"
-            />
-          </ListItem>
-
-          <ListItem
-            sx={{
-              color: "secondaryList.text",
-              textShadow: "0px 3px 8px #8a8a8a",
-            }}
-          >
-            <ListItemText
-              inset
-              disableTypography
-              secondary="– Nominated for the National Society of Leadership and Success"
-            />
-          </ListItem>
-
-          <ListItem
-            sx={{
-              color: "secondaryList.text",
-              textShadow: "0px 3px 8px #8a8a8a",
-            }}
-          >
-            <ListItemText
-              inset
-              disableTypography
-              secondary="– Nominated for the Alpha Chi Honor Society"
-            />
-          </ListItem>
-
-          <ListItem>
-            {/* INSERT DEGREE HERE */}
-            <BachelorDegree />
-          </ListItem>
-
-
-
-
-          <Divider />
-
-          <ListItem sx={{ textShadow: "0px 3px 8px #8a8a8a" }}>
-            <ListItemIcon color="white">
-              <SchoolRoundedIcon sx={{ color: "contrast.textDark" }} />
-            </ListItemIcon>
-            <ListItemText
-              primary="Associate of Applied Science - Information Technology and
-              Networking"
-            />
-          </ListItem>
-
-          <ListItem
-            sx={{
-              color: "secondaryList.text",
-              textShadow: "0px 3px 8px #8a8a8a",
-            }}
-          >
-            <ListItemText
-              inset
-              disableTypography
-              secondary="– DeVry University 2021 - June-2022"
-            />
-          </ListItem>
-
-          <ListItem
-            sx={{
-              color: "secondaryList.text",
-              textShadow: "0px 3px 8px #8a8a8a",
-            }}
-          >
-            <ListItemText
-              inset
-              disableTypography
-              secondary="– Grade: 4.0 GPA, With Honors, Deans List Awardee"
-            />
-          </ListItem>
-
-          <ListItem
-            sx={{
-              color: "secondaryList.text",
-              textShadow: "0px 3px 8px #8a8a8a",
-            }}
-          >
-            <ListItemText
-              inset
-              disableTypography
-              secondary="– Nominated for the National Society of Leadership and Success"
-            />
-          </ListItem>
-
-          <ListItem
-            sx={{
-              color: "secondaryList.text",
-              textShadow: "0px 3px 8px #8a8a8a",
-            }}
-          >
-            <ListItemText
-              inset
-              disableTypography
-              secondary="– Nominated for the Alpha Chi Honor Society"
-            />
-          </ListItem>
-
-          <ListItem>
-            {/* INSERT DEGREE HERE */}
-            <Degrees />
-          </ListItem>
-          <br />
-
+    <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', padding: 2 }}>
+      <Grid container spacing={2} direction="column" justifyContent="center" alignItems="center">
+        <List sx={{ width: "100%", maxWidth: 750 }}>
+          {degreeData.map((data, index) => (
+            <Box
+              key={index}
+              sx={{
+                bgcolor: "primary.light",
+                color: "contrast.textDark",
+                borderRadius: 2,
+                boxShadow: 3,
+                mb: 2,
+                p: 2,
+              }}
+            >
+              <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", textAlign: "center", mb: 2 }}>
+                <SchoolRoundedIcon sx={{ color: "contrast.textDark", mr: 1 }} />
+                <Typography sx={{ fontWeight: "bold" }}>{data.type}</Typography>
+              </Box>
+              <Box sx={{ textAlign: { xs: 'center'} }}>
+                <Typography sx={{ fontWeight: "bold", fontStyle: "italic", textAlign: { xs: 'center'} }}>
+                  {data.title}
+                </Typography>
+                <Typography sx={{ color: "secondaryList.text", fontStyle: "italic", textAlign: { xs: 'center'} }}>
+                  {data.university}
+                </Typography>
+                <Typography sx={{ color: "secondaryList.text", fontStyle: "italic", textAlign: { xs: 'center'} }}>
+                  {data.date}
+                </Typography>
+                <Typography sx={{ color: "secondaryList.text", fontStyle: "italic", textAlign: { xs: 'center'} }}>
+                  Grade: {data.grade}
+                </Typography>
+              </Box>
+              <Box sx={{ mt: 2, textAlign: { xs: 'center', sm: 'left' } }}>
+                {data.component}
+              </Box>
+            </Box>
+          ))}
         </List>
-        <br />
-
         <Button
-          sx={{ color: "button.textLight" }}
+          sx={{ color: "button.textLight", mt: 2 }}
           href="/DeVry-University-Projects"
           variant="contained"
           endIcon={<SchoolRoundedIcon />}
@@ -193,4 +89,5 @@ const College = () => {
     </Box>
   );
 };
+
 export default College;
