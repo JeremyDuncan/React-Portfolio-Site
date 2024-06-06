@@ -134,10 +134,6 @@ const Skills = () => {
           </Grid>
         </Box>
       ))}
-
-
-
-
       <br />
       <Button
         sx={{ color: "button.textLight" }}
