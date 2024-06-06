@@ -8,14 +8,8 @@ import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
-import Grid from "@mui/material/Grid";
-import Paper from "@mui/material/Paper";
-import { styled } from "@mui/material/styles";
-import Typography from "@mui/material/Typography";
+import { Box, Button, Divider, Grid, Paper, Typography, styled } from "@mui/material";
 import Image from "mui-image";
-
 import AwsLogo from '../images/languages/aws_logo.webp';
 import CSharpLogo from '../images/languages/cSharp_logo_Scaled.webp';
 import CssLogo from '../images/languages/css-logo_Scaled.webp';
@@ -102,9 +96,12 @@ const Skills = () => {
     <Box sx={{ flexGrow: 1 }}>
       {techList.map((techCategory, categoryIndex) => (
         <Box key={categoryIndex} sx={{ mb: 4 }}>
-          <Typography variant="h6" sx={{ mb: 2 }}>
-            {techCategory.category}
-          </Typography>
+          <Divider>
+            <Typography variant="h6" sx={{ }}>
+              {techCategory.category}
+            </Typography>
+          </Divider>
+          <br/>
           <Grid
             sx={{
               textShadow: "0px 3px 8px #8a8a8a",
@@ -137,6 +134,10 @@ const Skills = () => {
           </Grid>
         </Box>
       ))}
+
+
+
+
       <br />
       <Button
         sx={{ color: "button.textLight" }}
