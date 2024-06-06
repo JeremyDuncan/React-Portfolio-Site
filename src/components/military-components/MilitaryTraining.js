@@ -3,11 +3,6 @@
 // Goes to:
 // ==>  Military.js Component
 // *****************************************************************************
-
-import "@fontsource/roboto/300.css";
-import "@fontsource/roboto/400.css";
-import "@fontsource/roboto/500.css";
-import "@fontsource/roboto/700.css";
 import SchoolIcon from "@mui/icons-material/School";
 import { Box, Divider, Grid, Paper, Typography } from '@mui/material';
 import { styled } from "@mui/material/styles";

@@ -2,11 +2,6 @@
 // This is the main portfolio section. Contains MainSection Component
 // Goes to ==> Home.js Component
 // *****************************************************************************
-
-import "@fontsource/roboto/300.css";
-import "@fontsource/roboto/400.css";
-import "@fontsource/roboto/500.css";
-import "@fontsource/roboto/700.css";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";

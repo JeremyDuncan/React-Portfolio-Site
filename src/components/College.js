@@ -2,17 +2,8 @@
 // This component displays my Colleges and Degrees
 // Goes to to ==> MainSection.js Component
 // *****************************************************************************
-
-import "@fontsource/roboto/300.css";
-import "@fontsource/roboto/400.css";
-import "@fontsource/roboto/500.css";
-import "@fontsource/roboto/700.css";
 import SchoolRoundedIcon from "@mui/icons-material/SchoolRounded";
-import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
-import Grid from "@mui/material/Grid";
-import List from "@mui/material/List";
-import Typography from "@mui/material/Typography";
+import { Box, Button, Divider, Grid, List, Typography } from '@mui/material';
 import React from 'react';
 import BachelorDegree from "./BachelorDegree.js";
 import Degrees from "./Degrees.js";
@@ -53,14 +44,16 @@ const College = () => {
                 p: 2,
               }}
             >
-              <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", textAlign: "center", mb: 2 }}>
+              <Divider>
+              <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", textAlign: "center" }}>
                 <SchoolRoundedIcon sx={{ color: "contrast.textDark", mr: 1 }} />
                 <Typography sx={{ fontWeight: "bold" }}>{data.type}</Typography>
               </Box>
+              </Divider>
               <Box sx={{ textAlign: { xs: 'center'} }}>
-                <Typography sx={{ fontWeight: "bold", fontStyle: "italic", textAlign: { xs: 'center'} }}>
-                  {data.title}
-                </Typography>
+                  <Typography sx={{ fontWeight: "bold", fontStyle: "italic", textAlign: { xs: 'center'} }}>
+                    {data.title}
+                  </Typography>
                 <Typography sx={{ color: "secondaryList.text", fontStyle: "italic", textAlign: { xs: 'center'} }}>
                   {data.university}
                 </Typography>

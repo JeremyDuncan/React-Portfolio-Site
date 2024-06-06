@@ -2,11 +2,6 @@
 // This component has the accordion section that holds the section components
 // Goes to ==> Portfolio.js Component
 // *****************************************************************************
-
-import "@fontsource/roboto/300.css";
-import "@fontsource/roboto/400.css";
-import "@fontsource/roboto/500.css";
-import "@fontsource/roboto/700.css";
 import WorkIcon from "@mui/icons-material/Work";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import MilitaryTechIcon from "@mui/icons-material/MilitaryTech";

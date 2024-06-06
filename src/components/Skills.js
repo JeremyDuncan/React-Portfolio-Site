@@ -2,11 +2,6 @@
 // This component displays the programming languages and technologies experience
 // Goes to ==> MainSection.js Component
 // *****************************************************************************
-
-import "@fontsource/roboto/300.css";
-import "@fontsource/roboto/400.css";
-import "@fontsource/roboto/500.css";
-import "@fontsource/roboto/700.css";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import { Box, Button, Divider, Grid, Paper, Typography, styled } from "@mui/material";
 import Image from "mui-image";

@@ -2,11 +2,6 @@
 // This component displays the Contact section in an Accordion Component
 // Goes to ==> Devry.js Component
 // *****************************************************************************
-
-import "@fontsource/roboto/300.css";
-import "@fontsource/roboto/400.css";
-import "@fontsource/roboto/500.css";
-import "@fontsource/roboto/700.css";
 import EmailRoundedIcon from "@mui/icons-material/EmailRounded";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import GitHubIcon from "@mui/icons-material/GitHub";

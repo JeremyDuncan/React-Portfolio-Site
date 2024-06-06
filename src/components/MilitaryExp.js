@@ -2,11 +2,6 @@
 // This component displays my Military Experience
 // Goes to ==> MainSection.js Component
 // *****************************************************************************
-
-import "@fontsource/roboto/300.css";
-import "@fontsource/roboto/400.css";
-import "@fontsource/roboto/500.css";
-import "@fontsource/roboto/700.css";
 import AssignmentIndRoundedIcon from "@mui/icons-material/AssignmentIndRounded";
 import ExpandLess from "@mui/icons-material/ExpandLess";
 import ExpandMore from "@mui/icons-material/ExpandMore";

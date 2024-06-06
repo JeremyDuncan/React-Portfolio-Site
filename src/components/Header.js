@@ -7,10 +7,6 @@
 // ==> Contact.js   // Contact information and media links
 // *****************************************************************************
 
-import "@fontsource/roboto/300.css";
-import "@fontsource/roboto/400.css";
-import "@fontsource/roboto/500.css";
-import "@fontsource/roboto/700.css";
 import ContactPageIcon from "@mui/icons-material/ContactPage";
 import DescriptionIcon from "@mui/icons-material/Description";
 import EmojiPeopleIcon from "@mui/icons-material/EmojiPeople";

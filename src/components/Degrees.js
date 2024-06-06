@@ -2,11 +2,6 @@
 // This component displays college degrees
 // Goes to ==> MainSection.js Component
 // *****************************************************************************
-
-import "@fontsource/roboto/300.css";
-import "@fontsource/roboto/400.css";
-import "@fontsource/roboto/500.css";
-import "@fontsource/roboto/700.css";
 import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
