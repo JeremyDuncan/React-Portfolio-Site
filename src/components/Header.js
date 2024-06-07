@@ -6,7 +6,8 @@
 // ==> Devry.js     // Devry college projects / portfolio
 // ==> Contact.js   // Contact information and media links
 // *****************************************************************************
-import { AppBar, Box, Button, Container, Grid, IconButton, Menu, MenuItem, Slide, Toolbar, Typography } from "@mui/material";
+import { AppBar, Box, Button, Container, Grid, IconButton, Menu, MenuItem, Slide, Toolbar, Typography, useMediaQuery } from "@mui/material";
+import { useTheme } from "@mui/material/styles";
 import React, { useEffect, useState } from "react";
 import { ContactPageIcon, DescriptionIcon, EmojiPeopleIcon, HomeIcon, MenuIcon, MilitaryTechIcon, RssFeedIcon, SchoolIcon } from "../mui-icons";
 
@@ -49,8 +50,12 @@ const Header = () => {
   const [anchorElNav, setAnchorElNav] = useState(null);
   const [anchorElUser, setAnchorElUser] = useState(null);
   const [showHeader, setShowHeader] = useState(true);
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('md'));
 
   useEffect(() => {
+    if (!isMobile) return;
+
     let lastScrollY = window.scrollY;
 
     const handleScroll = () => {
@@ -67,7 +72,7 @@ const Header = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, [isMobile]);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -93,7 +98,7 @@ const Header = () => {
   };
 
   return (
-    <Slide in={showHeader}>
+    <Slide in={showHeader || !isMobile}>
       <AppBar elevation={9} position="sticky">
         <Container
           sx={{
