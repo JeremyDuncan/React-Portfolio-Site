@@ -48,7 +48,6 @@ const pages = [
 
 const Header = () => {
   const [anchorElNav, setAnchorElNav] = useState(null);
-  const [anchorElUser, setAnchorElUser] = useState(null);
   const [showHeader, setShowHeader] = useState(true);
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
@@ -82,11 +81,8 @@ const Header = () => {
     setAnchorElNav(null);
   };
 
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
-
-  const handleLinkClick = (label) => {
+  const handleLinkClick = (label, href, external) => {
+    handleCloseNavMenu();
     if (window.gtag) {
       window.gtag('event', 'header_link_click', {
         event_category: 'Header',
@@ -94,6 +90,11 @@ const Header = () => {
       });
     } else {
       console.error("gtag not found on window object");
+    }
+    if (external) {
+      window.open(href, '_blank', 'noopener');
+    } else {
+      window.location.href = href;
     }
   };
 
@@ -167,7 +168,7 @@ const Header = () => {
                 }}
               >
                 {pages.map((page) => (
-                  <MenuItem key={page.label} onClick={() => handleLinkClick(page.label)}>
+                  <MenuItem key={page.label} onClick={() => handleLinkClick(page.label, page.href, page.external)}>
                     <Typography sx={{ color: "black" }}>
                       {page.icon} {page.label}
                     </Typography>
@@ -187,7 +188,7 @@ const Header = () => {
               variant="h6"
               noWrap
               component="a"
-              href=""
+              onClick={() => handleLinkClick("Home", "/", false)}
               sx={{
                 mr: 2,
                 display: { xs: "flex", md: "none" },
@@ -198,6 +199,7 @@ const Header = () => {
                 color: "header.textLight",
                 textDecoration: "none",
                 textShadow: "1.5px 1.5px 4px #292727",
+                cursor: "pointer",
               }}
             >
               Jeremy Duncan
@@ -208,37 +210,16 @@ const Header = () => {
                   <Button
                     className="headerLink"
                     size="small"
-                    onClick={() => handleLinkClick(page.label)}
+                    onClick={() => handleLinkClick(page.label, page.href, page.external)}
                     sx={{
                       my: 2,
                       color: "white",
                     }}
-                    href={page.href}
-                    target={page.external ? "_blank" : "_self"}
-                    rel={page.external ? "noopener" : undefined}
                   >
                     {page.icon} {page.label}
                   </Button>
                 </Grid>
               ))}
-            </Box>
-            <Box sx={{ flexGrow: 0 }}>
-              <Menu
-                sx={{ mt: "45px" }}
-                id="menu-appbar"
-                anchorEl={anchorElUser}
-                anchorOrigin={{
-                  vertical: "top",
-                  horizontal: "right",
-                }}
-                keepMounted
-                transformOrigin={{
-                  vertical: "top",
-                  horizontal: "right",
-                }}
-                open={Boolean(anchorElUser)}
-                onClose={handleCloseUserMenu}
-              ></Menu>
             </Box>
           </Toolbar>
         </Container>
