@@ -1,4 +1,4 @@
-// *****************************************************************************
+// =============================================================================
 // Created by: Jeremy Duncan
 // Updated: October 17th 2022
 //
@@ -15,7 +15,6 @@ import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 import Box from "@mui/material/Box";
-
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import * as React from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
@@ -26,6 +25,7 @@ import Contact from "./pages/Contact";
 import Devry from "./pages/Devry";
 import Home from "./pages/Home";
 import Military from "./pages/Military";
+import usePageTracking from './usePageTracking';
 
 // Creates custom theme colors for webpages
 const theme = createTheme({
@@ -62,22 +62,31 @@ const theme = createTheme({
 
 function App() {
   return (
+    <ThemeProvider theme={theme}>
+      <Router>
+        <AppContent />
+      </Router>
+    </ThemeProvider>
+  );
+}
+
+function AppContent() {
+  usePageTracking();
+
+  return (
     <Box>
-      <ThemeProvider theme={theme}>
-        <div className="App">
-          <Header/>
-          <Router>
-            <Routes>
-              <Route exact path="/" element={<Home />} />
-              <Route path="/DeVry-University-Projects" element={<Devry />} />
-              <Route path="/Military-Training" element={<Military />} />
-              <Route path="/Contact" element={<Contact />} />
-            </Routes>
-          </Router>
-          <Footer/>
-        </div>
-      </ThemeProvider>
+      <div className="App">
+        <Header />
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/DeVry-University-Projects" element={<Devry />} />
+          <Route path="/Military-Training" element={<Military />} />
+          <Route path="/Contact" element={<Contact />} />
+        </Routes>
+        <Footer />
+      </div>
     </Box>
   );
 }
+
 export default App;

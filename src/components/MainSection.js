@@ -1,18 +1,11 @@
-// *****************************************************************************
-// This component has the accordion section that holds the section components
-// Goes to ==> Portfolio.js Component
-// *****************************************************************************
 import { Accordion, AccordionDetails, AccordionSummary, Box, Typography } from "@mui/material";
+import React, { useState } from "react";
 import { ExpandMoreIcon, MilitaryTechIcon, SchoolIcon, TerminalIcon, VerifiedIcon, WorkIcon } from "../mui-icons";
-
-
 import Certifications from "./Certifications";
 import College from "./College";
 import MilitaryExp from "./MilitaryExp";
 import Projects from "./Projects";
 import Skills from "./Skills";
-
-import React, { useState } from "react";
 
 const sections = [
   {
@@ -50,8 +43,19 @@ const sections = [
 const MainSection = () => {
   const [expanded, setExpanded] = useState(false);
 
-  const handleChange = (panel) => (event, isExpanded) => {
+  const handleChange = (panel, title) => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);
+
+    // Send event to Google Analytics
+    if (window.gtag) {
+      window.gtag('event', 'accordion_click', {
+        event_category: 'Accordion',
+        event_label: title,
+        value: isExpanded ? 1 : 0,
+      });
+    } else {
+      console.error("gtag not found on window object");
+    }
   };
 
   return (
@@ -62,20 +66,19 @@ const MainSection = () => {
           className="ga-btn"
           sx={{ bgcolor: "primary.dark", color: "contrast.textLight" }}
           expanded={expanded === section.panel}
-          onChange={handleChange(section.panel)}
+          onChange={handleChange(section.panel, section.title)}
         >
           <AccordionSummary
             expandIcon={<ExpandMoreIcon sx={{ color: "contrast.textLight" }} />}
             aria-controls={`${section.panel}bh-content`}
             id={`${section.panel}bh-header`}
           >
-          <Box
+            <Box
               sx={{
                 display: 'flex',
                 alignItems: 'center',
                 width: '100%',
                 textAlign: 'left',
-
               }}
             >
               <Typography
