@@ -9,7 +9,7 @@
 import { AppBar, Box, Button, Container, Grid, IconButton, Menu, MenuItem, Slide, Toolbar, Typography, useMediaQuery } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import React, { useEffect, useState } from "react";
-import { ContactPageIcon, DescriptionIcon, EmojiPeopleIcon, HomeIcon, MenuIcon, MilitaryTechIcon, RssFeedIcon, SchoolIcon } from "../mui-icons";
+import { ContactPageIcon, DescriptionIcon, EmojiPeopleIcon, HomeIcon, MenuIcon, MilitaryTechIcon, RssFeedIcon, SchoolIcon } from "../../mui-icons";
 
 const pages = [
   {

@@ -14,11 +14,10 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 
-//======================== CLASS BoxDesign ====================================>
+// ======================== CLASS BoxDesign ====================================>
 const Portfolio = () => {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      
       <br />
       <Grid
         container
@@ -29,22 +28,21 @@ const Portfolio = () => {
       >
         <Grid display="column" item xs={11} md={11} lg={11} xl={6}>
           <Item elevation={14} sx={{ bgcolor: "primary.main" }}>
-    
             <Item
               sx={{
-                background:
-                  "linear-gradient(to right, #A6B7C3 0%, #D2E8F7 50%, #A6B7C3 100%)",
+                background: "linear-gradient(to right, #A6B7C3 0%, #D2E8F7 50%, #A6B7C3 100%)",
                 color: "contrast.textDark",
                 textShadow: "0px 3px 8px #8a8a8a",
               }}
             >
               <AboutMe />
+
             </Item>
           </Item>
         </Grid>
       </Grid>
       <br />
-      {/*//=========== GRID BOX ===============> */}
+      {/* //=========== GRID BOX ===============> */}
       <Grid
         container
         spacing={2}
@@ -53,17 +51,12 @@ const Portfolio = () => {
         alignItems="center"
       >
         <Grid display="column" item xs={11} md={11} lg={11} xl={6}>
-          <Item
-            elevation={14}
-            sx={{ bgcolor: "primary.main", color: "header.textLight" }}
-          >
-            {/*=== ===*/}
+          <Item elevation={14} sx={{ bgcolor: "primary.main", color: "header.textLight" }}>
+
             <MainSection />
-            {/*<== === === === === === === === === {COMPONENT} */}
-            {/*=== ===*/}
+
           </Item>
         </Grid>
-        {/*//=========== GRID END ===============> */}
       </Grid>
     </Box>
   );

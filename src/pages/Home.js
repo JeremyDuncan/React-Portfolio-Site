@@ -2,7 +2,7 @@
 // This is the Home Page
 // *****************************************************************************
 import Box from "@mui/material/Box";
-import Portfolio from "../components/Portfolio";
+import Portfolio from "../components/home-components/Portfolio.js";
 
 const Home = () => {
 

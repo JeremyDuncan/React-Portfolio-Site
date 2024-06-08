@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.882c138e.css",
-    "main.js": "/static/js/main.30497274.js",
+    "main.js": "/static/js/main.d00cea5b.js",
     "static/media/associate-degree.webp": "/static/media/associate-degree.39a1e54b4d7f52b1fd96.webp",
     "static/media/programming-essentials.webp": "/static/media/programming-essentials.c7b0d77f4f6d86b97d7d.webp",
     "static/media/UX_Cert4.webp": "/static/media/UX_Cert4.316621b4f4a914763305.webp",
@@ -98,10 +98,10 @@
     "static/media/roboto-greek-ext-300-normal.woff2": "/static/media/roboto-greek-ext-300-normal.35b9d6be04b95f0f0530.woff2",
     "static/media/roboto-greek-ext-700-normal.woff2": "/static/media/roboto-greek-ext-700-normal.bd9854c751441ccc1a70.woff2",
     "main.882c138e.css.map": "/static/css/main.882c138e.css.map",
-    "main.30497274.js.map": "/static/js/main.30497274.js.map"
+    "main.d00cea5b.js.map": "/static/js/main.d00cea5b.js.map"
   },
   "entrypoints": [
     "static/css/main.882c138e.css",
-    "static/js/main.30497274.js"
+    "static/js/main.d00cea5b.js"
   ]
 }

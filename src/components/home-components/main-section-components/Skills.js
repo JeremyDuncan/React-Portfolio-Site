@@ -9,7 +9,7 @@ import {
   AwsLogo, CSharpLogo, CssLogo, DockerLogo, HtmlLogo, JavaLogo, JavascriptLogo, JestLogo, LaravelLogo, LumenLogo,
   MysqlLogo, NginxLogo, NodejsLogo, PhpLogo, PostgresqlLogo, PryLogo, PythonLogo, RailsLogo, ReactLogo, RedisLogo,
   RspecLogo, RubyLogo
-} from "../images";
+} from "../../../images";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",

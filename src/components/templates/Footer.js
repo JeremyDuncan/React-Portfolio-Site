@@ -4,7 +4,7 @@
 // ==> Contact.js Component
 // *****************************************************************************
 import { Box, BottomNavigation, Link, Grid, Paper, Typography, styled } from '@mui/material';
-import ContactMe from "../ContactMe";
+import ContactMe from "./ContactMe";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",

@@ -57,7 +57,7 @@ const Certifications = () => {
         <Grid direction="column" item xs={12} sm={6} md={5.5} lg={3.4} xl={3.4}>
           <Item elevation={6} sx={{ bgcolor: "primary.main", color: "white" }}>
             <Image
-              src={require("../images/languages/JavaScript_algo.webp")}
+              src={require("../../../images/languages/JavaScript_algo.webp")}
               style={{ borderRadius: 16 }}
               shift="top"
               distance={400}
@@ -88,7 +88,7 @@ const Certifications = () => {
         <Grid direction="column" item xs={12} sm={6} md={5.5} lg={3.4} xl={3.4}>
           <Item elevation={6} sx={{ bgcolor: "primary.main", color: "white" }}>
             <Image
-              src={require("../images/languages/Responsive_Web_Design.webp")}
+              src={require("../../../images/languages/Responsive_Web_Design.webp")}
               style={{ borderRadius: 16 }}
               shift="top"
               distance={400}
@@ -119,7 +119,7 @@ const Certifications = () => {
         <Grid direction="column" item xs={12} sm={6} md={5.5} lg={3.4} xl={3.4}>
           <Item elevation={6} sx={{ bgcolor: "primary.main", color: "white" }}>
             <Image
-              src={require("../images/languages/Front_End_Dev.webp")}
+              src={require("../../../images/languages/Front_End_Dev.webp")}
               style={{ borderRadius: 16 }}
               shift="top"
               distance={400}
@@ -150,7 +150,7 @@ const Certifications = () => {
         <Grid direction="column" item xs={12} sm={6} md={5.5} lg={3.4} xl={3.4}>
           <Item elevation={6} sx={{ bgcolor: "primary.main", color: "white" }}>
             <Image
-              src={require("../images/degrees/programming-essentials.webp")}
+              src={require("../../../images/degrees/programming-essentials.webp")}
               style={{ borderRadius: 16 }}
               shift="top"
               distance={400}
@@ -181,7 +181,7 @@ const Certifications = () => {
         <Grid direction="column" item xs={12} sm={6} md={5.5} lg={3.4} xl={3.4}>
           <Item elevation={6} sx={{ bgcolor: "primary.main", color: "white" }}>
             <Image
-              src={require("../images/certs/ux_cert1.webp")}
+              src={require("../../../images/certs/ux_cert1.webp")}
               style={{ borderRadius: 16 }}
               shift="top"
               distance={400}
@@ -212,7 +212,7 @@ const Certifications = () => {
         <Grid direction="column" item xs={12} sm={6} md={5.5} lg={3.4} xl={3.4}>
           <Item elevation={6} sx={{ bgcolor: "primary.main", color: "white" }}>
             <Image
-              src={require("../images/certs/ux_process_edi_cert2.webp")}
+              src={require("../../../images/certs/ux_process_edi_cert2.webp")}
               style={{ borderRadius: 16 }}
               shift="top"
               distance={400}
@@ -243,7 +243,7 @@ const Certifications = () => {
         <Grid direction="column" item xs={12} sm={6} md={5.5} lg={3.4} xl={3.4}>
           <Item elevation={6} sx={{ bgcolor: "primary.main", color: "white" }}>
             <Image
-              src={require("../images/certs/UX_Cert3.webp")}
+              src={require("../../../images/certs/UX_Cert3.webp")}
               style={{ borderRadius: 16 }}
               shift="top"
               distance={400}
@@ -274,7 +274,7 @@ const Certifications = () => {
         <Grid direction="column" item xs={12} sm={6} md={5.5} lg={3.4} xl={3.4}>
           <Item elevation={6} sx={{ bgcolor: "primary.main", color: "white" }}>
             <Image
-              src={require("../images/certs/UX_Cert4.webp")}
+              src={require("../../../images/certs/UX_Cert4.webp")}
               style={{ borderRadius: 16 }}
               shift="top"
               distance={400}

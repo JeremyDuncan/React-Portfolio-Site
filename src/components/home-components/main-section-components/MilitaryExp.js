@@ -3,7 +3,7 @@
 // Goes to ==> MainSection.js Component
 // *****************************************************************************
 import { Box, Button, Collapse, Divider, Grid, List, ListItemButton, ListItemIcon, ListItemText } from "@mui/material";
-import { AssignmentIndRoundedIcon, ExpandLessIcon, ExpandMoreIcon, MilitaryTechRoundedIcon} from "../mui-icons";
+import { AssignmentIndRoundedIcon, ExpandLessIcon, ExpandMoreIcon, MilitaryTechRoundedIcon} from "../../../mui-icons";
 import React from "react";
 
 const MilitaryExp = () => {

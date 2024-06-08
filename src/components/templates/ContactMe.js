@@ -5,7 +5,7 @@
 // ==> Military.js  // Military training information
 // ==> Devry.js     // Devry college projects / portfolio
 // *****************************************************************************
-import { EmailRoundedIcon, ExpandMoreIcon, GitHubIcon, LinkedInIcon, PermPhoneMsgRoundedIcon } from "../mui-icons";
+import { EmailRoundedIcon, ExpandMoreIcon, GitHubIcon, LinkedInIcon, PermPhoneMsgRoundedIcon } from "../../mui-icons";
 import { Accordion, AccordionDetails, AccordionSummary, Box, Button, Grid, Typography } from "@mui/material";
 import React, { useState } from "react";
 

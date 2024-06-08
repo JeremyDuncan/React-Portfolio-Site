@@ -1,11 +1,11 @@
 import { Accordion, AccordionDetails, AccordionSummary, Box, Typography } from "@mui/material";
 import React, { useState } from "react";
-import { ExpandMoreIcon, MilitaryTechIcon, SchoolIcon, TerminalIcon, VerifiedIcon, WorkIcon } from "../mui-icons";
-import Certifications from "./Certifications";
-import College from "./College";
-import MilitaryExp from "./MilitaryExp";
-import Projects from "./Projects";
-import Skills from "./Skills";
+import { ExpandMoreIcon, MilitaryTechIcon, SchoolIcon, TerminalIcon, VerifiedIcon, WorkIcon } from "../../mui-icons";
+import Certifications from "./main-section-components/Certifications";
+import College from "./main-section-components/College";
+import MilitaryExp from "./main-section-components/MilitaryExp";
+import Projects from "./main-section-components/Projects";
+import Skills from "./main-section-components/Skills";
 
 const sections = [
   {
