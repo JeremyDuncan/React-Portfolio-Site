@@ -179,8 +179,8 @@ const DevryProjects = () => {
                 align="left"
               >
                 This is the final project for my DeVry class CEIS295. In this
-                project I will be demonstrating fundamental data structure amd 
-                algorithm concepts by developing applications that measure the 
+                project I will be demonstrating fundamental data structure and
+                algorithm concepts by developing applications that measure the
                 performance of different algorithmic approaches.
               </Typography>
               <br />
@@ -283,7 +283,7 @@ const DevryProjects = () => {
                 align="left"
               >
                 This is the final project for my DeVry class CIS355A. In this
-                project I will be demonstrating fundamental Java concepts by 
+                project I will be demonstrating fundamental Java concepts by
                 developing a business application for a landscaping business.
               </Typography>
               <br />

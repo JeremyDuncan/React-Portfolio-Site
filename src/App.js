@@ -1,7 +1,4 @@
 // =============================================================================
-// Created by: Jeremy Duncan
-// Updated: October 17th 2022
-//
 // This React app is designed to be a multi-page website using React Routes.
 // Current Routes:
 // ==> Home.js      // Homepage of portfolio site
