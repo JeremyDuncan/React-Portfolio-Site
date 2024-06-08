@@ -3,16 +3,8 @@
 // Goes to:
 // ==> Contact.js Component
 // *****************************************************************************
-import EmailRoundedIcon from "@mui/icons-material/EmailRounded";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import PhoneIcon from "@mui/icons-material/Phone";
-import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
-import Grid from "@mui/material/Grid";
-import Paper from "@mui/material/Paper";
-import { styled } from "@mui/material/styles";
-import Typography from "@mui/material/Typography";
+import { Box, Grid, Paper, Typography, Button, styled } from '@mui/material';
+import { EmailRoundedIcon, GitHubIcon, LinkedInIcon, PhoneIcon } from "../../mui-icons";
 import Image from "mui-image";
 
 const Item = styled(Paper)(({ theme }) => ({

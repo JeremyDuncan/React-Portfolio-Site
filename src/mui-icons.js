@@ -21,6 +21,7 @@ import AssignmentIndRoundedIcon from "@mui/icons-material/AssignmentIndRounded";
 import ExpandLessIcon from "@mui/icons-material/ExpandLess";
 import MilitaryTechRoundedIcon from "@mui/icons-material/MilitaryTechRounded";
 import NavigateNextRoundedIcon from "@mui/icons-material/NavigateNextRounded";
+import PhoneIcon from "@mui/icons-material/Phone";
 
 export {
   ExpandMoreIcon,
@@ -46,5 +47,6 @@ export {
   CodeIcon,
   OndemandVideoIcon,
   NavigateNextRoundedIcon,
+  PhoneIcon
 };
 
