@@ -2,9 +2,10 @@
 // This component displays the About Me section and Resume
 // Goes to ==> MainSection.js Component
 // *****************************************************************************
-import { Box, Divider, Typography, styled, Paper, Grid, Button } from "@mui/material";
-import Image from "mui-image";
 import DescriptionIcon from "@mui/icons-material/Description";
+import RecommendIcon from '@mui/icons-material/Recommend';
+import { Box, Button, Divider, Grid, Paper, Typography, styled } from "@mui/material";
+import Image from "mui-image";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -149,6 +150,19 @@ const AboutMe = () => {
         >
           My Resume
         </Button>
+        <br/>
+        <Button
+          className="btn ga-btn"
+          sx={{ color: "button.textLight" }}
+          href="https://drive.google.com/file/d/1jdP_kaLbF5WjH0zbgQMm2YgjxcrudpLc/view"
+          rel="noopener"
+          target="_blank"
+          variant="contained"
+          endIcon={<RecommendIcon />}
+        >
+          See Recommendation
+        </Button>
+
       </Box>
     </Box>
   );

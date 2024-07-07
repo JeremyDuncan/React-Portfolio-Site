@@ -6,7 +6,7 @@
 import { Accordion, AccordionDetails, AccordionSummary, Box, Button, Grid, Paper, styled, Typography } from "@mui/material";
 import Image from "mui-image";
 import React, { useState } from 'react';
-import { CodeIcon, ExpandMoreIcon, OndemandVideoIcon } from "../../../mui-icons";
+import { CodeIcon, ExpandMoreIcon, LiveTvIcon, OndemandVideoIcon, RssFeedIcon } from "../../../mui-icons";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -17,6 +17,22 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 const projects = [
+  {
+    panel: "panel19",
+    title: "Ginger Tech Blog",
+    image: require("../../../images/ginger_tech_blog.webp"),
+    description: "This is a tech blog I self host and maintain using Ghost. I update it with useful developer knowledge, tutorials, and anything tech related.",
+    urlLink: "https://www.gingertechblog.com"
+  },
+  {
+    panel: "panel18",
+    title: "Rails SMS App",
+    image: require("../../../images/sms_app.webp"),
+    description: "This is a Ruby on Rails app I created which sends SMS messages to phone numbers based on certain triggers and user actions. Uses Devise, Rails Action Cable, Active Job, Slim, HTML, CSS, PostgreSQL, Ruby, JavaScript, and the Twilio API.",
+    demoLink: "https://sms-app.jeremyd.net",
+    sourceLink: "https://github.com/JeremyDuncan/sms_app",
+    blogLink: "https://gingertechblog.com/rails-sms-notification-app-video-walkthrough/"
+  },
   {
     panel: "panel1",
     title: "Wildflower Designs",
@@ -242,36 +258,71 @@ const Projects = () => {
                       justifyContent: "center",
                     }}
                   >
-                    <Button
-                      className="ga-btn"
-                      sx={{
-                        color: "button.textLight",
-                        width: "125px",
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center",
-                      }}
-                      href={project.demoLink}
-                      target="_blank"
-                      rel="noopener"
-                      variant="contained"
-                      endIcon={<OndemandVideoIcon />}
-                      onClick={() => handleButtonClick(`${project.title} Demo`)}
-                    >
-                      Demo
-                    </Button>
-                    <Button
-                      className="ga-btn"
-                      sx={{ color: "button.textLight" }}
-                      href={project.sourceLink}
-                      target="_blank"
-                      rel="noopener"
-                      variant="contained"
-                      endIcon={<CodeIcon />}
-                      onClick={() => handleButtonClick(`${project.title} Source`)}
-                    >
-                      Source
-                    </Button>
+                    {project.demoLink && (
+                      <Button
+                        className="ga-btn"
+                        sx={{
+                          color: "button.textLight",
+                          width: "125px",
+                          display: "flex",
+                          justifyContent: "center",
+                          alignItems: "center",
+                        }}
+                        href={project.demoLink}
+                        target="_blank"
+                        rel="noopener"
+                        variant="contained"
+                        endIcon={<OndemandVideoIcon />}
+                        onClick={() => handleButtonClick(`${project.title} Demo`)}
+                      >
+                        Demo
+                      </Button>
+                    )}
+
+                    {project.sourceLink && (
+                      <Button
+                        className="ga-btn"
+                        sx={{ color: "button.textLight" }}
+                        href={project.sourceLink}
+                        target="_blank"
+                        rel="noopener"
+                        variant="contained"
+                        endIcon={<CodeIcon />}
+                        onClick={() => handleButtonClick(`${project.title} Source`)}
+                      >
+                        Source
+                      </Button>
+                    )}
+
+                    {project.blogLink && (
+                      <Button
+                        className="ga-btn"
+                        sx={{ color: "button.textLight" }}
+                        href={project.blogLink}
+                        target="_blank"
+                        rel="noopener"
+                        variant="contained"
+                        endIcon={<LiveTvIcon />}
+                        onClick={() => handleButtonClick(`${project.title} Video`)}
+                      >
+                        Video
+                      </Button>
+                    )}
+                    {project.urlLink && (
+                      <Button
+                        className="ga-btn"
+                        sx={{ color: "button.textLight" }}
+                        href={project.urlLink}
+                        target="_blank"
+                        rel="noopener"
+                        variant="contained"
+                        endIcon={<RssFeedIcon />}
+                        onClick={() => handleButtonClick(`${project.title} Blog`)}
+                      >
+                        Visit
+                      </Button>
+                    )}
+
                   </Box>
                 </AccordionDetails>
               </Accordion>

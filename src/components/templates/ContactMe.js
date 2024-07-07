@@ -5,7 +5,7 @@
 // ==> Military.js  // Military training information
 // ==> Devry.js     // Devry college projects / portfolio
 // *****************************************************************************
-import { EmailRoundedIcon, ExpandMoreIcon, GitHubIcon, LinkedInIcon, PermPhoneMsgRoundedIcon } from "../../mui-icons";
+import { EmailRoundedIcon, ExpandMoreIcon, GitHubIcon, LinkedInIcon, PermPhoneMsgRoundedIcon, RssFeedIcon } from "../../mui-icons";
 import { Accordion, AccordionDetails, AccordionSummary, Box, Button, Grid, Typography } from "@mui/material";
 import React, { useState } from "react";
 
@@ -96,6 +96,19 @@ const ContactMe = () => {
                 <GitHubIcon fontSize="large" />
               </Button>
               {/* ============CONTACT LINK END ==============================*/}
+              {/* ============CONTACT LINK ==================================*/}
+              <Button
+                className="btn"
+                sx={{ color: "contrast.textLight" }}
+                href="https://www.gingertechblog.com"
+                target="_blank"
+                rel="noopener"
+                variant="contained"
+              >
+                <RssFeedIcon fontSize="large" />
+              </Button>
+              {/* ============CONTACT LINK END ==============================*/}
+
             </Grid>
           </Box>
         </AccordionDetails>

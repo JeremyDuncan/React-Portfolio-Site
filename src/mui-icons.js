@@ -23,6 +23,7 @@ import MilitaryTechRoundedIcon from "@mui/icons-material/MilitaryTechRounded";
 import NavigateNextRoundedIcon from "@mui/icons-material/NavigateNextRounded";
 import PhoneIcon from "@mui/icons-material/Phone";
 import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium";
+import LiveTvIcon from '@mui/icons-material/LiveTv';
 
 
 export {
@@ -50,6 +51,7 @@ export {
   OndemandVideoIcon,
   NavigateNextRoundedIcon,
   PhoneIcon,
-  WorkspacePremiumIcon
+  WorkspacePremiumIcon,
+  LiveTvIcon
 };
 

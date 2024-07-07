@@ -81,7 +81,7 @@ const College = () => {
             <Box
               key={index}
               sx={{
-                bgcolor: "primary.light",
+                bgcolor: "background.paper",
                 color: "contrast.textDark",
                 borderRadius: 2,
                 boxShadow: 3,
