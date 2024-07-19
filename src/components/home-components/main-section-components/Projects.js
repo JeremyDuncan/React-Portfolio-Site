@@ -25,6 +25,14 @@ const projects = [
     urlLink: "https://www.gingertechblog.com"
   },
   {
+    panel: "panel20",
+    title: "Journal App",
+    image: require("../../../images/journal_app.webp"),
+    description: "This is a decoupled app that uses Next.js, React, Tailwind CSS for the frontend, and Ruby on Rails and PostgreSQL for the backend. Has user login, pagination, a tag system, calendar feature with filtering, export journal to Word Document feature, and a search feature.",
+    demoLink: "https://journal.jeremyd.net",
+    sourceLink: "https://github.com/JeremyDuncan/blog_frontend",
+  },
+  {
     panel: "panel18",
     title: "Rails SMS App",
     image: require("../../../images/sms_app.webp"),
@@ -33,6 +41,7 @@ const projects = [
     sourceLink: "https://github.com/JeremyDuncan/sms_app",
     blogLink: "https://gingertechblog.com/rails-sms-notification-app-video-walkthrough/"
   },
+
   {
     panel: "panel1",
     title: "Wildflower Designs",

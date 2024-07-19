@@ -147,7 +147,7 @@ const MilitaryExp = () => {
   };
 
   return (
-    <Box sx={{ width: '100%', maxWidth: 800, mx: 'auto', p: 2, pt: 0 }}>
+    <Box sx={{ width: '100%', maxWidth: 800, mx: 'auto', p: 0, pt: 0}}>
       <Divider>
         <Typography
           variant="h6"
@@ -169,7 +169,7 @@ const MilitaryExp = () => {
         </Typography>
       </Divider>
       
-      <Grid container spacing={2} direction="column">
+      <Grid container spacing={2} direction="column" >
         {militaryExperiences.map((experience) => (
           <Grid item key={experience.id}>
             <ExperienceItem
@@ -181,7 +181,7 @@ const MilitaryExp = () => {
         ))}
       </Grid>
       <Button
-        sx={{ color: "button.textLight", ml: 2 }}
+        sx={{ color: "button.textLight", ml: 0 }}
         href="/Military-Training"
         variant="contained"
         endIcon={<MilitaryTechRoundedIcon />}
