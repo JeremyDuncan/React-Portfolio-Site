@@ -6,7 +6,6 @@ This React application serves as a multi-page portfolio website, leveraging Reac
 ## Table of Contents
 - [Features](#features)
 - [Pages](#pages)
-- [Components](#components)
 - [Setup](#setup)
 - [Usage](#usage)
 - [Theme](#theme)
