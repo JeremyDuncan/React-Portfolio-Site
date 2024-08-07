@@ -17,25 +17,47 @@ This React application serves as a multi-page portfolio website, leveraging Reac
 - Google Analytics integration for page tracking
 - Responsive design
 
-## Pages
+# Pages
 ### Home
 The homepage of the portfolio site, providing a summary of the portfolio.
 
+![Portfolio Main](public/portfolio_main.webp)
+
+### Main Page Sections
+### Skills
+My tech stack experience
+
+![Skills](public/skills.webp)
+
+### Portfolio Project
+My relevant portfolio projects I have worked on.
+
+![Portfolio Projects](public/portfolio_projects.webp)
+
+### College Education
+My college degrees with verified Parchment links.
+
+![College](public/college.webp)
+
+### Certifications
+My developer certifications.
+
+![Certifications](public/certifications.webp)
+
+### Military Experience
+All my military experience in the US Navy.
+
+![Military Experience](public/military_experience.webp)
+---
+
 ### Military
-Contains information on military training and experience.
+Contains information on military training schools and experience.
 
 ### DeVry University Projects
 Showcases various projects completed during college at DeVry University.
 
 ### Contact
 Provides contact information and links to social media profiles.
-
-## Components
-### ContactInfo
-Displays contact information and links to phone, email, LinkedIn, and GitHub.
-
-### DevryProjects
-Showcases detailed information on various projects completed at DeVry University.
 
 ## Setup
 1. Clone the repository:
